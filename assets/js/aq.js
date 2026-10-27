@@ -57,12 +57,15 @@
     var rail = box.querySelector('.rail'), prev = box.querySelector('[data-prev]'), next = box.querySelector('[data-next]');
     if (!rail || !prev) return;
     var step = function () { var li = rail.querySelector('li'); return li ? li.getBoundingClientRect().width + 20 : 300; };
+    // right to left: the rail starts at its right edge, scrollLeft runs from 0 down to negative
+    var dir = getComputedStyle(rail).direction === 'rtl' ? -1 : 1;
     var sync = function () {
-      prev.disabled = rail.scrollLeft < 8;
-      next.disabled = rail.scrollLeft + rail.clientWidth > rail.scrollWidth - 8;
+      var x = Math.abs(rail.scrollLeft);
+      prev.disabled = x < 8;
+      next.disabled = x + rail.clientWidth > rail.scrollWidth - 8;
     };
-    prev.addEventListener('click', function () { rail.scrollBy({ left: -step() * 2, behavior: still ? 'auto' : 'smooth' }); });
-    next.addEventListener('click', function () { rail.scrollBy({ left: step() * 2, behavior: still ? 'auto' : 'smooth' }); });
+    prev.addEventListener('click', function () { rail.scrollBy({ left: -dir * step() * 2, behavior: still ? 'auto' : 'smooth' }); });
+    next.addEventListener('click', function () { rail.scrollBy({ left: dir * step() * 2, behavior: still ? 'auto' : 'smooth' }); });
     rail.addEventListener('scroll', sync, { passive: true });
     addEventListener('resize', sync);
     sync();
@@ -72,7 +75,7 @@
   var clock = document.querySelector('[data-clock]');
   if (clock && window.Intl) {
     var f = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Jerusalem', hour: '2-digit', minute: '2-digit' });
-    var tick = function () { clock.textContent = 'Jerusalem ' + f.format(new Date()); };
+    var tick = function () { clock.textContent = 'القدس ' + f.format(new Date()); };
     tick();
     setInterval(tick, 30000);
   }
@@ -83,7 +86,7 @@
       e.preventDefault();
       var m = fm.querySelector('.msg') || (fm.nextElementSibling && fm.nextElementSibling.classList.contains('msg') ? fm.nextElementSibling : null);
       if (!fm.checkValidity()) { fm.reportValidity(); return; }
-      if (m) m.textContent = fm.getAttribute('data-proto') || 'Received. This is a design prototype, so nothing was sent.';
+      if (m) m.textContent = fm.getAttribute('data-proto') || 'وصلت. هذا نموذج تصميم، فلم يرسل شيء.';
       fm.reset();
     });
   });
@@ -91,8 +94,8 @@
     b.addEventListener('click', function () {
       var t = b.textContent;
       (navigator.clipboard ? navigator.clipboard.writeText(location.href) : Promise.reject()).then(function () {
-        b.textContent = 'Link copied';
-      }, function () { b.textContent = 'Copy the address bar'; });
+        b.textContent = 'نسخ الرابط';
+      }, function () { b.textContent = 'انسخ العنوان من المتصفح'; });
       setTimeout(function () { b.textContent = t; }, 1800);
     });
   });
@@ -109,7 +112,7 @@
       if (!q) { out.innerHTML = ''; return; }
       var words = q.split(/\s+/);
       var hits = idx.filter(function (s) { var t = s.t.toLowerCase(); return words.every(function (w) { return t.indexOf(w) > -1; }); });
-      out.innerHTML = '<p class="n" role="status">' + hits.length + (hits.length === 1 ? ' story' : ' stories') + ' for “' + esc(q) + '”</p>' +
+      out.innerHTML = '<p class="n" role="status">' + (hits.length ? hits.length + ' ' + (hits.length > 2 && hits.length < 11 ? 'أخبار' : 'خبر') : 'لا نتائج') + ' عن «' + esc(q) + '»</p>' +
         '<ul class="list">' + hits.map(function (s) {
           return '<li><p class="kick"><span class="c" style="--cc:' + s.cc + '">' + esc(s.c) + '</span><span>' + esc(s.p) + '</span><time>' + esc(s.d) + '</time></p>' +
             '<h3 class="hl" style="font-size:20px;margin-top:6px"><a href="' + s.u + '">' + esc(s.h) + '</a></h3></li>';
@@ -121,7 +124,7 @@
       if (q) input.value = q;
       run();
     }).catch(function () {
-      out.innerHTML = '<p class="n" role="status">Search could not load its index. Try again in a moment.</p>';
+      out.innerHTML = '<p class="n" role="status">تعذر تحميل فهرس البحث. حاول بعد قليل.</p>';
     });
     sf.addEventListener('submit', function (e) { e.preventDefault(); run(); });
     input.addEventListener('input', run);

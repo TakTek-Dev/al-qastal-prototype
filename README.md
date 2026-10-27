@@ -1,6 +1,6 @@
-# Al-Qastal — English site prototype
+# القسطل — Al-Qastal site prototype (Arabic, RTL)
 
-A Jerusalem-first news site for **Al-Qastal (القسطل)**, built on the client's own identity: the tower with its
+An Arabic, right-to-left, Jerusalem-first news site for **Al-Qastal (القسطل)**, built on the client's own identity: the tower with its
 crenel and round-headed door, and the yellow quarter disc under it, read as the swing of an open door.
 
 - Home `index.html`, the gates `gates.html` and one page per gate or quarter in `gate/`, one page per corner,
@@ -22,4 +22,4 @@ python -I tools/links.py      # broken-link check
 
 Bump `V` in `tools/shell.py` after any CSS or JS change. Never hand-edit built HTML.
 
-Type: Host Grotesk and Source Serif 4 (SIL OFL). Photographs: Wikimedia Commons, credited in `credits.html`.
+Type: Alexandria and Noto Naskh Arabic (SIL OFL). Arabic text: research/news-ar.json, photos-ar.json. Photographs: Wikimedia Commons, credited in `credits.html`.

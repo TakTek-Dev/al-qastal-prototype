@@ -12,6 +12,41 @@ import os
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 rd = lambda p: json.load(open(os.path.join(ROOT, p), encoding='utf-8'))
 news, cand, picks = rd('research/news.json'), rd('research/photos.json')['photos'], rd('tools/picks.json')
+# the site is Arabic: research/news-ar.json and photos-ar.json carry the Arabic text for every id and slug
+AR, PAR = rd('research/news-ar.json'), rd('research/photos-ar.json')
+
+
+def fig_kind(label):
+    """Which corner a headline count belongs to, read from its English label."""
+    t = label.lower()
+    for k, words in (('prisoners', ('prisoner', 'detain', 'detention', 'custody')), ('exiled', ('ban', 'deport', 'expel', 'exile')),
+                     ('aqsa', ('aqsa', 'storm', 'incursion')), ('martyrs', ('killed', 'martyr', 'death'))):
+        if any(w in t for w in words):
+            return k
+    return 'jerusalem'
+
+
+def arabic(s, a):
+    """Lay the Arabic text over a story; facts the translation does not carry (dates, values, links) stay."""
+    for k in ('headline', 'standfirst', 'body', 'place'):
+        if a.get(k):
+            s[k] = a[k]
+    if s.get('figure') and a.get('figure_label'):
+        s['figure'] = dict(s['figure'], label=a['figure_label'])
+    if s.get('quote') and a.get('quote'):
+        s['quote'] = dict(s['quote'], **{k: v for k, v in a['quote'].items() if v is not None})
+    if s.get('person') and a.get('person'):
+        ap, p = a['person'], dict(s['person'])
+        for k in ('name', 'status', 'sentence', 'prison'):
+            if ap.get(k):
+                p[k] = ap[k]
+        if p.get('ban'):
+            p['ban'] = dict(p['ban'], length_en=p['ban'].get('length'), **{k2: ap[k1] for k1, k2 in (('ban_from', 'from'), ('ban_length', 'length')) if ap.get(k1)})
+        s['person'] = p
+    s['outlet_ar'] = a.get('outlet_ar')
+    names = a.get('source_names') or []
+    s['sources'] = [dict(o, name=names[i]) if i < len(names) and names[i] else o for i, o in enumerate(s.get('sources') or [])]
+    return s
 
 # what a corner may borrow when its story has no place photo of its own
 # (only prison exteriors are honest stand-ins: a West Bank or Gaza photo names a different village)
@@ -29,6 +64,9 @@ for it in news['items']:
         continue
     s = {k: it.get(k) for k in ('id', 'corner', 'kind', 'date', 'place', 'gate', 'headline', 'standfirst', 'body',
                                  'figure', 'quote', 'person', 'outlet_he', 'sources')}
+    if it['id'] not in AR['items']:
+        raise SystemExit(f'{it["id"]}: no Arabic text')
+    s = arabic(s, AR['items'][it['id']])
     for k, v in picks.get('edit', {}).get(it['id'], {}).items():
         s[k] = v
     ph = picks.get('photo', {}).get(it['id'])
@@ -55,6 +93,14 @@ for k in sorted(used):
     photos[k] = {f: c.get(f) for f in ('file', 'page_url', 'author', 'license', 'date', 'alt', 'caption', 'place', 'gate')}
     if picks.get('focus', {}).get(k):
         photos[k]['focus'] = picks['focus'][k]
+    if k in PAR:
+        photos[k].update({f: PAR[k][f] for f in ('alt', 'caption') if PAR[k].get(f)})
+        photos[k]['place'] = PAR[k].get('place') or PAR[k]['caption'].split(':')[0].split('،')[0]
+
+figures = []
+for i, f in enumerate(news.get('figures', [])):
+    fa = (AR.get('figures') or [])[i] if i < len(AR.get('figures') or []) else {}
+    figures.append(dict(f, kind=fig_kind(f['label']), label=fa.get('label') or f['label'], source=fa.get('source') or f.get('source')))
 
 ids = {s['id'] for s in stories}
 for k in ('lead', 'urgent'):
@@ -62,7 +108,7 @@ for k in ('lead', 'urgent'):
         assert picks[k] in ids, (k, picks[k])
 edition = {
     'date': picks['date'], 'lead': picks['lead'], 'urgent': picks.get('urgent'), 'top': picks.get('top', []),
-    'stories': stories, 'figures': news.get('figures', []), 'gate_photo': gate_photo,
+    'stories': stories, 'figures': figures, 'gate_photo': gate_photo,
     'pictures': picks.get('pictures', []),
 }
 json.dump(edition, open(os.path.join(ROOT, 'tools', 'edition.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

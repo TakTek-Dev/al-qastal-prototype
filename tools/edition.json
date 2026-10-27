@@ -15,50 +15,52 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-06",
-   "place": "al-Tur (Mount of Olives)",
+   "place": "الطور (جبل الزيتون)",
    "gate": "al-tur",
-   "headline": "Five-storey building razed in al-Tur as Ben-Gvir watches from a bulldozer; 69 people displaced",
-   "standfirst": "OCHA called it the largest displacement from a single demolition in East Jerusalem since it began recording in 2009.",
+   "headline": "هدم بناية من 5 طوابق في الطور وبن غفير يصور من فوق جرافة؛ تهجير 69 شخصا",
+   "standfirst": "قالت أوتشا إنه أكبر تهجير ناجم عن عملية هدم واحدة في القدس الشرقية منذ بدء توثيقها عام 2009.",
    "body": [
-    "Israeli police, Border Police and municipal crews sealed off a five-storey residential building in al-Tur at about 3:30 a.m. on 6 October and demolished it, according to the Wadi Hilweh Information Center. The building had stood since 2009 and housed 11 families, among them the Khalfawi, Abu Sbitan, Ashour, Joudeh and Sandouka families.",
-    "OCHA put the number displaced at 69 Palestinians, including 36 children, and said residents were prevented from retrieving their belongings. The Palestine News Agency, cited by Arab News, described the building as having 10 apartments and about 70 residents.",
-    "National Security Minister Itamar Ben-Gvir attended the demolition, climbed onto a bulldozer and filmed the building coming down. The Wadi Hilweh centre said the stated grounds were a final Supreme Court ruling, about a month earlier, citing the lack of a permit and plans for a school on the site.",
-    "The Jerusalem Governorate described the demolitions as election stunts ahead of the 27 October Knesset vote, and the Arab League condemned Ben-Gvir's participation. According to the Palestinian Authority, 427 demolition and land-levelling operations had been carried out in Jerusalem since January."
+    "طوقت الشرطة الإسرائيلية وحرس الحدود وطواقم البلدية بناية سكنية من خمسة طوابق في بلدة الطور قرابة الساعة 3:30 فجر 6 تشرين الأول، ثم هدمتها، وفق مركز معلومات وادي حلوة. وكانت البناية قائمة منذ عام 2009 وتؤوي 11 عائلة، بينها عائلات خلفاوي وأبو سبيتان وعاشور وجودة وصندوقة.",
+    "وقدرت أوتشا عدد المهجرين بـ69 فلسطينيا، بينهم 36 طفلا، وقالت إن السكان منعوا من إخراج مقتنياتهم. ووصفت وكالة الأنباء الفلسطينية، كما نقلت عنها عرب نيوز، البناية بأنها تضم 10 شقق ونحو 70 ساكنا.",
+    "وحضر وزير الأمن القومي الإسرائيلي إيتمار بن غفير عملية الهدم، وصعد على جرافة وصور البناية وهي تنهار. وقال مركز وادي حلوة إن الذريعة المعلنة كانت قرارا نهائيا من المحكمة العليا صدر قبل نحو شهر، بحجة عدم الترخيص ووجود مخطط لإقامة مدرسة في الموقع.",
+    "ووصفت محافظة القدس عمليات الهدم بأنها استعراضات انتخابية قبيل انتخابات الكنيست في 27 تشرين الأول، فيما أدانت جامعة الدول العربية مشاركة بن غفير. ووفق السلطة الفلسطينية، نفذت 427 عملية هدم وتجريف في القدس منذ كانون الثاني."
    ],
    "figure": {
     "value": "69",
-    "label": "people displaced, 36 of them children (OCHA)"
+    "label": "مهجرا، بينهم 36 طفلا (أوتشا)"
    },
    "quote": {
-    "text": "election spectacles and displays of force",
-    "who": "Jerusalem Governorate",
-    "role": "Palestinian governorate statement",
-    "date": "2026-10-06"
+    "text": "مشاهد انتخابية واستعراض للقوة",
+    "who": "محافظة القدس",
+    "role": "بيان صادر عن المحافظة",
+    "date": "2026-10-06",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026",
      "date": "2026-10-15"
     },
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80078/details-al-tur-building-demolished-and-75-jerusalemites-displaced-at-dawn-ben-gvir-on-the-bulldozer-amid-escalating-targeting-of-residential-buildings-in-jerusalem",
      "date": "2026-10-06"
     },
     {
-     "name": "Arab News",
+     "name": "عرب نيوز",
      "url": "https://www.arabnews.com/middle-east/palestinian-authority-condemns-ben-gvir-over-home-demolition-stunt-in-jerusalem-3004913",
      "date": "2026-10-06"
     },
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175605",
      "date": "2026-10-06"
     }
    ],
+   "outlet_ar": null,
    "photo": "al-tur",
    "photo_own": false
   },
@@ -67,34 +69,35 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-13",
-   "place": "al-Tur",
+   "place": "الطور",
    "gate": "al-tur",
-   "headline": "A week after the tower, a second al-Tur home falls: 16 people, 10 of them children, displaced",
-   "standfirst": "The Abdullah family began demolishing their own home on 10 October; municipal bulldozers finished the job.",
+   "headline": "بعد أسبوع على البناية، هدم منزل ثان في الطور وتهجير 16 فردا بينهم 10 أطفال",
+   "standfirst": "بدأت عائلة عبد الله هدم منزلها بيدها في 10 تشرين الأول، وأكملت جرافات البلدية المهمة.",
    "body": [
-    "The Abdullah family home in al-Tur, which had stood for about 20 years and housed 16 people, was partly demolished by the family itself from Saturday 10 October and then completed by Israeli bulldozers, the Wadi Hilweh Information Center reported.",
-    "OCHA recorded the same case on 13 October: three Palestinian refugee households, 16 people including 10 children, displaced after their residential building was partly self-demolished and the rest demolished by the Israeli authorities.",
-    "OCHA says that 668 of the roughly 1,790 Palestinians displaced by permit-related demolitions across the West Bank in 2026 were in East Jerusalem, about 37 per cent."
+    "هدمت عائلة عبد الله جزءا من منزلها في الطور بيدها اعتبارا من يوم السبت 10 تشرين الأول، ثم أكملت الجرافات الإسرائيلية هدمه، وفق مركز معلومات وادي حلوة. وكان المنزل قائما منذ نحو 20 عاما ويؤوي 16 فردا.",
+    "ووثقت أوتشا الحالة نفسها في 13 تشرين الأول: ثلاث أسر لاجئة فلسطينية، تضم 16 فردا بينهم 10 أطفال، هجرت بعد أن هدمت جزءا من مبناها السكني بنفسها وهدمت السلطات الإسرائيلية ما تبقى منه.",
+    "وتقول أوتشا إن 668 من أصل نحو 1,790 فلسطينيا هجروا بفعل عمليات هدم بذريعة عدم الترخيص في الضفة الغربية عام 2026 كانوا في القدس الشرقية، أي نحو 37 في المئة."
    ],
    "figure": {
     "value": "668",
-    "label": "Palestinians displaced by demolitions in East Jerusalem in 2026 (OCHA)"
+    "label": "فلسطينيا هجروا بفعل الهدم في القدس الشرقية عام 2026 (أوتشا)"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
      "date": "2026-10-22"
     },
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "al-tur",
    "photo_own": false
   },
@@ -103,13 +106,13 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-13",
-   "place": "Wadi Qaddoum, Silwan",
+   "place": "وادي قدوم، سلوان",
    "gate": "silwan",
-   "headline": "Municipal bulldozers demolish two Salaymeh family homes in Silwan's Wadi Qaddoum",
-   "standfirst": "The homes, built in 2002, housed eight people.",
+   "headline": "جرافات البلدية تهدم منزلين لعائلة السلايمة في وادي قدوم بسلوان",
+   "standfirst": "بني المنزلان عام 2002 ويؤويان 8 أفراد.",
    "body": [
-    "Jerusalem municipality bulldozers demolished two homes in the Wadi Qaddoum area of Silwan belonging to Hani al-Salaymeh and his father, the Wadi Hilweh Information Center reported.",
-    "The two homes covered about 160 square metres in total, had been built in 2002 and were home to eight people."
+    "هدمت جرافات بلدية الاحتلال في القدس منزلين في منطقة وادي قدوم ببلدة سلوان، يعودان لهاني السلايمة ووالده، وفق مركز معلومات وادي حلوة.",
+    "وتبلغ مساحة المنزلين معا نحو 160 مترا مربعا، وقد بنيا عام 2002 ويقطنهما 8 أفراد."
    ],
    "figure": null,
    "quote": null,
@@ -117,11 +120,12 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "silwan-aerial",
    "photo_own": false
   },
@@ -130,13 +134,13 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-13",
-   "place": "Beit Hanina",
+   "place": "بيت حنينا",
    "gate": "beit-hanina",
-   "headline": "Two al-Rajabi homes in Beit Hanina demolished by their own owners",
-   "standfirst": "One belonged to a man married a year ago whose wife is pregnant.",
+   "headline": "هدم ذاتي قسري لمنزلين لعائلة الرجبي في بيت حنينا",
+   "standfirst": "أحدهما لشاب تزوج قبل عام وزوجته حامل.",
    "body": [
-    "Alaa Issam al-Rajabi demolished his own 60-square-metre home in Beit Hanina, which had stood since 2017, the Wadi Hilweh Information Center reported. He married about a year ago and his wife is pregnant.",
-    "Fadl al-Rajabi also demolished his own 70-square-metre home in Beit Hanina, built in 2010 and home to seven people."
+    "هدم علاء عصام الرجبي منزله البالغة مساحته 60 مترا مربعا في بيت حنينا بيده، وكان قائما منذ عام 2017، وفق مركز معلومات وادي حلوة. وقد تزوج قبل نحو عام وزوجته حامل.",
+    "كما هدم فضل الرجبي بيده منزله البالغة مساحته 70 مترا مربعا في بيت حنينا، وكان قد بني عام 2010 ويقطنه 7 أفراد."
    ],
    "figure": null,
    "quote": null,
@@ -144,11 +148,12 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "beit-hanina",
    "photo_own": false
   },
@@ -157,14 +162,14 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-04",
-   "place": "Ras al-Amud, Silwan",
+   "place": "رأس العامود، سلوان",
    "gate": "ras-al-amud",
-   "headline": "Murad Ghaith forced to demolish his own home in Ras al-Amud",
-   "standfirst": "His family is also barred from living in the floor below.",
+   "headline": "الاحتلال يجبر مراد غيث على هدم منزله ذاتيا في رأس العامود",
+   "standfirst": "ومنعت عائلته كذلك من السكن في الطابق السفلي.",
    "body": [
-    "Israeli authorities forced Jerusalemite Murad Ghaith to demolish his own home in the Ras al-Amud neighbourhood of Silwan, south of Al-Aqsa Mosque, on Sunday 4 October, WAFA reported, citing local sources.",
-    "The home is the upper floor of his family's two-storey building. He and his family have also been barred from living in the ground-floor home, so neither unit can be used.",
-    "WAFA said he had been threatened with a forced demolition by the municipality and with the costs and fines that would follow."
+    "أجبرت سلطات الاحتلال المقدسي مراد غيث على هدم منزله بيده في حي رأس العامود ببلدة سلوان، جنوب المسجد الأقصى المبارك، يوم الأحد 4 تشرين الأول، وفق ما أفادت وفا نقلا عن مصادر محلية.",
+    "والمنزل هو الطابق العلوي من مبنى العائلة المؤلف من طابقين. كما منع هو وعائلته من السكن في الطابق الأرضي، فبات استخدام الوحدتين متعذرا.",
+    "وقالت وفا إنه هدد من البلدية بالهدم القسري وبما يتبعه من تكاليف وغرامات."
    ],
    "figure": null,
    "quote": null,
@@ -172,16 +177,17 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175441",
      "date": "2026-10-04"
     },
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80075/self-demolition-continues-in-jerusalem-jerusalemites-demolish-their-homes-following-municipal-orders",
      "date": "2026-10-05"
     }
    ],
+   "outlet_ar": null,
    "photo": "ras-al-amud",
    "photo_own": false
   },
@@ -190,14 +196,14 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-05",
-   "place": "Sur Baher",
+   "place": "صور باهر",
    "gate": "sur-baher",
-   "headline": "Two Sur Baher families demolish homes that stood since 2001",
-   "standfirst": "One of the homes, about 70 square metres, housed 13 people.",
+   "headline": "عائلتان في صور باهر تهدمان منزليهما القائمين منذ عام 2001",
+   "standfirst": "أحد المنزلين، ومساحته نحو 70 مترا مربعا، كان يؤوي 13 فردا.",
    "body": [
-    "Sabri Daoud demolished his own home in Sur Baher, southeast of Jerusalem, after municipal orders citing construction without a permit, the Wadi Hilweh Information Center reported on 5 October. The home was about 70 square metres and housed 13 people.",
-    "Sultan al-Hajj also demolished the roughly 40-square-metre home he shared with his wife.",
-    "Both homes were built in 2001. Daoud said he went through years of court proceedings and paid fines before the final order was issued."
+    "هدم صبري داود منزله في صور باهر، جنوب شرق القدس، بيده إثر أوامر من البلدية بحجة البناء دون ترخيص، وفق ما أفاد مركز معلومات وادي حلوة في 5 تشرين الأول. وتبلغ مساحة المنزل نحو 70 مترا مربعا ويقطنه 13 فردا.",
+    "كما هدم سلطان الحاج منزله البالغة مساحته نحو 40 مترا مربعا، والذي كان يقطنه مع زوجته.",
+    "وقد بني المنزلان عام 2001. وقال داود إنه خاض سنوات من الإجراءات أمام المحاكم ودفع غرامات قبل صدور القرار النهائي."
    ],
    "figure": null,
    "quote": null,
@@ -205,11 +211,12 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80075/self-demolition-continues-in-jerusalem-jerusalemites-demolish-their-homes-following-municipal-orders",
      "date": "2026-10-05"
     }
    ],
+   "outlet_ar": null,
    "photo": "sur-baher",
    "photo_own": false
   },
@@ -218,31 +225,33 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-09-07",
-   "place": "Beit Hanina",
+   "place": "بيت حنينا",
    "gate": "beit-hanina",
-   "headline": "Three Abu Mayaleh family apartments demolished in Beit Hanina, leaving about 21 people homeless",
-   "standfirst": "The family says it was given no chance to remove its belongings.",
+   "headline": "هدم 3 شقق لعائلة أبو ميالة في بيت حنينا يشرد نحو 21 فردا",
+   "standfirst": "تقول العائلة إنها لم تمنح فرصة لإخراج مقتنياتها.",
    "body": [
-    "Israeli municipal bulldozers, backed by police and special forces, demolished three apartments owned by the Abu Mayaleh family in Beit Hanina early on Monday 7 September, the Wadi Hilweh Information Center reported.",
-    "Marwan Abu Mayaleh said his own home and those of his mother and brother were destroyed. The building's three apartments totalled about 200 square metres and housed about 21 people, including children; the family had lived there for some 20 years.",
-    "The municipality had issued numerous building-violation notices before the demolition. The family says it was fined and agreed to pay."
+    "هدمت جرافات بلدية الاحتلال، بحماية الشرطة والقوات الخاصة، ثلاث شقق تملكها عائلة أبو ميالة في بيت حنينا صباح يوم الإثنين 7 أيلول الباكر، وفق مركز معلومات وادي حلوة.",
+    "وقال مروان أبو ميالة إن منزله ومنزلي والدته وشقيقه دمرت. وتبلغ مساحة شقق البناية الثلاث نحو 200 متر مربع، ويقطنها نحو 21 فردا بينهم أطفال، وتعيش العائلة فيها منذ نحو 20 عاما.",
+    "وكانت البلدية قد أصدرت إخطارات عديدة بمخالفات بناء قبل الهدم. وتقول العائلة إنها غرمت ووافقت على الدفع."
    ],
    "figure": null,
    "quote": {
-    "text": "Where are we supposed to go? Rents are high, and we have nowhere else to live.",
-    "who": "Marwan Abu Mayaleh",
-    "role": "Beit Hanina resident",
-    "date": "2026-09-07"
+    "text": "إلى أين نذهب؟ الإيجارات مرتفعة، وليس لدينا مكان آخر نسكن فيه.",
+    "who": "مروان أبو ميالة",
+    "role": "من سكان بيت حنينا",
+    "date": "2026-09-07",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80058",
      "date": "2026-09-07"
     }
    ],
+   "outlet_ar": null,
    "photo": "beit-hanina",
    "photo_own": false
   },
@@ -251,28 +260,29 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-09-07",
-   "place": "Jabal al-Mukabber",
+   "place": "جبل المكبر",
    "gate": "jabal-mukabber",
-   "headline": "After three fines totalling 101,000 shekels, Shadi Obeidat demolishes his Jabal al-Mukabber home",
-   "standfirst": "He says he was close to obtaining a permit when the final order came.",
+   "headline": "بعد 3 غرامات بلغت 101,000 شيقل، شادي عبيدات يهدم منزله في جبل المكبر",
+   "standfirst": "يقول إنه كان على وشك الحصول على ترخيص حين صدر القرار النهائي.",
    "body": [
-    "Shadi Obeidat was forced to demolish his own 62-square-metre house in Jabal al-Mukabber, which he built in 2009 and shared with his wife and three children, the Wadi Hilweh Information Center reported.",
-    "He had been fined three times, 38,000, 35,000 and 28,000 shekels, and had applied through a planning and licensing scheme. He was close to receiving a building permit when a final demolition order was issued."
+    "أجبر شادي عبيدات على هدم منزله بيده في جبل المكبر، ومساحته 62 مترا مربعا، وكان قد بناه عام 2009 ويسكنه مع زوجته وأطفاله الثلاثة، وفق مركز معلومات وادي حلوة.",
+    "وكان قد غرم ثلاث مرات بمبالغ 38,000 و35,000 و28,000 شيقل، وتقدم بطلب عبر مخطط للتنظيم والترخيص. وكان على وشك الحصول على رخصة بناء حين صدر قرار هدم نهائي."
    ],
    "figure": {
     "value": "101,000",
-    "label": "shekels in fines before the demolition order"
+    "label": "شيقل غرامات قبل قرار الهدم"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80058",
      "date": "2026-09-07"
     }
    ],
+   "outlet_ar": null,
    "photo": "jabal-mukabber",
    "photo_own": false
   },
@@ -281,31 +291,33 @@
    "corner": "jerusalem",
    "kind": "report",
    "date": "2026-10-25",
-   "place": "Wadi Hilweh, Silwan",
+   "place": "وادي حلوة، سلوان",
    "gate": "silwan",
-   "headline": "Governorate warns tunnels under Wadi Hilweh are cracking Palestinian homes above",
-   "standfirst": "Digging stretches across the 'Holy Basin' from Silwan toward Sheikh Jarrah.",
+   "headline": "المحافظة تحذر: أنفاق تحت وادي حلوة تشقق منازل الفلسطينيين فوقها",
+   "standfirst": "الحفريات تمتد عبر «الحوض المقدس» من سلوان باتجاه الشيخ جراح.",
    "body": [
-    "Israeli authorities and settler organisations are continuing excavations and tunnel construction beneath Silwan, particularly around Wadi Hilweh, the Jerusalem Governorate said on 25 October, as reported by WAFA.",
-    "The governorate said the works extend across the area between the Old City and the Mount of Olives, including Silwan, Wadi Hilweh, al-Bustan and Wadi al-Rababa, and reach north toward Sheikh Jarrah.",
-    "It said cracks, collapses and structural damage have been documented in homes above the excavation sites, and that the digs focus on layers linked to the 10th century BCE while other periods are sidelined and sites are given biblical names."
+    "تواصل سلطات الاحتلال والجمعيات الاستيطانية الحفريات وشق الأنفاق أسفل بلدة سلوان، لا سيما في حي وادي حلوة، وفق ما قالته محافظة القدس في 25 تشرين الأول، بحسب وفا.",
+    "وقالت المحافظة إن الأعمال تمتد في المنطقة الواقعة بين البلدة القديمة وجبل الزيتون، بما فيها سلوان ووادي حلوة والبستان ووادي الربابة، وتصل شمالا باتجاه الشيخ جراح.",
+    "وأضافت أن تشققات وانهيارات وأضرارا إنشائية وثقت في المنازل الواقعة فوق مواقع الحفر، وأن الحفريات تركز على طبقات ترتبط بالقرن العاشر قبل الميلاد مع تهميش الحقب الأخرى، وتطلق على المواقع أسماء توراتية."
    ],
    "figure": null,
    "quote": {
-    "text": "the excavations threaten not only the historical identity of the city but also the safety of Palestinian citizens",
-    "who": "Jerusalem Governorate",
-    "role": "Palestinian governorate statement",
-    "date": "2026-10-25"
+    "text": "الحفريات لا تهدد الهوية التاريخية للمدينة فحسب، بل تهدد أيضا سلامة المواطنين الفلسطينيين",
+    "who": "محافظة القدس",
+    "role": "بيان صادر عن المحافظة",
+    "date": "2026-10-25",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/176255",
      "date": "2026-10-25"
     }
    ],
+   "outlet_ar": null,
    "photo": "silwan-valley",
    "photo_own": false
   },
@@ -314,35 +326,37 @@
    "corner": "jerusalem",
    "kind": "report",
    "date": "2026-10-13",
-   "place": "al-Bustan, Silwan",
+   "place": "البستان، سلوان",
    "gate": "silwan",
-   "headline": "In al-Bustan, 1,500 residents face a 'King's Garden' park planned over their homes",
-   "standfirst": "A large share of the neighbourhood's buildings has been slated for demolition by the municipality.",
+   "headline": "1,500 من سكان حي البستان يواجهون مخطط «حديقة الملك» فوق منازلهم",
+   "standfirst": "أدرجت البلدية جزءا كبيرا من مباني الحي للهدم.",
    "body": [
-    "Al-Bustan, inside Silwan just outside the Old City walls, has around 1,500 residents, and a large portion of its buildings have been slated for demolition by the local authority, The Journal reported from East Jerusalem.",
-    "The Jerusalem municipality plans a biblical park and tourist attraction there called the King's Garden. Residents say demolitions have increased since 7 October 2023 and that permits are very hard to obtain. The neighbourhood's social centre has already been demolished.",
-    "In nearby Batn al-Hawa, Israeli forces evicted 15 Palestinian households in March 2026, displacing 70 people, according to OCHA figures cited by The Journal; the settler organisation Ateret Cohanim has pursued property claims there since 2015.",
-    "Kutyabah Odeh, 32, a social worker in al-Bustan, said his family has lost two homes in Batn al-Hawa and one unit of their al-Bustan building has already been demolished."
+    "يقطن حي البستان في سلوان، خارج أسوار البلدة القديمة مباشرة، نحو 1,500 نسمة، وقد أدرجت السلطة المحلية جزءا كبيرا من مبانيه للهدم، وفق ما أفادت صحيفة ذا جورنال من القدس الشرقية.",
+    "وتخطط بلدية الاحتلال في القدس لإقامة حديقة توراتية ومعلم سياحي في الموقع باسم «حديقة الملك». ويقول السكان إن عمليات الهدم تزايدت منذ 7 تشرين الأول 2023 وإن الحصول على تراخيص بالغ الصعوبة. وقد هدم المركز الاجتماعي في الحي بالفعل.",
+    "وفي حي بطن الهوى المجاور، أخلت قوات الاحتلال 15 أسرة فلسطينية في آذار 2026، ما أدى إلى تهجير 70 شخصا، وفق أرقام أوتشا التي أوردتها ذا جورنال، فيما تلاحق جمعية «عطيرت كوهانيم» الاستيطانية دعاوى ملكية هناك منذ عام 2015.",
+    "وقال قتيبة عودة، 32 عاما، وهو أخصائي اجتماعي في البستان، إن عائلته فقدت منزلين في بطن الهوى، وإن وحدة من مبناها في البستان هدمت بالفعل."
    ],
    "figure": {
     "value": "1,500",
-    "label": "residents of al-Bustan"
+    "label": "نسمة يسكنون حي البستان"
    },
    "quote": {
-    "text": "We are paying the price for being Palestinians after 7 October",
-    "who": "Kutyabah Odeh",
-    "role": "social worker and community leader, al-Bustan",
-    "date": "2026-10-13"
+    "text": "ندفع ثمن كوننا فلسطينيين بعد 7 تشرين الأول",
+    "who": "قتيبة عودة",
+    "role": "أخصائي اجتماعي وقيادي مجتمعي في البستان",
+    "date": "2026-10-13",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "The Journal",
+     "name": "ذا جورنال",
      "url": "https://www.thejournal.ie/ireland-and-palestine-2-7190763-Oct2026/",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "silwan-wadi-hilweh",
    "photo_own": false
   },
@@ -351,25 +365,25 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-26",
-   "place": "Qalandiya refugee camp",
+   "place": "مخيم قلنديا",
    "gate": "qalandiya",
-   "headline": "Three injured, including a 17-year-old, as Israeli forces raid Qalandiya camp",
-   "standfirst": "Snipers took up positions on rooftops; the road to Qalandiya was closed during the raid.",
+   "headline": "3 إصابات بينها فتى 17 عاما خلال اقتحام الاحتلال مخيم قلنديا",
+   "standfirst": "اعتلى قناصة أسطح المنازل، وأغلقت الطريق المؤدية إلى قلنديا خلال الاقتحام.",
    "body": [
-    "Israeli forces raided Qalandiya refugee camp, north of Jerusalem, on the evening of Monday 26 October, posting snipers on rooftops, breaking open residents' doors and firing tear gas and stun grenades, WAFA reported, citing local sources and the Jerusalem Governorate.",
-    "Clashes broke out after soldiers fired stun grenades at residents leaving the camp mosque after the sunset prayer. The Palestinian Red Crescent said the number injured rose to three, including a 17-year-old boy shot in the foot with live ammunition; the governorate reported one person hit by rubber-coated metal bullets.",
-    "Local sources said soldiers detained one Palestinian from the camp. The road to Qalandiya was closed during the raid."
+    "اقتحمت قوات الاحتلال مخيم قلنديا للاجئين شمال القدس مساء يوم الإثنين 26 تشرين الأول، ونشرت قناصة على أسطح المنازل، وخلعت أبواب منازل المواطنين، وأطلقت قنابل الغاز المسيل للدموع والصوت، وفق وفا نقلا عن مصادر محلية ومحافظة القدس.",
+    "واندلعت مواجهات بعد أن أطلق الجنود قنابل الصوت تجاه المواطنين أثناء خروجهم من مسجد المخيم عقب صلاة المغرب. وقالت جمعية الهلال الأحمر الفلسطيني إن عدد الإصابات ارتفع إلى ثلاث، بينها فتى يبلغ 17 عاما أصيب بالرصاص الحي في قدمه، فيما أفادت المحافظة بإصابة شخص بالرصاص المعدني المغلف بالمطاط.",
+    "وقالت مصادر محلية إن الجنود اعتقلوا مواطنا من المخيم. وأغلقت الطريق المؤدية إلى قلنديا خلال الاقتحام."
    ],
    "figure": {
     "value": "3",
-    "label": "injured in the Qalandiya raid (PRCS)"
+    "label": "إصابات في اقتحام قلنديا (الهلال الأحمر)"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/176357",
      "date": "2026-10-26"
     },
@@ -384,6 +398,7 @@
      "date": "2026-10-26"
     }
    ],
+   "outlet_ar": null,
    "photo": "qalandiya-queue",
    "photo_own": false
   },
@@ -392,29 +407,30 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-14",
-   "place": "Beit Hanina",
+   "place": "بيت حنينا",
    "gate": "beit-hanina",
-   "headline": "Police arrest 155 West Bank ID holders in Beit Hanina sweep",
-   "standfirst": "Those detained were taken for questioning ahead of deportation to the West Bank.",
+   "headline": "شرطة الاحتلال تعتقل 155 من حملة هوية الضفة في حملة ببيت حنينا",
+   "standfirst": "نقل المعتقلون للتحقيق تمهيدا لترحيلهم إلى الضفة الغربية.",
    "body": [
-    "Israeli police arrested 155 Palestinians holding West Bank identity cards during an operation across several complexes in Beit Hanina, north of Jerusalem, the Wadi Hilweh Information Center reported on 14 October.",
-    "Police also arrested two people on suspicion of harbouring Palestinians who had entered Jerusalem without permits.",
-    "The centre said tens of thousands of Palestinians are currently denied access to Jerusalem for lack of entry permits."
+    "اعتقلت شرطة الاحتلال 155 فلسطينيا من حملة بطاقات هوية الضفة الغربية خلال عملية في عدة مجمعات ببلدة بيت حنينا شمال القدس، وفق ما أفاد مركز معلومات وادي حلوة في 14 تشرين الأول.",
+    "كما اعتقلت الشرطة شخصين بشبهة إيواء فلسطينيين دخلوا القدس دون تصاريح.",
+    "وقال المركز إن عشرات الآلاف من الفلسطينيين ممنوعون حاليا من دخول القدس لعدم حيازتهم تصاريح دخول."
    ],
    "figure": {
     "value": "155",
-    "label": "West Bank ID holders arrested in Beit Hanina"
+    "label": "من حملة هوية الضفة اعتقلوا في بيت حنينا"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80080/israeli-police-arrest-155-palestinians-holding-west-bank-id-cards-in-beit-hanina",
      "date": "2026-10-14"
     }
    ],
+   "outlet_ar": null,
    "photo": "beit-hanina",
    "photo_own": false
   },
@@ -423,29 +439,30 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-09-08",
-   "place": "Anata and Shuafat refugee camp",
+   "place": "عناتا ومخيم شعفاط",
    "gate": "shuafat",
-   "headline": "Siege on Anata and Shuafat camp hits 80,000 residents; about 100 detained",
-   "standfirst": "Roads and entrances were closed overnight, stranding people in their cars for hours.",
+   "headline": "حصار على عناتا ومخيم شعفاط يطال 80,000 نسمة واعتقال نحو 100",
+   "standfirst": "أغلقت الطرق والمداخل ليلا، فعلق مواطنون في سياراتهم لساعات.",
    "body": [
-    "Israeli forces imposed a tight siege on the town of Anata and Shuafat refugee camp, northeast of Jerusalem, from the night of 7 September, closing roads and entrances and restricting movement for around 80,000 residents, WAFA reported.",
-    "The Jerusalem Governorate estimated that about 100 Palestinians, including one woman, had been detained since the operation began. Forces raided dozens of homes, interrogating and searching residents, and seized several vehicles.",
-    "Schools and kindergartens were disrupted and shops kept closed, and dozens of people spent hours overnight in their vehicles after the roads were shut."
+    "فرضت قوات الاحتلال حصارا مشددا على بلدة عناتا ومخيم شعفاط للاجئين، شمال شرق القدس، منذ ليلة 7 أيلول، وأغلقت الطرق والمداخل وقيدت حركة نحو 80,000 نسمة، وفق وفا.",
+    "وقدرت محافظة القدس عدد المعتقلين منذ بدء العملية بنحو 100 فلسطيني، بينهم امرأة. ودهمت القوات عشرات المنازل، وحققت مع سكانها وفتشتهم، واستولت على عدة مركبات.",
+    "وتعطلت الدراسة في المدارس ورياض الأطفال، وبقيت المحال مغلقة، وأمضى عشرات المواطنين ساعات الليل في مركباتهم بعد إغلاق الطرق."
    ],
    "figure": {
     "value": "80,000",
-    "label": "residents under siege in Anata and Shuafat camp"
+    "label": "نسمة تحت الحصار في عناتا ومخيم شعفاط"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/174549",
      "date": "2026-09-08"
     }
    ],
+   "outlet_ar": null,
    "photo": "shuafat-camp-wall",
    "photo_own": false
   },
@@ -454,47 +471,48 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-09-21",
-   "place": "Biddu",
+   "place": "بدو",
    "gate": "other",
-   "headline": "At least 53 young men held in a seized home turned interrogation centre in Biddu",
-   "standfirst": "The raid followed a 20 September shooting that killed an Israeli settler; a family apartment was later sealed.",
+   "headline": "احتجاز 53 شابا على الأقل في منزل حول إلى مركز تحقيق في بدو",
+   "standfirst": "جاء الاقتحام عقب عملية إطلاق نار في 20 أيلول قتل فيها مستوطن، وأغلقت لاحقا شقة عائلة.",
    "body": [
-    "Israeli forces raided Biddu, northwest of Jerusalem, and arrested dozens of Palestinians, mostly young men, QNA reported, citing WAFA. The Jerusalem Governorate said at least 53 were being held in an interrogation centre set up inside a house seized during the raid.",
-    "On 24 September an apartment in Biddu was sealed on punitive grounds, displacing a family of five including three children, OCHA reported. The family was related to a man arrested over the 20 September shooting attack that killed an Israeli settler."
+    "اقتحمت قوات الاحتلال بلدة بدو، شمال غرب القدس، واعتقلت عشرات الفلسطينيين معظمهم من الشبان، وفق قنا نقلا عن وفا. وقالت محافظة القدس إن 53 منهم على الأقل محتجزون في مركز تحقيق أقيم داخل منزل استولي عليه خلال الاقتحام.",
+    "وفي 24 أيلول أغلقت شقة في بدو بذريعة عقابية، ما أدى إلى تهجير عائلة من خمسة أفراد بينهم ثلاثة أطفال، وفق أوتشا. والعائلة من أقارب رجل اعتقل على خلفية عملية إطلاق النار في 20 أيلول التي قتل فيها مستوطن إسرائيلي."
    ],
    "figure": {
     "value": "53",
-    "label": "young men held in a seized home in Biddu"
+    "label": "شابا احتجزوا في منزل مستولى عليه في بدو"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "QNA",
+     "name": "قنا",
      "url": "https://qna.org.qa/en/News-Area/News/2026-9/21/israeli-occupation-arrests-dozens-of-palestinians",
      "date": "2026-09-21"
     },
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026",
      "date": "2026-10-02"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "families-of-deportees-raided",
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-10-24",
-   "place": "Anata, the Old City, al-Sowaneh and Sur Baher",
+   "place": "عناتا والبلدة القديمة والصوانة وصور باهر",
    "gate": "anata",
-   "headline": "Families of prisoners deported to Turkey raided, blindfolded and made to phone their exiled relatives",
-   "standfirst": "The raids came the day after the Hebron attack that killed two Israeli soldiers.",
+   "headline": "دهم عائلات أسرى أبعدوا إلى تركيا وتعصيب أعينهم وإجبارهم على الاتصال بذويهم",
+   "standfirst": "جاءت المداهمات غداة عملية الخليل التي قتل فيها جنديان إسرائيليان.",
    "body": [
-    "Israeli forces raided the homes of families of released prisoners who were later deported to Turkey, in Anata, the Old City, al-Sowaneh and Sur Baher, the Wadi Hilweh Information Center reported on 24 October.",
-    "Families named include the Abu Qteish, al-Akari, Issa and al-Jo'beh families in Anata, the al-Jo'beh family in the Old City, the Abu Asab family in al-Sowaneh and the Attoun family in Sur Baher. Some members, including women, elderly people and children, were blindfolded and held in a single room.",
-    "Family members were pressured to call deported relatives on their own phones and were held responsible for the Hebron operation. In al-Sowaneh, former prisoner Yaqoub Abu Asab was interrogated during a raid of about an hour and a half after midnight."
+    "دهمت قوات الاحتلال منازل عائلات أسرى محررين أبعدوا لاحقا إلى تركيا، في عناتا والبلدة القديمة والصوانة وصور باهر، وفق ما أفاد مركز معلومات وادي حلوة في 24 تشرين الأول.",
+    "ومن العائلات المستهدفة عائلات أبو قطيش والعكاري وعيسى والجعبة في عناتا، وعائلة الجعبة في البلدة القديمة، وعائلة أبو عصب في الصوانة، وعائلة عطون في صور باهر. وعصبت أعين بعض أفرادها، بينهم نساء ومسنون وأطفال، واحتجزوا في غرفة واحدة.",
+    "وضغط على أفراد العائلات للاتصال بذويهم المبعدين من هواتفهم الخاصة، وحملوا مسؤولية عملية الخليل. وفي الصوانة، حقق مع الأسير المحرر يعقوب أبو عصب خلال مداهمة استمرت نحو ساعة ونصف بعد منتصف الليل."
    ],
    "figure": null,
    "quote": null,
@@ -502,7 +520,7 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80084/raids-detentions-and-forced-phone-calls-the-occupation-targets-the-families-of-released-prisoners-and-people-deported-from-jerusalem",
      "date": "2026-10-24"
     },
@@ -512,6 +530,7 @@
      "date": "2026-10-24"
     }
    ],
+   "outlet_ar": null,
    "photo": "anata-wall",
    "photo_own": false
   },
@@ -520,34 +539,36 @@
    "corner": "jerusalem",
    "kind": "report",
    "date": "2026-10-01",
-   "place": "Jerusalem governorate",
+   "place": "محافظة القدس",
    "gate": "other",
-   "headline": "Third quarter in Jerusalem: six killed, 357 arrests, 139 demolitions and nearly 28,000 Al-Aqsa incursions",
-   "standfirst": "The Jerusalem Governorate's Q3 2026 tally also counts 73 expulsion orders, most of them from Al-Aqsa.",
+   "headline": "الربع الثالث في القدس: 6 شهداء و357 اعتقالا و139 هدما ونحو 28 ألف اقتحام للأقصى",
+   "standfirst": "تشمل حصيلة محافظة القدس للربع الثالث من 2026 أيضا 73 قرار إبعاد، معظمها عن الأقصى.",
    "body": [
-    "The Jerusalem Governorate recorded six Palestinians killed in the third quarter of 2026, 357 arrests and 27,830 settler incursions into Al-Aqsa Mosque, QNA reported on 1 October.",
-    "It counted 139 demolition and land-levelling operations: 35 forced self-demolitions, 96 demolitions by Israeli machinery and 8 land-levelling operations.",
-    "The governorate also documented 73 expulsion orders, most of them barring people from Al-Aqsa Mosque."
+    "رصدت محافظة القدس استشهاد 6 فلسطينيين في الربع الثالث من عام 2026، و357 حالة اعتقال، و27,830 اقتحاما للمستوطنين للمسجد الأقصى المبارك، وفق ما أفادت قنا في 1 تشرين الأول.",
+    "ورصدت 139 عملية هدم وتجريف: 35 عملية هدم ذاتي قسري، و96 عملية هدم بآليات الاحتلال، و8 عمليات تجريف.",
+    "كما وثقت المحافظة 73 قرار إبعاد، معظمها عن الأقصى."
    ],
    "figure": {
     "value": "139",
-    "label": "demolition and land-levelling operations, Q3 2026"
+    "label": "عملية هدم وتجريف في الربع الثالث 2026"
    },
    "quote": {
-    "text": "the escalation was not limited to the growing number of settlers storming the mosque",
-    "who": "Jerusalem Governorate",
-    "role": "quarterly report",
-    "date": "2026-10-01"
+    "text": "التصعيد لم يقتصر على تزايد أعداد المستوطنين المقتحمين للمسجد",
+    "who": "محافظة القدس",
+    "role": "التقرير الفصلي",
+    "date": "2026-10-01",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "QNA",
+     "name": "قنا",
      "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
      "date": "2026-10-01"
     }
    ],
+   "outlet_ar": null,
    "photo": "skyline-panorama",
    "photo_own": false
   },
@@ -556,29 +577,30 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-09-21",
-   "place": "East Jerusalem",
+   "place": "القدس الشرقية",
    "gate": "old-city",
-   "headline": "Yom Kippur: East Jerusalem neighbourhoods sealed for 27 hours as 1,649 settlers enter Al-Aqsa",
-   "standfirst": "Tear gas set fires near shops in Sur Baher; settlers fired into the air in Silwan.",
+   "headline": "«يوم الغفران»: إغلاق أحياء القدس الشرقية 27 ساعة و1,649 مستوطنا يقتحمون الأقصى",
+   "standfirst": "قنابل الغاز أشعلت حرائق قرب محال في صور باهر، ومستوطنون أطلقوا النار في الهواء في سلوان.",
    "body": [
-    "For about 27 hours over Yom Kippur, Israeli forces closed streets, junctions and the entrances of many Jerusalem neighbourhoods, especially those near settlements, using barriers, concrete blocks and checkpoints, the Wadi Hilweh Information Center reported. Most schools closed.",
-    "At Al-Aqsa, 686 settlers entered on the day itself and 1,649 over the two days of the holiday, according to the centre. Worshippers were told to come back after the midday entries ended, and access was restricted mostly to elderly people.",
-    "In Sur Baher, tear gas canisters fired by security forces caused fires near shops and homes. Settlers attacked Jerusalemites' vehicles in Umm Tuba and attacked young men in Silwan, firing live rounds into the air."
+    "أغلقت قوات الاحتلال على مدى نحو 27 ساعة خلال «يوم الغفران» الشوارع والمفترقات ومداخل كثير من أحياء القدس، لا سيما القريبة من المستوطنات، بالحواجز والمكعبات الإسمنتية ونقاط التفتيش، وفق مركز معلومات وادي حلوة. وأغلقت معظم المدارس.",
+    "وفي المسجد الأقصى المبارك، اقتحمه 686 مستوطنا في يوم العيد نفسه، و1,649 على مدى يومي العيد، بحسب المركز. وطلب من المصلين العودة بعد انتهاء اقتحامات منتصف النهار، واقتصر الدخول في معظمه على كبار السن.",
+    "وفي صور باهر، تسببت قنابل الغاز التي أطلقتها القوات بحرائق قرب محال ومنازل. وهاجم مستوطنون مركبات للمقدسيين في أم طوبا، واعتدوا على شبان في سلوان وأطلقوا الرصاص الحي في الهواء."
    ],
    "figure": {
     "value": "1,649",
-    "label": "settlers in Al-Aqsa over Yom Kippur"
+    "label": "مستوطنا اقتحموا الأقصى في «يوم الغفران»"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80065",
      "date": "2026-09-21"
     }
    ],
+   "outlet_ar": null,
    "photo": "al-wad-police-barrier",
    "photo_own": false
   },
@@ -587,65 +609,67 @@
    "corner": "jerusalem",
    "kind": "news",
    "date": "2026-09-23",
-   "place": "Az Za'ayyem",
+   "place": "الزعيم",
    "gate": "other",
-   "headline": "20 structures demolished in Az Za'ayyem; two families displaced for the third time in a year",
-   "standfirst": "Six Bedouin households, 33 people including 20 children, lost their homes east of Jerusalem.",
+   "headline": "هدم 20 منشأة في الزعيم وتهجير عائلتين للمرة الثالثة خلال عام",
+   "standfirst": "فقدت 6 أسر بدوية، 33 فردا بينهم 20 طفلا، مساكنها شرق القدس.",
    "body": [
-    "Israeli authorities demolished 20 residential and agricultural structures in the Bedouin community of Az Za'ayyem on 23 September, displacing six households of 33 people, including 20 children, OCHA reported.",
-    "Two of the households were displaced for the third time in less than a year. About 300 dunums of farmland and water pipelines were also damaged.",
-    "OCHA says 218 structures have been demolished in Az Za'ayyem since 2009, 44 of them in 2026, out of more than 560 across 18 Bedouin communities in the area."
+    "هدمت سلطات الاحتلال 20 منشأة سكنية وزراعية في التجمع البدوي في الزعيم في 23 أيلول، ما أدى إلى تهجير 6 أسر تضم 33 فردا بينهم 20 طفلا، وفق أوتشا.",
+    "وهجرت أسرتان منها للمرة الثالثة خلال أقل من عام. كما تضرر نحو 300 دونم من الأراضي الزراعية وخطوط المياه.",
+    "وتقول أوتشا إن 218 منشأة هدمت في الزعيم منذ عام 2009، منها 44 في عام 2026، من أصل أكثر من 560 في 18 تجمعا بدويا في المنطقة."
    ],
    "figure": {
     "value": "33",
-    "label": "people displaced, 20 of them children"
+    "label": "مهجرا، بينهم 20 طفلا"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026",
      "date": "2026-10-02"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "aqsa-holiday-season-record",
    "corner": "aqsa",
    "kind": "report",
    "date": "2026-10-02",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Holiday season at Al-Aqsa: over 11,000 settlers, with 2,468 on a single day of Sukkot",
-   "standfirst": "Groups prostrated, raised an Israeli flag and performed Four Species rituals while Muslim entry was limited to the elderly.",
+   "headline": "موسم الأعياد في الأقصى: أكثر من 11 ألف مستوطن، و2,468 في يوم واحد من «العرش»",
+   "standfirst": "سجود جماعي ورفع العلم الإسرائيلي وطقوس «الأنواع الأربعة»، فيما اقتصر دخول المسلمين على كبار السن.",
    "body": [
-    "The Wadi Hilweh Information Center counted 11,692 settlers entering Al-Aqsa over the Jewish holiday season: 962 at Rosh Hashanah, 1,649 at Yom Kippur and 9,081 over five days of Sukkot, from 27 September to 1 October. The Jerusalem Governorate's own count for the season was 11,409, bringing its 2026 total to 52,277.",
-    "The busiest day was 30 September, with 2,468 entries. The centre said the Sukkot total compared with 7,474 over the same period last year. Groups entered through Bab al-Maghariba and left through Bab al-Silsila along a police-designated route.",
-    "Rituals included group prostration toward the Dome of the Rock, the Four Species, and the raising of an Israeli flag. Knesset member Zvi Sukkot called in a speech inside the compound for thanksgiving offerings to be made there.",
-    "From dawn until shortly before the afternoon prayer, Muslim entry was restricted to a small number of men over 60 or 65, who were confined to the covered prayer halls. The Arab League condemned the incursions on 1 October."
+    "أحصى مركز معلومات وادي حلوة 11,692 مستوطنا اقتحموا المسجد الأقصى المبارك خلال موسم الأعياد اليهودية: 962 في «رأس السنة العبرية»، و1,649 في «يوم الغفران»، و9,081 على مدى خمسة أيام من «عيد العرش» بين 27 أيلول و1 تشرين الأول. أما حصيلة محافظة القدس للموسم فبلغت 11,409، ليرتفع مجموعها لعام 2026 إلى 52,277.",
+    "وكان يوم 30 أيلول الأكثر كثافة بـ2,468 مقتحما. وقال المركز إن حصيلة «العرش» تقابل 7,474 في الفترة نفسها من العام الماضي. ودخلت المجموعات من باب المغاربة وخرجت من باب السلسلة عبر مسار حددته الشرطة.",
+    "وشملت الطقوس السجود الجماعي باتجاه قبة الصخرة، وطقوس «الأنواع الأربعة»، ورفع العلم الإسرائيلي. ودعا عضو الكنيست تسفي سوكوت في كلمة داخل المسجد إلى تقديم «قرابين الشكر» فيه.",
+    "ومن الفجر حتى ما قبل صلاة العصر بقليل، اقتصر دخول المسلمين على أعداد قليلة من الرجال فوق 60 أو 65 عاما، وحصروا في المصليات المسقوفة. وأدانت جامعة الدول العربية الاقتحامات في 1 تشرين الأول."
    ],
    "figure": {
     "value": "11,692",
-    "label": "settler entries over the holiday season (Wadi Hilweh centre)"
+    "label": "اقتحاما للمستوطنين خلال موسم الأعياد (مركز وادي حلوة)"
    },
    "quote": {
-    "text": "the storming of the blessed Al-Aqsa Mosque by more than 1,300 Israeli settlers",
-    "who": "Arab League General Secretariat",
-    "role": "statement",
-    "date": "2026-10-01"
+    "text": "اقتحام المسجد الأقصى المبارك من قبل أكثر من 1300 مستوطن إسرائيلي",
+    "who": "الأمانة العامة لجامعة الدول العربية",
+    "role": "بيان",
+    "date": "2026-10-01",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80073/the-holiday-season-at-al-aqsa-over-11-000-settlers-and-public-religious-rituals-extending-from-inside-the-mosque-to-its-surroundings",
      "date": "2026-10-02"
     },
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "قنا",
      "url": "https://www.silwanic.net/article/news/80072",
      "date": "2026-10-01"
     },
@@ -660,6 +684,7 @@
      "date": "2026-10-01"
     }
    ],
+   "outlet_ar": null,
    "photo": "dome-of-rock-arches",
    "photo_own": false
   },
@@ -668,42 +693,43 @@
    "corner": "aqsa",
    "kind": "news",
    "date": "2026-10-26",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "On election eve, Ben-Gvir enters Al-Aqsa unannounced with Moshe Feiglin",
-   "standfirst": "Qatar and Egypt condemned the visit; Times of Israel said he kept it low-key.",
+   "headline": "عشية الانتخابات، بن غفير يقتحم الأقصى دون إعلان برفقة موشيه فيغلين",
+   "standfirst": "أدانت قطر ومصر الاقتحام، وقالت تايمز أوف إسرائيل إنه أبقاه بعيدا عن الأضواء.",
    "body": [
-    "National Security Minister Itamar Ben-Gvir entered the Al-Aqsa compound on Monday 26 October, a day before Israel's general election, under heavy police protection and without announcing the visit in advance, Anadolu reported via TRT World. The Jerusalem Governorate said he was accompanied by Moshe Feiglin and a group of settlers.",
-    "According to Israel's Channel 7, cited by Anadolu, he also prayed at the Western Wall. The Times of Israel, citing Ynet, said he made little fanfare about the visit, possibly so as not to put off ultra-Orthodox voters.",
-    "Qatar's foreign ministry condemned the visit, and Egypt's foreign ministry rejected any attempt to change the compound's status quo or divide it in time or space. It was Ben-Gvir's latest visit after 28 September, when he went with Defence Minister Israel Katz during Sukkot."
+    "اقتحم وزير الأمن القومي الإسرائيلي إيتمار بن غفير المسجد الأقصى المبارك يوم الإثنين 26 تشرين الأول، عشية الانتخابات العامة الإسرائيلية، تحت حماية مشددة من الشرطة ودون إعلان مسبق، وفق الأناضول عبر تي آر تي وورلد. وقالت محافظة القدس إنه كان برفقة موشيه فيغلين ومجموعة من المستوطنين.",
+    "وبحسب القناة السابعة الإسرائيلية، التي نقلت عنها الأناضول، أدى أيضا صلاة عند حائط البراق. وقالت تايمز أوف إسرائيل، نقلا عن موقع واينت، إنه لم يحتف كثيرا بالزيارة، ربما كي لا ينفر الناخبين الحريديم.",
+    "وأدانت وزارة الخارجية القطرية الاقتحام، ورفضت وزارة الخارجية المصرية أي محاولة لتغيير الوضع القائم في المسجد أو تقسيمه زمانيا أو مكانيا. وهو أحدث اقتحام لبن غفير بعد 28 أيلول، حين اقتحمه برفقة وزير الأمن الإسرائيلي يسرائيل كاتس خلال «عيد العرش»."
    ],
    "figure": null,
    "quote": {
-    "text": "an unacceptable provocation to the sentiments of millions of Muslims around the world",
-    "who": "Qatar Ministry of Foreign Affairs",
-    "role": "statement",
-    "date": "2026-10-26"
+    "text": "استفزازا مرفوضا لمشاعر ملايين المسلمين حول العالم",
+    "who": "وزارة الخارجية القطرية",
+    "role": "بيان",
+    "date": "2026-10-26",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "TRT World (Anadolu)",
+     "name": "تي آر تي وورلد (الأناضول)",
      "url": "https://www.trtworld.com/article/45fb4b12173f",
      "date": "2026-10-26"
     },
     {
-     "name": "Democrata",
+     "name": "ديموكراتا",
      "url": "https://www.democrata.es/en/international/ben-gvir-bursts-into-the-temple-mount-in-the-run-up-to-the-elections-in-israel/",
      "date": "2026-10-26"
     },
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/176365",
      "date": "2026-10-26"
     },
     {
-     "name": "WAFA",
+     "name": "تايمز أوف إسرائيل",
      "url": "https://english.wafa.ps/Pages/Details/176364",
      "date": "2026-10-26"
     },
@@ -713,6 +739,7 @@
      "date": "2026-10-26"
     }
    ],
+   "outlet_ar": null,
    "photo": "qibli-facade",
    "photo_own": false
   },
@@ -721,39 +748,41 @@
    "corner": "aqsa",
    "kind": "news",
    "date": "2026-09-20",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Ben-Gvir storms Al-Aqsa before Yom Kippur as Netanyahu tours the tunnels beneath",
-   "standfirst": "Jordan, Saudi Arabia, Qatar, Kuwait and Egypt condemned the incursion.",
+   "headline": "بن غفير يقتحم الأقصى قبيل «الغفران» ونتنياهو يتجول في الأنفاق أسفله",
+   "standfirst": "أدان الأردن والسعودية وقطر والكويت ومصر الاقتحام.",
    "body": [
-    "Itamar Ben-Gvir entered Al-Aqsa with groups of settlers under police protection on 20 September, WAFA reported. Anadolu said 992 Israelis entered the compound ahead of Yom Kippur.",
-    "Hamas said Prime Minister Benjamin Netanyahu had entered the tunnels and excavation sites beneath Al-Aqsa and the Buraq Wall, calling it an assault on the mosque's identity.",
-    "Jordan's foreign ministry called the incursion a serious violation of the historical and legal status quo; Saudi Arabia, Qatar, Kuwait and Egypt also condemned it."
+    "اقتحم إيتمار بن غفير المسجد الأقصى المبارك مع مجموعات من المستوطنين بحماية الشرطة في 20 أيلول، وفق وفا. وقالت الأناضول إن 992 إسرائيليا اقتحموا المسجد قبيل «يوم الغفران».",
+    "وقالت حركة حماس إن رئيس الوزراء الإسرائيلي بنيامين نتنياهو دخل الأنفاق ومواقع الحفريات أسفل الأقصى وحائط البراق، معتبرة ذلك اعتداء على هوية المسجد.",
+    "ووصفت وزارة الخارجية الأردنية الاقتحام بأنه انتهاك خطير للوضع التاريخي والقانوني القائم، كما أدانته السعودية وقطر والكويت ومصر."
    ],
    "figure": {
     "value": "992",
-    "label": "Israelis entered the compound ahead of Yom Kippur"
+    "label": "إسرائيليا اقتحموا المسجد قبيل «يوم الغفران»"
    },
    "quote": {
-    "text": "Israel has no sovereignty over occupied Jerusalem or its Islamic and Christian holy sites.",
-    "who": "Fuad Majali",
-    "role": "spokesperson, Jordanian Ministry of Foreign Affairs",
-    "date": "2026-09-20"
+    "text": "لا سيادة لإسرائيل على القدس المحتلة ومقدساتها الإسلامية والمسيحية.",
+    "who": "فؤاد المجالي",
+    "role": "الناطق الرسمي باسم وزارة الخارجية الأردنية",
+    "date": "2026-09-20",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/174935",
      "date": "2026-09-20"
     },
     {
-     "name": "A News (Anadolu)",
+     "name": "إيه نيوز (الأناضول)",
      "url": "https://www.anews.com.tr/world/2026/09/21/arab-states-condemn-ben-gvirs-storming-of-al-aqsa-as-hamas-denounces-netanyahus-entry-into-holy-site",
      "date": "2026-09-21"
     }
    ],
+   "outlet_ar": null,
    "photo": "aqsa-worshippers-walk",
    "photo_own": false
   },
@@ -762,29 +791,30 @@
    "corner": "aqsa",
    "kind": "news",
    "date": "2026-09-15",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Temple groups petition Supreme Court to open Al-Aqsa to Jews on Saturdays",
-   "standfirst": "At Rosh Hashanah, shofars were sounded at the compound for the sixth year running, the Wadi Hilweh centre says.",
+   "headline": "جماعات «الهيكل» تطالب العليا الإسرائيلية بفتح الأقصى لليهود أيام السبت",
+   "standfirst": "نفخ في البوق في المسجد في «رأس السنة العبرية» للعام السادس على التوالي، وفق مركز وادي حلوة.",
    "body": [
-    "Israel's Supreme Court was due on 16 September to hear a petition by the Shofar Betzion organisation and the Public Committee for Opening the Temple Mount on Saturdays, seeking to end the ban on Jewish visits on Saturdays and allow prayer in the courtyards that day, the Wadi Hilweh Information Center reported.",
-    "At Rosh Hashanah, 417 settlers entered on the eve and 545 on the first day, despite the usual pause in incursions on Fridays and Saturdays. Police let more than 200 gather at once in the eastern area for group prayers.",
-    "Shofars were also sounded outside the eastern wall near the Bab al-Rahma cemetery. At dawn, men under about 60 to 65 were barred from entering for prayer."
+    "كان من المقرر أن تنظر المحكمة العليا الإسرائيلية في 16 أيلول في التماس قدمته منظمة «شوفار بتسيون» و«اللجنة الشعبية لفتح جبل الهيكل أيام السبت»، يطالب بإنهاء حظر زيارات اليهود أيام السبت والسماح بالصلاة في الساحات في ذلك اليوم، وفق مركز معلومات وادي حلوة.",
+    "وفي «رأس السنة العبرية»، اقتحم 417 مستوطنا المسجد الأقصى المبارك عشية العيد و545 في يومه الأول، رغم التوقف المعتاد للاقتحامات يومي الجمعة والسبت. وسمحت الشرطة بتجمع أكثر من 200 منهم في وقت واحد في المنطقة الشرقية لأداء صلوات جماعية.",
+    "كما نفخ في البوق خارج السور الشرقي قرب مقبرة باب الرحمة. ومنع الرجال دون سن 60 إلى 65 تقريبا من دخول المسجد لصلاة الفجر."
    ],
    "figure": {
     "value": "545",
-    "label": "settlers on the first day of Rosh Hashanah"
+    "label": "مستوطنا في اليوم الأول من «رأس السنة العبرية»"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80062",
      "date": "2026-09-15"
     }
    ],
+   "outlet_ar": null,
    "photo": "aqsa-friday-prayer",
    "photo_own": false
   },
@@ -793,33 +823,34 @@
    "corner": "aqsa",
    "kind": "news",
    "date": "2026-10-13",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "dung-gate",
-   "headline": "After the holidays, incursions continue: 315 on 5 October, 133 on 13 October",
-   "standfirst": "Groups enter through Bab al-Maghariba, whose keys Israel has held since 1967.",
+   "headline": "الاقتحامات تتواصل بعد الأعياد: 315 في 5 تشرين الأول و133 في 13 منه",
+   "standfirst": "تدخل المجموعات من باب المغاربة الذي تسيطر إسرائيل على مفاتيحه منذ عام 1967.",
    "body": [
-    "On 5 October, 145 settlers entered Al-Aqsa through the Moroccan Gate in the morning and afternoon sessions, and a further 170 entered as 'tourists', under heavy police protection, WAFA reported.",
-    "On 13 October, 133 settlers entered the courtyards through the same gate and the authorities imposed restrictions on worshippers, QNA reported, citing the Jerusalem Governorate."
+    "اقتحم 145 مستوطنا المسجد الأقصى المبارك من باب المغاربة في الفترتين الصباحية والمسائية يوم 5 تشرين الأول، ودخله 170 آخرون بصفة «سياح»، تحت حماية مشددة من الشرطة، وفق وفا.",
+    "وفي 13 تشرين الأول، اقتحم 133 مستوطنا الساحات من الباب نفسه، وفرضت السلطات قيودا على المصلين، وفق قنا نقلا عن محافظة القدس."
    ],
    "figure": {
     "value": "315",
-    "label": "entries on 5 October, including 170 as 'tourists'"
+    "label": "اقتحاما في 5 تشرين الأول، بينها 170 بصفة «سياح»"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175518",
      "date": "2026-10-05"
     },
     {
-     "name": "QNA",
+     "name": "قنا",
      "url": "https://qna.org.qa/en/news/news-details?id=dozens-of-israeli-colonists-storm-al-aqsa-mosque&date=13%2F10%2F2026",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "mughrabi-bridge",
    "photo_own": false
   },
@@ -828,28 +859,29 @@
    "corner": "aqsa",
    "kind": "report",
    "date": "2026-10-06",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Awqaf Ministry: 26 incursions into Al-Aqsa in September",
-   "standfirst": "The ministry also counted 150 bans on the call to prayer at Hebron's Ibrahimi Mosque.",
+   "headline": "وزارة الأوقاف: 26 اقتحاما للأقصى في أيلول",
+   "standfirst": "ورصدت الوزارة أيضا 150 منعا لرفع الأذان في المسجد الإبراهيمي بالخليل.",
    "body": [
-    "The Palestinian Ministry of Awqaf and Religious Affairs recorded 26 incursions into Al-Aqsa Mosque during September, WAFA reported.",
-    "It also documented 150 bans on the call to prayer at the Ibrahimi Mosque in Hebron and six days on which that mosque was closed entirely for Jewish holidays."
+    "رصدت وزارة الأوقاف والشؤون الدينية الفلسطينية 26 اقتحاما للمسجد الأقصى المبارك خلال شهر أيلول، وفق وفا.",
+    "كما وثقت 150 حالة منع لرفع الأذان في المسجد الإبراهيمي في الخليل، وستة أيام أغلق فيها المسجد بالكامل بداعي الأعياد اليهودية."
    ],
    "figure": {
     "value": "26",
-    "label": "incursions into Al-Aqsa in September"
+    "label": "اقتحاما للأقصى في أيلول"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175560",
      "date": "2026-10-06"
     }
    ],
+   "outlet_ar": null,
    "photo": "qibli-dawn",
    "photo_own": false
   },
@@ -858,25 +890,25 @@
    "corner": "prisoners",
    "kind": "report",
    "date": "2026-10-05",
-   "place": "Israeli prisons",
+   "place": "سجون الاحتلال",
    "gate": "other",
-   "headline": "9,300 Palestinians in Israeli prisons, 3,101 of them held without charge",
-   "standfirst": "Addameer's latest count includes 350 children and 91 women.",
+   "headline": "9,300 أسير فلسطيني في سجون الاحتلال، بينهم 3,101 معتقل إداري دون تهمة",
+   "standfirst": "تشمل أحدث إحصائية للضمير 350 طفلا و91 أسيرة.",
    "body": [
-    "Addameer counted about 9,300 Palestinian political prisoners in Israeli prisons as of 5 October 2026.",
-    "They include 3,101 administrative detainees held without charge or trial, 1,419 Gaza detainees classified by Israel as 'unlawful combatants', 350 children, 91 women and 118 prisoners serving life sentences.",
-    "In a report the next day, Addameer said administrative detainees and 'unlawful combatants' together account for nearly half of all Palestinian prisoners."
+    "أحصت مؤسسة الضمير لرعاية الأسير وحقوق الإنسان نحو 9,300 أسير سياسي فلسطيني في سجون الاحتلال حتى 5 تشرين الأول 2026.",
+    "ومن بينهم 3,101 معتقل إداري محتجزون دون تهمة أو محاكمة، و1,419 معتقلا من غزة تصنفهم إسرائيل «مقاتلين غير شرعيين»، و350 طفلا، و91 أسيرة، و118 أسيرا محكومين بالمؤبد.",
+    "وفي تقرير صدر في اليوم التالي، قالت الضمير إن المعتقلين الإداريين و«المقاتلين غير الشرعيين» يشكلون معا قرابة نصف الأسرى الفلسطينيين."
    ],
    "figure": {
     "value": "3,101",
-    "label": "administrative detainees"
+    "label": "معتقلا إداريا"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Addameer",
+     "name": "الضمير",
      "url": "https://addameer.ps/node/5760",
      "date": "2026-10-05"
     },
@@ -886,6 +918,7 @@
      "date": "2026-10-06"
     }
    ],
+   "outlet_ar": null,
    "photo": "ofer-prison",
    "photo_own": false
   },
@@ -894,47 +927,49 @@
    "corner": "prisoners",
    "kind": "prisoner",
    "date": "2026-09-17",
-   "place": "Ofer Prison",
+   "place": "سجن عوفر",
    "gate": "other",
-   "headline": "Moataz al-Atrash, 21, dies in Ofer: 92 deaths in Israeli custody since the war began",
-   "standfirst": "He had been held in administrative detention since late last year; relatives say he had no health problems before arrest.",
+   "headline": "استشهاد المعتقل معتز الأطرش (21 عاما) في عوفر يرفع شهداء السجون منذ الحرب إلى 92",
+   "standfirst": "كان معتقلا إداريا منذ أواخر العام الماضي، ويقول ذووه إنه لم يكن يعاني أي مشاكل صحية قبل اعتقاله.",
    "body": [
-    "Moataz al-Atrash, 21, from the West Bank, died at Ofer Prison while held in administrative detention without trial, the Commission of Detainees' Affairs and the Palestinian Prisoners' Society announced, Haaretz reported.",
-    "His death brought to 92 the number of Palestinians known to have died in Israeli prisons since October 2023, including 53 from Gaza, according to Addameer, which says the true figure is probably higher.",
-    "Addameer counts 329 deaths in Israeli detention since 1967 and has documented 41 cases of sexual violence against detainees."
+    "استشهد المعتقل معتز الأطرش، 21 عاما، من الضفة الغربية، في سجن عوفر، حيث كان محتجزا رهن الاعتقال الإداري دون محاكمة، وفق ما أعلنته هيئة شؤون الأسرى والمحررين ونادي الأسير الفلسطيني، بحسب هآرتس.",
+    "وباستشهاده ارتفع إلى 92 عدد الفلسطينيين المعروف أنهم استشهدوا في سجون الاحتلال منذ تشرين الأول 2023، بينهم 53 من غزة، وفق الضمير، التي تقول إن العدد الحقيقي أعلى على الأرجح.",
+    "وتحصي الضمير 329 حالة وفاة في المعتقلات الإسرائيلية منذ عام 1967، ووثقت 41 حالة عنف جنسي ضد معتقلين."
    ],
    "figure": {
     "value": "92",
-    "label": "deaths in Israeli custody since October 2023 (Addameer)"
+    "label": "شهيدا في سجون الاحتلال منذ تشرين الأول 2023 (الضمير)"
    },
    "quote": {
-    "text": "Since 1967, a total of 329 Palestinian prisoners have died in Israeli detention.",
-    "who": "Addameer",
-    "role": "prisoner support and human rights association",
-    "date": "2026-10-06"
+    "text": "منذ عام 1967، استشهد 329 أسيرا فلسطينيا في المعتقلات الإسرائيلية.",
+    "who": "مؤسسة الضمير",
+    "role": "مؤسسة لرعاية الأسير وحقوق الإنسان",
+    "date": "2026-10-06",
+    "translated": true
    },
    "person": {
-    "name": "Moataz al-Atrash",
+    "name": "معتز الأطرش",
     "age": 21,
-    "status": "martyr",
-    "sentence": "administrative detention",
-    "prison": "Ofer",
+    "status": "شهيد",
+    "sentence": "اعتقال إداري",
+    "prison": "عوفر",
     "arrested": null,
     "ban": null
    },
    "outlet_he": null,
    "sources": [
     {
-     "name": "Haaretz",
+     "name": "هآرتس",
      "url": "https://www.haaretz.com/israel-news/israel-security/2026-09-17/ty-article/.premium/palestinian-detainee-dies-as-deaths-in-israeli-prisons-during-war-rise-to-92/000001a0-addf-dea8-afe0-edff47ea0000",
      "date": "2026-09-17"
     },
     {
-     "name": "Addameer",
+     "name": "الضمير",
      "url": "https://addameer.ps/news/5763",
      "date": "2026-10-06"
     }
    ],
+   "outlet_ar": null,
    "photo": "ofer-prison-entrance",
    "photo_own": false
   },
@@ -943,22 +978,22 @@
    "corner": "prisoners",
    "kind": "prisoner",
    "date": "2026-10-13",
-   "place": "Issawiya",
+   "place": "العيسوية",
    "gate": "issawiya",
-   "headline": "Issawiya boy, 15, sentenced to six months after nearly a year under house arrest",
-   "standfirst": "A second Issawiya teenager, 16, had his detention extended.",
+   "headline": "الحكم على طفل من العيسوية (15 عاما) بالسجن 6 أشهر بعد قرابة عام من الحبس المنزلي",
+   "standfirst": "ومدد اعتقال فتى ثان من العيسوية يبلغ 16 عاما.",
    "body": [
-    "An Israeli court sentenced Ali Mahmoud, 15, from Issawiya, northeast of Jerusalem, to six months of actual imprisonment, WAFA reported on 13 October.",
-    "He was detained on 15 October 2025 and released on 30 December 2025 under house arrest until his case was decided, according to local sources.",
-    "The Wadi Hilweh Information Center reported that another Issawiya boy, Maher Zidan, 16, was arrested and his detention extended. Israeli forces also raided al-Tur with military vehicles the same day."
+    "حكمت محكمة الاحتلال على الطفل علي محمود، 15 عاما، من بلدة العيسوية شمال شرق القدس، بالسجن الفعلي 6 أشهر، وفق ما أفادت وفا في 13 تشرين الأول.",
+    "وكان قد اعتقل في 15 تشرين الأول 2025، وأفرج عنه في 30 كانون الأول 2025 بشرط الحبس المنزلي حتى البت في قضيته، وفق مصادر محلية.",
+    "وأفاد مركز معلومات وادي حلوة باعتقال فتى آخر من العيسوية، ماهر زيدان، 16 عاما، وتمديد اعتقاله. كما اقتحمت قوات الاحتلال بلدة الطور بآليات عسكرية في اليوم نفسه."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Ali Mahmoud",
+    "name": "علي محمود",
     "age": 15,
-    "status": "child prisoner",
-    "sentence": "6 months",
+    "status": "أسير طفل",
+    "sentence": "6 أشهر",
     "prison": null,
     "arrested": "2025-10-15",
     "ban": null
@@ -966,16 +1001,17 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175826",
      "date": "2026-10-13"
     },
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "issawiya-mosque",
    "photo_own": false
   },
@@ -984,22 +1020,22 @@
    "corner": "prisoners",
    "kind": "prisoner",
    "date": "2026-10-02",
-   "place": "Jabal al-Mukabber",
+   "place": "جبل المكبر",
    "gate": "jabal-mukabber",
-   "headline": "Writer Rasem Obeidat, 67, given six months' administrative detention; two Waqf staff renewed",
-   "standfirst": "His family says it is his eighth arrest in five years.",
+   "headline": "الكاتب راسم عبيدات (67 عاما) رهن الاعتقال الإداري 6 أشهر، وتجديد لموظفين في الأوقاف",
+   "standfirst": "تقول عائلته إنه اعتقاله الثامن خلال خمس سنوات.",
    "body": [
-    "Rasem Obeidat, 67, a writer and political analyst from Jabal al-Mukabber, was arrested in a dawn raid on his home on 27 September and placed under six months of administrative detention, the Wadi Hilweh Information Center reported. His family says it was his eighth arrest in five years.",
-    "The administrative detention of Mahdi Abeesan (al-Abbasi) and Abdul Rahman al-Sharif, both employees of the Islamic Waqf Department arrested in February, was renewed for two more months when they were due for release on 2 October.",
-    "Ayham Abu Jom'a, a young man from al-Tur, was also placed in administrative detention for four months, by decision of Defence Minister Israel Katz, the centre said."
+    "اعتقل الكاتب والمحلل السياسي راسم عبيدات، 67 عاما، من جبل المكبر، خلال مداهمة منزله فجر 27 أيلول، وحول إلى الاعتقال الإداري 6 أشهر، وفق مركز معلومات وادي حلوة. وتقول عائلته إنه اعتقاله الثامن خلال خمس سنوات.",
+    "وجدد الاعتقال الإداري لمهدي عبيسان (العباسي) وعبد الرحمن الشريف، الموظفين في دائرة الأوقاف الإسلامية اللذين اعتقلا في شباط، لشهرين إضافيين حين كان موعد الإفراج عنهما في 2 تشرين الأول.",
+    "كما حول الشاب أيهم أبو جمعة من الطور إلى الاعتقال الإداري 4 أشهر، بقرار من وزير الأمن الإسرائيلي يسرائيل كاتس، وفق المركز."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Rasem Obeidat",
+    "name": "راسم عبيدات",
     "age": 67,
-    "status": "administrative detainee",
-    "sentence": "6 months administrative",
+    "status": "معتقل إداري",
+    "sentence": "6 أشهر اعتقالا إداريا",
     "prison": null,
     "arrested": "2026-09-27",
     "ban": null
@@ -1007,7 +1043,7 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80074/three-jerusalemites-placed-under-administrative-detention",
      "date": "2026-10-02"
     },
@@ -1022,6 +1058,7 @@
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "jabal-mukabber",
    "photo_own": false
   },
@@ -1030,22 +1067,22 @@
    "corner": "prisoners",
    "kind": "prisoner",
    "date": "2026-10-04",
-   "place": "Shuafat",
+   "place": "شعفاط",
    "gate": "shuafat",
-   "headline": "Supreme Court rejects appeal of Shuafat detainee Oraib Abu Khdeir, held without charge since 2025",
-   "standfirst": "His administrative detention has been renewed twice, most recently for six more months.",
+   "headline": "العليا الإسرائيلية ترفض استئناف عريب أبو خضير من شعفاط، المعتقل دون تهمة منذ 2025",
+   "standfirst": "جدد اعتقاله الإداري مرتين، آخرهما لستة أشهر إضافية.",
    "body": [
-    "Oraib Abu Khdeir, a young man from Shuafat, was arrested on 20 September 2025 and placed in administrative detention for six months, the Wadi Hilweh Information Center reported.",
-    "The order was renewed on 20 March 2026 and again in September 2026 for six more months. The Supreme Court heard his appeal on 30 September and rejected it days later; he remains held without formal charges.",
-    "The same report said four young men from al-Tur, Yousef al-Sayyad, Hashem Alqam, Ismail al-Dayeh and Ali Zamara, were arrested in a dawn raid and had their detention extended."
+    "اعتقل الشاب عريب أبو خضير من شعفاط في 20 أيلول 2025، وحول إلى الاعتقال الإداري 6 أشهر، وفق مركز معلومات وادي حلوة.",
+    "وجدد الأمر في 20 آذار 2026، ثم مجددا في أيلول 2026 لستة أشهر أخرى. ونظرت المحكمة العليا في استئنافه في 30 أيلول ورفضته بعد أيام، ولا يزال محتجزا دون تهم رسمية.",
+    "وأفاد التقرير نفسه باعتقال أربعة شبان من الطور، هم يوسف الصياد وهاشم علقم وإسماعيل الدايه وعلي زمارة، خلال مداهمة فجرا وتمديد اعتقالهم."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Oraib Abu Khdeir",
+    "name": "عريب أبو خضير",
     "age": null,
-    "status": "administrative detainee",
-    "sentence": "6 months administrative, renewed",
+    "status": "معتقل إداري",
+    "sentence": "6 أشهر اعتقالا إداريا، جدد",
     "prison": null,
     "arrested": "2025-09-20",
     "ban": null
@@ -1053,11 +1090,12 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80077/arrests-extensions-of-detention-and-expulsions-ongoing-measures-against-jerusalemites",
      "date": "2026-10-04"
     }
    ],
+   "outlet_ar": null,
    "photo": "shuafat-camp",
    "photo_own": false
   },
@@ -1066,33 +1104,34 @@
    "corner": "prisoners",
    "kind": "report",
    "date": "2026-10-15",
-   "place": "Israeli prisons",
+   "place": "سجون الاحتلال",
    "gate": "other",
-   "headline": "At least 350 Palestinian children still held, of more than 2,000 detained since the war began",
-   "standfirst": "Rights groups say they struggle to reach prisons to assess conditions.",
+   "headline": "350 طفلا فلسطينيا على الأقل لا يزالون معتقلين، من أصل أكثر من 2,000 منذ بدء الحرب",
+   "standfirst": "تقول منظمات حقوقية إنها تواجه صعوبة في الوصول إلى السجون لتقييم الظروف.",
    "body": [
-    "Israeli forces have detained more than 2,000 Palestinian children since the start of the war, and at least 350 remain in Israeli prisons, Khaled Quzmar, executive director of the Palestinian Center for Child Rights, told Voice of Palestine, WAFA reported.",
-    "Quzmar warned that conditions are deteriorating, citing reports of torture, starvation and medical neglect, and said human rights organisations face difficulties gaining access to the prisons."
+    "اعتقلت قوات الاحتلال أكثر من 2,000 طفل فلسطيني منذ بدء الحرب، ولا يزال 350 منهم على الأقل في سجون الاحتلال، وفق ما قاله خالد قزمار، المدير التنفيذي للمركز الفلسطيني لحقوق الطفل، لإذاعة صوت فلسطين، بحسب وفا.",
+    "وحذر قزمار من تدهور الظروف، مستشهدا بتقارير عن التعذيب والتجويع والإهمال الطبي، وقال إن منظمات حقوق الإنسان تواجه صعوبات في الوصول إلى السجون."
    ],
    "figure": {
     "value": "350",
-    "label": "Palestinian children in Israeli prisons"
+    "label": "طفلا فلسطينيا في سجون الاحتلال"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175924",
      "date": "2026-10-15"
     },
     {
-     "name": "Addameer",
+     "name": "الضمير",
      "url": "https://addameer.ps/node/5760",
      "date": "2026-10-05"
     }
    ],
+   "outlet_ar": null,
    "photo": "prisoners-solidarity-ramallah",
    "photo_own": false
   },
@@ -1101,34 +1140,36 @@
    "corner": "prisoners",
    "kind": "news",
    "date": "2026-10-24",
-   "place": "West Bank and Jerusalem",
+   "place": "الضفة الغربية والقدس",
    "gate": "other",
-   "headline": "About 70 detained across the West Bank and Jerusalem in a day, most of them former prisoners",
-   "standfirst": "The Prisoners' Society counts more than 26,000 West Bank arrests since the war began.",
+   "headline": "اعتقال نحو 70 في الضفة والقدس خلال يوم، معظمهم أسرى سابقون",
+   "standfirst": "يحصي نادي الأسير أكثر من 26,000 حالة اعتقال في الضفة منذ بدء الحرب.",
    "body": [
-    "About 70 Palestinians were detained across West Bank governorates, Jerusalem among them, between Friday 23 October and early Saturday, the Palestinian Prisoners' Society said, WAFA reported. Some have since been released.",
-    "Hundreds of homes were raided in Hebron, the main focus, and dozens were turned into field interrogation centres. The home of released prisoner Nael Barghouti in Kobar was also raided.",
-    "The society said more than 26,000 arrests have been recorded in the West Bank since the start of the war, plus thousands in Gaza, and described the raids as collective punishment."
+    "اعتقل نحو 70 فلسطينيا في محافظات الضفة الغربية، ومنها القدس، بين يوم الجمعة 23 تشرين الأول وفجر السبت، وفق نادي الأسير الفلسطيني، بحسب وفا. وأفرج عن بعضهم لاحقا.",
+    "ودوهمت مئات المنازل في الخليل، التي تركزت فيها الحملة، وحولت العشرات منها إلى مراكز تحقيق ميداني. كما دوهم منزل الأسير المحرر نائل البرغوثي في كوبر.",
+    "وقال النادي إن أكثر من 26,000 حالة اعتقال سجلت في الضفة منذ بدء الحرب، إضافة إلى الآلاف في غزة، ووصف المداهمات بأنها عقاب جماعي."
    ],
    "figure": {
     "value": "26,000+",
-    "label": "West Bank arrests since the war began (PPS)"
+    "label": "حالة اعتقال في الضفة منذ بدء الحرب (نادي الأسير)"
    },
    "quote": {
-    "text": "most of those detained are former prisoners who spent years in Israeli jails",
-    "who": "Palestinian Prisoners' Society",
-    "role": "statement",
-    "date": "2026-10-24"
+    "text": "معظم المعتقلين أسرى سابقون أمضوا سنوات في سجون الاحتلال",
+    "who": "نادي الأسير الفلسطيني",
+    "role": "بيان",
+    "date": "2026-10-24",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/176228",
      "date": "2026-10-24"
     }
    ],
+   "outlet_ar": null,
    "photo": "prisoner-poster-nilin",
    "photo_own": false
   },
@@ -1137,49 +1178,50 @@
    "corner": "prisoners",
    "kind": "news",
    "date": "2026-10-22",
-   "place": "Nasser Medical Complex, Khan Younis",
+   "place": "مجمع ناصر الطبي، خان يونس",
    "gate": "other",
-   "headline": "Nine Gaza detainees freed through Kerem Shalom, describing torture in Israeli prisons",
-   "standfirst": "They were handed over via the Red Cross and taken to Nasser Medical Complex.",
+   "headline": "الإفراج عن 9 معتقلين من غزة عبر كرم أبو سالم يروون التعذيب في سجون الاحتلال",
+   "standfirst": "سلموا عبر الصليب الأحمر ونقلوا إلى مجمع ناصر الطبي.",
    "body": [
-    "Israel released nine Palestinian detainees from Gaza on Wednesday 21 October, who arrived at Nasser Medical Complex in Khan Younis via the Kerem Shalom crossing and the International Committee of the Red Cross, according to Gaza's Ministry of Prisoners.",
-    "Five were from Gaza City and one each from Jabalia, Deir al-Balah, Khan Younis and Rafah. They described torture and harsh conditions in Israeli prisons."
+    "أفرجت سلطات الاحتلال عن 9 معتقلين فلسطينيين من غزة يوم الأربعاء 21 تشرين الأول، ووصلوا إلى مجمع ناصر الطبي في خان يونس عبر معبر كرم أبو سالم واللجنة الدولية للصليب الأحمر، وفق وزارة الأسرى في غزة.",
+    "وخمسة منهم من مدينة غزة، وواحد من كل من جباليا ودير البلح وخان يونس ورفح. وتحدثوا عن تعذيب وظروف قاسية في سجون الاحتلال."
    ],
    "figure": {
     "value": "9",
-    "label": "Gaza detainees released"
+    "label": "معتقلين من غزة أفرج عنهم"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Daily Yemen",
+     "name": "ديلي يمن",
      "url": "https://dailyyemen.net/2026/10/22/israel-releases-9-palestinians-from-gaza/",
      "date": "2026-10-22"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "martyr-ibrahim-al-hindi-damascus-gate",
    "corner": "martyrs",
    "kind": "martyr",
    "date": "2026-09-04",
-   "place": "Damascus Gate",
+   "place": "باب العامود",
    "gate": "damascus-gate",
-   "headline": "Ibrahim al-Hindi, 33, of Beit Hanina shot dead by police at Damascus Gate",
-   "standfirst": "Police say he tried to stab officers; his body is still being held.",
+   "headline": "استشهاد إبراهيم الهندي (33 عاما) من بيت حنينا برصاص الشرطة عند باب العامود",
+   "standfirst": "تقول الشرطة إنه حاول طعن عناصرها، ولا يزال جثمانه محتجزا.",
    "body": [
-    "Israeli police shot dead Ibrahim al-Hindi, 33, from Beit Hanina, near Damascus Gate at about 3:45 a.m. on Friday 4 September. Police said he had tried to stab officers; no officers were hurt.",
-    "Israeli forces then cordoned off Damascus Gate and nearby streets of the Old City, keeping Palestinians from reaching the dawn prayer, WAFA reported.",
-    "The Wadi Hilweh Information Center said he was a former prisoner who had spent nearly two years in Israeli jails, that his relatives were summoned for interrogation, and that his body remains in Israeli custody."
+    "أطلقت الشرطة الإسرائيلية النار على إبراهيم الهندي، 33 عاما، من بيت حنينا، قرب باب العامود قرابة الساعة 3:45 فجر يوم الجمعة 4 أيلول، فاستشهد. وقالت الشرطة إنه حاول طعن عناصرها، ولم يصب أي منهم.",
+    "ثم طوقت قوات الاحتلال باب العامود والشوارع المجاورة في البلدة القديمة، ومنعت الفلسطينيين من الوصول إلى صلاة الفجر، وفق وفا.",
+    "وقال مركز معلومات وادي حلوة إنه أسير محرر أمضى قرابة عامين في سجون الاحتلال، وإن ذويه استدعوا للتحقيق، وإن جثمانه لا يزال محتجزا لدى الاحتلال."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Ibrahim al-Hindi",
+    "name": "إبراهيم الهندي",
     "age": 33,
-    "status": "martyr",
+    "status": "شهيد",
     "sentence": null,
     "prison": null,
     "arrested": null,
@@ -1188,26 +1230,27 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/174363",
      "date": "2026-09-04"
     },
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80055",
      "date": "2026-09-04"
     },
     {
-     "name": "The Times of Israel",
+     "name": "تايمز أوف إسرائيل",
      "url": "https://www.timesofisrael.com/east-jerusalem-man-tries-to-stab-cops-near-old-city-is-shot-dead-police/",
      "date": "2026-09-04"
     },
     {
-     "name": "Arab News",
+     "name": "عرب نيوز",
      "url": "https://www.arabnews.com/middle-east/police-kill-palestinian-in-jerusalem-after-attempted-knife-attack-3000482",
      "date": "2026-09-04"
     }
    ],
+   "outlet_ar": null,
    "photo": "damascus-gate-crowd",
    "photo_own": false
   },
@@ -1216,21 +1259,21 @@
    "corner": "martyrs",
    "kind": "martyr",
    "date": "2026-10-02",
-   "place": "Kobar (from Kafr Aqab)",
+   "place": "كوبر (من كفر عقب)",
    "gate": "kafr-aqab",
-   "headline": "Bahaa al-Natsheh, 19, from Kafr Aqab killed by settler gunfire in Kobar",
-   "standfirst": "His body was seized and held for two days before burial in Jerusalem.",
+   "headline": "استشهاد بهاء النتشة (19 عاما) من كفر عقب برصاص المستوطنين في كوبر",
+   "standfirst": "احتجز جثمانه يومين قبل دفنه في القدس.",
    "body": [
-    "Bahaa Sami al-Natsheh, 19, from Kafr Aqab north of Jerusalem, died of critical gunshot wounds after settlers fired live ammunition at residents in Kobar, north of Ramallah, on the evening of Friday 2 October, the Ministry of Health said, as reported by the Wadi Hilweh Information Center.",
-    "The Palestinian Red Crescent said Israeli forces blocked its ambulances from reaching Kobar and then seized the body.",
-    "After two days, his funeral prayer was held on 4 October in the courtyard of al-Makassed Hospital, and he was buried in al-Mujahideen cemetery on Salah al-Din Street."
+    "استشهد بهاء سامي النتشة، 19 عاما، من كفر عقب شمال القدس، متأثرا بإصابته الحرجة بالرصاص بعد أن أطلق مستوطنون الرصاص الحي على المواطنين في بلدة كوبر شمال رام الله، مساء يوم الجمعة 2 تشرين الأول، وفق وزارة الصحة، كما نقل مركز معلومات وادي حلوة.",
+    "وقالت جمعية الهلال الأحمر الفلسطيني إن قوات الاحتلال منعت سيارات الإسعاف التابعة لها من الوصول إلى كوبر، ثم احتجزت الجثمان.",
+    "وبعد يومين، أديت صلاة الجنازة عليه في 4 تشرين الأول في ساحة مستشفى المقاصد، ووري الثرى في مقبرة المجاهدين في شارع صلاح الدين."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Bahaa Sami al-Natsheh",
+    "name": "بهاء سامي النتشة",
     "age": 19,
-    "status": "martyr",
+    "status": "شهيد",
     "sentence": null,
     "prison": null,
     "arrested": null,
@@ -1239,11 +1282,12 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80076/after-his-body-was-withheld-for-two-days-the-funeral-of-jerusalemite-martyr-bahaa-al-natsheh-was-held-in-jerusalem",
      "date": "2026-10-04"
     }
    ],
+   "outlet_ar": null,
    "photo": "kafr-aqab",
    "photo_own": false
   },
@@ -1252,20 +1296,20 @@
    "corner": "martyrs",
    "kind": "martyr",
    "date": "2026-07-24",
-   "place": "Shuafat camp checkpoint",
+   "place": "حاجز مخيم شعفاط",
    "gate": "shuafat",
-   "headline": "Khalil al-Rashq, 47, father of five, dies after being shot at the Shuafat camp checkpoint",
-   "standfirst": "His family said he suffered from epilepsy; his body was withheld.",
+   "headline": "استشهاد خليل الرشق (47 عاما)، أب لخمسة، متأثرا بإصابته على حاجز مخيم شعفاط",
+   "standfirst": "قالت عائلته إنه كان يعاني من الصرع، واحتجز جثمانه.",
    "body": [
-    "Khalil Rashad Hamed al-Rashq, 47, from Dahiyat al-Salam in Jerusalem, died after Israeli forces shot him the previous night at the checkpoint of Shuafat refugee camp, the Jerusalem Governorate said on 24 July, as reported by WAFA.",
-    "He was married with four daughters and a son, and his family said he suffered from epilepsy. Israeli authorities withheld his body; the governorate described the city's checkpoints as death checkpoints."
+    "استشهد خليل رشاد حامد الرشق، 47 عاما، من ضاحية السلام في القدس، بعد أن أطلقت قوات الاحتلال النار عليه في الليلة السابقة على حاجز مخيم شعفاط للاجئين، وفق ما قالته محافظة القدس في 24 تموز، بحسب وفا.",
+    "وهو متزوج وأب لأربع بنات وابن، وقالت عائلته إنه كان يعاني من الصرع. واحتجزت سلطات الاحتلال جثمانه، ووصفت المحافظة حواجز المدينة بأنها «حواجز موت»."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Khalil Rashad Hamed al-Rashq",
+    "name": "خليل رشاد حامد الرشق",
     "age": 47,
-    "status": "martyr",
+    "status": "شهيد",
     "sentence": null,
     "prison": null,
     "arrested": null,
@@ -1274,11 +1318,12 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/172874",
      "date": "2026-07-24"
     }
    ],
+   "outlet_ar": null,
    "photo": "shuafat-camp-wall",
    "photo_own": false
   },
@@ -1287,24 +1332,24 @@
    "corner": "martyrs",
    "kind": "martyr",
    "date": "2026-06-29",
-   "place": "Umm al-Sharayet",
+   "place": "أم الشرايط",
    "gate": "other",
-   "headline": "Amir Jaber, 15, the 11th Palestinian from Jerusalem governorate killed in the first half of 2026",
-   "standfirst": "The toll included two labourers shot near al-Ram and three people killed by settlers.",
+   "headline": "الطفل أمير جابر (15 عاما)، الشهيد الحادي عشر من محافظة القدس في النصف الأول من 2026",
+   "standfirst": "بين الشهداء عاملان استشهدا بالرصاص قرب الرام، وثلاثة على يد المستوطنين.",
    "body": [
-    "Amir Ahmed Jawad Jaber, 15, a Jerusalem ID holder, was shot dead by Israeli forces during a raid on Umm al-Sharayet, the Jerusalem Governorate said on 29 June, as reported by WAFA.",
-    "The governorate said he was the 11th Palestinian from Jerusalem governorate killed since the start of 2026, a toll that included two labourers shot near al-Ram and three people killed by settlers.",
-    "Its third-quarter report later counted six more Palestinians killed between July and September."
+    "استشهد أمير أحمد جواد جابر، 15 عاما، من حملة الهوية المقدسية، برصاص قوات الاحتلال خلال اقتحامها منطقة أم الشرايط، وفق ما قالته محافظة القدس في 29 حزيران، بحسب وفا.",
+    "وقالت المحافظة إنه الشهيد الحادي عشر من محافظة القدس منذ بداية عام 2026، وبينهم عاملان استشهدا بالرصاص قرب الرام وثلاثة على يد المستوطنين.",
+    "ورصد تقريرها للربع الثالث لاحقا استشهاد 6 فلسطينيين آخرين بين تموز وأيلول."
    ],
    "figure": {
     "value": "11",
-    "label": "killed from Jerusalem governorate, Jan to June 2026"
+    "label": "شهيدا من محافظة القدس بين كانون الثاني وحزيران 2026"
    },
    "quote": null,
    "person": {
-    "name": "Amir Ahmed Jawad Jaber",
+    "name": "أمير أحمد جواد جابر",
     "age": 15,
-    "status": "martyr",
+    "status": "شهيد",
     "sentence": null,
     "prison": null,
     "arrested": null,
@@ -1313,86 +1358,89 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/172172",
      "date": "2026-06-29"
     },
     {
-     "name": "QNA",
+     "name": "قنا",
      "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
      "date": "2026-10-01"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "withheld-bodies-31-jerusalemites",
    "corner": "martyrs",
    "kind": "report",
    "date": "2026-09-04",
-   "place": "Jerusalem",
+   "place": "القدس",
    "gate": "other",
-   "headline": "Israel holds the bodies of 31 Jerusalemites, 10 of them children",
-   "standfirst": "The oldest case dates to October 2016; the youngest, Wadi' Alayan, was 14.",
+   "headline": "الاحتلال يحتجز جثامين 31 شهيدا مقدسيا، بينهم 10 أطفال",
+   "standfirst": "أقدم حالة تعود إلى تشرين الأول 2016، وأصغرهم وديع عليان كان يبلغ 14 عاما.",
    "body": [
-    "Israeli authorities are holding the bodies of 31 Jerusalemite martyrs who held Jerusalem identity cards, in morgues or in so-called cemeteries of numbers, the Wadi Hilweh Information Center reported.",
-    "The oldest case is Musbah Abu Sbeih, from October 2016. Ten of the 31 were under 18, the youngest being 14-year-old Wadi' Alayan, killed in February 2024.",
-    "The most recent names on the list are Ayman al-Hashlamon, killed in May 2026, and Khalil al-Rashq, killed in July 2026."
+    "تحتجز سلطات الاحتلال جثامين 31 شهيدا مقدسيا من حملة الهوية المقدسية، في الثلاجات أو فيما يسمى «مقابر الأرقام»، وفق مركز معلومات وادي حلوة.",
+    "وأقدم الحالات حالة مصباح أبو صبيح منذ تشرين الأول 2016. وعشرة من الـ31 كانوا دون 18 عاما، أصغرهم وديع عليان، 14 عاما، الذي استشهد في شباط 2024.",
+    "وأحدث الأسماء في القائمة أيمن الهشلمون، الذي استشهد في أيار 2026، وخليل الرشق، الذي استشهد في تموز 2026."
    ],
    "figure": {
     "value": "31",
-    "label": "Jerusalemites' bodies held by Israel"
+    "label": "جثمانا لشهداء مقدسيين يحتجزها الاحتلال"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80055",
      "date": "2026-09-04"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "seven-banned-including-guard",
    "corner": "exiled",
    "kind": "exile",
    "date": "2026-09-15",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Seven Jerusalemites, including Al-Aqsa guard Samer Abu Quwaider, banned for six months",
-   "standfirst": "Some orders arrived by WhatsApp with maps covering every courtyard, gate and approach road.",
+   "headline": "إبعاد 7 مقدسيين عن الأقصى 6 أشهر، بينهم الحارس سامر أبو قويدر",
+   "standfirst": "وصلت بعض القرارات عبر واتساب مرفقة بخرائط تشمل كل الساحات والأبواب والطرق المؤدية إليه.",
    "body": [
-    "Israeli authorities issued six-month orders barring seven Jerusalemites from Al-Aqsa, effective immediately, the Jerusalem Governorate said, as reported by WAFA: Al-Aqsa guard Samer Abu Quwaider, Hamza Jabr al-Abbasi, Mohammad Zalloum, Amin al-Abbasi, Suhaib Afaneh, Naseem Khalil Hamada and Yousef al-Rashq.",
-    "Al-Rashq is from Silwan, and Afaneh and Hamada are from Sur Baher. Their orders came via WhatsApp with maps showing banned areas, including all of Al-Aqsa's courtyards and entrances and the roads leading to it.",
-    "The Wadi Hilweh Information Center said Al-Aqsa guard Fadi Alayan was also banned, along with others who asked not to be named."
+    "أصدرت سلطات الاحتلال قرارات بإبعاد سبعة مقدسيين عن المسجد الأقصى المبارك لمدة ستة أشهر، تسري فورا، وفق محافظة القدس، بحسب وفا، وهم: حارس الأقصى سامر أبو قويدر، وحمزة جبر العباسي، ومحمد زلوم، وأمين العباسي، وصهيب عفانة، ونسيم خليل حمادة، ويوسف الرشق.",
+    "والرشق من سلوان، وعفانة وحمادة من صور باهر. ووصلتهم القرارات عبر واتساب مع خرائط تحدد المناطق المحظورة، ومنها جميع ساحات الأقصى ومداخله والطرق المؤدية إليه.",
+    "وقال مركز معلومات وادي حلوة إن حارس الأقصى فادي عليان أبعد أيضا، إلى جانب آخرين طلبوا عدم ذكر أسمائهم."
    ],
    "figure": {
     "value": "7",
-    "label": "six-month bans in one day"
+    "label": "قرارات إبعاد لستة أشهر في يوم واحد"
    },
    "quote": null,
    "person": {
-    "name": "Samer Abu Quwaider",
+    "name": "سامر أبو قويدر",
     "age": null,
-    "status": "exiled",
+    "status": "مبعد",
     "sentence": null,
     "prison": null,
     "arrested": null,
     "ban": {
-     "from": "Al-Aqsa",
-     "length": "6 months"
+     "from": "المسجد الأقصى",
+     "length": "6 أشهر",
+     "length_en": "6 months"
     }
    },
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/174758",
      "date": "2026-09-15"
     },
     {
-     "name": "WAFA",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://english.wafa.ps/Pages/Details/174729",
      "date": "2026-09-15"
     },
@@ -1402,6 +1450,7 @@
      "date": "2026-09-15"
     }
    ],
+   "outlet_ar": null,
    "photo": "chain-gate-inside",
    "photo_own": false
   },
@@ -1410,36 +1459,37 @@
    "corner": "exiled",
    "kind": "exile",
    "date": "2026-10-16",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Sheikh Ekrima Sabri's Al-Aqsa ban renewed, now until mid-April 2027",
-   "standfirst": "The head of the Supreme Islamic Council has been barred from the mosque since August 2024.",
+   "headline": "تجديد إبعاد الشيخ عكرمة صبري عن الأقصى حتى منتصف نيسان 2027",
+   "standfirst": "رئيس الهيئة الإسلامية العليا ممنوع من دخول المسجد منذ آب 2024.",
    "body": [
-    "Israeli authorities renewed the ban on Sheikh Ekrima Sabri, head of the Supreme Islamic Council and an Al-Aqsa preacher, entering the mosque, the Wadi Hilweh Information Center reported on 16 October. His lawyer, Hamza Qutteineh, first received a one-week notice, renewable.",
-    "A later report by the centre said the ban had been extended for six months, until mid-April 2027. Sabri has been barred from Al-Aqsa since August 2024.",
-    "The centre counts more than 1,000 expulsion orders from Al-Aqsa and the Old City since the start of 2026."
+    "جددت سلطات الاحتلال قرار منع الشيخ عكرمة صبري، رئيس الهيئة الإسلامية العليا وخطيب المسجد الأقصى المبارك، من دخول المسجد، وفق ما أفاد مركز معلومات وادي حلوة في 16 تشرين الأول. وتسلم محاميه حمزة قطينة في البداية إخطارا بالإبعاد أسبوعا قابلا للتجديد.",
+    "وأفاد تقرير لاحق للمركز بتمديد الإبعاد ستة أشهر حتى منتصف نيسان 2027. ويمنع صبري من دخول الأقصى منذ آب 2024.",
+    "ويحصي المركز أكثر من 1,000 قرار إبعاد عن الأقصى والبلدة القديمة منذ بداية عام 2026."
    ],
    "figure": {
     "value": "1,000+",
-    "label": "expulsion orders from Al-Aqsa and the Old City in 2026 (Wadi Hilweh centre)"
+    "label": "قرار إبعاد عن الأقصى والبلدة القديمة في 2026 (مركز وادي حلوة)"
    },
    "quote": null,
    "person": {
-    "name": "Ekrima Sabri",
+    "name": "عكرمة صبري",
     "age": null,
-    "status": "exiled",
+    "status": "مبعد",
     "sentence": null,
     "prison": null,
     "arrested": null,
     "ban": {
-     "from": "Al-Aqsa",
-     "length": "6 months (to mid-April 2027)"
+     "from": "المسجد الأقصى",
+     "length": "6 أشهر (حتى منتصف نيسان 2027)",
+     "length_en": "6 months (to mid-April 2027)"
     }
    },
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80081/renewing-the-expulsion-of-sheikh-ekrima-sabri-from-al-aqsa-mosque-ongoing-harassment-since-august-2024",
      "date": "2026-10-16"
     },
@@ -1449,6 +1499,7 @@
      "date": "2026-10-23"
     }
    ],
+   "outlet_ar": null,
    "photo": "qibli-facade",
    "photo_own": false
   },
@@ -1457,37 +1508,39 @@
    "corner": "exiled",
    "kind": "exile",
    "date": "2026-10-23",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Al-Aqsa preacher Khaled Abu Jom'a arrested after Friday sermon and banned for a week",
-   "standfirst": "The Grand Mufti, Sheikh Mohammad Hussein, is barred until January 2027.",
+   "headline": "اعتقال خطيب الأقصى خالد أبو جمعة بعد خطبة الجمعة وإبعاده أسبوعا",
+   "standfirst": "والمفتي العام الشيخ محمد حسين مبعد حتى كانون الثاني 2027.",
    "body": [
-    "Police took Sheikh Khaled Abu Jom'a, an Al-Aqsa preacher, from a room inside the mosque shortly after Friday's sermon, in which he spoke about steadfast presence in Jerusalem and about the olive harvest, the Wadi Hilweh Information Center reported on 23 October.",
-    "He was released on condition that he stay away from the mosque for a week, which can be extended.",
-    "The Grand Mufti of Jerusalem and the Palestinian Territories, Sheikh Mohammad Hussein, is barred from Al-Aqsa for six months, from 10 July 2026 to 10 January 2027."
+    "اقتادت الشرطة الشيخ خالد أبو جمعة، خطيب المسجد الأقصى المبارك، من غرفة داخل المسجد بعد وقت قصير من خطبة الجمعة، التي تحدث فيها عن الثبات في القدس وعن موسم قطف الزيتون، وفق ما أفاد مركز معلومات وادي حلوة في 23 تشرين الأول.",
+    "وأفرج عنه بشرط الإبعاد عن المسجد أسبوعا قابلا للتمديد.",
+    "ويمنع المفتي العام للقدس والديار الفلسطينية، الشيخ محمد حسين، من دخول الأقصى ستة أشهر، من 10 تموز 2026 حتى 10 كانون الثاني 2027."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Khaled Abu Jom'a",
+    "name": "خالد أبو جمعة",
     "age": null,
-    "status": "exiled",
+    "status": "مبعد",
     "sentence": null,
     "prison": null,
     "arrested": null,
     "ban": {
-     "from": "Al-Aqsa",
-     "length": "1 week, renewable"
+     "from": "المسجد الأقصى",
+     "length": "أسبوع قابل للتجديد",
+     "length_en": "1 week, renewable"
     }
    },
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80082/al-aqsa-preacher-khaled-abu-jom-a-faces-arrest-and-deportation-as-mosque-preachers-come-under-fire",
      "date": "2026-10-23"
     }
    ],
+   "outlet_ar": null,
    "photo": "aqsa-after-fajr",
    "photo_own": false
   },
@@ -1496,39 +1549,41 @@
    "corner": "exiled",
    "kind": "report",
    "date": "2026-09-06",
-   "place": "Al-Aqsa Mosque compound and Old City",
+   "place": "المسجد الأقصى المبارك والبلدة القديمة",
    "gate": "old-city",
-   "headline": "800 orders barring Palestinians from Al-Aqsa in 2026, and the holiday season is only beginning",
-   "standfirst": "The Jerusalem Governorate says 762 were issued in the first half of the year alone.",
+   "headline": "800 قرار إبعاد عن الأقصى منذ مطلع 2026، وموسم الأعياد في بدايته",
+   "standfirst": "تقول محافظة القدس إن 762 منها صدرت في النصف الأول من العام وحده.",
    "body": [
-    "Israeli authorities issued 785 orders barring Palestinians from Al-Aqsa from January through August 2026, 762 of them in the first half, the Jerusalem Governorate said on 6 September, as reported by WAFA. With 15 more in the first six days of September, the total reached 800.",
-    "The governorate said these are only the orders it was able to document and the real number is likely higher. It warned that the orders were accelerating ahead of the Jewish holiday season.",
-    "Its third-quarter report later recorded 73 expulsion orders between July and September, most of them from Al-Aqsa."
+    "أصدرت سلطات الاحتلال 785 قرار إبعاد عن المسجد الأقصى المبارك من كانون الثاني حتى آب 2026، منها 762 في النصف الأول، وفق ما قالته محافظة القدس في 6 أيلول، بحسب وفا. ومع 15 قرارا إضافيا في الأيام الستة الأولى من أيلول، بلغ المجموع 800.",
+    "وقالت المحافظة إن هذه القرارات هي فقط ما تمكنت من توثيقه، وإن العدد الحقيقي أعلى على الأرجح. وحذرت من تسارع القرارات قبيل موسم الأعياد اليهودية.",
+    "ورصد تقريرها للربع الثالث لاحقا 73 قرار إبعاد بين تموز وأيلول، معظمها عن الأقصى."
    ],
    "figure": {
     "value": "800",
-    "label": "Al-Aqsa ban orders, 1 January to 6 September"
+    "label": "قرار إبعاد عن الأقصى، من 1 كانون الثاني حتى 6 أيلول"
    },
    "quote": {
-    "text": "a systematic policy pursued by the occupation authorities for years",
-    "who": "Jerusalem Governorate",
-    "role": "Palestinian governorate statement",
-    "date": "2026-09-06"
+    "text": "سياسة ممنهجة تنتهجها سلطات الاحتلال منذ سنوات",
+    "who": "محافظة القدس",
+    "role": "بيان صادر عن المحافظة",
+    "date": "2026-09-06",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/174409",
      "date": "2026-09-06"
     },
     {
-     "name": "QNA",
+     "name": "قنا",
      "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
      "date": "2026-10-01"
     }
    ],
+   "outlet_ar": null,
    "photo": "al-wad-street",
    "photo_own": false
   },
@@ -1537,40 +1592,42 @@
    "corner": "exiled",
    "kind": "exile",
    "date": "2026-09-27",
-   "place": "Silwan",
+   "place": "سلوان",
    "gate": "silwan",
-   "headline": "Jamil Abbasi of Silwan served his seventh consecutive six-month Al-Aqsa ban",
-   "standfirst": "About 35 orders since 2003, including two barring him from the Old City and two from all of Jerusalem.",
+   "headline": "جميل العباسي من سلوان يتسلم قرار إبعاده السابع على التوالي عن الأقصى 6 أشهر",
+   "standfirst": "نحو 35 قرارا منذ 2003، بينها اثنان عن البلدة القديمة واثنان عن القدس كلها.",
    "body": [
-    "Jamil Abbasi from Silwan, first banned in 2003, has received about 35 orders, including repeated Al-Aqsa bans, two barring him from the Old City and two from all of Jerusalem, the Wadi Hilweh Information Center reported. His latest, a seventh consecutive six-month ban, runs until next March.",
-    "Khadija Khweis, banned by successive orders since 2014, was arrested at the school where she works and given a one-week ban, followed the next day by an order signed by Prime Minister Benjamin Netanyahu.",
-    "Salwa Abu Libdeh, a Jerusalemite media figure who has used a wheelchair since a 2019 stroke and has not reached Al-Aqsa for seven years, was summoned over social media posts and given a one-week ban."
+    "تسلم جميل العباسي من سلوان، الذي أبعد للمرة الأولى عام 2003، نحو 35 قرارا، منها قرارات متكررة بالإبعاد عن الأقصى، واثنان بالإبعاد عن البلدة القديمة، واثنان عن القدس كلها، وفق مركز معلومات وادي حلوة. وآخرها قرار إبعاد سابع على التوالي لستة أشهر يسري حتى آذار المقبل.",
+    "واعتقلت خديجة خويص، المبعدة بقرارات متتالية منذ عام 2014، من المدرسة التي تعمل فيها، وأبعدت أسبوعا، تلاه في اليوم التالي قرار وقعه رئيس الوزراء الإسرائيلي بنيامين نتنياهو.",
+    "واستدعيت الإعلامية المقدسية سلوى أبو لبدة، التي تستخدم كرسيا متحركا منذ إصابتها بجلطة عام 2019 ولم تصل إلى الأقصى منذ سبع سنوات، بسبب منشورات على مواقع التواصل الاجتماعي، وأبعدت أسبوعا."
    ],
    "figure": {
     "value": "35",
-    "label": "orders served on Jamil Abbasi since 2003"
+    "label": "قرارا بحق جميل العباسي منذ 2003"
    },
    "quote": null,
    "person": {
-    "name": "Jamil Abbasi",
+    "name": "جميل العباسي",
     "age": null,
-    "status": "exiled",
+    "status": "مبعد",
     "sentence": null,
     "prison": null,
     "arrested": null,
     "ban": {
-     "from": "Al-Aqsa",
-     "length": "6 months"
+     "from": "المسجد الأقصى",
+     "length": "6 أشهر",
+     "length_en": "6 months"
     }
    },
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80068",
      "date": "2026-09-27"
     }
    ],
+   "outlet_ar": null,
    "photo": "silwan-aerial",
    "photo_own": false
   },
@@ -1579,37 +1636,39 @@
    "corner": "exiled",
    "kind": "exile",
    "date": "2026-10-13",
-   "place": "Jerusalem",
+   "place": "القدس",
    "gate": "aqsa",
-   "headline": "Raeda Saeed to report to prison on 12 November for breaching an Al-Aqsa ban",
-   "standfirst": "Silwan's Khaled Abu Tayeh was meanwhile barred from the mosque for six months.",
+   "headline": "رائدة سعيد تسلم نفسها للسجن في 12 تشرين الثاني بتهمة خرق قرار إبعاد عن الأقصى",
+   "standfirst": "وفي الأثناء، أبعد خالد أبو تايه من سلوان عن المسجد ستة أشهر.",
    "body": [
-    "The Central Court upheld on appeal a one-year prison sentence against Raeda Saeed, convicted at the end of 2025 of violating an order banning her from Al-Aqsa, the Wadi Hilweh Information Center reported. She must report to prison on 12 November 2026.",
-    "She had been held for eight days in 2023 and then spent about two years under house arrest.",
-    "Khaled Abu Tayeh from Silwan, arrested at Al-Aqsa earlier in October, was barred from the mosque for six months by an order signed by the Jerusalem police commander."
+    "ثبتت المحكمة المركزية في الاستئناف حكما بالسجن عاما على رائدة سعيد، التي أدينت أواخر عام 2025 بخرق قرار إبعادها عن المسجد الأقصى المبارك، وفق مركز معلومات وادي حلوة. وعليها تسليم نفسها للسجن في 12 تشرين الثاني 2026.",
+    "وكانت قد احتجزت ثمانية أيام عام 2023، ثم أمضت نحو عامين في الحبس المنزلي.",
+    "وأبعد خالد أبو تايه من سلوان، الذي اعتقل في الأقصى مطلع تشرين الأول، عن المسجد ستة أشهر بقرار وقعه قائد شرطة الاحتلال في القدس."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Raeda Saeed",
+    "name": "رائدة سعيد",
     "age": null,
-    "status": "woman prisoner",
-    "sentence": "1 year",
+    "status": "أسيرة",
+    "sentence": "سنة واحدة",
     "prison": null,
     "arrested": null,
     "ban": {
-     "from": "Al-Aqsa",
-     "length": null
+     "from": "المسجد الأقصى",
+     "length": null,
+     "length_en": null
     }
    },
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "name": "مركز معلومات وادي حلوة",
      "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "damon-prison",
    "photo_own": false
   },
@@ -1618,31 +1677,33 @@
    "corner": "westbank",
    "kind": "news",
    "date": "2026-10-23",
-   "place": "Yehuda Junction, Hebron",
+   "place": "مفترق يهودا، الخليل",
    "gate": "other",
-   "headline": "Two soldiers and two gunmen killed near Hebron; West Bank sealed for the fourth time in a month",
-   "standfirst": "Netanyahu vowed to go house-by-house; Smotrich ordered demolitions near the site.",
+   "headline": "مقتل جنديين ومسلحين اثنين قرب الخليل، وإغلاق الضفة للمرة الرابعة خلال شهر",
+   "standfirst": "نتنياهو توعد بالتفتيش «منزلا منزلا»، وسموتريتش أمر بهدم مبان قرب الموقع.",
    "body": [
-    "Two Israeli soldiers, Staff Sgt. Ron Yonatan Roytman, 23, and Sgt. Yuval Shai Svilem, 20, were killed and three lightly wounded in a shooting near Yehuda Junction outside Hebron on 23 October, AP reported. The army said two gunmen from Hebron were killed after about 20 minutes of fire.",
-    "Prime Minister Benjamin Netanyahu blamed Hamas and vowed a sweeping operation in the gunmen's neighbourhood. His office ordered Hebron cordoned off and a full West Bank closure, the fourth in a month; residents may leave the city only through three exit points after screening.",
-    "Finance Minister Bezalel Smotrich ordered the demolition of Palestinian-owned buildings near the site, and he and Itamar Ben-Gvir called for the army to take control of the West Bank from the Palestinian Authority."
+    "قتل جنديان إسرائيليان، هما الرقيب أول رون يوناتان رويتمان، 23 عاما، والرقيب يوفال شاي سفيلم، 20 عاما، وأصيب ثلاثة آخرون بجروح طفيفة، في عملية إطلاق نار قرب مفترق يهودا خارج الخليل في 23 تشرين الأول، وفق أسوشيتد برس. وقال الجيش إن مسلحين اثنين من الخليل قتلا بعد نحو 20 دقيقة من إطلاق النار.",
+    "وحمل رئيس الوزراء الإسرائيلي بنيامين نتنياهو حركة حماس المسؤولية، وتوعد بعملية واسعة في حي المسلحين. وأمر مكتبه بتطويق الخليل وإغلاق الضفة الغربية بالكامل، للمرة الرابعة خلال شهر، ولا يسمح للسكان بمغادرة المدينة إلا عبر ثلاث نقاط خروج بعد التفتيش.",
+    "وأمر وزير المالية الإسرائيلي بتسلئيل سموتريتش بهدم مبان يملكها فلسطينيون قرب الموقع، فيما دعا هو وإيتمار بن غفير إلى أن يتولى الجيش السيطرة على الضفة الغربية بدلا من السلطة الفلسطينية."
    ],
    "figure": null,
    "quote": {
-    "text": "we will go house-by-house",
-    "who": "Benjamin Netanyahu",
-    "role": "Israeli prime minister",
-    "date": "2026-10-23"
+    "text": "سندخل منزلا منزلا",
+    "who": "بنيامين نتنياهو",
+    "role": "رئيس الوزراء الإسرائيلي",
+    "date": "2026-10-23",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "AP via WSLS",
+     "name": "أسوشيتد برس",
      "url": "https://www.wsls.com/news/2026/10/23/israels-military-says-it-killed-2-men-who-had-launched-an-attack-in-the-occupied-west-bank/",
      "date": "2026-10-23"
     }
    ],
+   "outlet_ar": null,
    "photo": "hebron-shuhada-2016",
    "photo_own": false
   },
@@ -1651,29 +1712,30 @@
    "corner": "westbank",
    "kind": "report",
    "date": "2026-10-22",
-   "place": "West Bank",
+   "place": "الضفة الغربية",
    "gate": "other",
-   "headline": "272 settler attacks on the olive harvest so far, already more than all of 2024 or 2025",
-   "standfirst": "OCHA counts 2,159 settler attacks with casualties or damage in 2026, 7.4 a day.",
+   "headline": "272 اعتداء للمستوطنين على موسم الزيتون حتى الآن، أكثر من موسمي 2024 و2025 كاملين",
+   "standfirst": "تحصي أوتشا 2,159 اعتداء للمستوطنين أوقع إصابات أو أضرارا في 2026، بمعدل 7.4 يوميا.",
    "body": [
-    "Between 1 September and 19 October, OCHA recorded 272 harvest-related settler attacks, in which one Palestinian was killed and 200 injured, and more than 3,200 olive trees and saplings were damaged. The figure already exceeds the full 2024 (224) and 2025 (185) harvest seasons.",
-    "In the week of 13 to 19 October alone, 148 Palestinians were injured, 92 by Israeli forces and 56 by settlers, across 83 settler attacks in 48 communities.",
-    "Since January, OCHA has documented 2,159 settler attacks causing casualties or damage in more than 300 communities, an average of 7.4 a day compared with 5 a day in 2025."
+    "بين 1 أيلول و19 تشرين الأول، رصدت أوتشا 272 اعتداء للمستوطنين مرتبطا بموسم قطف الزيتون، استشهد فيها فلسطيني وأصيب 200، وتضررت أكثر من 3,200 شجرة زيتون وشتلة. ويتجاوز هذا الرقم حصيلة موسمي 2024 (224) و2025 (185) كاملين.",
+    "وفي أسبوع 13 إلى 19 تشرين الأول وحده، أصيب 148 فلسطينيا، 92 منهم على يد قوات الاحتلال و56 على يد المستوطنين، في 83 اعتداء للمستوطنين طالت 48 تجمعا.",
+    "ومنذ كانون الثاني، وثقت أوتشا 2,159 اعتداء للمستوطنين أوقعت إصابات أو أضرارا في أكثر من 300 تجمع، بمعدل 7.4 اعتداء يوميا مقارنة بـ5 يوميا في 2025."
    ],
    "figure": {
     "value": "272",
-    "label": "harvest-related settler attacks, 1 Sep to 19 Oct"
+    "label": "اعتداء للمستوطنين مرتبطا بقطف الزيتون، 1 أيلول حتى 19 تشرين الأول"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
      "date": "2026-10-22"
     }
    ],
+   "outlet_ar": null,
    "photo": "olive-harvest",
    "photo_own": false
   },
@@ -1682,34 +1744,35 @@
    "corner": "westbank",
    "kind": "news",
    "date": "2026-10-26",
-   "place": "Ramallah and al-Bireh",
+   "place": "رام الله والبيرة",
    "gate": "qalandiya",
-   "headline": "General West Bank closure for Israel's election day as Ramallah's entrances are shut",
-   "standfirst": "WAFA counts 925 checkpoints and barriers controlling 3.4 million Palestinians.",
+   "headline": "إغلاق شامل للضفة يوم الانتخابات الإسرائيلية وإغلاق مداخل رام الله",
+   "standfirst": "تحصي وفا 925 حاجزا وعائقا تتحكم بحركة 3.4 مليون فلسطيني.",
    "body": [
-    "The Israeli army announced a general closure of the West Bank for Palestinians on Israel's 27 October election day, Haaretz reported.",
-    "On 26 October forces closed the entrances to Jaba', Ein Sinya and Atara near Ramallah, causing heavy congestion at the Atara checkpoint, and closed the road to Qalandiya during the raid on the camp, WAFA reported. On 27 October all entrances to Ramallah were closed.",
-    "WAFA says 925 checkpoints and barriers now restrict 3.4 million Palestinians, including 89 permanently staffed checkpoints and 232 road gates, 159 of them frequently closed."
+    "أعلن جيش الاحتلال إغلاقا شاملا للضفة الغربية أمام الفلسطينيين يوم الانتخابات الإسرائيلية في 27 تشرين الأول، وفق هآرتس.",
+    "وفي 26 تشرين الأول، أغلقت القوات مداخل جبع وعين سينيا وعطارة قرب رام الله، ما تسبب بازدحام شديد على حاجز عطارة، وأغلقت الطريق المؤدية إلى قلنديا خلال اقتحام المخيم، وفق وفا. وفي 27 تشرين الأول، أغلقت جميع مداخل رام الله.",
+    "وتقول وفا إن 925 حاجزا وعائقا باتت تقيد حركة 3.4 مليون فلسطيني، منها 89 حاجزا عسكريا دائما و232 بوابة على الطرق، 159 منها تغلق بشكل متكرر."
    ],
    "figure": {
     "value": "925",
-    "label": "checkpoints and barriers in the West Bank (WAFA)"
+    "label": "حاجزا وعائقا في الضفة الغربية (وفا)"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Haaretz",
+     "name": "هآرتس",
      "url": "https://www.haaretz.com/israel-news/elections/2026-10-25/ty-article-live/idf-announces-general-closure-for-west-bank-palestinians-on-election-day/000001a1-70f7-d34e-a1b9-feffa6f20002",
      "date": "2026-10-25"
     },
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/176360",
      "date": "2026-10-26"
     }
    ],
+   "outlet_ar": null,
    "photo": "qalandiya-turnstiles",
    "photo_own": false
   },
@@ -1718,13 +1781,13 @@
    "corner": "westbank",
    "kind": "news",
    "date": "2026-10-14",
-   "place": "Mikhmas",
+   "place": "مخماس",
    "gate": "other",
-   "headline": "Settlers set fire to a mosque in Mikhmas and attack olive pickers in Beit Ijza",
-   "standfirst": "Three herding families were displaced from Ma'azi Jaba' and Burqa in early October.",
+   "headline": "مستوطنون يحرقون مسجدا في مخماس ويهاجمون قاطفي الزيتون في بيت إجزا",
+   "standfirst": "هجرت ثلاث عائلات رعوية من معازي جبع وبرقة مطلع تشرين الأول.",
    "body": [
-    "Settlers carried out an arson attack on a mosque in Mikhmas, northeast of Jerusalem, on 14 October, OCHA reported. Farmers in Beit Ijza, in Jerusalem governorate, were attacked by settlers during the olive harvest on 15 and 19 October.",
-    "On 5 and 6 October, three herding families, 15 people including nine children, were displaced from Ma'azi Jaba' (Jerusalem) and Burqa (Ramallah) after settler attacks, OCHA said."
+    "أضرم مستوطنون النار في مسجد في بلدة مخماس، شمال شرق القدس، في 14 تشرين الأول، وفق أوتشا. وهاجم مستوطنون مزارعين في بيت إجزا، في محافظة القدس، خلال قطف الزيتون في 15 و19 تشرين الأول.",
+    "وفي 5 و6 تشرين الأول، هجرت ثلاث عائلات رعوية، 15 فردا بينهم تسعة أطفال، من معازي جبع (القدس) وبرقة (رام الله) إثر اعتداءات للمستوطنين، وفق أوتشا."
    ],
    "figure": null,
    "quote": null,
@@ -1732,7 +1795,7 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
      "date": "2026-10-22"
     },
@@ -1741,41 +1804,44 @@
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026",
      "date": "2026-10-15"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "gaza-ceasefire-in-name-only",
    "corner": "gaza",
    "kind": "news",
    "date": "2026-10-09",
-   "place": "Gaza Strip",
+   "place": "قطاع غزة",
    "gate": "other",
-   "headline": "A year on, more than 100 organisations say Gaza's ceasefire exists in name only",
-   "standfirst": "More than 1,400 Palestinians, including at least 327 children, killed since the agreement.",
+   "headline": "بعد عام، أكثر من 100 منظمة: وقف إطلاق النار في غزة قائم بالاسم فقط",
+   "standfirst": "استشهاد أكثر من 1,400 فلسطيني، بينهم 327 طفلا على الأقل، منذ الاتفاق.",
    "body": [
-    "One year after the Gaza ceasefire agreement, more than 100 civil society organisations, including Amnesty International and Save the Children, said Israeli forces have killed more than 1,400 Palestinians since it took effect, at least 327 of them children.",
-    "Nearly two million people still need shelter, about 1.4 million face crisis-level hunger or worse through the end of the year, and none of Gaza's 36 hospitals is fully functioning.",
-    "More than 18,500 patients, including at least 4,000 children, still need medical evacuation, and over 1,000 have died while waiting. The groups said Israel has moved the 'Yellow Line' deeper into Gaza than the agreed withdrawal line."
+    "بعد عام على اتفاق وقف إطلاق النار في غزة، قالت أكثر من 100 منظمة من منظمات المجتمع المدني، بينها منظمة العفو الدولية و«أنقذوا الأطفال»، إن قوات الاحتلال قتلت أكثر من 1,400 فلسطيني منذ دخوله حيز التنفيذ، بينهم 327 طفلا على الأقل.",
+    "ولا يزال قرابة مليوني شخص بحاجة إلى مأوى، ويواجه نحو 1.4 مليون مستوى الأزمة من الجوع أو أسوأ حتى نهاية العام، ولا يعمل أي من مستشفيات غزة الـ36 بكامل طاقته.",
+    "وما زال أكثر من 18,500 مريض، بينهم 4,000 طفل على الأقل، بحاجة إلى إجلاء طبي، وتوفي أكثر من 1,000 منهم أثناء الانتظار. وقالت المنظمات إن إسرائيل نقلت «الخط الأصفر» إلى عمق غزة أبعد من خط الانسحاب المتفق عليه."
    ],
    "figure": {
     "value": "1,400+",
-    "label": "Palestinians killed since the ceasefire"
+    "label": "شهيد فلسطيني منذ وقف إطلاق النار"
    },
    "quote": {
-    "text": "Accountability cannot be swept under the rubble.",
-    "who": "Agnes Callamard",
-    "role": "Secretary-General, Amnesty International",
-    "date": "2026-10-09"
+    "text": "لا يمكن دفن المساءلة تحت الركام.",
+    "who": "أنياس كالامار",
+    "role": "الأمينة العامة لمنظمة العفو الدولية",
+    "date": "2026-10-09",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Amnesty International",
+     "name": "منظمة العفو الدولية",
      "url": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations/",
      "date": "2026-10-09"
     }
    ],
+   "outlet_ar": null,
    "photo": "gaza-tents-rubble",
    "photo_own": false
   },
@@ -1784,28 +1850,29 @@
    "corner": "gaza",
    "kind": "report",
    "date": "2026-10-22",
-   "place": "Gaza Strip",
+   "place": "قطاع غزة",
    "gate": "other",
-   "headline": "UNICEF: 351 children killed in Gaza since the ceasefire, eight in the past six days",
-   "standfirst": "Gaza's Health Ministry reports 1,522 deaths since October 2025, 32 of them in one week.",
+   "headline": "يونيسف: استشهاد 351 طفلا في غزة منذ وقف إطلاق النار، 8 منهم في 6 أيام",
+   "standfirst": "وزارة الصحة في غزة تسجل 1,522 شهيدا منذ تشرين الأول 2025، بينهم 32 في أسبوع واحد.",
    "body": [
-    "UNICEF says 351 children have been killed in Gaza since the October 2025 ceasefire, including eight killed and 20 injured in the six days to 22 October, OCHA reported.",
-    "The Ministry of Health recorded 32 people killed and 123 injured between 13 and 19 October, bringing the total since the ceasefire to 1,522 killed and 5,421 injured, with a further 67 deaths added retroactively after identification."
+    "تقول يونيسف إن 351 طفلا استشهدوا في غزة منذ وقف إطلاق النار في تشرين الأول 2025، بينهم 8 استشهدوا و20 أصيبوا في الأيام الستة حتى 22 تشرين الأول، وفق أوتشا.",
+    "وسجلت وزارة الصحة 32 شهيدا و123 إصابة بين 13 و19 تشرين الأول، ليرتفع العدد منذ وقف إطلاق النار إلى 1,522 شهيدا و5,421 مصابا، إضافة إلى 67 شهيدا أضيفوا بأثر رجعي بعد التعرف على هوياتهم."
    ],
    "figure": {
     "value": "351",
-    "label": "children killed since the ceasefire (UNICEF)"
+    "label": "طفلا استشهدوا منذ وقف إطلاق النار (يونيسف)"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "OCHA Humanitarian Situation Report",
+     "name": "أوتشا",
      "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
      "date": "2026-10-22"
     }
    ],
+   "outlet_ar": null,
    "photo": "gaza-displacement-camp",
    "photo_own": false
   },
@@ -1814,28 +1881,29 @@
    "corner": "gaza",
    "kind": "report",
    "date": "2026-10-13",
-   "place": "Gaza Strip",
+   "place": "قطاع غزة",
    "gate": "other",
-   "headline": "Gaza death toll since October 2023 reaches 74,389",
-   "standfirst": "838 bodies have been recovered from the rubble since the ceasefire.",
+   "headline": "ارتفاع حصيلة الشهداء في غزة منذ تشرين الأول 2023 إلى 74,389",
+   "standfirst": "انتشال 838 جثمانا من تحت الأنقاض منذ وقف إطلاق النار.",
    "body": [
-    "Gaza's Ministry of Health put the number killed since 7 October 2023 at 74,389, with 175,423 injured, WAFA reported on 13 October.",
-    "Seven deaths were recorded in the previous 24 hours, including three people who died of their wounds and one recovered body. Since the ceasefire, the ministry counts 1,498 killed, 5,306 injured and 838 bodies recovered."
+    "قالت وزارة الصحة في غزة إن عدد الشهداء منذ 7 تشرين الأول 2023 بلغ 74,389، والمصابين 175,423، وفق ما أفادت وفا في 13 تشرين الأول.",
+    "وسجلت الوزارة 7 شهداء خلال الساعات الـ24 السابقة، بينهم ثلاثة متأثرون بجروحهم وجثمان واحد انتشل. ومنذ وقف إطلاق النار، تحصي الوزارة 1,498 شهيدا و5,306 مصابين و838 جثمانا انتشلت."
    ],
    "figure": {
     "value": "74,389",
-    "label": "killed in Gaza since 7 October 2023"
+    "label": "شهيدا في غزة منذ 7 تشرين الأول 2023"
    },
    "quote": null,
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175851",
      "date": "2026-10-13"
     }
    ],
+   "outlet_ar": null,
    "photo": "gaza-mosque-jabalia",
    "photo_own": false
   },
@@ -1844,19 +1912,19 @@
    "corner": "gaza",
    "kind": "martyr",
    "date": "2026-10-27",
-   "place": "al-Mawasi, Khan Younis",
+   "place": "المواصي، خان يونس",
    "gate": "other",
-   "headline": "Six-year-old Tihani Shalalfeh dies of wounds from Israeli fire in al-Mawasi",
-   "standfirst": "She died on the morning of Israel's election day.",
+   "headline": "استشهاد الطفلة تهاني شلالفة (6 أعوام) متأثرة بإصابتها برصاص الاحتلال في المواصي",
+   "standfirst": "استشهدت صباح يوم الانتخابات الإسرائيلية.",
    "body": [
-    "Tihani Mohammad Saeed Shalalfeh, six, died on the morning of Tuesday 27 October of wounds sustained when she was shot by Israeli forces in the al-Mawasi area of Khan Younis, WAFA reported."
+    "استشهدت الطفلة تهاني محمد سعيد شلالفة، 6 أعوام، صباح يوم الثلاثاء 27 تشرين الأول، متأثرة بجروح أصيبت بها جراء إطلاق قوات الاحتلال النار عليها في منطقة المواصي بخان يونس، وفق وفا."
    ],
    "figure": null,
    "quote": null,
    "person": {
-    "name": "Tihani Mohammad Saeed Shalalfeh",
+    "name": "تهاني محمد سعيد شلالفة",
     "age": 6,
-    "status": "martyr",
+    "status": "شهيدة",
     "sentence": null,
     "prison": null,
     "arrested": null,
@@ -1865,24 +1933,25 @@
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/176376",
      "date": "2026-10-27"
     }
-   ]
+   ],
+   "outlet_ar": null
   },
   {
    "id": "hebrew-haaretz-east-jerusalem-no-vote",
    "corner": "hebrew",
    "kind": "translation",
    "date": "2026-10-26",
-   "place": "Silwan",
+   "place": "سلوان",
    "gate": "silwan",
-   "headline": "Haaretz: In East Jerusalem, no vote in Israel's election but plenty at stake",
-   "standfirst": "Nagham Zbeedat opens with Manal Jalajel in Silwan, who received a demolition notice she could not read.",
+   "headline": "هآرتس: في القدس الشرقية لا تصويت في انتخابات إسرائيل لكن الكثير على المحك",
+   "standfirst": "تفتتح نغم زبيدات تقريرها بمنال جلاجل من سلوان، التي تلقت إخطار هدم لم تستطع قراءته.",
    "body": [
-    "Haaretz's Nagham Zbeedat reports that most Palestinian Jerusalemites cannot vote in national elections and many boycott municipal ones, yet Israeli politics shapes their housing and policing.",
-    "The piece opens with Manal Jalajel, who received a Jerusalem municipality demolition notice about five years ago; she could not read the Hebrew, so her husband read it to her."
+    "تقول نغم زبيدات في هآرتس إن معظم الفلسطينيين المقدسيين لا يحق لهم التصويت في الانتخابات العامة، ويقاطع كثيرون منهم الانتخابات البلدية، لكن السياسة الإسرائيلية ترسم واقع سكنهم وطريقة تعامل الشرطة معهم.",
+    "ويفتتح التقرير بمنال جلاجل، التي تلقت قبل نحو خمس سنوات إخطار هدم من بلدية القدس؛ ولم تستطع قراءة العبرية، فقرأه لها زوجها."
    ],
    "figure": null,
    "quote": null,
@@ -1890,11 +1959,12 @@
    "outlet_he": "הארץ",
    "sources": [
     {
-     "name": "Haaretz",
+     "name": "هآرتس",
      "url": "https://www.haaretz.com/israel-news/elections/2026-10-26/ty-article-magazine/.premium/east-jerusalem-palestinians-cant-vote-in-israels-election-but-much-is-at-stake/000001a1-5993-d9b6-a9b1-79bbe6d80000",
      "date": "2026-10-26"
     }
    ],
+   "outlet_ar": "هآرتس",
    "photo": "silwan-valley",
    "photo_own": false
   },
@@ -1903,30 +1973,32 @@
    "corner": "hebrew",
    "kind": "translation",
    "date": "2026-09-27",
-   "place": "Muslim Quarter, Old City",
+   "place": "الحي الإسلامي، البلدة القديمة",
    "gate": "old-city",
-   "headline": "Haaretz: Police close Palestinian shops in the Muslim Quarter so Jews can pray during Sukkot",
-   "standfirst": "Nir Hasson reports a new policy ordering dozens of shopkeepers to close for the whole holiday.",
+   "headline": "هآرتس: الشرطة تغلق محال فلسطينية في الحي الإسلامي ليصلي اليهود في «العرش»",
+   "standfirst": "نير حسون يتحدث عن سياسة جديدة تلزم عشرات التجار بالإغلاق طوال العيد.",
    "body": [
-    "Police ordered dozens of Palestinian shop owners in Jerusalem's Old City to close for the duration of Sukkot to give Jewish worshippers access to an area leading to the Temple Mount/Al-Aqsa compound, Haaretz's Nir Hasson reported.",
-    "Haaretz described it as a new policy after years of limited restrictions."
+    "أمرت الشرطة الإسرائيلية عشرات أصحاب المحال الفلسطينيين في البلدة القديمة بالقدس بالإغلاق طوال «عيد العرش»، لإتاحة وصول المصلين اليهود إلى منطقة تؤدي إلى «جبل الهيكل»/المسجد الأقصى، وفق ما أفاد نير حسون في هآرتس.",
+    "ووصفت هآرتس ذلك بأنه سياسة جديدة بعد سنوات من القيود المحدودة."
    ],
    "figure": null,
    "quote": {
-    "text": "From now on, they'll tell us to close every holiday",
-    "who": "Palestinian shopkeeper (unnamed)",
-    "role": "Old City merchant, quoted by Haaretz",
-    "date": "2026-09-27"
+    "text": "من الآن فصاعدا سيطلبون منا الإغلاق في كل عيد",
+    "who": "تاجر فلسطيني (لم يذكر اسمه)",
+    "role": "تاجر في البلدة القديمة، نقلت عنه هآرتس",
+    "date": "2026-09-27",
+    "translated": true
    },
    "person": null,
    "outlet_he": "הארץ",
    "sources": [
     {
-     "name": "Haaretz",
+     "name": "هآرتس",
      "url": "https://www.haaretz.com/israel-news/israel-security/2026-09-27/ty-article/.premium/police-close-palestinian-shops-for-jews-to-pray-in-jerusalems-muslim-quarter/000001a0-e2dd-db4b-a7a5-f2ff7adc0000",
      "date": "2026-09-27"
     }
    ],
+   "outlet_ar": "هآرتس",
    "photo": "cotton-market",
    "photo_own": false
   },
@@ -1935,30 +2007,32 @@
    "corner": "hebrew",
    "kind": "translation",
    "date": "2026-10-26",
-   "place": "Western Wall and Al-Aqsa compound",
+   "place": "حائط البراق والمسجد الأقصى",
    "gate": "aqsa",
-   "headline": "Times of Israel: Ben Gvir goes up the Temple Mount quietly; Netanyahu leaves a note at the Western Wall",
-   "standfirst": "Ynet suggested Ben Gvir kept quiet so as not to put off ultra-Orthodox voters.",
+   "headline": "تايمز أوف إسرائيل: بن غفير يقتحم الأقصى بهدوء ونتنياهو يترك رسالة عند حائط البراق",
+   "standfirst": "رجح موقع واينت أن بن غفير التزم الهدوء كي لا ينفر الناخبين الحريديم.",
    "body": [
-    "On the eve of the election, Itamar Ben Gvir visited the Western Wall and went up to the Temple Mount but, unlike previous visits, did not make much of it, the Times of Israel's Stuart Winer reported, citing Ynet's suggestion that he did not want to deter Haredi voters who frown on such visits.",
-    "Netanyahu and his wife Sara visited the Western Wall, where he left a handwritten note with a drawing of an Israeli flag."
+    "عشية الانتخابات، زار إيتمار بن غفير حائط البراق واقتحم «جبل الهيكل» (المسجد الأقصى المبارك)، لكنه خلافا لزياراته السابقة لم يحتف بذلك كثيرا، وفق ما أفاد ستيوارت واينر في تايمز أوف إسرائيل، نقلا عن ترجيح موقع واينت بأنه لم يرد تنفير الناخبين الحريديم الذين يستهجنون مثل هذه الزيارات.",
+    "وزار نتنياهو وزوجته سارة حائط البراق، حيث ترك رسالة مكتوبة بخط يده مع رسم للعلم الإسرائيلي."
    ],
    "figure": null,
    "quote": {
-    "text": "the eternity of Israel will not lie!",
-    "who": "Benjamin Netanyahu",
-    "role": "Israeli prime minister, note left at the Western Wall",
-    "date": "2026-10-26"
+    "text": "خلود إسرائيل لن يكذب!",
+    "who": "بنيامين نتنياهو",
+    "role": "رئيس الوزراء الإسرائيلي، في رسالة تركها عند حائط البراق",
+    "date": "2026-10-26",
+    "translated": true
    },
    "person": null,
    "outlet_he": "טיימס אוף ישראל",
    "sources": [
     {
-     "name": "The Times of Israel",
+     "name": "تايمز أوف إسرائيل",
      "url": "https://www.timesofisrael.com/from-the-western-wall-to-tel-aviv-bars-candidates-give-last-push-ahead-of-election/",
      "date": "2026-10-26"
     }
    ],
+   "outlet_ar": "تايمز أوف إسرائيل",
    "photo": "chain-gate-street",
    "photo_own": false
   },
@@ -1967,59 +2041,63 @@
    "corner": "hebrew",
    "kind": "translation",
    "date": "2026-10-19",
-   "place": "E1, east of Jerusalem",
+   "place": "E1، شرق القدس",
    "gate": "other",
-   "headline": "Times of Israel: UK warns firms that bidding on E1 tenders exposes them to sanctions",
-   "standfirst": "E1 would cut contiguity between Ramallah, East Jerusalem and Bethlehem.",
+   "headline": "تايمز أوف إسرائيل: بريطانيا تحذر الشركات من أن عطاءات E1 تعرضها للعقوبات",
+   "standfirst": "مخطط E1 سيقطع التواصل بين رام الله والقدس الشرقية وبيت لحم.",
    "body": [
-    "On the day bidding closed, Britain warned construction firms that bidding on E1 tenders near Jerusalem could expose them to British sanctions, the Times of Israel's Lazar Berman reported.",
-    "E1 would extend the Ma'ale Adumim settlement and cut territorial contiguity between Ramallah, East Jerusalem and Bethlehem."
+    "في يوم إغلاق باب تقديم العروض، حذرت بريطانيا شركات البناء من أن التقدم لعطاءات مخطط E1 قرب القدس قد يعرضها لعقوبات بريطانية، وفق ما أفاد لازار بيرمان في تايمز أوف إسرائيل.",
+    "ومن شأن مخطط E1 أن يوسع مستوطنة «معاليه أدوميم» ويقطع التواصل الجغرافي بين رام الله والقدس الشرقية وبيت لحم."
    ],
    "figure": null,
    "quote": {
-    "text": "We urge businesses and individuals not to proceed with bids for E1 construction tenders.",
-    "who": "Ed Miliband",
-    "role": "UK Foreign Secretary",
-    "date": "2026-10-19"
+    "text": "نحث الشركات والأفراد على عدم المضي في تقديم عروض لعطاءات البناء في E1.",
+    "who": "إد ميليباند",
+    "role": "وزير الخارجية البريطاني",
+    "date": "2026-10-19",
+    "translated": true
    },
    "person": null,
    "outlet_he": "טיימס אוף ישראל",
    "sources": [
     {
-     "name": "The Times of Israel",
+     "name": "تايمز أوف إسرائيل",
      "url": "https://www.timesofisrael.com/liveblog_entry/uk-warns-firms-that-bidding-on-e1-settlement-tenders-exposes-them-to-sanctions/",
      "date": "2026-10-19"
     }
-   ]
+   ],
+   "outlet_ar": "تايمز أوف إسرائيل"
   },
   {
    "id": "statement-ben-gvir-al-tur",
    "corner": "statements",
    "kind": "statement",
    "date": "2026-10-06",
-   "place": "al-Tur",
+   "place": "الطور",
    "gate": "al-tur",
-   "headline": "Ben-Gvir at the al-Tur demolition",
-   "standfirst": "Filmed in front of the demolished five-storey building.",
+   "headline": "بن غفير خلال هدم بناية الطور",
+   "standfirst": "في مقطع صوره أمام البناية المهدومة المؤلفة من خمسة طوابق.",
    "body": [
-    "Itamar Ben-Gvir filmed the demolition of the al-Tur building and posted it online, calling it governance in Jerusalem."
+    "صور إيتمار بن غفير عملية هدم بناية الطور ونشر المقطع على الإنترنت، واصفا ما جرى بأنه «حوكمة» في القدس."
    ],
    "figure": null,
    "quote": {
-    "text": "We are seeing here the images I love most, the images of governance in Jerusalem",
-    "who": "Itamar Ben-Gvir",
-    "role": "Israeli National Security Minister",
-    "date": "2026-10-06"
+    "text": "نرى هنا الصور التي أحبها أكثر من أي شيء، صور الحوكمة في القدس",
+    "who": "إيتمار بن غفير",
+    "role": "وزير الأمن القومي الإسرائيلي",
+    "date": "2026-10-06",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "Wake Up Singapore",
+     "name": "ويك أب سنغافورة",
      "url": "https://wakeup.sg/east-jerusalem-demolition/",
      "date": "2026-10-07"
     }
    ],
+   "outlet_ar": null,
    "photo": "al-tur",
    "photo_own": false
   },
@@ -2028,29 +2106,31 @@
    "corner": "statements",
    "kind": "statement",
    "date": "2026-09-28",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Abu Rudeineh: Al-Aqsa is not subject to division",
-   "standfirst": "On the third consecutive day of Sukkot incursions.",
+   "headline": "أبو ردينة: الأقصى لا يقبل القسمة",
+   "standfirst": "في اليوم الثالث على التوالي من اقتحامات «عيد العرش».",
    "body": [
-    "The Palestinian Presidency spokesperson said the incursions would not grant Israel any legitimacy and that East Jerusalem is occupied Palestinian territory."
+    "قال الناطق الرسمي باسم الرئاسة الفلسطينية إن الاقتحامات لن تمنح إسرائيل أي شرعية، وإن القدس الشرقية أرض فلسطينية محتلة."
    ],
    "figure": null,
    "quote": {
-    "text": "is the exclusive right of Muslims and is not subject to division or partnership",
-    "who": "Nabil Abu Rudeineh",
-    "role": "spokesperson, Palestinian Presidency",
-    "date": "2026-09-28"
+    "text": "حق خالص للمسلمين، ولا يقبل القسمة أو الشراكة",
+    "who": "نبيل أبو ردينة",
+    "role": "الناطق الرسمي باسم الرئاسة الفلسطينية",
+    "date": "2026-09-28",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175268",
      "date": "2026-09-28"
     }
    ],
+   "outlet_ar": null,
    "photo": "aqsa-prayer-door",
    "photo_own": false
   },
@@ -2059,29 +2139,31 @@
    "corner": "statements",
    "kind": "statement",
    "date": "2026-09-20",
-   "place": "Al-Aqsa Mosque compound",
+   "place": "المسجد الأقصى المبارك",
    "gate": "aqsa",
-   "headline": "Jordan: categorical rejection of ministers' incursions",
-   "standfirst": "After Ben-Gvir's 20 September visit to Al-Aqsa.",
+   "headline": "الأردن: رفض مطلق لاقتحامات الوزراء للأقصى",
+   "standfirst": "بعد اقتحام بن غفير المسجد الأقصى المبارك في 20 أيلول.",
    "body": [
-    "Jordan's foreign ministry called the incursion a serious violation of the historical and legal status quo."
+    "وصفت وزارة الخارجية الأردنية الاقتحام بأنه انتهاك خطير للوضع التاريخي والقانوني القائم."
    ],
    "figure": null,
    "quote": {
-    "text": "categorical rejection of the continued incursions into the mosque by Israeli ministers, officials and extremist colonists",
-    "who": "Fuad Majali",
-    "role": "spokesperson, Jordanian Ministry of Foreign Affairs",
-    "date": "2026-09-20"
+    "text": "الرفض المطلق لاستمرار اقتحامات المسجد من قبل وزراء ومسؤولين إسرائيليين ومستعمرين متطرفين",
+    "who": "فؤاد المجالي",
+    "role": "الناطق الرسمي باسم وزارة الخارجية الأردنية",
+    "date": "2026-09-20",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/174935",
      "date": "2026-09-20"
     }
    ],
+   "outlet_ar": null,
    "photo": "dome-of-rock-arches",
    "photo_own": false
   },
@@ -2090,29 +2172,31 @@
    "corner": "statements",
    "kind": "statement",
    "date": "2026-10-06",
-   "place": "al-Tur",
+   "place": "الطور",
    "gate": "al-tur",
-   "headline": "Arab League on Ben-Gvir's role in the al-Tur demolition",
-   "standfirst": "The League urged the UN Security Council to stop demolitions in East Jerusalem.",
+   "headline": "الجامعة العربية عن دور بن غفير في هدم بناية الطور",
+   "standfirst": "دعت الجامعة مجلس الأمن الدولي إلى وقف عمليات الهدم في القدس الشرقية.",
    "body": [
-    "The Arab League General Secretariat called the demolition part of an ongoing policy to reduce the Palestinian presence in East Jerusalem."
+    "قالت الأمانة العامة لجامعة الدول العربية إن الهدم جزء من سياسة متواصلة لتقليص الوجود الفلسطيني في القدس الشرقية."
    ],
    "figure": null,
    "quote": {
-    "text": "the participation of Minister Ben-Gvir in the demolition operation reflects the level of official responsibility",
-    "who": "Arab League General Secretariat",
-    "role": "statement",
-    "date": "2026-10-06"
+    "text": "مشاركة الوزير بن غفير في عملية الهدم تعكس مستوى المسؤولية الرسمية",
+    "who": "الأمانة العامة لجامعة الدول العربية",
+    "role": "بيان",
+    "date": "2026-10-06",
+    "translated": true
    },
    "person": null,
    "outlet_he": null,
    "sources": [
     {
-     "name": "WAFA",
+     "name": "وفا",
      "url": "https://english.wafa.ps/Pages/Details/175605",
      "date": "2026-10-06"
     }
    ],
+   "outlet_ar": null,
    "photo": "al-tur",
    "photo_own": false
   }
@@ -2120,73 +2204,83 @@
  "figures": [
   {
    "value": "9,300",
-   "label": "Palestinian political prisoners in Israeli prisons",
-   "source": "Addameer",
+   "label": "أسير سياسي فلسطيني في سجون الاحتلال",
+   "source": "الضمير",
    "date": "2026-10-05",
-   "url": "https://addameer.ps/node/5760"
+   "url": "https://addameer.ps/node/5760",
+   "kind": "prisoners"
   },
   {
    "value": "3,101",
-   "label": "administrative detainees held without charge",
-   "source": "Addameer",
+   "label": "معتقل إداري محتجزون دون تهمة",
+   "source": "الضمير",
    "date": "2026-10-05",
-   "url": "https://addameer.ps/node/5760"
+   "url": "https://addameer.ps/node/5760",
+   "kind": "prisoners"
   },
   {
    "value": "350",
-   "label": "children in Israeli prisons",
-   "source": "Addameer",
+   "label": "طفل في سجون الاحتلال",
+   "source": "الضمير",
    "date": "2026-10-05",
-   "url": "https://addameer.ps/node/5760"
+   "url": "https://addameer.ps/node/5760",
+   "kind": "jerusalem"
   },
   {
    "value": "92",
-   "label": "deaths in Israeli custody since October 2023",
-   "source": "Addameer",
+   "label": "شهيدا في سجون الاحتلال منذ تشرين الأول 2023",
+   "source": "الضمير",
    "date": "2026-10-06",
-   "url": "https://addameer.ps/news/5763"
+   "url": "https://addameer.ps/news/5763",
+   "kind": "prisoners"
   },
   {
    "value": "52,277",
-   "label": "settler entries into Al-Aqsa since January",
-   "source": "Jerusalem Governorate via QNA",
+   "label": "اقتحاما للمستوطنين للأقصى منذ كانون الثاني",
+   "source": "محافظة القدس عبر قنا",
    "date": "2026-10-05",
-   "url": "https://qna.org.qa/en/News-Area/News/2026-10/5/dozens-of-settlers-storm-al-aqsa-mosque-under-israeli-occupation-forces-protection"
+   "url": "https://qna.org.qa/en/News-Area/News/2026-10/5/dozens-of-settlers-storm-al-aqsa-mosque-under-israeli-occupation-forces-protection",
+   "kind": "aqsa"
   },
   {
    "value": "11,692",
-   "label": "settler entries into Al-Aqsa over the holiday season",
-   "source": "Wadi Hilweh Information Center",
+   "label": "اقتحاما للمستوطنين للأقصى خلال موسم الأعياد",
+   "source": "مركز معلومات وادي حلوة",
    "date": "2026-10-02",
-   "url": "https://www.silwanic.net/article/news/80073/the-holiday-season-at-al-aqsa-over-11-000-settlers-and-public-religious-rituals-extending-from-inside-the-mosque-to-its-surroundings"
+   "url": "https://www.silwanic.net/article/news/80073/the-holiday-season-at-al-aqsa-over-11-000-settlers-and-public-religious-rituals-extending-from-inside-the-mosque-to-its-surroundings",
+   "kind": "aqsa"
   },
   {
    "value": "427",
-   "label": "demolition and land-levelling operations in Jerusalem since January",
-   "source": "Palestinian Authority via Arab News",
+   "label": "عملية هدم وتجريف في القدس منذ كانون الثاني",
+   "source": "السلطة الفلسطينية عبر عرب نيوز",
    "date": "2026-10-06",
-   "url": "https://www.arabnews.com/middle-east/palestinian-authority-condemns-ben-gvir-over-home-demolition-stunt-in-jerusalem-3004913"
+   "url": "https://www.arabnews.com/middle-east/palestinian-authority-condemns-ben-gvir-over-home-demolition-stunt-in-jerusalem-3004913",
+   "kind": "jerusalem"
   },
   {
    "value": "668",
-   "label": "Palestinians displaced by demolitions in East Jerusalem in 2026",
-   "source": "OCHA",
+   "label": "فلسطينيا هجروا بفعل الهدم في القدس الشرقية عام 2026",
+   "source": "أوتشا",
    "date": "2026-10-22",
-   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+   "kind": "jerusalem"
   },
   {
    "value": "1,000+",
-   "label": "orders expelling Palestinians from Al-Aqsa and the Old City since January",
-   "source": "Wadi Hilweh Information Center",
+   "label": "قرار إبعاد عن الأقصى والبلدة القديمة منذ كانون الثاني",
+   "source": "مركز معلومات وادي حلوة",
    "date": "2026-10-16",
-   "url": "https://www.silwanic.net/article/news/80081/renewing-the-expulsion-of-sheikh-ekrima-sabri-from-al-aqsa-mosque-ongoing-harassment-since-august-2024"
+   "url": "https://www.silwanic.net/article/news/80081/renewing-the-expulsion-of-sheikh-ekrima-sabri-from-al-aqsa-mosque-ongoing-harassment-since-august-2024",
+   "kind": "exiled"
   },
   {
    "value": "6",
-   "label": "Palestinians killed in Jerusalem governorate, July to September 2026",
-   "source": "Jerusalem Governorate via QNA",
+   "label": "شهداء من محافظة القدس بين تموز وأيلول 2026",
+   "source": "محافظة القدس عبر قنا",
    "date": "2026-10-01",
-   "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026"
+   "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
+   "kind": "martyrs"
   }
  ],
  "gate_photo": {
