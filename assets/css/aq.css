@@ -163,14 +163,61 @@ figure figcaption,.cap{font-size:13.5px;line-height:1.5;color:var(--mute);margin
 .js .sec-h .tower .t-sw{transform:rotate(-90deg);transition:transform .9s var(--swing) .15s}
 .js .sec-h.in .tower .t-sw{transform:none}
 
-/* ------------------------------------------------------------ home: the first story */
-.first{padding:40px 0 64px}
-.first .grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:40px}
-.first .lead .ph{aspect-ratio:3/2}
-.first .lead .kick{margin:22px 0 12px}
-.first .lead h1{font-size:clamp(28px,3.3vw,46px);line-height:1.35}
-.first .lead .sf{margin-top:16px;font-size:19.5px;max-width:60ch}
-.first .lead .fig{display:flex;gap:16px;align-items:baseline;margin-top:22px;padding-top:18px;border-top:1px solid var(--rule)}
+/* ------------------------------------------------------------ home: the first story, seen through the gate
+   The lead photograph stands in a door the shape of the tower's own, on the night of the masthead; the
+   yellow swing hangs from the door's foot under its right part, where it hangs from the tower. */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate}
+.hero .bg{position:absolute;inset:0;z-index:-1;opacity:.22}
+.hero .bg img{width:100%;height:100%;object-fit:cover;filter:blur(28px) saturate(.7);transform:scale(1.15)}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,23,36,.35),var(--ink) 92%)}
+.hero-g{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:56px;align-items:center;padding-top:44px;padding-bottom:28px}
+.hero-k{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font-size:14.5px;color:var(--mute-on)}
+.hero-k .first-tag{display:inline-flex;align-items:center;gap:9px;background:var(--yellow);color:var(--ink);font-weight:800;font-size:14px;padding:6px 12px 6px 14px;border-radius:7px}
+.hero-k .first-tag .tower{font-size:12px;color:var(--ink)}
+.hero-k .first-tag .tower .t-sw{fill:#fff}
+.hero-k a{color:#fff;font-weight:600}
+.hero-k a:hover{color:var(--yellow)}
+.hero-h{margin-top:20px;font-size:clamp(30px,3.5vw,50px);font-weight:800;line-height:1.32}
+.hero-h a{background:linear-gradient(var(--yellow),var(--yellow)) 100% 100%/0 3px no-repeat;transition:background-size .5s var(--ease)}
+.hero-h a:hover{background-size:100% 3px}
+.hero-s{margin-top:16px;font-family:var(--serif);font-size:19px;line-height:1.85;color:#C6CFDB;max-width:52ch}
+.hero-f{display:flex;align-items:center;gap:18px;margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}
+.hero-f b{font-size:clamp(48px,5vw,72px);font-weight:800;line-height:1;color:var(--yellow);letter-spacing:-.02em}
+.hero-f span{font-size:16px;line-height:1.6;color:#D9E0EA;max-width:30ch}
+.hero-cta{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.hero-cta .btn{min-height:50px;padding:0 22px;font-size:16px}
+.hero-cta .btn .ic{transition:transform .3s var(--ease)}
+.hero-cta .btn:hover .ic{transform:translateX(-4px)}
+.hero-door{position:relative;display:block;justify-self:center;width:min(100%,430px);margin-bottom:calc(min(100%,430px)*.34 + 16px)}
+.hero-door .arch{display:block;position:relative;z-index:2;aspect-ratio:4/5;border-radius:999px 999px 16px 16px;overflow:hidden;background:var(--ink-2);box-shadow:0 0 0 1px rgba(255,255,255,.08)}
+.hero-door .arch img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.hero-door:hover .arch img{transform:scale(1.04)}
+.hero-door .arch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(14,23,36,.55));pointer-events:none}
+.hero-door .stamp{position:absolute;inset-inline-start:16px;bottom:16px;z-index:3}
+/* the swing: 42% of the door's width, from the crenel's edge to the tower's, as in the logo */
+.hero-door .swing{width:34%;height:auto;aspect-ratio:1;right:0;left:auto;top:100%;z-index:1}
+.hero-more{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid rgba(255,255,255,.14);margin-bottom:0}
+.hero-more li{padding:22px 0 30px;padding-inline-end:22px;margin-inline-end:22px;border-inline-end:1px solid rgba(255,255,255,.1)}
+.hero-more li:last-child{border-inline-end:0;margin-inline-end:0;padding-inline-end:0}
+.hero-more a{display:grid;grid-template-columns:72px minmax(0,1fr);gap:14px;align-items:start}
+.hero-more .ph,.hero-more .plate{aspect-ratio:1;border-radius:999px 999px 8px 8px}
+.hero-more .plate{background:var(--ink-2);padding:0}
+.hero-more .plate::before,.hero-more .plate div{display:none}
+.hero-more .kick{font-size:13px}
+.hero-more h3{font-size:16px;line-height:1.55;margin-top:4px;color:#fff}
+.hero-more a:hover h3{color:var(--yellow)}
+@media (max-width:1100px){.hero-more{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-more li:nth-child(2){border-inline-end:0;margin-inline-end:0;padding-inline-end:0}.hero-more li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.1)}}
+@media (max-width:900px){.hero-g{grid-template-columns:1fr;gap:28px;padding-top:28px}.hero-door{order:-1;width:min(100%,420px)}}
+@media (max-width:640px){.hero-door{width:86%;margin-bottom:calc(86vw*.34*.86 + 8px)}.hero-more{grid-template-columns:1fr}.hero-more li{border-inline-end:0;margin-inline-end:0;padding:18px 0;border-top:1px solid rgba(255,255,255,.1)}.hero-more li:first-child{border-top:0}.hero-f b{font-size:52px}}
+/* entrance: the door opens from its sill, then the swing turns out; text arrives by line */
+.js .hero:not(.go) .arch{clip-path:inset(100% 0 0 0 round 999px 999px 16px 16px)}
+.js .hero .arch{transition:clip-path 1.1s cubic-bezier(.7,0,.2,1)}
+.js .hero:not(.go) .hero-door .swing{transform:rotate(-90deg)}
+.js .hero .hero-door .swing{transition:transform .9s var(--swing) .85s}
+.js .hero:not(.go) .hero-t > *{opacity:0;transform:translateY(16px)}
+.js .hero .hero-t > *{transition:opacity .7s var(--ease),transform .8s var(--ease)}
+.js .hero .hero-t > :nth-child(2){transition-delay:.12s}.js .hero .hero-t > :nth-child(3){transition-delay:.22s}
+.js .hero .hero-t > :nth-child(4){transition-delay:.32s}.js .hero .hero-t > :nth-child(5){transition-delay:.42s}
 .fig-n{font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:1}
 .fig-l{font-size:15px;color:var(--mute);max-width:36ch}
 .stack{display:flex;flex-direction:column}
@@ -498,6 +545,7 @@ figure figcaption,.cap{font-size:13.5px;line-height:1.5;color:var(--mute);margin
 .js .rv.in{opacity:1;transform:none}
 
 @media (prefers-reduced-motion:reduce){
+  .js .hero .arch{clip-path:none!important}.js .hero .hero-t > *{opacity:1!important;transform:none!important}.js .hero .hero-door .swing{transform:none!important}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
   .js .rv{opacity:1;transform:none}
   .js .sec-h .tower .t-sw{transform:none}

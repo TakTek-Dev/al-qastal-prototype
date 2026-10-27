@@ -157,14 +157,25 @@ def home():
     if len(top) < 5:
         top += [s for s in S if s['corner'] in ('jerusalem', 'aqsa') and s['id'] != lead['id'] and s not in top][:5 - len(top)]
     fg = lead.get('figure')
-    first = f'''<section class="first" aria-label="الخبر الأول"><div class="wrap"><div class="grid">
-<article class="lead"><a href="{sh.link(lead["id"])}" tabindex="-1" aria-hidden="true">{sh.picture(lead, sizes="(max-width:1023px) 100vw, 60vw", eager=True, stamped=True)}</a>
-{sh.kick(lead)}<h1 class="hl"><a href="{sh.link(lead["id"])}">{esc(lead["headline"])}</a></h1>
-<p class="sf">{esc(lead.get("standfirst") or "")}</p>
-{f'<div class="fig"><b class="fig-n num">{sh.num(fg["value"])}</b><span class="fig-l">{esc(fg["label"])}</span></div>' if fg else ''}
-</article>
-<aside aria-label="أيضا من القدس"><ul class="stack">{"".join(row(s) for s in top[:5])}</ul></aside>
-</div></div></section>'''
+    ph = lead.get('photo')
+    bg = f'<div class="bg" aria-hidden="true">{sh.photo(ph, cls="", sizes="40vw")}</div>' if ph else ''
+    door_img = sh.photo(ph, cls='', sizes='(max-width:900px) 86vw, 500px', eager=True) if ph else ''
+    gk = sh.gate_of(lead)
+    place = f'<a href="{sh.glink(gk)}">{esc(lead["place"])}</a>' if gk else f'<span>{esc(lead.get("place") or "")}</span>'
+    more = ''.join(f'<li><a href="{sh.link(s["id"])}">{sh.picture(s, sizes="72px")}<div>{kick_plain(s)}<h3 class="hl">{esc(s["headline"])}</h3></div></a></li>' for s in top[:4])
+    first = f'''<section class="hero on-ink" aria-label="الخبر الأول" data-hero>{bg}
+<div class="wrap hero-g">
+<div class="hero-t">
+<p class="hero-k"><span class="first-tag">{sh.tower()}الخبر الأول</span>{place}<a href="{CORNER[lead["corner"]][0]}.html">{esc(CORNER[lead["corner"]][1])}</a>{sh.tdate(lead, long=True)}</p>
+<h1 class="hero-h"><a href="{sh.link(lead["id"])}">{esc(lead["headline"])}</a></h1>
+<p class="hero-s">{esc(lead.get("standfirst") or "")}</p>
+{f'<div class="hero-f"><b class="num">{sh.num(fg["value"])}</b><span>{esc(fg["label"])}</span></div>' if fg else ''}
+<p class="hero-cta"><a class="btn y" href="{sh.link(lead["id"])}">اقرأ الخبر{sh.icon("i-fwd")}</a><a class="btn" href="{sh.glink(gk) if gk else "gates.html"}">كل ما جرى في {esc(sh.GATE[gk][1] if gk else "القدس")}</a></p>
+</div>
+<a class="hero-door" href="{sh.link(lead["id"])}" tabindex="-1" aria-hidden="true"><span class="arch">{door_img}</span>{sh.swing()}{sh.stamp(lead)}</a>
+</div>
+<div class="wrap"><ul class="hero-more" aria-label="أيضا من القدس">{more}</ul></div>
+</section>'''
 
     # the gates: places with news, latest first
     seen = []
