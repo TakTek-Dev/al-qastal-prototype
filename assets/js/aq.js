@@ -15,6 +15,15 @@
     setTimeout(done, 2650);
   }
 
+  // ---------------------------------------------------------------- the first story's door opens once the page is seen
+  var hero = document.querySelector('[data-hero]');
+  if (hero) {
+    var open = function () { hero.classList.add('go'); };
+    if (d.classList.contains('js-load')) setTimeout(open, 1750);       // as the loader's doorway grows
+    else if (d.classList.contains('aq-arrive')) setTimeout(open, 380);  // after the page-to-page door
+    else requestAnimationFrame(function () { requestAnimationFrame(open); });
+  }
+
   // ---------------------------------------------------------------- page to page
   var nav = document.querySelector('.gate-nav .hole');
   if (d.classList.contains('aq-arrive') && nav) {

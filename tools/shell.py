@@ -9,7 +9,7 @@ import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = '6'                                       # bump on any asset change (Chrome caches hard)
+V = '7'                                       # bump on any asset change (Chrome caches hard)
 SITE = 'القسطل'
 BASE_URL = 'https://taktek-dev.github.io/al-qastal-prototype/'
 BASE_PATH = '/al-qastal-prototype/'
