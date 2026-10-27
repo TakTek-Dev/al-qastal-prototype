@@ -1,0 +1,80 @@
+{
+ "date": "2026-10-27",
+ "lead": "al-tur-building-demolished-ben-gvir",
+ "urgent": "ben-gvir-aqsa-election-eve",
+ "top": [
+  "aqsa-holiday-season-record",
+  "qalandiya-camp-raid-three-injured",
+  "silwan-excavations-tunnels",
+  "jerusalem-q3-2026-governorate-report",
+  "beit-hanina-155-arrested-permits"
+ ],
+ "drop": [],
+ "own": [],
+ "photo": {
+  "aqsa-holiday-season-record": "dome-of-rock-arches",
+  "ben-gvir-aqsa-election-eve": "qibli-facade",
+  "ben-gvir-netanyahu-aqsa-september": "aqsa-worshippers-walk",
+  "aqsa-saturday-petition-rosh-hashanah": "aqsa-friday-prayer",
+  "aqsa-october-incursions-moroccan-gate": "mughrabi-bridge",
+  "awqaf-september-26-incursions": "qibli-dawn",
+  "jerusalem-q3-2026-governorate-report": "skyline-panorama",
+  "yom-kippur-city-closed-27-hours": "al-wad-police-barrier",
+  "addameer-prisoner-totals-october": "ofer-prison",
+  "deaths-in-custody-92-atrash": "ofer-prison-entrance",
+  "child-prisoners-350": "prisoners-solidarity-ramallah",
+  "pps-70-detained-after-hebron": "prisoner-poster-nilin",
+  "martyr-ibrahim-al-hindi-damascus-gate": "damascus-gate-crowd",
+  "martyr-bahaa-al-natsheh-kafr-aqab": "kafr-aqab",
+  "martyr-khalil-al-rashq-shuafat-checkpoint": "shuafat-camp-wall",
+  "hebrew-haaretz-old-city-shops-closed": "cotton-market",
+  "hebrew-toi-ben-gvir-low-key-mount-visit": "chain-gate-street",
+  "hebrew-haaretz-east-jerusalem-no-vote": "silwan-valley",
+  "hebron-attack-west-bank-closure": "hebron-shuhada-2016",
+  "olive-harvest-record-attacks": "olive-harvest",
+  "election-closure-checkpoints": "qalandiya-turnstiles",
+  "gaza-ceasefire-in-name-only": "gaza-tents-rubble",
+  "gaza-children-killed-since-ceasefire": "gaza-displacement-camp",
+  "gaza-death-toll-74389": "gaza-mosque-jabalia",
+  "families-of-deportees-raided": "anata-wall",
+  "seven-banned-including-guard": "chain-gate-inside",
+  "ekrima-sabri-ban-renewed": "qibli-facade",
+  "raeda-saeed-prison-for-ban-breach": "damon-prison"
+ },
+ "no_photo": [
+  "martyr-amir-jaber-eleventh-of-2026",
+  "withheld-bodies-31-jerusalemites",
+  "gaza-girl-tihani-shalalfeh",
+  "gaza-nine-detainees-released",
+  "hebrew-toi-uk-e1-sanctions",
+  "jerusalem-villages-settler-attacks",
+  "biddu-raid-53-held",
+  "az-zaayyem-bedouin-demolitions"
+ ],
+ "gate_photo": {
+  "damascus-gate": "damascus-gate-steps",
+  "lions-gate": "lions-gate-outside",
+  "herods-gate": "herods-gate-dusk",
+  "jaffa-gate": "jaffa-gate-night",
+  "old-city": "al-wad-street",
+  "aqsa": "dome-of-rock-arches",
+  "silwan": "silwan-aerial",
+  "sheikh-jarrah": "sheikh-jarrah-aerial",
+  "chain-gate": "chain-gate-street",
+  "ezariya": "wall-eizariya",
+  "golden-gate": "golden-gate"
+ },
+ "focus": {},
+ "pictures": [
+  "skyline-sunset",
+  "aqsa-friday-prayer",
+  "cotton-market",
+  "sheikh-jarrah-tent",
+  "herods-gate-lights"
+ ],
+ "edit": {
+  "martyr-ibrahim-al-hindi-damascus-gate": {
+   "quote": null
+  }
+ }
+}

@@ -1,0 +1,2232 @@
+{
+ "date": "2026-10-27",
+ "lead": "al-tur-building-demolished-ben-gvir",
+ "urgent": "ben-gvir-aqsa-election-eve",
+ "top": [
+  "aqsa-holiday-season-record",
+  "qalandiya-camp-raid-three-injured",
+  "silwan-excavations-tunnels",
+  "jerusalem-q3-2026-governorate-report",
+  "beit-hanina-155-arrested-permits"
+ ],
+ "stories": [
+  {
+   "id": "al-tur-building-demolished-ben-gvir",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-06",
+   "place": "al-Tur (Mount of Olives)",
+   "gate": "al-tur",
+   "headline": "Five-storey building razed in al-Tur as Ben-Gvir watches from a bulldozer; 69 people displaced",
+   "standfirst": "OCHA called it the largest displacement from a single demolition in East Jerusalem since it began recording in 2009.",
+   "body": [
+    "Israeli police, Border Police and municipal crews sealed off a five-storey residential building in al-Tur at about 3:30 a.m. on 6 October and demolished it, according to the Wadi Hilweh Information Center. The building had stood since 2009 and housed 11 families, among them the Khalfawi, Abu Sbitan, Ashour, Joudeh and Sandouka families.",
+    "OCHA put the number displaced at 69 Palestinians, including 36 children, and said residents were prevented from retrieving their belongings. The Palestine News Agency, cited by Arab News, described the building as having 10 apartments and about 70 residents.",
+    "National Security Minister Itamar Ben-Gvir attended the demolition, climbed onto a bulldozer and filmed the building coming down. The Wadi Hilweh centre said the stated grounds were a final Supreme Court ruling, about a month earlier, citing the lack of a permit and plans for a school on the site.",
+    "The Jerusalem Governorate described the demolitions as election stunts ahead of the 27 October Knesset vote, and the Arab League condemned Ben-Gvir's participation. According to the Palestinian Authority, 427 demolition and land-levelling operations had been carried out in Jerusalem since January."
+   ],
+   "figure": {
+    "value": "69",
+    "label": "people displaced, 36 of them children (OCHA)"
+   },
+   "quote": {
+    "text": "election spectacles and displays of force",
+    "who": "Jerusalem Governorate",
+    "role": "Palestinian governorate statement",
+    "date": "2026-10-06"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026",
+     "date": "2026-10-15"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80078/details-al-tur-building-demolished-and-75-jerusalemites-displaced-at-dawn-ben-gvir-on-the-bulldozer-amid-escalating-targeting-of-residential-buildings-in-jerusalem",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "Arab News",
+     "url": "https://www.arabnews.com/middle-east/palestinian-authority-condemns-ben-gvir-over-home-demolition-stunt-in-jerusalem-3004913",
+     "date": "2026-10-06"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175605",
+     "date": "2026-10-06"
+    }
+   ],
+   "photo": "al-tur",
+   "photo_own": false
+  },
+  {
+   "id": "al-tur-abdullah-family-home",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-13",
+   "place": "al-Tur",
+   "gate": "al-tur",
+   "headline": "A week after the tower, a second al-Tur home falls: 16 people, 10 of them children, displaced",
+   "standfirst": "The Abdullah family began demolishing their own home on 10 October; municipal bulldozers finished the job.",
+   "body": [
+    "The Abdullah family home in al-Tur, which had stood for about 20 years and housed 16 people, was partly demolished by the family itself from Saturday 10 October and then completed by Israeli bulldozers, the Wadi Hilweh Information Center reported.",
+    "OCHA recorded the same case on 13 October: three Palestinian refugee households, 16 people including 10 children, displaced after their residential building was partly self-demolished and the rest demolished by the Israeli authorities.",
+    "OCHA says that 668 of the roughly 1,790 Palestinians displaced by permit-related demolitions across the West Bank in 2026 were in East Jerusalem, about 37 per cent."
+   ],
+   "figure": {
+    "value": "668",
+    "label": "Palestinians displaced by demolitions in East Jerusalem in 2026 (OCHA)"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "al-tur",
+   "photo_own": false
+  },
+  {
+   "id": "silwan-wadi-qaddoum-salaymeh-homes",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-13",
+   "place": "Wadi Qaddoum, Silwan",
+   "gate": "silwan",
+   "headline": "Municipal bulldozers demolish two Salaymeh family homes in Silwan's Wadi Qaddoum",
+   "standfirst": "The homes, built in 2002, housed eight people.",
+   "body": [
+    "Jerusalem municipality bulldozers demolished two homes in the Wadi Qaddoum area of Silwan belonging to Hani al-Salaymeh and his father, the Wadi Hilweh Information Center reported.",
+    "The two homes covered about 160 square metres in total, had been built in 2002 and were home to eight people."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "silwan-aerial",
+   "photo_own": false
+  },
+  {
+   "id": "beit-hanina-rajabi-self-demolitions",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-13",
+   "place": "Beit Hanina",
+   "gate": "beit-hanina",
+   "headline": "Two al-Rajabi homes in Beit Hanina demolished by their own owners",
+   "standfirst": "One belonged to a man married a year ago whose wife is pregnant.",
+   "body": [
+    "Alaa Issam al-Rajabi demolished his own 60-square-metre home in Beit Hanina, which had stood since 2017, the Wadi Hilweh Information Center reported. He married about a year ago and his wife is pregnant.",
+    "Fadl al-Rajabi also demolished his own 70-square-metre home in Beit Hanina, built in 2010 and home to seven people."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "beit-hanina",
+   "photo_own": false
+  },
+  {
+   "id": "ras-al-amud-ghaith-self-demolition",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-04",
+   "place": "Ras al-Amud, Silwan",
+   "gate": "ras-al-amud",
+   "headline": "Murad Ghaith forced to demolish his own home in Ras al-Amud",
+   "standfirst": "His family is also barred from living in the floor below.",
+   "body": [
+    "Israeli authorities forced Jerusalemite Murad Ghaith to demolish his own home in the Ras al-Amud neighbourhood of Silwan, south of Al-Aqsa Mosque, on Sunday 4 October, WAFA reported, citing local sources.",
+    "The home is the upper floor of his family's two-storey building. He and his family have also been barred from living in the ground-floor home, so neither unit can be used.",
+    "WAFA said he had been threatened with a forced demolition by the municipality and with the costs and fines that would follow."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175441",
+     "date": "2026-10-04"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80075/self-demolition-continues-in-jerusalem-jerusalemites-demolish-their-homes-following-municipal-orders",
+     "date": "2026-10-05"
+    }
+   ],
+   "photo": "ras-al-amud",
+   "photo_own": false
+  },
+  {
+   "id": "sur-baher-two-self-demolitions",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-05",
+   "place": "Sur Baher",
+   "gate": "sur-baher",
+   "headline": "Two Sur Baher families demolish homes that stood since 2001",
+   "standfirst": "One of the homes, about 70 square metres, housed 13 people.",
+   "body": [
+    "Sabri Daoud demolished his own home in Sur Baher, southeast of Jerusalem, after municipal orders citing construction without a permit, the Wadi Hilweh Information Center reported on 5 October. The home was about 70 square metres and housed 13 people.",
+    "Sultan al-Hajj also demolished the roughly 40-square-metre home he shared with his wife.",
+    "Both homes were built in 2001. Daoud said he went through years of court proceedings and paid fines before the final order was issued."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80075/self-demolition-continues-in-jerusalem-jerusalemites-demolish-their-homes-following-municipal-orders",
+     "date": "2026-10-05"
+    }
+   ],
+   "photo": "sur-baher",
+   "photo_own": false
+  },
+  {
+   "id": "beit-hanina-abu-mayaleh-apartments",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-09-07",
+   "place": "Beit Hanina",
+   "gate": "beit-hanina",
+   "headline": "Three Abu Mayaleh family apartments demolished in Beit Hanina, leaving about 21 people homeless",
+   "standfirst": "The family says it was given no chance to remove its belongings.",
+   "body": [
+    "Israeli municipal bulldozers, backed by police and special forces, demolished three apartments owned by the Abu Mayaleh family in Beit Hanina early on Monday 7 September, the Wadi Hilweh Information Center reported.",
+    "Marwan Abu Mayaleh said his own home and those of his mother and brother were destroyed. The building's three apartments totalled about 200 square metres and housed about 21 people, including children; the family had lived there for some 20 years.",
+    "The municipality had issued numerous building-violation notices before the demolition. The family says it was fined and agreed to pay."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "Where are we supposed to go? Rents are high, and we have nowhere else to live.",
+    "who": "Marwan Abu Mayaleh",
+    "role": "Beit Hanina resident",
+    "date": "2026-09-07"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80058",
+     "date": "2026-09-07"
+    }
+   ],
+   "photo": "beit-hanina",
+   "photo_own": false
+  },
+  {
+   "id": "jabal-mukabber-obeidat-self-demolition",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-09-07",
+   "place": "Jabal al-Mukabber",
+   "gate": "jabal-mukabber",
+   "headline": "After three fines totalling 101,000 shekels, Shadi Obeidat demolishes his Jabal al-Mukabber home",
+   "standfirst": "He says he was close to obtaining a permit when the final order came.",
+   "body": [
+    "Shadi Obeidat was forced to demolish his own 62-square-metre house in Jabal al-Mukabber, which he built in 2009 and shared with his wife and three children, the Wadi Hilweh Information Center reported.",
+    "He had been fined three times, 38,000, 35,000 and 28,000 shekels, and had applied through a planning and licensing scheme. He was close to receiving a building permit when a final demolition order was issued."
+   ],
+   "figure": {
+    "value": "101,000",
+    "label": "shekels in fines before the demolition order"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80058",
+     "date": "2026-09-07"
+    }
+   ],
+   "photo": "jabal-mukabber",
+   "photo_own": false
+  },
+  {
+   "id": "silwan-excavations-tunnels",
+   "corner": "jerusalem",
+   "kind": "report",
+   "date": "2026-10-25",
+   "place": "Wadi Hilweh, Silwan",
+   "gate": "silwan",
+   "headline": "Governorate warns tunnels under Wadi Hilweh are cracking Palestinian homes above",
+   "standfirst": "Digging stretches across the 'Holy Basin' from Silwan toward Sheikh Jarrah.",
+   "body": [
+    "Israeli authorities and settler organisations are continuing excavations and tunnel construction beneath Silwan, particularly around Wadi Hilweh, the Jerusalem Governorate said on 25 October, as reported by WAFA.",
+    "The governorate said the works extend across the area between the Old City and the Mount of Olives, including Silwan, Wadi Hilweh, al-Bustan and Wadi al-Rababa, and reach north toward Sheikh Jarrah.",
+    "It said cracks, collapses and structural damage have been documented in homes above the excavation sites, and that the digs focus on layers linked to the 10th century BCE while other periods are sidelined and sites are given biblical names."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "the excavations threaten not only the historical identity of the city but also the safety of Palestinian citizens",
+    "who": "Jerusalem Governorate",
+    "role": "Palestinian governorate statement",
+    "date": "2026-10-25"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176255",
+     "date": "2026-10-25"
+    }
+   ],
+   "photo": "silwan-valley",
+   "photo_own": false
+  },
+  {
+   "id": "al-bustan-kings-garden",
+   "corner": "jerusalem",
+   "kind": "report",
+   "date": "2026-10-13",
+   "place": "al-Bustan, Silwan",
+   "gate": "silwan",
+   "headline": "In al-Bustan, 1,500 residents face a 'King's Garden' park planned over their homes",
+   "standfirst": "A large share of the neighbourhood's buildings has been slated for demolition by the municipality.",
+   "body": [
+    "Al-Bustan, inside Silwan just outside the Old City walls, has around 1,500 residents, and a large portion of its buildings have been slated for demolition by the local authority, The Journal reported from East Jerusalem.",
+    "The Jerusalem municipality plans a biblical park and tourist attraction there called the King's Garden. Residents say demolitions have increased since 7 October 2023 and that permits are very hard to obtain. The neighbourhood's social centre has already been demolished.",
+    "In nearby Batn al-Hawa, Israeli forces evicted 15 Palestinian households in March 2026, displacing 70 people, according to OCHA figures cited by The Journal; the settler organisation Ateret Cohanim has pursued property claims there since 2015.",
+    "Kutyabah Odeh, 32, a social worker in al-Bustan, said his family has lost two homes in Batn al-Hawa and one unit of their al-Bustan building has already been demolished."
+   ],
+   "figure": {
+    "value": "1,500",
+    "label": "residents of al-Bustan"
+   },
+   "quote": {
+    "text": "We are paying the price for being Palestinians after 7 October",
+    "who": "Kutyabah Odeh",
+    "role": "social worker and community leader, al-Bustan",
+    "date": "2026-10-13"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "The Journal",
+     "url": "https://www.thejournal.ie/ireland-and-palestine-2-7190763-Oct2026/",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "silwan-wadi-hilweh",
+   "photo_own": false
+  },
+  {
+   "id": "qalandiya-camp-raid-three-injured",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-26",
+   "place": "Qalandiya refugee camp",
+   "gate": "qalandiya",
+   "headline": "Three injured, including a 17-year-old, as Israeli forces raid Qalandiya camp",
+   "standfirst": "Snipers took up positions on rooftops; the road to Qalandiya was closed during the raid.",
+   "body": [
+    "Israeli forces raided Qalandiya refugee camp, north of Jerusalem, on the evening of Monday 26 October, posting snipers on rooftops, breaking open residents' doors and firing tear gas and stun grenades, WAFA reported, citing local sources and the Jerusalem Governorate.",
+    "Clashes broke out after soldiers fired stun grenades at residents leaving the camp mosque after the sunset prayer. The Palestinian Red Crescent said the number injured rose to three, including a 17-year-old boy shot in the foot with live ammunition; the governorate reported one person hit by rubber-coated metal bullets.",
+    "Local sources said soldiers detained one Palestinian from the camp. The road to Qalandiya was closed during the raid."
+   ],
+   "figure": {
+    "value": "3",
+    "label": "injured in the Qalandiya raid (PRCS)"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176357",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176361",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176360",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "qalandiya-queue",
+   "photo_own": false
+  },
+  {
+   "id": "beit-hanina-155-arrested-permits",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-14",
+   "place": "Beit Hanina",
+   "gate": "beit-hanina",
+   "headline": "Police arrest 155 West Bank ID holders in Beit Hanina sweep",
+   "standfirst": "Those detained were taken for questioning ahead of deportation to the West Bank.",
+   "body": [
+    "Israeli police arrested 155 Palestinians holding West Bank identity cards during an operation across several complexes in Beit Hanina, north of Jerusalem, the Wadi Hilweh Information Center reported on 14 October.",
+    "Police also arrested two people on suspicion of harbouring Palestinians who had entered Jerusalem without permits.",
+    "The centre said tens of thousands of Palestinians are currently denied access to Jerusalem for lack of entry permits."
+   ],
+   "figure": {
+    "value": "155",
+    "label": "West Bank ID holders arrested in Beit Hanina"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80080/israeli-police-arrest-155-palestinians-holding-west-bank-id-cards-in-beit-hanina",
+     "date": "2026-10-14"
+    }
+   ],
+   "photo": "beit-hanina",
+   "photo_own": false
+  },
+  {
+   "id": "anata-shuafat-siege-80000",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-09-08",
+   "place": "Anata and Shuafat refugee camp",
+   "gate": "shuafat",
+   "headline": "Siege on Anata and Shuafat camp hits 80,000 residents; about 100 detained",
+   "standfirst": "Roads and entrances were closed overnight, stranding people in their cars for hours.",
+   "body": [
+    "Israeli forces imposed a tight siege on the town of Anata and Shuafat refugee camp, northeast of Jerusalem, from the night of 7 September, closing roads and entrances and restricting movement for around 80,000 residents, WAFA reported.",
+    "The Jerusalem Governorate estimated that about 100 Palestinians, including one woman, had been detained since the operation began. Forces raided dozens of homes, interrogating and searching residents, and seized several vehicles.",
+    "Schools and kindergartens were disrupted and shops kept closed, and dozens of people spent hours overnight in their vehicles after the roads were shut."
+   ],
+   "figure": {
+    "value": "80,000",
+    "label": "residents under siege in Anata and Shuafat camp"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174549",
+     "date": "2026-09-08"
+    }
+   ],
+   "photo": "shuafat-camp-wall",
+   "photo_own": false
+  },
+  {
+   "id": "biddu-raid-53-held",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-09-21",
+   "place": "Biddu",
+   "gate": "other",
+   "headline": "At least 53 young men held in a seized home turned interrogation centre in Biddu",
+   "standfirst": "The raid followed a 20 September shooting that killed an Israeli settler; a family apartment was later sealed.",
+   "body": [
+    "Israeli forces raided Biddu, northwest of Jerusalem, and arrested dozens of Palestinians, mostly young men, QNA reported, citing WAFA. The Jerusalem Governorate said at least 53 were being held in an interrogation centre set up inside a house seized during the raid.",
+    "On 24 September an apartment in Biddu was sealed on punitive grounds, displacing a family of five including three children, OCHA reported. The family was related to a man arrested over the 20 September shooting attack that killed an Israeli settler."
+   ],
+   "figure": {
+    "value": "53",
+    "label": "young men held in a seized home in Biddu"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/News-Area/News/2026-9/21/israeli-occupation-arrests-dozens-of-palestinians",
+     "date": "2026-09-21"
+    },
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026",
+     "date": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "id": "families-of-deportees-raided",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-10-24",
+   "place": "Anata, the Old City, al-Sowaneh and Sur Baher",
+   "gate": "anata",
+   "headline": "Families of prisoners deported to Turkey raided, blindfolded and made to phone their exiled relatives",
+   "standfirst": "The raids came the day after the Hebron attack that killed two Israeli soldiers.",
+   "body": [
+    "Israeli forces raided the homes of families of released prisoners who were later deported to Turkey, in Anata, the Old City, al-Sowaneh and Sur Baher, the Wadi Hilweh Information Center reported on 24 October.",
+    "Families named include the Abu Qteish, al-Akari, Issa and al-Jo'beh families in Anata, the al-Jo'beh family in the Old City, the Abu Asab family in al-Sowaneh and the Attoun family in Sur Baher. Some members, including women, elderly people and children, were blindfolded and held in a single room.",
+    "Family members were pressured to call deported relatives on their own phones and were held responsible for the Hebron operation. In al-Sowaneh, former prisoner Yaqoub Abu Asab was interrogated during a raid of about an hour and a half after midnight."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80084/raids-detentions-and-forced-phone-calls-the-occupation-targets-the-families-of-released-prisoners-and-people-deported-from-jerusalem",
+     "date": "2026-10-24"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80083/storming-of-the-abu-asab-family-s-building-in-the-al-sowaneh-neighborhood-with-family-members-detained-and-interrogated",
+     "date": "2026-10-24"
+    }
+   ],
+   "photo": "anata-wall",
+   "photo_own": false
+  },
+  {
+   "id": "jerusalem-q3-2026-governorate-report",
+   "corner": "jerusalem",
+   "kind": "report",
+   "date": "2026-10-01",
+   "place": "Jerusalem governorate",
+   "gate": "other",
+   "headline": "Third quarter in Jerusalem: six killed, 357 arrests, 139 demolitions and nearly 28,000 Al-Aqsa incursions",
+   "standfirst": "The Jerusalem Governorate's Q3 2026 tally also counts 73 expulsion orders, most of them from Al-Aqsa.",
+   "body": [
+    "The Jerusalem Governorate recorded six Palestinians killed in the third quarter of 2026, 357 arrests and 27,830 settler incursions into Al-Aqsa Mosque, QNA reported on 1 October.",
+    "It counted 139 demolition and land-levelling operations: 35 forced self-demolitions, 96 demolitions by Israeli machinery and 8 land-levelling operations.",
+    "The governorate also documented 73 expulsion orders, most of them barring people from Al-Aqsa Mosque."
+   ],
+   "figure": {
+    "value": "139",
+    "label": "demolition and land-levelling operations, Q3 2026"
+   },
+   "quote": {
+    "text": "the escalation was not limited to the growing number of settlers storming the mosque",
+    "who": "Jerusalem Governorate",
+    "role": "quarterly report",
+    "date": "2026-10-01"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
+     "date": "2026-10-01"
+    }
+   ],
+   "photo": "skyline-panorama",
+   "photo_own": false
+  },
+  {
+   "id": "yom-kippur-city-closed-27-hours",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-09-21",
+   "place": "East Jerusalem",
+   "gate": "old-city",
+   "headline": "Yom Kippur: East Jerusalem neighbourhoods sealed for 27 hours as 1,649 settlers enter Al-Aqsa",
+   "standfirst": "Tear gas set fires near shops in Sur Baher; settlers fired into the air in Silwan.",
+   "body": [
+    "For about 27 hours over Yom Kippur, Israeli forces closed streets, junctions and the entrances of many Jerusalem neighbourhoods, especially those near settlements, using barriers, concrete blocks and checkpoints, the Wadi Hilweh Information Center reported. Most schools closed.",
+    "At Al-Aqsa, 686 settlers entered on the day itself and 1,649 over the two days of the holiday, according to the centre. Worshippers were told to come back after the midday entries ended, and access was restricted mostly to elderly people.",
+    "In Sur Baher, tear gas canisters fired by security forces caused fires near shops and homes. Settlers attacked Jerusalemites' vehicles in Umm Tuba and attacked young men in Silwan, firing live rounds into the air."
+   ],
+   "figure": {
+    "value": "1,649",
+    "label": "settlers in Al-Aqsa over Yom Kippur"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80065",
+     "date": "2026-09-21"
+    }
+   ],
+   "photo": "al-wad-police-barrier",
+   "photo_own": false
+  },
+  {
+   "id": "az-zaayyem-bedouin-demolitions",
+   "corner": "jerusalem",
+   "kind": "news",
+   "date": "2026-09-23",
+   "place": "Az Za'ayyem",
+   "gate": "other",
+   "headline": "20 structures demolished in Az Za'ayyem; two families displaced for the third time in a year",
+   "standfirst": "Six Bedouin households, 33 people including 20 children, lost their homes east of Jerusalem.",
+   "body": [
+    "Israeli authorities demolished 20 residential and agricultural structures in the Bedouin community of Az Za'ayyem on 23 September, displacing six households of 33 people, including 20 children, OCHA reported.",
+    "Two of the households were displaced for the third time in less than a year. About 300 dunums of farmland and water pipelines were also damaged.",
+    "OCHA says 218 structures have been demolished in Az Za'ayyem since 2009, 44 of them in 2026, out of more than 560 across 18 Bedouin communities in the area."
+   ],
+   "figure": {
+    "value": "33",
+    "label": "people displaced, 20 of them children"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-2-october-2026",
+     "date": "2026-10-02"
+    }
+   ]
+  },
+  {
+   "id": "aqsa-holiday-season-record",
+   "corner": "aqsa",
+   "kind": "report",
+   "date": "2026-10-02",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Holiday season at Al-Aqsa: over 11,000 settlers, with 2,468 on a single day of Sukkot",
+   "standfirst": "Groups prostrated, raised an Israeli flag and performed Four Species rituals while Muslim entry was limited to the elderly.",
+   "body": [
+    "The Wadi Hilweh Information Center counted 11,692 settlers entering Al-Aqsa over the Jewish holiday season: 962 at Rosh Hashanah, 1,649 at Yom Kippur and 9,081 over five days of Sukkot, from 27 September to 1 October. The Jerusalem Governorate's own count for the season was 11,409, bringing its 2026 total to 52,277.",
+    "The busiest day was 30 September, with 2,468 entries. The centre said the Sukkot total compared with 7,474 over the same period last year. Groups entered through Bab al-Maghariba and left through Bab al-Silsila along a police-designated route.",
+    "Rituals included group prostration toward the Dome of the Rock, the Four Species, and the raising of an Israeli flag. Knesset member Zvi Sukkot called in a speech inside the compound for thanksgiving offerings to be made there.",
+    "From dawn until shortly before the afternoon prayer, Muslim entry was restricted to a small number of men over 60 or 65, who were confined to the covered prayer halls. The Arab League condemned the incursions on 1 October."
+   ],
+   "figure": {
+    "value": "11,692",
+    "label": "settler entries over the holiday season (Wadi Hilweh centre)"
+   },
+   "quote": {
+    "text": "the storming of the blessed Al-Aqsa Mosque by more than 1,300 Israeli settlers",
+    "who": "Arab League General Secretariat",
+    "role": "statement",
+    "date": "2026-10-01"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80073/the-holiday-season-at-al-aqsa-over-11-000-settlers-and-public-religious-rituals-extending-from-inside-the-mosque-to-its-surroundings",
+     "date": "2026-10-02"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80072",
+     "date": "2026-10-01"
+    },
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/News-Area/News/2026-10/5/dozens-of-settlers-storm-al-aqsa-mosque-under-israeli-occupation-forces-protection",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/news/news-details?id=arab-league-condemns-settler-incursions-into-al-aqsa-mosque-calls-for-international-action-to-halt-attacks&date=1%2F10%2F2026",
+     "date": "2026-10-01"
+    }
+   ],
+   "photo": "dome-of-rock-arches",
+   "photo_own": false
+  },
+  {
+   "id": "ben-gvir-aqsa-election-eve",
+   "corner": "aqsa",
+   "kind": "news",
+   "date": "2026-10-26",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "On election eve, Ben-Gvir enters Al-Aqsa unannounced with Moshe Feiglin",
+   "standfirst": "Qatar and Egypt condemned the visit; Times of Israel said he kept it low-key.",
+   "body": [
+    "National Security Minister Itamar Ben-Gvir entered the Al-Aqsa compound on Monday 26 October, a day before Israel's general election, under heavy police protection and without announcing the visit in advance, Anadolu reported via TRT World. The Jerusalem Governorate said he was accompanied by Moshe Feiglin and a group of settlers.",
+    "According to Israel's Channel 7, cited by Anadolu, he also prayed at the Western Wall. The Times of Israel, citing Ynet, said he made little fanfare about the visit, possibly so as not to put off ultra-Orthodox voters.",
+    "Qatar's foreign ministry condemned the visit, and Egypt's foreign ministry rejected any attempt to change the compound's status quo or divide it in time or space. It was Ben-Gvir's latest visit after 28 September, when he went with Defence Minister Israel Katz during Sukkot."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "an unacceptable provocation to the sentiments of millions of Muslims around the world",
+    "who": "Qatar Ministry of Foreign Affairs",
+    "role": "statement",
+    "date": "2026-10-26"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "TRT World (Anadolu)",
+     "url": "https://www.trtworld.com/article/45fb4b12173f",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "Democrata",
+     "url": "https://www.democrata.es/en/international/ben-gvir-bursts-into-the-temple-mount-in-the-run-up-to-the-elections-in-israel/",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176365",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176364",
+     "date": "2026-10-26"
+    },
+    {
+     "name": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/from-the-western-wall-to-tel-aviv-bars-candidates-give-last-push-ahead-of-election/",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "qibli-facade",
+   "photo_own": false
+  },
+  {
+   "id": "ben-gvir-netanyahu-aqsa-september",
+   "corner": "aqsa",
+   "kind": "news",
+   "date": "2026-09-20",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Ben-Gvir storms Al-Aqsa before Yom Kippur as Netanyahu tours the tunnels beneath",
+   "standfirst": "Jordan, Saudi Arabia, Qatar, Kuwait and Egypt condemned the incursion.",
+   "body": [
+    "Itamar Ben-Gvir entered Al-Aqsa with groups of settlers under police protection on 20 September, WAFA reported. Anadolu said 992 Israelis entered the compound ahead of Yom Kippur.",
+    "Hamas said Prime Minister Benjamin Netanyahu had entered the tunnels and excavation sites beneath Al-Aqsa and the Buraq Wall, calling it an assault on the mosque's identity.",
+    "Jordan's foreign ministry called the incursion a serious violation of the historical and legal status quo; Saudi Arabia, Qatar, Kuwait and Egypt also condemned it."
+   ],
+   "figure": {
+    "value": "992",
+    "label": "Israelis entered the compound ahead of Yom Kippur"
+   },
+   "quote": {
+    "text": "Israel has no sovereignty over occupied Jerusalem or its Islamic and Christian holy sites.",
+    "who": "Fuad Majali",
+    "role": "spokesperson, Jordanian Ministry of Foreign Affairs",
+    "date": "2026-09-20"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174935",
+     "date": "2026-09-20"
+    },
+    {
+     "name": "A News (Anadolu)",
+     "url": "https://www.anews.com.tr/world/2026/09/21/arab-states-condemn-ben-gvirs-storming-of-al-aqsa-as-hamas-denounces-netanyahus-entry-into-holy-site",
+     "date": "2026-09-21"
+    }
+   ],
+   "photo": "aqsa-worshippers-walk",
+   "photo_own": false
+  },
+  {
+   "id": "aqsa-saturday-petition-rosh-hashanah",
+   "corner": "aqsa",
+   "kind": "news",
+   "date": "2026-09-15",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Temple groups petition Supreme Court to open Al-Aqsa to Jews on Saturdays",
+   "standfirst": "At Rosh Hashanah, shofars were sounded at the compound for the sixth year running, the Wadi Hilweh centre says.",
+   "body": [
+    "Israel's Supreme Court was due on 16 September to hear a petition by the Shofar Betzion organisation and the Public Committee for Opening the Temple Mount on Saturdays, seeking to end the ban on Jewish visits on Saturdays and allow prayer in the courtyards that day, the Wadi Hilweh Information Center reported.",
+    "At Rosh Hashanah, 417 settlers entered on the eve and 545 on the first day, despite the usual pause in incursions on Fridays and Saturdays. Police let more than 200 gather at once in the eastern area for group prayers.",
+    "Shofars were also sounded outside the eastern wall near the Bab al-Rahma cemetery. At dawn, men under about 60 to 65 were barred from entering for prayer."
+   ],
+   "figure": {
+    "value": "545",
+    "label": "settlers on the first day of Rosh Hashanah"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80062",
+     "date": "2026-09-15"
+    }
+   ],
+   "photo": "aqsa-friday-prayer",
+   "photo_own": false
+  },
+  {
+   "id": "aqsa-october-incursions-moroccan-gate",
+   "corner": "aqsa",
+   "kind": "news",
+   "date": "2026-10-13",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "dung-gate",
+   "headline": "After the holidays, incursions continue: 315 on 5 October, 133 on 13 October",
+   "standfirst": "Groups enter through Bab al-Maghariba, whose keys Israel has held since 1967.",
+   "body": [
+    "On 5 October, 145 settlers entered Al-Aqsa through the Moroccan Gate in the morning and afternoon sessions, and a further 170 entered as 'tourists', under heavy police protection, WAFA reported.",
+    "On 13 October, 133 settlers entered the courtyards through the same gate and the authorities imposed restrictions on worshippers, QNA reported, citing the Jerusalem Governorate."
+   ],
+   "figure": {
+    "value": "315",
+    "label": "entries on 5 October, including 170 as 'tourists'"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175518",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/news/news-details?id=dozens-of-israeli-colonists-storm-al-aqsa-mosque&date=13%2F10%2F2026",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "mughrabi-bridge",
+   "photo_own": false
+  },
+  {
+   "id": "awqaf-september-26-incursions",
+   "corner": "aqsa",
+   "kind": "report",
+   "date": "2026-10-06",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Awqaf Ministry: 26 incursions into Al-Aqsa in September",
+   "standfirst": "The ministry also counted 150 bans on the call to prayer at Hebron's Ibrahimi Mosque.",
+   "body": [
+    "The Palestinian Ministry of Awqaf and Religious Affairs recorded 26 incursions into Al-Aqsa Mosque during September, WAFA reported.",
+    "It also documented 150 bans on the call to prayer at the Ibrahimi Mosque in Hebron and six days on which that mosque was closed entirely for Jewish holidays."
+   ],
+   "figure": {
+    "value": "26",
+    "label": "incursions into Al-Aqsa in September"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175560",
+     "date": "2026-10-06"
+    }
+   ],
+   "photo": "qibli-dawn",
+   "photo_own": false
+  },
+  {
+   "id": "addameer-prisoner-totals-october",
+   "corner": "prisoners",
+   "kind": "report",
+   "date": "2026-10-05",
+   "place": "Israeli prisons",
+   "gate": "other",
+   "headline": "9,300 Palestinians in Israeli prisons, 3,101 of them held without charge",
+   "standfirst": "Addameer's latest count includes 350 children and 91 women.",
+   "body": [
+    "Addameer counted about 9,300 Palestinian political prisoners in Israeli prisons as of 5 October 2026.",
+    "They include 3,101 administrative detainees held without charge or trial, 1,419 Gaza detainees classified by Israel as 'unlawful combatants', 350 children, 91 women and 118 prisoners serving life sentences.",
+    "In a report the next day, Addameer said administrative detainees and 'unlawful combatants' together account for nearly half of all Palestinian prisoners."
+   ],
+   "figure": {
+    "value": "3,101",
+    "label": "administrative detainees"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Addameer",
+     "url": "https://addameer.ps/node/5760",
+     "date": "2026-10-05"
+    },
+    {
+     "name": "Addameer",
+     "url": "https://addameer.ps/news/5763",
+     "date": "2026-10-06"
+    }
+   ],
+   "photo": "ofer-prison",
+   "photo_own": false
+  },
+  {
+   "id": "deaths-in-custody-92-atrash",
+   "corner": "prisoners",
+   "kind": "prisoner",
+   "date": "2026-09-17",
+   "place": "Ofer Prison",
+   "gate": "other",
+   "headline": "Moataz al-Atrash, 21, dies in Ofer: 92 deaths in Israeli custody since the war began",
+   "standfirst": "He had been held in administrative detention since late last year; relatives say he had no health problems before arrest.",
+   "body": [
+    "Moataz al-Atrash, 21, from the West Bank, died at Ofer Prison while held in administrative detention without trial, the Commission of Detainees' Affairs and the Palestinian Prisoners' Society announced, Haaretz reported.",
+    "His death brought to 92 the number of Palestinians known to have died in Israeli prisons since October 2023, including 53 from Gaza, according to Addameer, which says the true figure is probably higher.",
+    "Addameer counts 329 deaths in Israeli detention since 1967 and has documented 41 cases of sexual violence against detainees."
+   ],
+   "figure": {
+    "value": "92",
+    "label": "deaths in Israeli custody since October 2023 (Addameer)"
+   },
+   "quote": {
+    "text": "Since 1967, a total of 329 Palestinian prisoners have died in Israeli detention.",
+    "who": "Addameer",
+    "role": "prisoner support and human rights association",
+    "date": "2026-10-06"
+   },
+   "person": {
+    "name": "Moataz al-Atrash",
+    "age": 21,
+    "status": "martyr",
+    "sentence": "administrative detention",
+    "prison": "Ofer",
+    "arrested": null,
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Haaretz",
+     "url": "https://www.haaretz.com/israel-news/israel-security/2026-09-17/ty-article/.premium/palestinian-detainee-dies-as-deaths-in-israeli-prisons-during-war-rise-to-92/000001a0-addf-dea8-afe0-edff47ea0000",
+     "date": "2026-09-17"
+    },
+    {
+     "name": "Addameer",
+     "url": "https://addameer.ps/news/5763",
+     "date": "2026-10-06"
+    }
+   ],
+   "photo": "ofer-prison-entrance",
+   "photo_own": false
+  },
+  {
+   "id": "issawiya-child-ali-mahmoud-sentenced",
+   "corner": "prisoners",
+   "kind": "prisoner",
+   "date": "2026-10-13",
+   "place": "Issawiya",
+   "gate": "issawiya",
+   "headline": "Issawiya boy, 15, sentenced to six months after nearly a year under house arrest",
+   "standfirst": "A second Issawiya teenager, 16, had his detention extended.",
+   "body": [
+    "An Israeli court sentenced Ali Mahmoud, 15, from Issawiya, northeast of Jerusalem, to six months of actual imprisonment, WAFA reported on 13 October.",
+    "He was detained on 15 October 2025 and released on 30 December 2025 under house arrest until his case was decided, according to local sources.",
+    "The Wadi Hilweh Information Center reported that another Issawiya boy, Maher Zidan, 16, was arrested and his detention extended. Israeli forces also raided al-Tur with military vehicles the same day."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Ali Mahmoud",
+    "age": 15,
+    "status": "child prisoner",
+    "sentence": "6 months",
+    "prison": null,
+    "arrested": "2025-10-15",
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175826",
+     "date": "2026-10-13"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "issawiya-mosque",
+   "photo_own": false
+  },
+  {
+   "id": "rasem-obeidat-administrative-detention",
+   "corner": "prisoners",
+   "kind": "prisoner",
+   "date": "2026-10-02",
+   "place": "Jabal al-Mukabber",
+   "gate": "jabal-mukabber",
+   "headline": "Writer Rasem Obeidat, 67, given six months' administrative detention; two Waqf staff renewed",
+   "standfirst": "His family says it is his eighth arrest in five years.",
+   "body": [
+    "Rasem Obeidat, 67, a writer and political analyst from Jabal al-Mukabber, was arrested in a dawn raid on his home on 27 September and placed under six months of administrative detention, the Wadi Hilweh Information Center reported. His family says it was his eighth arrest in five years.",
+    "The administrative detention of Mahdi Abeesan (al-Abbasi) and Abdul Rahman al-Sharif, both employees of the Islamic Waqf Department arrested in February, was renewed for two more months when they were due for release on 2 October.",
+    "Ayham Abu Jom'a, a young man from al-Tur, was also placed in administrative detention for four months, by decision of Defence Minister Israel Katz, the centre said."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Rasem Obeidat",
+    "age": 67,
+    "status": "administrative detainee",
+    "sentence": "6 months administrative",
+    "prison": null,
+    "arrested": "2026-09-27",
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80074/three-jerusalemites-placed-under-administrative-detention",
+     "date": "2026-10-02"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80068",
+     "date": "2026-09-27"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "jabal-mukabber",
+   "photo_own": false
+  },
+  {
+   "id": "oraib-abu-khdeir-appeal-rejected",
+   "corner": "prisoners",
+   "kind": "prisoner",
+   "date": "2026-10-04",
+   "place": "Shuafat",
+   "gate": "shuafat",
+   "headline": "Supreme Court rejects appeal of Shuafat detainee Oraib Abu Khdeir, held without charge since 2025",
+   "standfirst": "His administrative detention has been renewed twice, most recently for six more months.",
+   "body": [
+    "Oraib Abu Khdeir, a young man from Shuafat, was arrested on 20 September 2025 and placed in administrative detention for six months, the Wadi Hilweh Information Center reported.",
+    "The order was renewed on 20 March 2026 and again in September 2026 for six more months. The Supreme Court heard his appeal on 30 September and rejected it days later; he remains held without formal charges.",
+    "The same report said four young men from al-Tur, Yousef al-Sayyad, Hashem Alqam, Ismail al-Dayeh and Ali Zamara, were arrested in a dawn raid and had their detention extended."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Oraib Abu Khdeir",
+    "age": null,
+    "status": "administrative detainee",
+    "sentence": "6 months administrative, renewed",
+    "prison": null,
+    "arrested": "2025-09-20",
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80077/arrests-extensions-of-detention-and-expulsions-ongoing-measures-against-jerusalemites",
+     "date": "2026-10-04"
+    }
+   ],
+   "photo": "shuafat-camp",
+   "photo_own": false
+  },
+  {
+   "id": "child-prisoners-350",
+   "corner": "prisoners",
+   "kind": "report",
+   "date": "2026-10-15",
+   "place": "Israeli prisons",
+   "gate": "other",
+   "headline": "At least 350 Palestinian children still held, of more than 2,000 detained since the war began",
+   "standfirst": "Rights groups say they struggle to reach prisons to assess conditions.",
+   "body": [
+    "Israeli forces have detained more than 2,000 Palestinian children since the start of the war, and at least 350 remain in Israeli prisons, Khaled Quzmar, executive director of the Palestinian Center for Child Rights, told Voice of Palestine, WAFA reported.",
+    "Quzmar warned that conditions are deteriorating, citing reports of torture, starvation and medical neglect, and said human rights organisations face difficulties gaining access to the prisons."
+   ],
+   "figure": {
+    "value": "350",
+    "label": "Palestinian children in Israeli prisons"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175924",
+     "date": "2026-10-15"
+    },
+    {
+     "name": "Addameer",
+     "url": "https://addameer.ps/node/5760",
+     "date": "2026-10-05"
+    }
+   ],
+   "photo": "prisoners-solidarity-ramallah",
+   "photo_own": false
+  },
+  {
+   "id": "pps-70-detained-after-hebron",
+   "corner": "prisoners",
+   "kind": "news",
+   "date": "2026-10-24",
+   "place": "West Bank and Jerusalem",
+   "gate": "other",
+   "headline": "About 70 detained across the West Bank and Jerusalem in a day, most of them former prisoners",
+   "standfirst": "The Prisoners' Society counts more than 26,000 West Bank arrests since the war began.",
+   "body": [
+    "About 70 Palestinians were detained across West Bank governorates, Jerusalem among them, between Friday 23 October and early Saturday, the Palestinian Prisoners' Society said, WAFA reported. Some have since been released.",
+    "Hundreds of homes were raided in Hebron, the main focus, and dozens were turned into field interrogation centres. The home of released prisoner Nael Barghouti in Kobar was also raided.",
+    "The society said more than 26,000 arrests have been recorded in the West Bank since the start of the war, plus thousands in Gaza, and described the raids as collective punishment."
+   ],
+   "figure": {
+    "value": "26,000+",
+    "label": "West Bank arrests since the war began (PPS)"
+   },
+   "quote": {
+    "text": "most of those detained are former prisoners who spent years in Israeli jails",
+    "who": "Palestinian Prisoners' Society",
+    "role": "statement",
+    "date": "2026-10-24"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176228",
+     "date": "2026-10-24"
+    }
+   ],
+   "photo": "prisoner-poster-nilin",
+   "photo_own": false
+  },
+  {
+   "id": "gaza-nine-detainees-released",
+   "corner": "prisoners",
+   "kind": "news",
+   "date": "2026-10-22",
+   "place": "Nasser Medical Complex, Khan Younis",
+   "gate": "other",
+   "headline": "Nine Gaza detainees freed through Kerem Shalom, describing torture in Israeli prisons",
+   "standfirst": "They were handed over via the Red Cross and taken to Nasser Medical Complex.",
+   "body": [
+    "Israel released nine Palestinian detainees from Gaza on Wednesday 21 October, who arrived at Nasser Medical Complex in Khan Younis via the Kerem Shalom crossing and the International Committee of the Red Cross, according to Gaza's Ministry of Prisoners.",
+    "Five were from Gaza City and one each from Jabalia, Deir al-Balah, Khan Younis and Rafah. They described torture and harsh conditions in Israeli prisons."
+   ],
+   "figure": {
+    "value": "9",
+    "label": "Gaza detainees released"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Daily Yemen",
+     "url": "https://dailyyemen.net/2026/10/22/israel-releases-9-palestinians-from-gaza/",
+     "date": "2026-10-22"
+    }
+   ]
+  },
+  {
+   "id": "martyr-ibrahim-al-hindi-damascus-gate",
+   "corner": "martyrs",
+   "kind": "martyr",
+   "date": "2026-09-04",
+   "place": "Damascus Gate",
+   "gate": "damascus-gate",
+   "headline": "Ibrahim al-Hindi, 33, of Beit Hanina shot dead by police at Damascus Gate",
+   "standfirst": "Police say he tried to stab officers; his body is still being held.",
+   "body": [
+    "Israeli police shot dead Ibrahim al-Hindi, 33, from Beit Hanina, near Damascus Gate at about 3:45 a.m. on Friday 4 September. Police said he had tried to stab officers; no officers were hurt.",
+    "Israeli forces then cordoned off Damascus Gate and nearby streets of the Old City, keeping Palestinians from reaching the dawn prayer, WAFA reported.",
+    "The Wadi Hilweh Information Center said he was a former prisoner who had spent nearly two years in Israeli jails, that his relatives were summoned for interrogation, and that his body remains in Israeli custody."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Ibrahim al-Hindi",
+    "age": 33,
+    "status": "martyr",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174363",
+     "date": "2026-09-04"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80055",
+     "date": "2026-09-04"
+    },
+    {
+     "name": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/east-jerusalem-man-tries-to-stab-cops-near-old-city-is-shot-dead-police/",
+     "date": "2026-09-04"
+    },
+    {
+     "name": "Arab News",
+     "url": "https://www.arabnews.com/middle-east/police-kill-palestinian-in-jerusalem-after-attempted-knife-attack-3000482",
+     "date": "2026-09-04"
+    }
+   ],
+   "photo": "damascus-gate-crowd",
+   "photo_own": false
+  },
+  {
+   "id": "martyr-bahaa-al-natsheh-kafr-aqab",
+   "corner": "martyrs",
+   "kind": "martyr",
+   "date": "2026-10-02",
+   "place": "Kobar (from Kafr Aqab)",
+   "gate": "kafr-aqab",
+   "headline": "Bahaa al-Natsheh, 19, from Kafr Aqab killed by settler gunfire in Kobar",
+   "standfirst": "His body was seized and held for two days before burial in Jerusalem.",
+   "body": [
+    "Bahaa Sami al-Natsheh, 19, from Kafr Aqab north of Jerusalem, died of critical gunshot wounds after settlers fired live ammunition at residents in Kobar, north of Ramallah, on the evening of Friday 2 October, the Ministry of Health said, as reported by the Wadi Hilweh Information Center.",
+    "The Palestinian Red Crescent said Israeli forces blocked its ambulances from reaching Kobar and then seized the body.",
+    "After two days, his funeral prayer was held on 4 October in the courtyard of al-Makassed Hospital, and he was buried in al-Mujahideen cemetery on Salah al-Din Street."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Bahaa Sami al-Natsheh",
+    "age": 19,
+    "status": "martyr",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80076/after-his-body-was-withheld-for-two-days-the-funeral-of-jerusalemite-martyr-bahaa-al-natsheh-was-held-in-jerusalem",
+     "date": "2026-10-04"
+    }
+   ],
+   "photo": "kafr-aqab",
+   "photo_own": false
+  },
+  {
+   "id": "martyr-khalil-al-rashq-shuafat-checkpoint",
+   "corner": "martyrs",
+   "kind": "martyr",
+   "date": "2026-07-24",
+   "place": "Shuafat camp checkpoint",
+   "gate": "shuafat",
+   "headline": "Khalil al-Rashq, 47, father of five, dies after being shot at the Shuafat camp checkpoint",
+   "standfirst": "His family said he suffered from epilepsy; his body was withheld.",
+   "body": [
+    "Khalil Rashad Hamed al-Rashq, 47, from Dahiyat al-Salam in Jerusalem, died after Israeli forces shot him the previous night at the checkpoint of Shuafat refugee camp, the Jerusalem Governorate said on 24 July, as reported by WAFA.",
+    "He was married with four daughters and a son, and his family said he suffered from epilepsy. Israeli authorities withheld his body; the governorate described the city's checkpoints as death checkpoints."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Khalil Rashad Hamed al-Rashq",
+    "age": 47,
+    "status": "martyr",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/172874",
+     "date": "2026-07-24"
+    }
+   ],
+   "photo": "shuafat-camp-wall",
+   "photo_own": false
+  },
+  {
+   "id": "martyr-amir-jaber-eleventh-of-2026",
+   "corner": "martyrs",
+   "kind": "martyr",
+   "date": "2026-06-29",
+   "place": "Umm al-Sharayet",
+   "gate": "other",
+   "headline": "Amir Jaber, 15, the 11th Palestinian from Jerusalem governorate killed in the first half of 2026",
+   "standfirst": "The toll included two labourers shot near al-Ram and three people killed by settlers.",
+   "body": [
+    "Amir Ahmed Jawad Jaber, 15, a Jerusalem ID holder, was shot dead by Israeli forces during a raid on Umm al-Sharayet, the Jerusalem Governorate said on 29 June, as reported by WAFA.",
+    "The governorate said he was the 11th Palestinian from Jerusalem governorate killed since the start of 2026, a toll that included two labourers shot near al-Ram and three people killed by settlers.",
+    "Its third-quarter report later counted six more Palestinians killed between July and September."
+   ],
+   "figure": {
+    "value": "11",
+    "label": "killed from Jerusalem governorate, Jan to June 2026"
+   },
+   "quote": null,
+   "person": {
+    "name": "Amir Ahmed Jawad Jaber",
+    "age": 15,
+    "status": "martyr",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/172172",
+     "date": "2026-06-29"
+    },
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
+     "date": "2026-10-01"
+    }
+   ]
+  },
+  {
+   "id": "withheld-bodies-31-jerusalemites",
+   "corner": "martyrs",
+   "kind": "report",
+   "date": "2026-09-04",
+   "place": "Jerusalem",
+   "gate": "other",
+   "headline": "Israel holds the bodies of 31 Jerusalemites, 10 of them children",
+   "standfirst": "The oldest case dates to October 2016; the youngest, Wadi' Alayan, was 14.",
+   "body": [
+    "Israeli authorities are holding the bodies of 31 Jerusalemite martyrs who held Jerusalem identity cards, in morgues or in so-called cemeteries of numbers, the Wadi Hilweh Information Center reported.",
+    "The oldest case is Musbah Abu Sbeih, from October 2016. Ten of the 31 were under 18, the youngest being 14-year-old Wadi' Alayan, killed in February 2024.",
+    "The most recent names on the list are Ayman al-Hashlamon, killed in May 2026, and Khalil al-Rashq, killed in July 2026."
+   ],
+   "figure": {
+    "value": "31",
+    "label": "Jerusalemites' bodies held by Israel"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80055",
+     "date": "2026-09-04"
+    }
+   ]
+  },
+  {
+   "id": "seven-banned-including-guard",
+   "corner": "exiled",
+   "kind": "exile",
+   "date": "2026-09-15",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Seven Jerusalemites, including Al-Aqsa guard Samer Abu Quwaider, banned for six months",
+   "standfirst": "Some orders arrived by WhatsApp with maps covering every courtyard, gate and approach road.",
+   "body": [
+    "Israeli authorities issued six-month orders barring seven Jerusalemites from Al-Aqsa, effective immediately, the Jerusalem Governorate said, as reported by WAFA: Al-Aqsa guard Samer Abu Quwaider, Hamza Jabr al-Abbasi, Mohammad Zalloum, Amin al-Abbasi, Suhaib Afaneh, Naseem Khalil Hamada and Yousef al-Rashq.",
+    "Al-Rashq is from Silwan, and Afaneh and Hamada are from Sur Baher. Their orders came via WhatsApp with maps showing banned areas, including all of Al-Aqsa's courtyards and entrances and the roads leading to it.",
+    "The Wadi Hilweh Information Center said Al-Aqsa guard Fadi Alayan was also banned, along with others who asked not to be named."
+   ],
+   "figure": {
+    "value": "7",
+    "label": "six-month bans in one day"
+   },
+   "quote": null,
+   "person": {
+    "name": "Samer Abu Quwaider",
+    "age": null,
+    "status": "exiled",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": {
+     "from": "Al-Aqsa",
+     "length": "6 months"
+    }
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174758",
+     "date": "2026-09-15"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174729",
+     "date": "2026-09-15"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80062",
+     "date": "2026-09-15"
+    }
+   ],
+   "photo": "chain-gate-inside",
+   "photo_own": false
+  },
+  {
+   "id": "ekrima-sabri-ban-renewed",
+   "corner": "exiled",
+   "kind": "exile",
+   "date": "2026-10-16",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Sheikh Ekrima Sabri's Al-Aqsa ban renewed, now until mid-April 2027",
+   "standfirst": "The head of the Supreme Islamic Council has been barred from the mosque since August 2024.",
+   "body": [
+    "Israeli authorities renewed the ban on Sheikh Ekrima Sabri, head of the Supreme Islamic Council and an Al-Aqsa preacher, entering the mosque, the Wadi Hilweh Information Center reported on 16 October. His lawyer, Hamza Qutteineh, first received a one-week notice, renewable.",
+    "A later report by the centre said the ban had been extended for six months, until mid-April 2027. Sabri has been barred from Al-Aqsa since August 2024.",
+    "The centre counts more than 1,000 expulsion orders from Al-Aqsa and the Old City since the start of 2026."
+   ],
+   "figure": {
+    "value": "1,000+",
+    "label": "expulsion orders from Al-Aqsa and the Old City in 2026 (Wadi Hilweh centre)"
+   },
+   "quote": null,
+   "person": {
+    "name": "Ekrima Sabri",
+    "age": null,
+    "status": "exiled",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": {
+     "from": "Al-Aqsa",
+     "length": "6 months (to mid-April 2027)"
+    }
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80081/renewing-the-expulsion-of-sheikh-ekrima-sabri-from-al-aqsa-mosque-ongoing-harassment-since-august-2024",
+     "date": "2026-10-16"
+    },
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80082/al-aqsa-preacher-khaled-abu-jom-a-faces-arrest-and-deportation-as-mosque-preachers-come-under-fire",
+     "date": "2026-10-23"
+    }
+   ],
+   "photo": "qibli-facade",
+   "photo_own": false
+  },
+  {
+   "id": "preacher-khaled-abu-joma-arrested",
+   "corner": "exiled",
+   "kind": "exile",
+   "date": "2026-10-23",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Al-Aqsa preacher Khaled Abu Jom'a arrested after Friday sermon and banned for a week",
+   "standfirst": "The Grand Mufti, Sheikh Mohammad Hussein, is barred until January 2027.",
+   "body": [
+    "Police took Sheikh Khaled Abu Jom'a, an Al-Aqsa preacher, from a room inside the mosque shortly after Friday's sermon, in which he spoke about steadfast presence in Jerusalem and about the olive harvest, the Wadi Hilweh Information Center reported on 23 October.",
+    "He was released on condition that he stay away from the mosque for a week, which can be extended.",
+    "The Grand Mufti of Jerusalem and the Palestinian Territories, Sheikh Mohammad Hussein, is barred from Al-Aqsa for six months, from 10 July 2026 to 10 January 2027."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Khaled Abu Jom'a",
+    "age": null,
+    "status": "exiled",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": {
+     "from": "Al-Aqsa",
+     "length": "1 week, renewable"
+    }
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80082/al-aqsa-preacher-khaled-abu-jom-a-faces-arrest-and-deportation-as-mosque-preachers-come-under-fire",
+     "date": "2026-10-23"
+    }
+   ],
+   "photo": "aqsa-after-fajr",
+   "photo_own": false
+  },
+  {
+   "id": "governorate-800-ban-orders",
+   "corner": "exiled",
+   "kind": "report",
+   "date": "2026-09-06",
+   "place": "Al-Aqsa Mosque compound and Old City",
+   "gate": "old-city",
+   "headline": "800 orders barring Palestinians from Al-Aqsa in 2026, and the holiday season is only beginning",
+   "standfirst": "The Jerusalem Governorate says 762 were issued in the first half of the year alone.",
+   "body": [
+    "Israeli authorities issued 785 orders barring Palestinians from Al-Aqsa from January through August 2026, 762 of them in the first half, the Jerusalem Governorate said on 6 September, as reported by WAFA. With 15 more in the first six days of September, the total reached 800.",
+    "The governorate said these are only the orders it was able to document and the real number is likely higher. It warned that the orders were accelerating ahead of the Jewish holiday season.",
+    "Its third-quarter report later recorded 73 expulsion orders between July and September, most of them from Al-Aqsa."
+   ],
+   "figure": {
+    "value": "800",
+    "label": "Al-Aqsa ban orders, 1 January to 6 September"
+   },
+   "quote": {
+    "text": "a systematic policy pursued by the occupation authorities for years",
+    "who": "Jerusalem Governorate",
+    "role": "Palestinian governorate statement",
+    "date": "2026-09-06"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174409",
+     "date": "2026-09-06"
+    },
+    {
+     "name": "QNA",
+     "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026",
+     "date": "2026-10-01"
+    }
+   ],
+   "photo": "al-wad-street",
+   "photo_own": false
+  },
+  {
+   "id": "jamil-abbasi-seventh-six-month-ban",
+   "corner": "exiled",
+   "kind": "exile",
+   "date": "2026-09-27",
+   "place": "Silwan",
+   "gate": "silwan",
+   "headline": "Jamil Abbasi of Silwan served his seventh consecutive six-month Al-Aqsa ban",
+   "standfirst": "About 35 orders since 2003, including two barring him from the Old City and two from all of Jerusalem.",
+   "body": [
+    "Jamil Abbasi from Silwan, first banned in 2003, has received about 35 orders, including repeated Al-Aqsa bans, two barring him from the Old City and two from all of Jerusalem, the Wadi Hilweh Information Center reported. His latest, a seventh consecutive six-month ban, runs until next March.",
+    "Khadija Khweis, banned by successive orders since 2014, was arrested at the school where she works and given a one-week ban, followed the next day by an order signed by Prime Minister Benjamin Netanyahu.",
+    "Salwa Abu Libdeh, a Jerusalemite media figure who has used a wheelchair since a 2019 stroke and has not reached Al-Aqsa for seven years, was summoned over social media posts and given a one-week ban."
+   ],
+   "figure": {
+    "value": "35",
+    "label": "orders served on Jamil Abbasi since 2003"
+   },
+   "quote": null,
+   "person": {
+    "name": "Jamil Abbasi",
+    "age": null,
+    "status": "exiled",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": {
+     "from": "Al-Aqsa",
+     "length": "6 months"
+    }
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80068",
+     "date": "2026-09-27"
+    }
+   ],
+   "photo": "silwan-aerial",
+   "photo_own": false
+  },
+  {
+   "id": "raeda-saeed-prison-for-ban-breach",
+   "corner": "exiled",
+   "kind": "exile",
+   "date": "2026-10-13",
+   "place": "Jerusalem",
+   "gate": "aqsa",
+   "headline": "Raeda Saeed to report to prison on 12 November for breaching an Al-Aqsa ban",
+   "standfirst": "Silwan's Khaled Abu Tayeh was meanwhile barred from the mosque for six months.",
+   "body": [
+    "The Central Court upheld on appeal a one-year prison sentence against Raeda Saeed, convicted at the end of 2025 of violating an order banning her from Al-Aqsa, the Wadi Hilweh Information Center reported. She must report to prison on 12 November 2026.",
+    "She had been held for eight days in 2023 and then spent about two years under house arrest.",
+    "Khaled Abu Tayeh from Silwan, arrested at Al-Aqsa earlier in October, was barred from the mosque for six months by an order signed by the Jerusalem police commander."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Raeda Saeed",
+    "age": null,
+    "status": "woman prisoner",
+    "sentence": "1 year",
+    "prison": null,
+    "arrested": null,
+    "ban": {
+     "from": "Al-Aqsa",
+     "length": null
+    }
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wadi Hilweh Information Center (Silwanic)",
+     "url": "https://www.silwanic.net/article/news/80079/between-demolitions-arrests-and-deportations-palestinians-in-jerusalem-face-measures-targeting-their-homes-freedom-and-presence-in-the-city",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "damon-prison",
+   "photo_own": false
+  },
+  {
+   "id": "hebron-attack-west-bank-closure",
+   "corner": "westbank",
+   "kind": "news",
+   "date": "2026-10-23",
+   "place": "Yehuda Junction, Hebron",
+   "gate": "other",
+   "headline": "Two soldiers and two gunmen killed near Hebron; West Bank sealed for the fourth time in a month",
+   "standfirst": "Netanyahu vowed to go house-by-house; Smotrich ordered demolitions near the site.",
+   "body": [
+    "Two Israeli soldiers, Staff Sgt. Ron Yonatan Roytman, 23, and Sgt. Yuval Shai Svilem, 20, were killed and three lightly wounded in a shooting near Yehuda Junction outside Hebron on 23 October, AP reported. The army said two gunmen from Hebron were killed after about 20 minutes of fire.",
+    "Prime Minister Benjamin Netanyahu blamed Hamas and vowed a sweeping operation in the gunmen's neighbourhood. His office ordered Hebron cordoned off and a full West Bank closure, the fourth in a month; residents may leave the city only through three exit points after screening.",
+    "Finance Minister Bezalel Smotrich ordered the demolition of Palestinian-owned buildings near the site, and he and Itamar Ben-Gvir called for the army to take control of the West Bank from the Palestinian Authority."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "we will go house-by-house",
+    "who": "Benjamin Netanyahu",
+    "role": "Israeli prime minister",
+    "date": "2026-10-23"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "AP via WSLS",
+     "url": "https://www.wsls.com/news/2026/10/23/israels-military-says-it-killed-2-men-who-had-launched-an-attack-in-the-occupied-west-bank/",
+     "date": "2026-10-23"
+    }
+   ],
+   "photo": "hebron-shuhada-2016",
+   "photo_own": false
+  },
+  {
+   "id": "olive-harvest-record-attacks",
+   "corner": "westbank",
+   "kind": "report",
+   "date": "2026-10-22",
+   "place": "West Bank",
+   "gate": "other",
+   "headline": "272 settler attacks on the olive harvest so far, already more than all of 2024 or 2025",
+   "standfirst": "OCHA counts 2,159 settler attacks with casualties or damage in 2026, 7.4 a day.",
+   "body": [
+    "Between 1 September and 19 October, OCHA recorded 272 harvest-related settler attacks, in which one Palestinian was killed and 200 injured, and more than 3,200 olive trees and saplings were damaged. The figure already exceeds the full 2024 (224) and 2025 (185) harvest seasons.",
+    "In the week of 13 to 19 October alone, 148 Palestinians were injured, 92 by Israeli forces and 56 by settlers, across 83 settler attacks in 48 communities.",
+    "Since January, OCHA has documented 2,159 settler attacks causing casualties or damage in more than 300 communities, an average of 7.4 a day compared with 5 a day in 2025."
+   ],
+   "figure": {
+    "value": "272",
+    "label": "harvest-related settler attacks, 1 Sep to 19 Oct"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    }
+   ],
+   "photo": "olive-harvest",
+   "photo_own": false
+  },
+  {
+   "id": "election-closure-checkpoints",
+   "corner": "westbank",
+   "kind": "news",
+   "date": "2026-10-26",
+   "place": "Ramallah and al-Bireh",
+   "gate": "qalandiya",
+   "headline": "General West Bank closure for Israel's election day as Ramallah's entrances are shut",
+   "standfirst": "WAFA counts 925 checkpoints and barriers controlling 3.4 million Palestinians.",
+   "body": [
+    "The Israeli army announced a general closure of the West Bank for Palestinians on Israel's 27 October election day, Haaretz reported.",
+    "On 26 October forces closed the entrances to Jaba', Ein Sinya and Atara near Ramallah, causing heavy congestion at the Atara checkpoint, and closed the road to Qalandiya during the raid on the camp, WAFA reported. On 27 October all entrances to Ramallah were closed.",
+    "WAFA says 925 checkpoints and barriers now restrict 3.4 million Palestinians, including 89 permanently staffed checkpoints and 232 road gates, 159 of them frequently closed."
+   ],
+   "figure": {
+    "value": "925",
+    "label": "checkpoints and barriers in the West Bank (WAFA)"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Haaretz",
+     "url": "https://www.haaretz.com/israel-news/elections/2026-10-25/ty-article-live/idf-announces-general-closure-for-west-bank-palestinians-on-election-day/000001a1-70f7-d34e-a1b9-feffa6f20002",
+     "date": "2026-10-25"
+    },
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176360",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "qalandiya-turnstiles",
+   "photo_own": false
+  },
+  {
+   "id": "jerusalem-villages-settler-attacks",
+   "corner": "westbank",
+   "kind": "news",
+   "date": "2026-10-14",
+   "place": "Mikhmas",
+   "gate": "other",
+   "headline": "Settlers set fire to a mosque in Mikhmas and attack olive pickers in Beit Ijza",
+   "standfirst": "Three herding families were displaced from Ma'azi Jaba' and Burqa in early October.",
+   "body": [
+    "Settlers carried out an arson attack on a mosque in Mikhmas, northeast of Jerusalem, on 14 October, OCHA reported. Farmers in Beit Ijza, in Jerusalem governorate, were attacked by settlers during the olive harvest on 15 and 19 October.",
+    "On 5 and 6 October, three herding families, 15 people including nine children, were displaced from Ma'azi Jaba' (Jerusalem) and Burqa (Ramallah) after settler attacks, OCHA said."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    },
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-15-october-2026",
+     "date": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "id": "gaza-ceasefire-in-name-only",
+   "corner": "gaza",
+   "kind": "news",
+   "date": "2026-10-09",
+   "place": "Gaza Strip",
+   "gate": "other",
+   "headline": "A year on, more than 100 organisations say Gaza's ceasefire exists in name only",
+   "standfirst": "More than 1,400 Palestinians, including at least 327 children, killed since the agreement.",
+   "body": [
+    "One year after the Gaza ceasefire agreement, more than 100 civil society organisations, including Amnesty International and Save the Children, said Israeli forces have killed more than 1,400 Palestinians since it took effect, at least 327 of them children.",
+    "Nearly two million people still need shelter, about 1.4 million face crisis-level hunger or worse through the end of the year, and none of Gaza's 36 hospitals is fully functioning.",
+    "More than 18,500 patients, including at least 4,000 children, still need medical evacuation, and over 1,000 have died while waiting. The groups said Israel has moved the 'Yellow Line' deeper into Gaza than the agreed withdrawal line."
+   ],
+   "figure": {
+    "value": "1,400+",
+    "label": "Palestinians killed since the ceasefire"
+   },
+   "quote": {
+    "text": "Accountability cannot be swept under the rubble.",
+    "who": "Agnes Callamard",
+    "role": "Secretary-General, Amnesty International",
+    "date": "2026-10-09"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Amnesty International",
+     "url": "https://www.amnesty.org/en/latest/news/2026/10/gaza-ceasefire-exists-in-name-only-say-more-than-100-organizations/",
+     "date": "2026-10-09"
+    }
+   ],
+   "photo": "gaza-tents-rubble",
+   "photo_own": false
+  },
+  {
+   "id": "gaza-children-killed-since-ceasefire",
+   "corner": "gaza",
+   "kind": "report",
+   "date": "2026-10-22",
+   "place": "Gaza Strip",
+   "gate": "other",
+   "headline": "UNICEF: 351 children killed in Gaza since the ceasefire, eight in the past six days",
+   "standfirst": "Gaza's Health Ministry reports 1,522 deaths since October 2025, 32 of them in one week.",
+   "body": [
+    "UNICEF says 351 children have been killed in Gaza since the October 2025 ceasefire, including eight killed and 20 injured in the six days to 22 October, OCHA reported.",
+    "The Ministry of Health recorded 32 people killed and 123 injured between 13 and 19 October, bringing the total since the ceasefire to 1,522 killed and 5,421 injured, with a further 67 deaths added retroactively after identification."
+   ],
+   "figure": {
+    "value": "351",
+    "label": "children killed since the ceasefire (UNICEF)"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "OCHA Humanitarian Situation Report",
+     "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026",
+     "date": "2026-10-22"
+    }
+   ],
+   "photo": "gaza-displacement-camp",
+   "photo_own": false
+  },
+  {
+   "id": "gaza-death-toll-74389",
+   "corner": "gaza",
+   "kind": "report",
+   "date": "2026-10-13",
+   "place": "Gaza Strip",
+   "gate": "other",
+   "headline": "Gaza death toll since October 2023 reaches 74,389",
+   "standfirst": "838 bodies have been recovered from the rubble since the ceasefire.",
+   "body": [
+    "Gaza's Ministry of Health put the number killed since 7 October 2023 at 74,389, with 175,423 injured, WAFA reported on 13 October.",
+    "Seven deaths were recorded in the previous 24 hours, including three people who died of their wounds and one recovered body. Since the ceasefire, the ministry counts 1,498 killed, 5,306 injured and 838 bodies recovered."
+   ],
+   "figure": {
+    "value": "74,389",
+    "label": "killed in Gaza since 7 October 2023"
+   },
+   "quote": null,
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175851",
+     "date": "2026-10-13"
+    }
+   ],
+   "photo": "gaza-mosque-jabalia",
+   "photo_own": false
+  },
+  {
+   "id": "gaza-girl-tihani-shalalfeh",
+   "corner": "gaza",
+   "kind": "martyr",
+   "date": "2026-10-27",
+   "place": "al-Mawasi, Khan Younis",
+   "gate": "other",
+   "headline": "Six-year-old Tihani Shalalfeh dies of wounds from Israeli fire in al-Mawasi",
+   "standfirst": "She died on the morning of Israel's election day.",
+   "body": [
+    "Tihani Mohammad Saeed Shalalfeh, six, died on the morning of Tuesday 27 October of wounds sustained when she was shot by Israeli forces in the al-Mawasi area of Khan Younis, WAFA reported."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": {
+    "name": "Tihani Mohammad Saeed Shalalfeh",
+    "age": 6,
+    "status": "martyr",
+    "sentence": null,
+    "prison": null,
+    "arrested": null,
+    "ban": null
+   },
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/176376",
+     "date": "2026-10-27"
+    }
+   ]
+  },
+  {
+   "id": "hebrew-haaretz-east-jerusalem-no-vote",
+   "corner": "hebrew",
+   "kind": "translation",
+   "date": "2026-10-26",
+   "place": "Silwan",
+   "gate": "silwan",
+   "headline": "Haaretz: In East Jerusalem, no vote in Israel's election but plenty at stake",
+   "standfirst": "Nagham Zbeedat opens with Manal Jalajel in Silwan, who received a demolition notice she could not read.",
+   "body": [
+    "Haaretz's Nagham Zbeedat reports that most Palestinian Jerusalemites cannot vote in national elections and many boycott municipal ones, yet Israeli politics shapes their housing and policing.",
+    "The piece opens with Manal Jalajel, who received a Jerusalem municipality demolition notice about five years ago; she could not read the Hebrew, so her husband read it to her."
+   ],
+   "figure": null,
+   "quote": null,
+   "person": null,
+   "outlet_he": "הארץ",
+   "sources": [
+    {
+     "name": "Haaretz",
+     "url": "https://www.haaretz.com/israel-news/elections/2026-10-26/ty-article-magazine/.premium/east-jerusalem-palestinians-cant-vote-in-israels-election-but-much-is-at-stake/000001a1-5993-d9b6-a9b1-79bbe6d80000",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "silwan-valley",
+   "photo_own": false
+  },
+  {
+   "id": "hebrew-haaretz-old-city-shops-closed",
+   "corner": "hebrew",
+   "kind": "translation",
+   "date": "2026-09-27",
+   "place": "Muslim Quarter, Old City",
+   "gate": "old-city",
+   "headline": "Haaretz: Police close Palestinian shops in the Muslim Quarter so Jews can pray during Sukkot",
+   "standfirst": "Nir Hasson reports a new policy ordering dozens of shopkeepers to close for the whole holiday.",
+   "body": [
+    "Police ordered dozens of Palestinian shop owners in Jerusalem's Old City to close for the duration of Sukkot to give Jewish worshippers access to an area leading to the Temple Mount/Al-Aqsa compound, Haaretz's Nir Hasson reported.",
+    "Haaretz described it as a new policy after years of limited restrictions."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "From now on, they'll tell us to close every holiday",
+    "who": "Palestinian shopkeeper (unnamed)",
+    "role": "Old City merchant, quoted by Haaretz",
+    "date": "2026-09-27"
+   },
+   "person": null,
+   "outlet_he": "הארץ",
+   "sources": [
+    {
+     "name": "Haaretz",
+     "url": "https://www.haaretz.com/israel-news/israel-security/2026-09-27/ty-article/.premium/police-close-palestinian-shops-for-jews-to-pray-in-jerusalems-muslim-quarter/000001a0-e2dd-db4b-a7a5-f2ff7adc0000",
+     "date": "2026-09-27"
+    }
+   ],
+   "photo": "cotton-market",
+   "photo_own": false
+  },
+  {
+   "id": "hebrew-toi-ben-gvir-low-key-mount-visit",
+   "corner": "hebrew",
+   "kind": "translation",
+   "date": "2026-10-26",
+   "place": "Western Wall and Al-Aqsa compound",
+   "gate": "aqsa",
+   "headline": "Times of Israel: Ben Gvir goes up the Temple Mount quietly; Netanyahu leaves a note at the Western Wall",
+   "standfirst": "Ynet suggested Ben Gvir kept quiet so as not to put off ultra-Orthodox voters.",
+   "body": [
+    "On the eve of the election, Itamar Ben Gvir visited the Western Wall and went up to the Temple Mount but, unlike previous visits, did not make much of it, the Times of Israel's Stuart Winer reported, citing Ynet's suggestion that he did not want to deter Haredi voters who frown on such visits.",
+    "Netanyahu and his wife Sara visited the Western Wall, where he left a handwritten note with a drawing of an Israeli flag."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "the eternity of Israel will not lie!",
+    "who": "Benjamin Netanyahu",
+    "role": "Israeli prime minister, note left at the Western Wall",
+    "date": "2026-10-26"
+   },
+   "person": null,
+   "outlet_he": "טיימס אוף ישראל",
+   "sources": [
+    {
+     "name": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/from-the-western-wall-to-tel-aviv-bars-candidates-give-last-push-ahead-of-election/",
+     "date": "2026-10-26"
+    }
+   ],
+   "photo": "chain-gate-street",
+   "photo_own": false
+  },
+  {
+   "id": "hebrew-toi-uk-e1-sanctions",
+   "corner": "hebrew",
+   "kind": "translation",
+   "date": "2026-10-19",
+   "place": "E1, east of Jerusalem",
+   "gate": "other",
+   "headline": "Times of Israel: UK warns firms that bidding on E1 tenders exposes them to sanctions",
+   "standfirst": "E1 would cut contiguity between Ramallah, East Jerusalem and Bethlehem.",
+   "body": [
+    "On the day bidding closed, Britain warned construction firms that bidding on E1 tenders near Jerusalem could expose them to British sanctions, the Times of Israel's Lazar Berman reported.",
+    "E1 would extend the Ma'ale Adumim settlement and cut territorial contiguity between Ramallah, East Jerusalem and Bethlehem."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "We urge businesses and individuals not to proceed with bids for E1 construction tenders.",
+    "who": "Ed Miliband",
+    "role": "UK Foreign Secretary",
+    "date": "2026-10-19"
+   },
+   "person": null,
+   "outlet_he": "טיימס אוף ישראל",
+   "sources": [
+    {
+     "name": "The Times of Israel",
+     "url": "https://www.timesofisrael.com/liveblog_entry/uk-warns-firms-that-bidding-on-e1-settlement-tenders-exposes-them-to-sanctions/",
+     "date": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "id": "statement-ben-gvir-al-tur",
+   "corner": "statements",
+   "kind": "statement",
+   "date": "2026-10-06",
+   "place": "al-Tur",
+   "gate": "al-tur",
+   "headline": "Ben-Gvir at the al-Tur demolition",
+   "standfirst": "Filmed in front of the demolished five-storey building.",
+   "body": [
+    "Itamar Ben-Gvir filmed the demolition of the al-Tur building and posted it online, calling it governance in Jerusalem."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "We are seeing here the images I love most, the images of governance in Jerusalem",
+    "who": "Itamar Ben-Gvir",
+    "role": "Israeli National Security Minister",
+    "date": "2026-10-06"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "Wake Up Singapore",
+     "url": "https://wakeup.sg/east-jerusalem-demolition/",
+     "date": "2026-10-07"
+    }
+   ],
+   "photo": "al-tur",
+   "photo_own": false
+  },
+  {
+   "id": "statement-abu-rudeineh-aqsa",
+   "corner": "statements",
+   "kind": "statement",
+   "date": "2026-09-28",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Abu Rudeineh: Al-Aqsa is not subject to division",
+   "standfirst": "On the third consecutive day of Sukkot incursions.",
+   "body": [
+    "The Palestinian Presidency spokesperson said the incursions would not grant Israel any legitimacy and that East Jerusalem is occupied Palestinian territory."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "is the exclusive right of Muslims and is not subject to division or partnership",
+    "who": "Nabil Abu Rudeineh",
+    "role": "spokesperson, Palestinian Presidency",
+    "date": "2026-09-28"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175268",
+     "date": "2026-09-28"
+    }
+   ],
+   "photo": "aqsa-prayer-door",
+   "photo_own": false
+  },
+  {
+   "id": "statement-majali-jordan",
+   "corner": "statements",
+   "kind": "statement",
+   "date": "2026-09-20",
+   "place": "Al-Aqsa Mosque compound",
+   "gate": "aqsa",
+   "headline": "Jordan: categorical rejection of ministers' incursions",
+   "standfirst": "After Ben-Gvir's 20 September visit to Al-Aqsa.",
+   "body": [
+    "Jordan's foreign ministry called the incursion a serious violation of the historical and legal status quo."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "categorical rejection of the continued incursions into the mosque by Israeli ministers, officials and extremist colonists",
+    "who": "Fuad Majali",
+    "role": "spokesperson, Jordanian Ministry of Foreign Affairs",
+    "date": "2026-09-20"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/174935",
+     "date": "2026-09-20"
+    }
+   ],
+   "photo": "dome-of-rock-arches",
+   "photo_own": false
+  },
+  {
+   "id": "statement-arab-league-al-tur",
+   "corner": "statements",
+   "kind": "statement",
+   "date": "2026-10-06",
+   "place": "al-Tur",
+   "gate": "al-tur",
+   "headline": "Arab League on Ben-Gvir's role in the al-Tur demolition",
+   "standfirst": "The League urged the UN Security Council to stop demolitions in East Jerusalem.",
+   "body": [
+    "The Arab League General Secretariat called the demolition part of an ongoing policy to reduce the Palestinian presence in East Jerusalem."
+   ],
+   "figure": null,
+   "quote": {
+    "text": "the participation of Minister Ben-Gvir in the demolition operation reflects the level of official responsibility",
+    "who": "Arab League General Secretariat",
+    "role": "statement",
+    "date": "2026-10-06"
+   },
+   "person": null,
+   "outlet_he": null,
+   "sources": [
+    {
+     "name": "WAFA",
+     "url": "https://english.wafa.ps/Pages/Details/175605",
+     "date": "2026-10-06"
+    }
+   ],
+   "photo": "al-tur",
+   "photo_own": false
+  }
+ ],
+ "figures": [
+  {
+   "value": "9,300",
+   "label": "Palestinian political prisoners in Israeli prisons",
+   "source": "Addameer",
+   "date": "2026-10-05",
+   "url": "https://addameer.ps/node/5760"
+  },
+  {
+   "value": "3,101",
+   "label": "administrative detainees held without charge",
+   "source": "Addameer",
+   "date": "2026-10-05",
+   "url": "https://addameer.ps/node/5760"
+  },
+  {
+   "value": "350",
+   "label": "children in Israeli prisons",
+   "source": "Addameer",
+   "date": "2026-10-05",
+   "url": "https://addameer.ps/node/5760"
+  },
+  {
+   "value": "92",
+   "label": "deaths in Israeli custody since October 2023",
+   "source": "Addameer",
+   "date": "2026-10-06",
+   "url": "https://addameer.ps/news/5763"
+  },
+  {
+   "value": "52,277",
+   "label": "settler entries into Al-Aqsa since January",
+   "source": "Jerusalem Governorate via QNA",
+   "date": "2026-10-05",
+   "url": "https://qna.org.qa/en/News-Area/News/2026-10/5/dozens-of-settlers-storm-al-aqsa-mosque-under-israeli-occupation-forces-protection"
+  },
+  {
+   "value": "11,692",
+   "label": "settler entries into Al-Aqsa over the holiday season",
+   "source": "Wadi Hilweh Information Center",
+   "date": "2026-10-02",
+   "url": "https://www.silwanic.net/article/news/80073/the-holiday-season-at-al-aqsa-over-11-000-settlers-and-public-religious-rituals-extending-from-inside-the-mosque-to-its-surroundings"
+  },
+  {
+   "value": "427",
+   "label": "demolition and land-levelling operations in Jerusalem since January",
+   "source": "Palestinian Authority via Arab News",
+   "date": "2026-10-06",
+   "url": "https://www.arabnews.com/middle-east/palestinian-authority-condemns-ben-gvir-over-home-demolition-stunt-in-jerusalem-3004913"
+  },
+  {
+   "value": "668",
+   "label": "Palestinians displaced by demolitions in East Jerusalem in 2026",
+   "source": "OCHA",
+   "date": "2026-10-22",
+   "url": "https://www.ochaopt.org/content/humanitarian-situation-report-22-october-2026"
+  },
+  {
+   "value": "1,000+",
+   "label": "orders expelling Palestinians from Al-Aqsa and the Old City since January",
+   "source": "Wadi Hilweh Information Center",
+   "date": "2026-10-16",
+   "url": "https://www.silwanic.net/article/news/80081/renewing-the-expulsion-of-sheikh-ekrima-sabri-from-al-aqsa-mosque-ongoing-harassment-since-august-2024"
+  },
+  {
+   "value": "6",
+   "label": "Palestinians killed in Jerusalem governorate, July to September 2026",
+   "source": "Jerusalem Governorate via QNA",
+   "date": "2026-10-01",
+   "url": "https://qna.org.qa/en/News-Area/News/2026-10/1/jerusalem-governorate-nearly-28000-settlers-stormed-al-aqsa-mosque-in-q3-2026"
+  }
+ ],
+ "gate_photo": {
+  "damascus-gate": "damascus-gate-steps",
+  "lions-gate": "lions-gate-outside",
+  "herods-gate": "herods-gate-dusk",
+  "jaffa-gate": "jaffa-gate-night",
+  "old-city": "al-wad-street",
+  "aqsa": "dome-of-rock-arches",
+  "silwan": "silwan-aerial",
+  "sheikh-jarrah": "sheikh-jarrah-aerial",
+  "chain-gate": "chain-gate-street",
+  "ezariya": "wall-eizariya",
+  "golden-gate": "golden-gate",
+  "dung-gate": "dung-gate",
+  "new-gate": "new-gate-night",
+  "zion-gate": "zion-gate",
+  "issawiya": "issawiya-mosque",
+  "jabal-mukabber": "jabal-mukabber",
+  "al-tur": "al-tur",
+  "shuafat": "shuafat-camp-wall",
+  "anata": "anata-wall",
+  "kafr-aqab": "kafr-aqab",
+  "qalandiya": "qalandiya-queue",
+  "beit-hanina": "beit-hanina",
+  "sur-baher": "sur-baher",
+  "ras-al-amud": "ras-al-amud",
+  "walaja": "walaja-terraces",
+  "wall": "wall-eizariya",
+  "prison": "ofer-prison",
+  "funeral": "funeral-dura",
+  "westbank": "jenin-camp",
+  "gaza": "gaza-displacement-walk",
+  "skyline": "skyline-sunset"
+ },
+ "pictures": [
+  "skyline-sunset",
+  "aqsa-friday-prayer",
+  "cotton-market",
+  "sheikh-jarrah-tent",
+  "herods-gate-lights"
+ ]
+}

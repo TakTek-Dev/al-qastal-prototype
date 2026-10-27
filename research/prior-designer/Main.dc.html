@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>القسطل | أخبار القدس</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Mada:wght@400;500;600;700;800;900&amp;family=Reem+Kufi:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+
+:root{
+  --white:#ffffff; --grey:#f3f4f8; --grey2:#e6e8ef; --rule:#d9dce6;
+  --navy:#1c2b5a; --navyd:#131e44; --ink:#161b2e; --muted:#535a6c;
+  --yellow:#f7d417; --red:#c4161c;
+  --kufi:"Reem Kufi",serif; --text:"Mada",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--white)}
+body{font-family:var(--text);color:var(--ink);background:var(--white);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+ul{list-style:none}
+.wrap{max-width:1296px;margin:0 auto;padding:0 32px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--yellow);outline-offset:2px;box-shadow:0 0 0 6px var(--navy)}
+h1,h2,h3{font-family:var(--text);font-weight:800;line-height:1.35;color:var(--ink)}
+.meta{font-size:14px;color:var(--muted);margin-top:6px}
+.place{display:inline-block;font-size:14px;font-weight:700;color:var(--navy)}
+.credit{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.5}
+.credit span{white-space:nowrap}
+
+/* top bar */
+.topbar{background:var(--navyd);color:#dfe3ee;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;min-height:44px;gap:16px}
+.topbar .links{display:flex;align-items:center;gap:4px}
+.topbar .links a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px}
+.topbar .ico{width:44px;justify-content:center;padding:0}
+.topbar svg{width:16px;height:16px;stroke:#dfe3ee}
+.handle{color:var(--yellow);font-weight:700;direction:ltr;padding-right:8px}
+
+/* masthead */
+.mast > .wrap{display:flex;align-items:center;justify-content:space-between;gap:32px;padding-top:20px;padding-bottom:18px}
+.brand{display:flex;align-items:center;gap:28px}
+.brand img{width:210px;height:auto}
+.motto{font-family:var(--kufi);font-weight:600;font-size:22px;color:var(--navy);line-height:1.4;border-right:1px solid var(--rule);padding-right:28px}
+.motto small{display:block;font-family:var(--text);font-weight:500;font-size:15px;color:var(--muted)}
+.tools{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;min-width:44px;padding:0 16px;border:1.5px solid var(--navy);color:var(--navy);font-weight:700;font-size:15px;border-radius:2px}
+.btn svg{width:18px;height:18px;stroke:currentColor}
+.btn.solid{background:var(--navy);color:#fff}
+.nav{border-top:1px solid var(--rule);border-bottom:3px solid var(--navy)}
+.nav ul{display:flex}
+.nav a{white-space:nowrap;display:flex;align-items:center;min-height:48px;padding:0 17px;font-weight:700;font-size:16px;color:var(--navy)}
+.nav li:first-child a{background:var(--navy);color:#fff}
+.nav li.en{margin-right:auto}
+.nav li.en a{color:var(--muted);direction:ltr;font-weight:600}
+
+/* gates band */
+.gates{background:var(--grey);padding-top:28px;border-bottom:1px solid var(--rule)}
+.gates-head{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:22px}
+.gates-title{font-weight:800;font-size:26px;color:var(--navy);line-height:1.2}
+.gates-title span{font-weight:500;font-size:16px;color:var(--muted);margin-right:12px}
+.gates-dir{font-size:14px;color:var(--muted);white-space:nowrap}
+.gate-row{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;align-items:end}
+.gate{position:relative;display:flex;flex-direction:column;align-items:stretch;min-height:268px;border:2px solid var(--navy);border-bottom:0;border-radius:200px 200px 0 0;background:var(--white);padding:46px 16px 18px;overflow:hidden}
+.gate .name{font-family:var(--kufi);font-weight:700;font-size:22px;line-height:1.25;color:var(--navy);text-align:center;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.gate .hl{font-size:16px;font-weight:600;line-height:1.45;margin-top:12px;text-align:right}
+.gate .flag{position:absolute;top:16px;left:0;right:0;text-align:center}
+.gate .flag b{background:var(--red);color:#fff;font-size:14px;font-weight:700;padding:1px 10px}
+.gate.on{background:var(--navy);padding:0}
+.gate.on img{position:absolute;inset:0}
+.gate.on .cap{position:relative;margin-top:auto;background:var(--navy);padding:12px 14px 14px;text-align:center}
+.gate.on .name{color:#fff;border:0;padding:0}
+.gate.on .cap .sub{display:block;font-size:14px;color:var(--yellow);font-weight:700;margin-top:2px}
+.wall{height:20px;background:
+  linear-gradient(var(--navy),var(--navy)) bottom/100% 9px no-repeat,
+  repeating-linear-gradient(90deg,var(--navy) 0 26px,transparent 26px 40px) top/100% 11px no-repeat}
+.swipe{display:none}
+
+/* lead (inside the gates band) */
+.lead{padding:36px 0 48px}
+.lead-grid{display:grid;grid-template-columns:7fr 5fr;gap:48px;align-items:start}
+.pin{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;font-size:15px;color:var(--muted);margin-bottom:12px}
+.pin b{font-family:var(--kufi);font-weight:700;font-size:24px;color:var(--navy)}
+.lead h1{font-size:46px;line-height:1.3;font-weight:800}
+.lead .dek{font-size:20px;line-height:1.7;color:#30364a;margin-top:16px}
+.facts{margin-top:26px;background:var(--navy);color:#fff;padding:20px 24px 22px;position:relative}
+.facts::after{content:"";position:absolute;right:0;bottom:0;width:44px;height:44px;background:var(--yellow);border-radius:0 0 0 44px}
+.facts h2{color:var(--yellow);font-size:16px;font-weight:700;margin-bottom:6px}
+.facts dl{display:grid;grid-template-columns:auto 1fr;column-gap:20px}
+.facts dt{font-size:15px;color:#c9d0e4;padding:8px 0;border-top:1px solid rgba(255,255,255,.18)}
+.facts dd{font-size:16px;font-weight:700;padding:8px 0;border-top:1px solid rgba(255,255,255,.18);line-height:1.45}
+.facts .src{font-size:14px;color:#c9d0e4;margin-top:12px;padding-right:56px}
+.lead-fig{margin:0}
+.lead-fig .ph{aspect-ratio:4/3;overflow:hidden;background:var(--grey2)}
+.more{margin-top:24px;border-top:3px solid var(--navy);padding-top:12px}
+.more h2{font-size:16px;color:var(--navy);font-weight:700}
+.more article{padding:12px 0;border-bottom:1px solid var(--rule)}
+.more h3{font-size:18px;line-height:1.45;font-weight:700}
+
+/* section head */
+.sec{padding:56px 0}
+.sec-h{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.sec-h h2{font-size:28px;font-weight:800;color:var(--navy);white-space:nowrap}
+.sec-h .line{flex:1;height:2px;background:var(--navy)}
+.sec-h a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:700;color:var(--navy);white-space:nowrap}
+
+/* demolitions ledger */
+.ledger{display:grid;grid-template-columns:4fr 8fr;gap:56px;align-items:start}
+.big{font-weight:900;font-size:120px;line-height:.95;color:var(--navy)}
+.big-l{font-size:22px;font-weight:700;line-height:1.45;margin-top:10px}
+.bar{display:flex;height:40px;margin-top:6px}
+.bar span{display:block;height:100%}
+.bar .a{background:var(--navy);flex:96}
+.bar .b{background:var(--yellow);flex:35}
+.bar .c{background:#8c94ab;flex:8}
+.bar-legend{display:grid;grid-template-columns:96fr 35fr 8fr;gap:0;margin-top:10px}
+.bar-legend div{font-size:15px;line-height:1.4;padding-left:8px}
+.bar-legend b{display:block;font-size:26px;font-weight:800;color:var(--ink)}
+.bar-legend div:last-child{white-space:nowrap}
+.notices{display:grid;grid-template-columns:repeat(3,1fr);margin-top:30px;border-top:1px solid var(--rule)}
+.notices div{padding:14px 0 0}
+.notices div + div{border-right:1px solid var(--rule);padding-right:18px}
+.notices b{font-size:34px;font-weight:800;color:var(--navy);line-height:1.1;display:block}
+.notices span{font-size:15px}
+.hit{margin-top:26px}
+.hit p{font-size:15px;font-weight:700;color:var(--muted);margin-bottom:10px}
+.hit ul{display:flex;flex-wrap:wrap;gap:8px}
+.hit a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1.5px solid var(--navy);font-weight:700;color:var(--navy);font-size:15px;background:var(--white)}
+.ledger .credit{margin-top:18px}
+
+/* neighbourhoods */
+.hood{display:grid;grid-template-columns:220px 1fr 1fr 260px;gap:32px;padding:24px 0;border-top:1px solid var(--rule);align-items:start}
+.hood:last-child{border-bottom:1px solid var(--rule)}
+.hood-name .n{font-family:var(--kufi);font-weight:700;font-size:26px;line-height:1.25;color:var(--navy)}
+.hood-name p{font-size:15px;color:var(--muted);margin-top:4px}
+.hood-name a{display:inline-flex;align-items:center;min-height:44px;font-size:15px;font-weight:700;color:var(--navy)}
+.hood h3{font-size:18px;line-height:1.45;font-weight:700}
+.hood figure{margin:0}
+.hood .ph{aspect-ratio:3/2;overflow:hidden;background:var(--grey2)}
+.hood .credit{font-size:14px}
+
+/* martyrs + prisoners */
+.mp{background:var(--grey);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.mp-grid{display:grid;grid-template-columns:5fr 7fr;gap:56px}
+.mlist li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.mlist li:first-child{border-top:3px solid var(--red)}
+.mlist b{font-size:17px;font-weight:800;color:var(--ink)}
+.mlist span{font-size:15px;color:var(--muted);text-align:left}
+.mnote{font-size:14px;color:var(--muted);margin-top:12px}
+.figs{display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--navy)}
+.figs div{padding:16px 16px 16px 0}
+.figs div + div{border-right:1px solid var(--rule);padding-right:16px}
+.figs b{font-size:38px;font-weight:800;line-height:1.05;color:var(--navy);display:block}
+.figs span{font-size:15px;display:block;margin-top:4px;line-height:1.45}
+.plist{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:20px;padding-top:20px;border-top:1px solid var(--rule)}
+.plist h3{font-size:18px;line-height:1.45;font-weight:700}
+
+/* video */
+.video{background:var(--navyd);color:#fff}
+.video .sec-h h2,.video .sec-h a{color:#fff}
+.video .sec-h .line{background:var(--yellow)}
+.v-grid{display:grid;grid-template-columns:8fr 4fr;gap:40px;align-items:start}
+.v-main .ph{display:block;position:relative;aspect-ratio:16/9;overflow:hidden;background:#0c1430}
+.play{position:absolute;bottom:16px;right:16px;width:56px;height:56px;border-radius:50%;background:var(--yellow);display:flex;align-items:center;justify-content:center}
+.play svg{width:22px;height:22px;fill:var(--navy);margin-right:-3px}
+.dur{position:absolute;bottom:16px;left:16px;background:rgba(10,16,40,.88);font-size:14px;font-weight:700;padding:2px 8px}
+.video .place{color:var(--yellow);margin-top:14px}
+.v-main h3{color:#fff;font-size:26px;margin-top:4px}
+.video .credit{color:#b9c1d8}
+.v-list li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.v-list li:first-child{padding-top:0}
+.v-list .place{margin-top:0}
+.v-list h3{color:#fff;font-size:18px;line-height:1.45;font-weight:700;margin-top:4px}
+.v-list .meta{color:#c9d0e4;display:flex;align-items:center;gap:8px}
+.v-list .meta svg{width:14px;height:14px;fill:var(--yellow)}
+
+/* gallery + translations */
+.gt{display:grid;grid-template-columns:8fr 4fr;gap:56px}
+.gal{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:200px 200px;gap:12px}
+.gal figure{margin:0;overflow:hidden;background:var(--grey2)}
+.gal .g1{grid-row:1/3}
+.gal-meta{margin-top:16px}
+.gal-meta h3{font-size:22px}
+.trans li{padding:16px 0;border-bottom:1px solid var(--rule)}
+.trans li:first-child{padding-top:0}
+.src{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;color:var(--navy)}
+.src i{font-style:normal;border:1.5px solid var(--navy);padding:0 7px;line-height:22px;font-family:"Times New Roman",serif}
+.trans h3{font-size:18px;line-height:1.45;font-weight:700;margin-top:6px}
+
+/* footer */
+.foot{background:var(--navyd);color:#dfe3ee;padding:48px 0 0}
+.foot-top{display:grid;grid-template-columns:3fr 9fr;gap:56px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.16)}
+.foot-logo{width:190px;height:auto}
+.foot-about{font-size:15px;line-height:1.7;margin-top:16px}
+.foot-social{display:flex;gap:8px;margin-top:16px}
+.foot-social a{width:44px;height:44px;border:1.5px solid rgba(255,255,255,.35);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.foot-social svg{width:17px;height:17px;stroke:#fff}
+.idx-h{font-size:22px;font-weight:800;color:#fff}
+.idx-sub{font-size:15px;color:#b9c1d8;margin-bottom:18px}
+.idx{display:grid;grid-template-columns:1fr 2fr;gap:40px}
+.idx h3{color:var(--yellow);font-size:16px;font-weight:700;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.16)}
+.idx ul{display:grid;grid-template-columns:repeat(2,1fr);column-gap:20px}
+.idx .wide ul{grid-template-columns:repeat(3,1fr)}
+.idx a{display:flex;align-items:center;min-height:44px;font-size:16px;border-bottom:1px solid rgba(255,255,255,.08)}
+.foot-sec{display:flex;flex-wrap:wrap;gap:0 8px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.foot-sec a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font-weight:700;color:#fff}
+.foot-sec a:first-child{padding-right:0}
+.foot-bot{display:flex;justify-content:space-between;gap:16px;padding:16px 0 22px;font-size:14px;color:#b9c1d8}
+
+/* responsive */
+@media (max-width:1100px){
+  .lead h1{font-size:38px}
+  .hood{grid-template-columns:180px 1fr 1fr}
+  .hood figure{display:none}
+}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  .topbar .links .hide-m{display:none}
+  .topbar .wrap > span{white-space:nowrap}
+  .mast > .wrap{padding-top:12px;padding-bottom:12px;gap:12px}
+  .brand img{width:132px}
+  .motto{display:none}
+  .btn .lbl{display:none}
+  .btn{padding:0}
+  .tools .solid{display:none}
+  .nav{overflow-x:auto}
+  .nav ul{width:max-content}
+  .nav a{min-height:44px;padding:0 13px;font-size:15px}
+
+  .gates{padding-top:16px}
+  .gates-head{margin-bottom:10px}
+  .gates-title{font-size:20px}
+  .gates-title span,.gates-dir{display:none}
+  .gate-row{display:flex;overflow-x:auto;gap:8px;margin:0 -16px;padding:4px 16px 0;scroll-snap-type:x mandatory}
+  .gate{flex:0 0 104px;min-height:118px;padding:40px 8px 10px;scroll-snap-align:start;border-radius:60px 60px 0 0}
+  .gate .hl{display:none}
+  .gate .name{font-size:18px;border:0;padding:0}
+  .gate .flag{top:14px}
+  .gate .flag b{font-size:12px;padding:0 6px}
+  .gate.on{flex-basis:132px}
+  .gate.on .cap{padding:6px 6px 8px}
+  .gate.on .cap .sub{font-size:12px}
+  .gate.on{order:-1}
+  .wall{height:16px;background:
+    linear-gradient(var(--navy),var(--navy)) bottom/100% 7px no-repeat,
+    repeating-linear-gradient(90deg,var(--navy) 0 18px,transparent 18px 28px) top/100% 9px no-repeat}
+  .swipe{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);padding:8px 0 0}
+  .swipe b{color:var(--navy)}
+
+  .lead{padding:22px 0 36px}
+  .lead-grid{grid-template-columns:1fr;gap:22px}
+  .pin b{font-size:21px}
+  .lead h1{font-size:29px;line-height:1.35}
+  .lead .dek{font-size:17px}
+  .facts{padding:16px 18px 18px}
+  .facts dd{font-size:15px}
+
+  .sec{padding:40px 0}
+  .sec-h{margin-bottom:18px;gap:12px}
+  .sec-h h2{font-size:22px}
+  .ledger,.mp-grid,.v-grid,.gt,.foot-top,.idx{grid-template-columns:1fr}
+  .ledger{gap:22px}
+  .big{font-size:84px}
+  .big-l{font-size:19px}
+  .bar-legend b{font-size:20px}
+  .bar-legend div{font-size:14px}
+  .notices b{font-size:26px}
+  .notices span{font-size:14px;display:block;line-height:1.4}
+
+  .hood{grid-template-columns:1fr;gap:10px;padding:20px 0}
+  .hood-name{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 12px}
+  .hood-name .n{font-size:22px}
+  .hood-name p{margin-top:0}
+  .hood-name a{margin-right:auto;min-height:36px}
+  .hood article + article{border-top:1px solid var(--rule);padding-top:10px}
+
+  .mp-grid{gap:36px}
+  .figs{grid-template-columns:1fr 1fr}
+  .figs div:nth-child(3){border-right:0;padding-right:0}
+  .figs div:nth-child(n+3){border-top:1px solid var(--rule)}
+  .figs b{font-size:30px}
+  .plist{grid-template-columns:1fr;gap:14px}
+
+  .v-grid{gap:24px}
+  .v-main h3{font-size:21px}
+  .gt{gap:40px}
+  .gal{grid-template-columns:1fr;grid-template-rows:240px}
+  .gal .g2,.gal .g3{display:none}
+  .gal .g1{grid-row:auto}
+  .gal-meta h3{font-size:19px}
+
+  .foot-top{gap:28px}
+  .idx{gap:20px}
+  .idx .wide ul{grid-template-columns:repeat(2,1fr)}
+  .foot-bot{flex-direction:column;gap:4px}
+}
+
+</style>
+</helmet>
+<div class="dc-root" dir="rtl" lang="ar">
+<div class="topbar">
+  <div class="wrap">
+    <span>الثلاثاء 6 تشرين الأول 2026</span>
+    <div class="links">
+      <a href="#" class="hide-m">من نحن</a>
+      <a href="#" class="hide-m">أرسل خبراً</a>
+      <a href="#" class="ico hide-m" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H6.5v3.5H9V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></a>
+      <a href="#" class="ico hide-m" aria-label="إكس"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+      <a href="#" class="ico" aria-label="تلغرام"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4L3 11l6 2.5L18 7l-7 8 7 5z"/></svg></a>
+      <a href="#" class="ico" aria-label="إنستغرام"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/></svg></a>
+      <span class="handle hide-m">@alqastalps</span>
+    </div>
+  </div>
+</div>
+
+<header class="mast">
+  <div class="wrap">
+    <div class="brand">
+      <a href="#"><img src="/_blob/6f7bf2d74fbfca29cfeaaec5b8fa60b0" alt="القسطل AL Qastal"></a>
+      <p class="motto">القدس أولاً<small>أخبار المدينة من أبوابها وأحيائها</small></p>
+    </div>
+    <div class="tools">
+      <a href="#" class="btn" aria-label="بحث"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span class="lbl">بحث</span></a>
+      <a href="#" class="btn solid"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linejoin="round"><path d="M21 4L3 11l6 2.5L18 7l-7 8 7 5z"/></svg><span class="lbl">تابعنا على تلغرام</span></a>
+    </div>
+  </div>
+  <nav class="nav" aria-label="الأقسام">
+    <div class="wrap">
+      <ul>
+        <li><a href="#">القدس</a></li>
+        <li><a href="#">الأقصى</a></li>
+        <li><a href="#">الأسرى</a></li>
+        <li><a href="#">الضفة</a></li>
+        <li><a href="#">غزة</a></li>
+        <li><a href="#">ترجمات عبرية</a></li>
+        <li><a href="#">تقارير</a></li>
+        <li><a href="#">فيديو</a></li>
+        <li><a href="#">صور</a></li>
+        <li class="en"><a href="#">English</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<!-- ===== SIGNATURE: the city's gates, with the lead opened from its gate ===== -->
+<section class="gates" aria-label="أبواب المدينة">
+  <div class="wrap">
+    <div class="gates-head">
+      <p class="gates-title">أبواب المدينة <span>آخر خبر من كل مكان في القدس</span></p>
+      <p class="gates-dir">من الشمال إلى الجنوب &larr;</p>
+    </div>
+    <div class="gate-row">
+      <a href="#" class="gate">
+        <span class="name">كفر عقب</span>
+        <span class="hl">70 منشأة هُدمت في كفر عقب وأطراف مخيم قلنديا ضمن عملية «درع العاصمة»</span>
+      </a>
+      <a href="#" class="gate">
+        <span class="flag"><b>عاجل</b></span>
+        <span class="name">شعفاط</span>
+        <span class="hl">اقتحام واسع لمخيم شعفاط وبلدة عناتا، واعتقال 100 مواطن على الأقل</span>
+      </a>
+      <a href="#" class="gate">
+        <span class="name">العيسوية</span>
+        <span class="hl">إخطارات هدم جديدة تطال منازل في البلدة</span>
+      </a>
+      <a href="#" class="gate">
+        <span class="name">الشيخ جراح</span>
+        <span class="hl">«نحلات شمعون»: مخطط لـ316 وحدة استيطانية مكان بيوت الحي</span>
+      </a>
+      <a href="#" class="gate">
+        <span class="name">باب العامود</span>
+        <span class="hl">المدرج بين أكثر مواقع الاعتقال في القدس مطلع العام</span>
+      </a>
+      <a href="#lead" class="gate on" aria-current="true">
+        <img src="/_blob/4d586560e696b890fae22e9041d8ea99" alt="">
+        <span class="cap"><span class="name">سلوان</span><span class="sub">القصة الرئيسية</span></span>
+      </a>
+      <a href="#" class="gate">
+        <span class="name">جبل المكبر</span>
+        <span class="hl">الجبل على خريطة إخطارات الهدم مجدداً هذا الربع</span>
+      </a>
+    </div>
+    <div class="wall" aria-hidden="true"></div>
+    <p class="swipe"><span>اسحب لبقية الأماكن</span><b>&larr; 7 أماكن</b></p>
+  </div>
+
+  <article class="lead" id="lead">
+    <div class="wrap">
+      <div class="lead-grid">
+        <div>
+          <p class="pin">من <b>سلوان</b> حي البستان، جنوب المسجد الأقصى</p>
+          <h1><a href="#">حي البستان: 54 بيتاً هُدمت من أصل 120، والجرافات تعود لإفساح المكان لـ«حديقة توراتية»</a></h1>
+          <p class="dek">بلدية الاحتلال تستأنف هدم منازل الحي لإقامة حديقة أثرية سياحية يهودية، فيما تواجه العائلات الباقية أوامر هدم وإخلاء متتالية.</p>
+          <p class="meta">القسطل &middot; تقرير &middot; محدّث</p>
+          <aside class="facts" aria-label="بطاقة المكان">
+            <h2>بطاقة المكان</h2>
+            <dl>
+              <dt>المكان</dt><dd>حي البستان، بلدة سلوان</dd>
+              <dt>البيوت قبل الهدم</dt><dd>120 بيتاً</dd>
+              <dt>ما بقي منها</dt><dd>66 بيتاً</dd>
+              <dt>المشروع المعلن</dt><dd>حديقة أثرية سياحية يهودية</dd>
+            </dl>
+            <p class="src">المصادر: الجزيرة نت، 30 آذار 2026 &middot; هآرتس، 31 آذار 2026</p>
+          </aside>
+        </div>
+        <div>
+          <figure class="lead-fig">
+            <div class="ph"><img src="/_blob/fa0da1cd4c2f41ff37f4c823870ea35c" alt="بيوت بلدة سلوان على السفح جنوب البلدة القديمة"></div>
+            <figcaption class="credit">بلدة سلوان جنوب المسجد الأقصى &middot; <span>تصوير: Yasmine.shal، ويكيميديا كومنز، CC BY-SA 4.0</span></figcaption>
+          </figure>
+          <div class="more">
+            <h2>المزيد من سلوان</h2>
+            <article><h3><a href="#">الاحتلال يجبر المقدسي مأمون شيوخي على هدم منزله ذاتياً في حي العين الفوقا</a></h3><p class="meta">العين الفوقا &middot; المركز الفلسطيني للإعلام، 7 أيار 2026</p></article>
+            <article><h3><a href="#">بطن الهوى: تهجير نحو 15 عائلة من بيوتها منذ السابع من أكتوبر 2023</a></h3><p class="meta">بطن الهوى &middot; الجزيرة نت، 26 آذار 2026</p></article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<!-- ===== DEMOLITION LEDGER ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-h"><h2>الهدم في القدس: الربع الثالث</h2><span class="line"></span><a href="#">ملف الهدم &larr;</a></div>
+    <div class="ledger">
+      <div>
+        <p class="big">139</p>
+        <p class="big-l">عملية هدم وتجريف في محافظة القدس بين تموز وأيلول 2026</p>
+      </div>
+      <div>
+        <div class="bar" role="img" aria-label="96 هدم بآليات الاحتلال، 35 هدم ذاتي قسري، 8 تجريف"><span class="a"></span><span class="b"></span><span class="c"></span></div>
+        <div class="bar-legend">
+          <div><b>96</b>هدماً بآليات الاحتلال</div>
+          <div><b>35</b>هدماً ذاتياً قسرياً</div>
+          <div><b>8</b>تجريف</div>
+        </div>
+        <div class="notices">
+          <div><b>140</b><span>إخطار هدم جديد</span></div>
+          <div><b>7</b><span>قرارات مصادرة</span></div>
+          <div><b>3</b><span>قرارات إخلاء</span></div>
+        </div>
+        <div class="hit">
+          <p>أين وقع الهدم</p>
+          <ul>
+            <li><a href="#">سلوان</a></li><li><a href="#">جبل المكبر</a></li><li><a href="#">بيت حنينا</a></li><li><a href="#">عناتا</a></li><li><a href="#">الرام</a></li><li><a href="#">حزما</a></li><li><a href="#">قلنديا</a></li>
+          </ul>
+        </div>
+        <p class="credit">المصدر: التقرير الربعي لمحافظة القدس، نشرته وكالة وفا في 1 تشرين الأول 2026</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEIGHBOURHOODS ===== -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-h"><h2>من الأحياء</h2><span class="line"></span><a href="#">كل الأحياء &larr;</a></div>
+
+    <div class="hood">
+      <div class="hood-name"><p class="n">الشيخ جراح</p><p>شمال البلدة القديمة</p><a href="#">صفحة الحي &larr;</a></div>
+      <article><h3><a href="#">الاحتلال يستولي على مقر الأونروا في الحي ويستبدل علم الأمم المتحدة بعلمه</a></h3><p class="meta">بديل، كانون الأول 2025</p></article>
+      <article><h3><a href="#">مركز معلومات وادي حلوة: الشيخ جراح يعود إلى الواجهة باعتقالات وهدم</a></h3><p class="meta">سلوانك</p></article>
+      <figure><div class="ph"><img src="/_blob/90cdd93b9540c5d7b5b94e1ac72fdbfb" alt="حي الشيخ جراح من أعلى"></div><figcaption class="credit">Hagai Agmon-Snir &middot; كومنز &middot; CC BY-SA</figcaption></figure>
+    </div>
+
+    <div class="hood">
+      <div class="hood-name"><p class="n">مخيم شعفاط وعناتا</p><p>شمال شرق القدس</p><a href="#">صفحة المخيم &larr;</a></div>
+      <article><h3><a href="#">خمسة أسئلة عما يجري في مخيم شعفاط وبلدة عناتا</a></h3><p class="meta">شرح &middot; أيلول 2026</p></article>
+      <article><h3><a href="#">357 حالة اعتقال في محافظة القدس خلال الربع الثالث، بينها 10 أطفال و8 نساء</a></h3><p class="meta">محافظة القدس، 1 تشرين الأول 2026</p></article>
+      <figure><div class="ph"><img src="/_blob/9e178ca5d954ed45a0856d2fda7e5aad" alt="مخيم شعفاط والجدار من أعلى"></div><figcaption class="credit">Hagai Agmon-Snir &middot; كومنز &middot; CC BY-SA</figcaption></figure>
+    </div>
+
+    <div class="hood">
+      <div class="hood-name"><p class="n">قلنديا</p><p>شمال القدس، خلف الجدار</p><a href="#">صفحة البلدة &larr;</a></div>
+      <article><h3><a href="#">إخطارات بهدم 7 منازل مأهولة في الحي الشرقي من القرية، ومهلة 21 يوماً للإخلاء</a></h3><p class="meta">قلنديا</p></article>
+      <article><h3><a href="#">على الطرف الآخر من الحاجز: أحياء عالية تنمو بلا خدمات ولا تراخيص</a></h3><p class="meta">تقرير مصور</p></article>
+      <figure><div class="ph"><img src="/_blob/d92e25e26161a113a1ac2ced7b878472" alt="بنايات كفر عقب شمال القدس"></div><figcaption class="credit">كفر عقب &middot; Hagai Agmon-Snir &middot; CC BY-SA</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARTYRS + PRISONERS ===== -->
+<section class="sec mp">
+  <div class="wrap">
+    <div class="mp-grid">
+      <div>
+        <div class="sec-h"><h2>شهداء القدس</h2><span class="line"></span></div>
+        <ul class="mlist">
+          <li><b>إبراهيم الهندي</b><span>باب العامود</span></li>
+          <li><b>خليل عباس خليل الأعور</b><span>سلوان</span></li>
+          <li><b>أحمد خليل عباس الأعور</b><span>سلوان</span></li>
+          <li><b>خليل رشاد حامد الرشق</b><span>حاجز مخيم شعفاط</span></li>
+          <li><b>وليد نضال أبو سنينة</b><span>مخيم قلنديا</span></li>
+          <li><b>نصر زعل كعابنة</b><span>بيرنبالا</span></li>
+        </ul>
+        <p class="mnote">تموز &ndash; أيلول 2026 &middot; محافظة القدس، 1 تشرين الأول 2026</p>
+      </div>
+      <div>
+        <div class="sec-h"><h2>الأسرى</h2><span class="line"></span><a href="#">ملف الأسرى &larr;</a></div>
+        <div class="figs">
+          <div><b>9350</b><span>أسيراً ومعتقلاً في سجون الاحتلال</span></div>
+          <div><b>3176</b><span>معتقلاً إدارياً بلا تهمة</span></div>
+          <div><b>350</b><span>طفلاً على الأقل</span></div>
+          <div><b>90</b><span>أسيرة</span></div>
+        </div>
+        <p class="meta">حتى بداية أيلول 2026 &middot; مؤسسة الضمير</p>
+        <div class="plist">
+          <article><h3><a href="#">الاحتلال يصدر 650 أمر اعتقال إداري بين جديد وتجديد خلال تموز</a></h3><p class="meta">هيئة شؤون الأسرى، آب 2026</p></article>
+          <article><h3><a href="#">419 حالة اعتقال في القدس خلال الربع الأول من العام</a></h3><p class="meta">محافظة القدس، 2 نيسان 2026</p></article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== VIDEO: one clip + list, by place ===== -->
+<section class="sec video">
+  <div class="wrap">
+    <div class="sec-h"><h2>فيديو</h2><span class="line"></span><a href="#">كل الفيديو &larr;</a></div>
+    <div class="v-grid">
+      <article class="v-main">
+        <a href="#" class="ph"><img src="/_blob/959ab9b8ba58662693bd40f851d51960" alt="باب العامود في القدس"><span class="play"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span><span class="dur">4:05</span></a>
+        <span class="place">باب العامود</span>
+        <h3><a href="#">ساعة على المدرج: كيف يعيش أشهر أبواب القدس تحت الحواجز الحديدية</a></h3>
+        <p class="credit">صورة الغلاف: DMY، ويكيميديا كومنز، CC BY 3.0</p>
+      </article>
+      <ul class="v-list">
+        <li><span class="place">العيسوية</span><h3><a href="#">أهالي العيسوية يقرأون إخطارات الهدم على أبوابهم</a></h3><p class="meta"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>2:40</p></li>
+        <li><span class="place">الشيخ جراح</span><h3><a href="#">من مقر الأونروا إلى بيوت كرم الجاعوني: جولة في الحي</a></h3><p class="meta"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>3:15</p></li>
+        <li><span class="place">سلوان</span><h3><a href="#">وادي حلوة: الحفريات تمشي تحت البيوت</a></h3><p class="meta"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg>1:55</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY + HEBREW PRESS (compact) ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="gt">
+      <div>
+        <div class="sec-h"><h2>صور</h2><span class="line"></span><a href="#">كل الألبومات &larr;</a></div>
+        <div class="gal">
+          <figure class="g1"><img src="/_blob/c07613c5244609432e20b5088b91e6ee" alt="أسطح البلدة القديمة من فوق باب العامود وقبة الصخرة في الأفق"></figure>
+          <figure class="g2"><img src="/_blob/6e6763d958d32d294d9a68858cdab15d" alt="محل في طريق الواد"></figure>
+          <figure class="g3"><img src="/_blob/68007368b678eb39f46a9c2c13acd6d4" alt="باب الأسباط"></figure>
+        </div>
+        <div class="gal-meta">
+          <h3><a href="#">البلدة القديمة من فوق: من باب العامود إلى طريق الواد وباب الأسباط</a></h3>
+          <p class="meta">ألبوم &middot; 18 صورة</p>
+          <p class="credit">الصور: McKaby &middot; Bahnfrend &middot; Godot13، ويكيميديا كومنز، CC BY-SA 4.0</p>
+        </div>
+      </div>
+      <div>
+        <div class="sec-h"><h2>ترجمات عبرية</h2><span class="line"></span></div>
+        <ul class="trans">
+          <li><span class="src"><i>הארץ</i>هآرتس، 11 شباط 2026</span><h3><a href="#">قاضٍ إسرائيلي يوقف عملية هدم في سلوان في اللحظة الأخيرة</a></h3></li>
+          <li><span class="src"><i>הארץ</i>هآرتس، 8 كانون الأول 2025</span><h3><a href="#">بن غفير ونواب حزبه يحضرون نقاش قانون إعدام الأسرى بدبابيس على شكل مشنقة</a></h3></li>
+        </ul>
+        <a href="#" class="btn" style="margin-top:18px">كل الترجمات</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <img class="foot-logo" src="/_blob/b0da4890cae5baa031fc45518f2b45b5" alt="القسطل AL Qastal">
+        <p class="foot-about">القسطل منصة إخبارية مقدسية، تنقل أخبار القدس أولاً: من أبواب البلدة القديمة إلى أحيائها وبلداتها ومخيماتها.</p>
+        <div class="foot-social">
+          <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H6.5v3.5H9V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></a>
+          <a href="#" aria-label="إكس"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="تلغرام"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4L3 11l6 2.5L18 7l-7 8 7 5z"/></svg></a>
+          <a href="#" aria-label="إنستغرام"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <p class="idx-h">فهرس الأماكن</p>
+        <p class="idx-sub">لكل مكان في القدس صفحته وأخباره</p>
+        <div class="idx">
+          <div>
+            <h3>البلدة القديمة</h3>
+            <ul>
+              <li><a href="#">المسجد الأقصى</a></li><li><a href="#">باب العامود</a></li>
+              <li><a href="#">باب الأسباط</a></li><li><a href="#">باب الساهرة</a></li>
+              <li><a href="#">حارة الواد</a></li><li><a href="#">حارة السعدية</a></li>
+              <li><a href="#">باب السلسلة</a></li><li><a href="#">باب الخليل</a></li>
+            </ul>
+          </div>
+          <div class="wide">
+            <h3>الأحياء والبلدات</h3>
+            <ul>
+              <li><a href="#">سلوان</a></li><li><a href="#">الشيخ جراح</a></li><li><a href="#">العيسوية</a></li>
+              <li><a href="#">جبل المكبر</a></li><li><a href="#">الطور</a></li><li><a href="#">صور باهر</a></li>
+              <li><a href="#">بيت حنينا</a></li><li><a href="#">شعفاط</a></li><li><a href="#">عناتا</a></li>
+              <li><a href="#">كفر عقب</a></li><li><a href="#">قلنديا</a></li><li><a href="#">الرام</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="foot-sec" aria-label="أقسام الموقع">
+      <a href="#">القدس</a><a href="#">الأقصى</a><a href="#">الأسرى</a><a href="#">الضفة</a><a href="#">غزة</a><a href="#">ترجمات عبرية</a><a href="#">تقارير</a><a href="#">فيديو</a><a href="#">صور</a>
+    </nav>
+    <div class="foot-bot">
+      <span>&copy; 2026 القسطل &middot; alqastal.ps</span>
+      <span>الصور الخارجية من ويكيميديا كومنز بتراخيص مفتوحة، مع ذكر المصوّر</span>
+    </div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5218}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

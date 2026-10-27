@@ -1,0 +1,230 @@
+{
+ "al-tur": {
+  "w": 1400,
+  "h": 934
+ },
+ "al-wad-police-barrier": {
+  "w": 1400,
+  "h": 1050
+ },
+ "al-wad-street": {
+  "w": 1400,
+  "h": 935
+ },
+ "anata-wall": {
+  "w": 1400,
+  "h": 934
+ },
+ "aqsa-after-fajr": {
+  "w": 1400,
+  "h": 788
+ },
+ "aqsa-friday-prayer": {
+  "w": 1400,
+  "h": 931
+ },
+ "aqsa-prayer-door": {
+  "w": 1400,
+  "h": 933
+ },
+ "aqsa-worshippers-walk": {
+  "w": 1400,
+  "h": 933
+ },
+ "beit-hanina": {
+  "w": 1400,
+  "h": 934
+ },
+ "chain-gate-inside": {
+  "w": 1400,
+  "h": 951
+ },
+ "chain-gate-street": {
+  "w": 1400,
+  "h": 1050
+ },
+ "cotton-market": {
+  "w": 1400,
+  "h": 1050
+ },
+ "damascus-gate-crowd": {
+  "w": 1400,
+  "h": 788
+ },
+ "damascus-gate-steps": {
+  "w": 1400,
+  "h": 788
+ },
+ "damon-prison": {
+  "w": 1400,
+  "h": 788
+ },
+ "dome-of-rock-arches": {
+  "w": 1400,
+  "h": 932
+ },
+ "dung-gate": {
+  "w": 1400,
+  "h": 1080
+ },
+ "funeral-dura": {
+  "w": 1400,
+  "h": 933
+ },
+ "gaza-displacement-camp": {
+  "w": 1400,
+  "h": 788
+ },
+ "gaza-displacement-walk": {
+  "w": 1400,
+  "h": 788
+ },
+ "gaza-mosque-jabalia": {
+  "w": 1400,
+  "h": 788
+ },
+ "gaza-tents-rubble": {
+  "w": 1400,
+  "h": 788
+ },
+ "golden-gate": {
+  "w": 1400,
+  "h": 931
+ },
+ "hebron-shuhada-2016": {
+  "w": 1400,
+  "h": 933
+ },
+ "herods-gate-dusk": {
+  "w": 1400,
+  "h": 933
+ },
+ "herods-gate-lights": {
+  "w": 1400,
+  "h": 1050
+ },
+ "issawiya-mosque": {
+  "w": 1400,
+  "h": 934
+ },
+ "jabal-mukabber": {
+  "w": 1400,
+  "h": 932
+ },
+ "jaffa-gate-night": {
+  "w": 1400,
+  "h": 1050
+ },
+ "jenin-camp": {
+  "w": 1400,
+  "h": 931
+ },
+ "kafr-aqab": {
+  "w": 1400,
+  "h": 934
+ },
+ "lions-gate-outside": {
+  "w": 1400,
+  "h": 1050
+ },
+ "mughrabi-bridge": {
+  "w": 1400,
+  "h": 1050
+ },
+ "new-gate-night": {
+  "w": 1400,
+  "h": 1050
+ },
+ "ofer-prison": {
+  "w": 1400,
+  "h": 971
+ },
+ "ofer-prison-entrance": {
+  "w": 1400,
+  "h": 1050
+ },
+ "olive-harvest": {
+  "w": 1400,
+  "h": 933
+ },
+ "prisoner-poster-nilin": {
+  "w": 1400,
+  "h": 931
+ },
+ "prisoners-solidarity-ramallah": {
+  "w": 1400,
+  "h": 933
+ },
+ "qalandiya-queue": {
+  "w": 1400,
+  "h": 1050
+ },
+ "qalandiya-turnstiles": {
+  "w": 1400,
+  "h": 1050
+ },
+ "qibli-dawn": {
+  "w": 1400,
+  "h": 933
+ },
+ "qibli-facade": {
+  "w": 1400,
+  "h": 753
+ },
+ "ras-al-amud": {
+  "w": 1400,
+  "h": 944
+ },
+ "sheikh-jarrah-aerial": {
+  "w": 1400,
+  "h": 933
+ },
+ "sheikh-jarrah-tent": {
+  "w": 1400,
+  "h": 928
+ },
+ "shuafat-camp": {
+  "w": 1400,
+  "h": 934
+ },
+ "shuafat-camp-wall": {
+  "w": 1400,
+  "h": 934
+ },
+ "silwan-aerial": {
+  "w": 1400,
+  "h": 934
+ },
+ "silwan-valley": {
+  "w": 1400,
+  "h": 1050
+ },
+ "silwan-wadi-hilweh": {
+  "w": 1400,
+  "h": 582
+ },
+ "skyline-panorama": {
+  "w": 1400,
+  "h": 434
+ },
+ "skyline-sunset": {
+  "w": 1400,
+  "h": 1050
+ },
+ "sur-baher": {
+  "w": 1400,
+  "h": 934
+ },
+ "walaja-terraces": {
+  "w": 1400,
+  "h": 849
+ },
+ "wall-eizariya": {
+  "w": 1400,
+  "h": 1050
+ },
+ "zion-gate": {
+  "w": 1400,
+  "h": 1050
+ }
+}

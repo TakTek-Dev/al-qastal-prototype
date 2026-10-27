@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>القسطل — أخبار القدس</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+
+:root{
+  --navy:#1c2b5a; --navy-d:#121d42; --yellow:#f7d417; --red:#c4161c;
+  --ink:#161b33; --mute:#525a73; --line:#dfe2ea; --paper:#f4f5f8; --white:#fff;
+  --f:'Noto Kufi Arabic', sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--white)}
+body{font-family:var(--f);color:var(--ink);background:var(--white);font-size:16.5px;line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+button{font:inherit;background:none;border:0;color:inherit;cursor:pointer}
+h1,h2,h3,h4{font-weight:inherit}
+.wrap{max-width:1296px;margin:0 auto;padding:0 32px}
+
+/* ---------- header ---------- */
+.util{border-bottom:1px solid var(--line);font-size:14px;color:var(--mute)}
+.util .wrap{display:flex;justify-content:space-between;align-items:center;height:44px;gap:16px}
+.util .soc{display:flex;align-items:center;color:var(--navy)}
+.util .soc a{width:44px;height:44px;display:flex;align-items:center;justify-content:center}
+.util .soc svg{width:18px;height:18px}
+.util .soc .hdl{font-weight:700;direction:ltr;margin-inline-start:6px}
+.mast .wrap{display:flex;align-items:center;justify-content:space-between;height:100px;gap:24px}
+.mast .logo{display:block;width:176px;height:63px}
+.mast .logo img{object-fit:contain}
+.mast .motto{font-size:15px;color:var(--mute);text-align:center}
+.mast .motto b{color:var(--navy);font-weight:800}
+.mast .search{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--navy)}
+.mast .search svg{width:19px;height:19px}
+.nav{background:var(--navy)}
+.nav ul{list-style:none;display:flex;height:52px;overflow-x:auto;scrollbar-width:none}
+.nav li a{display:flex;align-items:center;height:100%;padding:2px 18px 0;color:#fff;font-weight:700;font-size:16px;white-space:nowrap;border-bottom:4px solid transparent}
+.nav li a.on{border-bottom-color:var(--yellow);color:var(--yellow)}
+
+/* places strip: the city reached by its gates */
+.places{background:var(--paper);border-bottom:1px solid var(--line)}
+.places .wrap{display:flex;align-items:center;gap:6px;min-height:50px}
+.places .lbl{flex:none;font-weight:800;font-size:14.5px;color:var(--navy);padding-inline-end:12px;margin-inline-end:4px;border-inline-end:2px solid var(--yellow);line-height:1.4}
+.places ul{list-style:none;display:flex;overflow-x:auto;scrollbar-width:none;min-width:0}
+.places li a{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 11px;font-weight:600;font-size:15px;color:var(--ink);white-space:nowrap}
+.places li a svg{width:13px;height:16px;color:var(--navy);flex:none}
+.places li a.on{color:var(--navy);font-weight:800}
+.places li a.on svg{color:var(--red)}
+
+.brk{border-bottom:1px solid var(--line)}
+.brk .wrap{display:flex;align-items:center;gap:16px;min-height:56px;padding-top:10px;padding-bottom:10px}
+.brk .lbl{background:var(--red);color:#fff;font-weight:700;font-size:14px;padding:2px 14px;border-radius:3px;flex:none}
+.brk p{font-weight:700;font-size:16px;line-height:1.6}
+.brk time{color:var(--mute);font-size:13.5px;flex:none;margin-inline-start:auto}
+
+/* ---------- the desk: one slot per form ---------- */
+.slot{padding:52px 0;border-top:1px solid var(--line)}
+.slot:first-of-type{border-top:0}
+.slot .wrap{display:grid;grid-template-columns:repeat(12,1fr);gap:24px}
+.slot .hd{grid-column:span 3;padding-top:2px}
+.slot .bd{grid-column:span 9;min-width:0}
+.hd .mk{width:26px;height:26px;display:block}
+.hd h2{font-weight:900;font-size:27px;line-height:1.45;color:var(--navy);margin-top:14px}
+.hd p{font-size:14.5px;color:var(--mute);margin-top:8px;line-height:1.75;max-width:250px}
+.hd .n{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:700;color:var(--navy);border-top:2px solid var(--navy);padding-top:6px}
+.meta{font-size:13.5px;color:var(--mute);display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;line-height:1.6}
+.meta b{color:var(--navy);font-weight:700}
+.meta i{width:4px;height:4px;border-radius:50%;background:#aab0c2;display:inline-block}
+.sub{display:flex;align-items:center;gap:12px;margin:36px 0 16px;font-weight:800;font-size:16px;color:var(--navy)}
+.sub::after{content:"";flex:1;height:1px;background:var(--line)}
+
+/* place stamp — every form carries the gate it came from */
+.at{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:13px;color:var(--navy);background:var(--paper);border:1px solid var(--line);border-radius:3px;padding:0 8px;line-height:1.9;white-space:nowrap}
+.at svg{width:10px;height:13px;color:var(--red);flex:none}
+
+/* 1 — lead: the statement form */
+.lead{display:grid;grid-template-columns:1.25fr 1fr;gap:32px;align-items:start}
+.lead .ph{aspect-ratio:16/9.5;overflow:hidden;border-radius:4px}
+.lead .cap{font-size:13.5px;color:var(--mute);margin-top:8px}
+.lead .top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.lead .src{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:14.5px;color:var(--navy)}
+.lead .src::before{content:"";width:28px;height:3px;background:var(--yellow)}
+.lead h3{font-weight:800;font-size:29px;line-height:1.6;color:var(--navy);margin-top:12px}
+.lead .dek{font-size:16.5px;color:var(--ink);margin-top:12px}
+.lead .meta{margin-top:14px}
+.lead .more{margin-top:20px;border-top:2px solid var(--navy)}
+.lead .more a{display:block;padding:11px 0;border-bottom:1px solid var(--line);font-weight:700;font-size:15.5px;line-height:1.65}
+.lead .more a span{display:block;color:var(--mute);font-weight:500;font-size:13px}
+
+/* 2 — gates of the city */
+.grow3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px}
+.gate{display:flex;flex-direction:column}
+.gate .arch{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:50% 50% 0 0 / 38% 38% 0 0;background:var(--navy);border-bottom:5px solid var(--navy)}
+.gate .arch img{object-position:50% 60%}
+.gate .kind{position:absolute;bottom:0;right:0;background:var(--navy);color:#fff;font-weight:700;font-size:12.5px;padding:0 12px;line-height:2}
+.gate .nm{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:12px}
+.gate .nm b{font-weight:900;font-size:22px;color:var(--navy);line-height:1.4}
+.gate .nm span{font-size:13px;font-weight:700;color:var(--mute);white-space:nowrap}
+.gate h3{font-weight:700;font-size:16px;line-height:1.7;margin-top:6px}
+.gate .meta{margin-top:6px}
+.gate.on .arch{outline:4px solid var(--yellow);outline-offset:4px}
+.gate.on .kind{background:var(--yellow);color:var(--navy)}
+.gmore{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:30px;padding-top:16px;border-top:1px solid var(--line)}
+.gmore p{font-weight:800;font-size:14.5px;color:var(--navy);margin-inline-end:6px}
+.gmore a{display:inline-flex;align-items:center;gap:6px;min-height:40px;padding:0 14px;border:1.5px solid var(--line);border-radius:999px;font-weight:600;font-size:14.5px}
+.gmore a svg{width:10px;height:13px;color:var(--navy)}
+
+/* 3 — martyrs: framed portrait + red name bar */
+.mrow{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.mart{text-align:center}
+.mart .frame{border:8px solid var(--navy);outline:1px solid #c4c9d8;outline-offset:4px;aspect-ratio:4/4.6;background:#eceef4;display:flex;align-items:center;justify-content:center;margin:5px 5px 0}
+.mart .frame svg{width:62%;height:auto;color:var(--navy);opacity:.22}
+.mart .bar{position:relative;background:var(--red);color:#fff;border-radius:6px;margin:-18px 0 0;padding:12px 10px 8px}
+.mart .bar small{position:absolute;top:-12px;right:14px;background:var(--navy);color:#fff;font-size:12px;font-weight:700;padding:0 10px;border-radius:5px;line-height:1.8}
+.mart h3{font-weight:800;font-size:17px;line-height:1.55}
+.mart h3 span{font-weight:500;font-size:14px}
+.mart p{font-size:14.5px;color:var(--navy);font-weight:600;margin-top:12px;line-height:1.65}
+.mart .meta{justify-content:center;margin-top:6px;font-size:13px}
+.mfoot{margin-top:28px;padding-top:14px;border-top:1px solid var(--line);font-size:14.5px;color:var(--mute)}
+.mfoot b{color:var(--ink);font-weight:700}
+
+/* 4 — prisoners: framed portrait behind the fence + yellow name bar + detention card */
+.prow{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.pris .frame{position:relative;border:8px solid var(--navy);outline:1px solid #c4c9d8;outline-offset:4px;aspect-ratio:4/4.6;margin:5px 5px 0;overflow:hidden;background-color:#2a3a6c;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.13) 0 2px,transparent 2px 20px)}
+.pris .frame .wire{position:absolute;top:10%;left:0;width:100%;height:auto;color:#c9cfe2;opacity:.75}
+.pris .frame .who{position:absolute;bottom:6%;left:50%;width:80%;height:auto;transform:translateX(-50%);color:#8f9abd}
+.pris .bar{position:relative;background:var(--yellow);color:var(--navy);border-radius:6px;margin:-18px 0 0;padding:12px 10px 8px;text-align:center}
+.pris .bar small{position:absolute;top:-12px;right:14px;background:var(--navy);color:#fff;font-size:12px;font-weight:700;padding:0 10px;border-radius:5px;line-height:1.8}
+.pris h3{font-weight:800;font-size:17px;line-height:1.55}
+.pris dl{display:grid;grid-template-columns:auto 1fr;margin-top:12px;font-size:14px;line-height:1.6}
+.pris dt{color:var(--mute);font-weight:500;padding:6px 0 6px 12px;border-bottom:1px solid var(--line)}
+.pris dd{color:var(--ink);font-weight:700;padding:6px 0;border-bottom:1px solid var(--line)}
+.pris dd.hl{color:var(--red)}
+.pris .at{margin-top:10px}
+.nrow{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
+.note{border:1.5px solid var(--navy);border-radius:4px;display:flex;flex-direction:column;background:#fff}
+.note .top{display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:#fff;padding:7px 18px;font-size:13.5px;font-weight:600}
+.note .top b{color:var(--yellow);font-weight:800;font-size:15px}
+.note .in{padding:18px 20px 16px;display:flex;flex-direction:column;flex:1}
+.note h3{font-weight:800;font-size:18.5px;line-height:1.65;color:var(--navy)}
+.note p{font-size:15px;margin-top:8px;color:var(--ink)}
+.note .meta{margin-top:auto;padding-top:14px}
+.note .span{display:flex;align-items:center;gap:10px;margin-top:12px;font-weight:700;color:var(--navy);font-size:14px}
+.note .span i{flex:1;height:2px;background:repeating-linear-gradient(to left,var(--navy) 0 6px,transparent 6px 11px)}
+.note.count{background:var(--navy);color:#fff}
+.note.count .top{border-bottom:1px solid rgba(255,255,255,.18)}
+.note.count .big{font-weight:900;font-size:54px;line-height:1.3;color:var(--yellow)}
+.note.count .lbl{font-size:15.5px;font-weight:600}
+.note.count dl{margin-top:12px;display:grid;grid-template-columns:auto 1fr;gap:0 14px;font-size:14.5px}
+.note.count dt{font-weight:800;color:#fff;padding:5px 0;border-top:1px solid rgba(255,255,255,.18)}
+.note.count dd{padding:5px 0;border-top:1px solid rgba(255,255,255,.18);color:#d6dbea}
+.note.count .meta{color:#c2c8dc}
+.note.count .meta b{color:#fff}
+
+/* 5 — deportees: the ban order */
+.stat{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:6px 18px;align-items:center;background:var(--navy);color:#fff;border-radius:4px;padding:18px 24px;margin-bottom:24px}
+.stat b{font-weight:900;font-size:44px;line-height:1.2;color:var(--yellow)}
+.stat span{font-size:14.5px;line-height:1.65;color:#e1e5f0}
+.stat small{grid-column:1/-1;font-size:12.5px;color:#aeb6cf;border-top:1px solid rgba(255,255,255,.16);padding-top:8px;margin-top:6px}
+.brow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.ban{border:1.5px solid var(--navy);border-radius:4px;display:flex;flex-direction:column;background:#fff}
+.ban .from{display:flex;align-items:center;gap:10px;padding:12px 14px;border-bottom:3px double var(--navy)}
+.ban .from svg{width:24px;height:29px;flex:none;color:var(--navy)}
+.ban .from span{display:block;font-size:12.5px;font-weight:600;color:var(--mute);line-height:1.5}
+.ban .from b{display:block;font-weight:900;font-size:18px;color:var(--navy);line-height:1.45;white-space:nowrap}
+.ban .in{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.ban h3{font-weight:800;font-size:17px;line-height:1.6;color:var(--ink)}
+.ban .role{font-size:13.5px;color:var(--mute);font-weight:600}
+.ban .len{display:flex;align-items:baseline;gap:8px;margin-top:14px}
+.ban .len b{font-weight:900;font-size:30px;color:var(--red);line-height:1.2}
+.ban .len span{font-size:14px;font-weight:700;color:var(--ink)}
+.ban .track{display:grid;grid-template-columns:repeat(6,1fr);gap:3px;margin-top:8px}
+.ban .track i{height:9px;background:#e4e7ef;border-radius:1px}
+.ban .track i.f{background:var(--red)}
+.ban .track i.p{background:var(--red);width:12%}
+.ban .track i.q{background:none;border:1.5px dashed #9aa2ba}
+.ban .scale{display:flex;justify-content:space-between;font-size:11.5px;color:var(--mute);margin-top:3px;line-height:1.5}
+.ban p{font-size:14px;margin-top:12px;color:var(--ink);line-height:1.7}
+.ban .meta{margin-top:auto;padding-top:12px}
+
+/* 6 — quotes */
+.qrow{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.quote{border-top:3px solid var(--navy);padding-top:18px;display:flex;flex-direction:column}
+.quote svg{width:34px;height:28px;color:var(--navy)}
+.quote h3{font-weight:600;font-size:18.5px;line-height:1.75;color:var(--ink);margin-top:12px}
+.quote .who{margin-top:16px;padding-top:12px;border-top:1px solid var(--line)}
+.quote .who b{display:block;font-weight:800;font-size:15.5px;color:var(--navy)}
+.quote .who span{font-size:13.5px;color:var(--mute)}
+
+/* 7 — Hebrew press: source paper + Arabic translation */
+.hrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.paper{background:var(--paper);border-radius:4px;padding:20px 22px 20px}
+.paper .src{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:10px;padding-bottom:10px;border-bottom:3px double var(--navy)}
+.paper .src b{font-weight:900;font-size:17px;color:var(--navy);white-space:nowrap}
+.paper .src span{white-space:nowrap;font-size:13px;color:var(--mute)}
+.paper .tag{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:700;color:var(--navy);background:var(--yellow);padding:0 10px;border-radius:3px}
+.paper h3{font-weight:700;font-size:17.5px;line-height:1.7;color:var(--ink);margin-top:10px}
+.paper p{font-size:14.5px;color:var(--mute);margin-top:8px;line-height:1.7}
+
+/* 8 — plus: explainer covers */
+.cvrow{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cover{position:relative;display:flex;flex-direction:column;background:var(--navy);border-radius:4px;overflow:hidden;aspect-ratio:4/3.4;color:#fff}
+.cover .plus{position:absolute;top:16px;left:16px;width:36px;height:36px;border-radius:50%;background:var(--yellow);color:var(--navy);display:flex;align-items:center;justify-content:center}
+.cover .plus svg{width:18px;height:18px}
+.cover .k{padding:20px 22px 0;font-size:13.5px;font-weight:800;color:var(--yellow)}
+.cover h3{font-weight:800;font-size:20.5px;line-height:1.65;padding:6px 22px 0}
+.cover .tear{margin-top:auto;background:var(--yellow);color:var(--navy);padding:26px 22px 12px;font-size:13.5px;font-weight:700;clip-path:polygon(0 30%,6% 18%,12% 32%,19% 14%,26% 27%,33% 12%,40% 26%,47% 15%,54% 30%,61% 13%,68% 25%,75% 10%,82% 28%,89% 16%,95% 29%,100% 15%,100% 100%,0 100%)}
+
+/* 9 — photos */
+.phrow{display:grid;grid-template-columns:5fr 4fr 3fr;gap:24px}
+.phrow figure .ph{height:300px;overflow:hidden;border-radius:4px}
+.phrow .low img{object-position:75% 50%}
+.phrow figcaption{font-size:14.5px;font-weight:700;line-height:1.65;margin-top:10px}
+.phrow figcaption span{display:block;font-size:13px;color:var(--mute);font-weight:500;margin-top:2px}
+
+/* ---------- footer ---------- */
+footer{background:var(--navy-d);color:#cfd5e8;padding:44px 0 26px}
+footer .top{display:grid;grid-template-columns:1.2fr 2fr 1fr;gap:40px;align-items:start}
+footer .flogo{width:180px;height:auto}
+footer p{font-size:14.5px;margin-top:14px;line-height:1.8;max-width:340px}
+footer h5{font-weight:800;font-size:16.5px;color:#fff;margin-bottom:10px}
+footer ul{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0 20px}
+footer ul a{display:flex;align-items:center;min-height:44px;color:#e6e9f3;font-size:15px}
+footer .soc{display:flex;gap:8px}
+footer .soc a{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;color:#fff}
+footer .soc svg{width:18px;height:18px}
+footer .hdl{direction:ltr;text-align:right;color:var(--yellow);font-weight:700;margin-top:12px;font-size:16px}
+footer .bot{border-top:1px solid rgba(255,255,255,.14);margin-top:32px;padding-top:18px;display:flex;justify-content:space-between;gap:16px;font-size:13.5px;color:#a9b1cc}
+footer .bot nav{display:flex;gap:4px}
+footer .bot nav a{min-height:44px;display:flex;align-items:center;padding:0 8px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .slot .hd,.slot .bd{grid-column:span 12}
+  .slot .hd{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .hd .mk{align-self:center}
+  .hd h2{margin-top:0}
+  .hd p{max-width:none;margin-top:0}
+  .hd .n{display:none}
+  .brow{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:700px){
+  body{font-size:15.5px}
+  .wrap{padding:0 16px}
+  .util{display:none}
+  .mast .wrap{height:68px}
+  .mast .logo{width:128px;height:46px}
+  .mast .motto{display:none}
+  .nav ul{height:46px}
+  .nav li a{padding:2px 12px 0;font-size:15px}
+  .places .wrap{padding-left:0;min-height:46px}
+  .places .lbl{font-size:13px;padding-inline-end:10px}
+  .places li a{padding:0 9px;font-size:14px}
+  .brk .wrap{gap:10px;align-items:flex-start;min-height:0}
+  .brk .lbl{font-size:13px;margin-top:3px}
+  .brk p{font-size:14.5px}
+  .brk time{display:none}
+  .slot{padding:32px 0}
+  .slot .wrap{gap:14px}
+  .hd .mk{width:20px;height:20px}
+  .hd h2{font-size:22px}
+  .hd p{font-size:13.5px;flex-basis:100%}
+  .sub{margin:26px 0 12px;font-size:15px}
+  .lead{grid-template-columns:1fr;gap:14px}
+  .lead .ph{aspect-ratio:16/9}
+  .lead .cap{display:none}
+  .lead h3{font-size:21px;margin-top:8px}
+  .lead .dek{font-size:15px;margin-top:8px}
+  .lead .more{margin-top:14px}
+  .lead .more a{font-size:14.5px;padding:10px 0}
+  .grow3{grid-template-columns:1fr 1fr;gap:22px 14px}
+  .gate .nm{margin-top:8px;flex-wrap:wrap;gap:0 8px}
+  .gate .nm b{font-size:18px}
+  .gate .nm span{font-size:12px}
+  .gate h3{font-size:14px;line-height:1.65;margin-top:2px}
+  .gate .meta{font-size:12px}
+  .gate .kind{font-size:11.5px;padding:0 8px}
+  .gmore{margin-top:22px;gap:6px}
+  .gmore p{flex-basis:100%;font-size:14px}
+  .gmore a{min-height:40px;font-size:14px;padding:0 12px}
+  .mrow,.prow{grid-template-columns:1fr 1fr;gap:28px 14px}
+  .mart .frame,.pris .frame{border-width:6px;aspect-ratio:1/1}
+  .mart .bar,.pris .bar{margin-top:-14px;padding:12px 6px 6px}
+  .mart h3,.pris h3{font-size:14.5px}
+  .mart h3 span{font-size:12.5px}
+  .mart p{font-size:13.5px;margin-top:8px}
+  .mfoot{margin-top:20px;font-size:13.5px}
+  .pris dl{font-size:12.5px;margin-top:8px}
+  .pris dt{padding:5px 0 5px 6px}
+  .pris dd{padding:5px 0}
+  .pris .at{font-size:12px}
+  .stat{grid-template-columns:auto 1fr;padding:14px 16px;gap:4px 14px}
+  .stat b{font-size:34px}
+  .stat span{font-size:13.5px}
+  .brow{grid-template-columns:1fr 1fr;gap:14px}
+  .ban .from{padding:10px 10px;gap:8px}
+  .ban .from svg{width:22px;height:27px}
+  .ban .from b{font-size:15.5px}
+  .ban .from span{font-size:11.5px}
+  .ban .in{padding:12px 10px 12px}
+  .ban h3{font-size:14.5px}
+  .ban .role{font-size:12.5px}
+  .ban .len b{font-size:24px}
+  .ban .len span{font-size:12.5px}
+  .ban p{display:none}
+  .ban .meta{font-size:12px}
+  .nrow,.qrow,.hrow,.cvrow{grid-template-columns:1fr;gap:14px}
+  .note .in{padding:16px}
+  .note h3{font-size:16.5px}
+  .note p{font-size:14px}
+  .note.count .big{font-size:44px}
+  .note.count dl{font-size:13.5px}
+  .quote{padding-top:14px}
+  .quote svg{width:26px;height:22px}
+  .quote h3{font-size:16px;margin-top:6px}
+  .quote .who{margin-top:10px;padding-top:8px}
+  .paper{padding:16px}
+  .paper h3{font-size:15.5px}
+  .paper p{display:none}
+  .cover{aspect-ratio:auto;min-height:0}
+  .cover h3{font-size:17.5px;padding-bottom:6px}
+  .cover .tear{padding-top:22px}
+  .phrow{grid-template-columns:1fr 1fr;gap:14px}
+  .phrow figure:first-child{grid-column:span 2}
+  .phrow figure .ph{height:150px}
+  .phrow figure:first-child .ph{height:200px}
+  .phrow figcaption{font-size:13.5px}
+  footer{padding:32px 0 20px}
+  footer .top{grid-template-columns:1fr;gap:20px}
+  footer .flogo{width:140px}
+  footer ul a{font-size:14.5px}
+  footer .bot{flex-direction:column;gap:4px;margin-top:20px}
+}
+
+</style>
+</helmet>
+<div class="dc-root" dir="rtl" lang="ar">
+<header>
+  <div class="util">
+    <div class="wrap">
+      <span>الأربعاء 7 تشرين الأول 2026 · القدس المحتلة</span>
+      <div class="soc">
+        <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></a>
+        <a href="#" aria-label="إكس"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        <a href="#" aria-label="تلغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4L3 11l6 2.5L11 20l3.5-4.5L19 19z"/><path d="M9 13.5l12-9.5"/></svg></a>
+        <a href="#" aria-label="إنستغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        <span class="hdl">@alqastalps</span>
+      </div>
+    </div>
+  </div>
+  <div class="mast">
+    <div class="wrap">
+      <a href="#" class="logo"><img src="/_blob/dc02c5bbdad886220061bcb467c3288a" alt="القسطل AL Qastal"></a>
+      <p class="motto"><b>القدس أولاً</b> · كل خبر في قالبه، وكل قالب من بابه</p>
+      <button type="button" class="search" aria-label="بحث"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+    </div>
+  </div>
+  <nav class="nav" aria-label="الأقسام">
+    <div class="wrap">
+      <ul>
+        <li><a href="#" class="on">القدس</a></li>
+        <li><a href="#">الأقصى</a></li>
+        <li><a href="#">الأسرى</a></li>
+        <li><a href="#">المبعدون</a></li>
+        <li><a href="#">الضفة</a></li>
+        <li><a href="#">غزة</a></li>
+        <li><a href="#">ترجمات عبرية</a></li>
+        <li><a href="#">تقارير</a></li>
+        <li><a href="#">فيديو</a></li>
+        <li><a href="#">صور</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="places" aria-label="القدس من أبوابها">
+    <div class="wrap">
+      <span class="lbl">القدس من أبوابها</span>
+      <ul>
+        <li><a href="#" class="on"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>البلدة القديمة</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>باب العامود</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>باب الأسباط</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>باب المغاربة</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>سلوان</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>الشيخ جراح</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>العيسوية</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>جبل المكبر</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>شعفاط</a></li>
+        <li><a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>كفر عقب</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="brk">
+    <div class="wrap">
+      <span class="lbl">عاجل</span>
+      <p>تشييع جثمان الشهيد المقدسي بهاء النتشة في كفر عقب بعد أن احتجز الاحتلال جثمانه</p>
+      <time>4 تشرين الأول</time>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1 — the day's lead, in the statement form, stamped with its place -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#f7d417"/></svg>
+        <h2>الخبر الأول</h2>
+        <p>ما يتصدّر يوم القدس، في القالب الذي يناسبه، ومختوماً بمكانه.</p>
+      </div>
+      <div class="bd">
+        <article class="lead">
+          <div>
+            <div class="ph"><img src="/_blob/0e7ecde1d935e0ad0be618a183477484" alt="مصلون في باحات المسجد الأقصى أمام المصلى القبلي"></div>
+            <p class="cap">باحات المسجد الأقصى المبارك — أرشيف القسطل</p>
+          </div>
+          <div>
+            <div class="top">
+              <span class="src">بيان · محافظة القدس</span>
+              <a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>البلدة القديمة</a>
+            </div>
+            <h3>محافظة القدس تحذّر من استغلال الأعياد اليهودية لفرض وقائع جديدة في الأقصى</h3>
+            <p class="dek">إغلاقات لتأمين طقوس جماعية للمستوطنين في «عيد العرش» تعطّل حركة المقدسيين، مع تحذير من امتدادها إلى الطرق المؤدية إلى حائط البراق.</p>
+            <div class="meta"><b>القسطل — القدس</b><i></i><span>28 أيلول 2026</span></div>
+            <div class="more">
+              <a href="#">40,661 مستوطناً اقتحموا الأقصى منذ مطلع العام حتى نهاية آب<span>محافظة القدس · 6 أيلول 2026</span></a>
+              <a href="#">17 شهيداً في محافظة القدس منذ مطلع العام<span>وفا · 1 تشرين الأول 2026</span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 — the gates: Jerusalem reached by place -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#1c2b5a"/></svg>
+        <h2>أبواب القدس</h2>
+        <p>آخر خبر من كل باب وحيّ. كل قالب في الصفحة يحمل ختم مكانه ويقود إلى بابه.</p>
+        <span class="n">من الخبر الأول: البلدة القديمة</span>
+      </div>
+      <div class="bd">
+        <div class="grow3">
+          <a href="#" class="gate on">
+            <div class="arch"><img src="/_blob/98ba511e23c8e461877db87adaa6dfe2" alt="باب الأسباط في سور البلدة القديمة"><span class="kind">منها الخبر الأول</span></div>
+            <div class="nm"><b>البلدة القديمة</b><span>باب الأسباط</span></div>
+            <h3>إغلاقات «عيد العرش» تعطّل حركة المقدسيين نحو الأقصى وحائط البراق</h3>
+            <div class="meta"><span>28 أيلول 2026</span></div>
+          </a>
+          <a href="#" class="gate">
+            <div class="arch"><img src="/_blob/1ce96eec91267b5d22b01e315ab62f6b" alt="باب العامود ومدرجه"><span class="kind">باب</span></div>
+            <div class="nm"><b>باب العامود</b><span>شمال السور</span></div>
+            <h3>استشهاد الشاب إبراهيم الهندي برصاص الاحتلال قرب باب العامود</h3>
+            <div class="meta"><span>1 تشرين الأول 2026</span></div>
+          </a>
+          <a href="#" class="gate">
+            <div class="arch"><img src="/_blob/85732fd53d6c24d8a5d2c213ace1400e" alt="بيوت بلدة سلوان على سفح الوادي"><span class="kind">بلدة</span></div>
+            <div class="nm"><b>سلوان</b><span>جنوب الأقصى</span></div>
+            <h3>استشهاد خليل وأحمد الأعور خلال اقتحام قوات الاحتلال البلدة</h3>
+            <div class="meta"><span>1 تشرين الأول 2026</span></div>
+          </a>
+          <a href="#" class="gate">
+            <div class="arch"><img src="/_blob/04acfbf27ae33a6e5e6eace644bd511a" alt="حي الشيخ جراح من أعلى"><span class="kind">حيّ</span></div>
+            <div class="nm"><b>الشيخ جراح</b><span>شمال السور</span></div>
+            <h3>«نحلات شمعون»: مخطط لـ316 وحدة استيطانية مكان بيوت الحي</h3>
+            <div class="meta"><span>ملف الحي</span></div>
+          </a>
+          <a href="#" class="gate">
+            <div class="arch"><img src="/_blob/00774d967058de291aaf6f6d59c94a50" alt="مخيم شعفاط والجدار من أعلى"><span class="kind">مخيم</span></div>
+            <div class="nm"><b>شعفاط</b><span>خلف الجدار</span></div>
+            <h3>اقتحام واسع لمخيم شعفاط وبلدة عناتا، واعتقال 100 مواطن على الأقل</h3>
+            <div class="meta"><span>أيلول 2026</span></div>
+          </a>
+          <a href="#" class="gate">
+            <div class="arch"><img src="/_blob/e6dd03c1fc848e47d1c67dbe3a581033" alt="بنايات كفر عقب شمال القدس"><span class="kind">بلدة</span></div>
+            <div class="nm"><b>كفر عقب</b><span>شمال القدس</span></div>
+            <h3>تشييع الشهيد بهاء النتشة بعد أن احتجز الاحتلال جثمانه</h3>
+            <div class="meta"><span>4 تشرين الأول 2026</span></div>
+          </a>
+        </div>
+        <div class="gmore">
+          <p>أماكن أخرى</p>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>باب المغاربة</a>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>العيسوية</a>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>جبل المكبر</a>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>الطور</a>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>بيت حنينا</a>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>قلنديا</a>
+          <a href="#"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>صور باهر</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 — martyrs -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#c4161c"/></svg>
+        <h2>شهداء القدس</h2>
+        <p>الإطار والاسم، كما ينشرها القسطل.</p>
+        <span class="n">الربع الثالث 2026</span>
+      </div>
+      <div class="bd">
+        <div class="mrow">
+          <article class="mart">
+            <div class="frame"><svg viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M50 4v10"/><path d="M26 40a24 24 0 0 1 48 0"/><path d="M28 40h44v10H28z"/><path d="M10 50h80v26H10z"/><path d="M22 76V62a4 4 0 0 1 8 0v14M46 76V62a4 4 0 0 1 8 0v14M70 76V62a4 4 0 0 1 8 0v14"/></svg></div>
+            <div class="bar"><small>الشهيد</small><h3>بهاء النتشة <span>(19 عاماً)</span></h3></div>
+            <p>برصاص المستوطنين قرب كوبر، وشُيّع في كفر عقب</p>
+            <div class="meta"><a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>كفر عقب</a><span>2 تشرين الأول 2026</span></div>
+          </article>
+          <article class="mart">
+            <div class="frame"><svg viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M50 4v10"/><path d="M26 40a24 24 0 0 1 48 0"/><path d="M28 40h44v10H28z"/><path d="M10 50h80v26H10z"/><path d="M22 76V62a4 4 0 0 1 8 0v14M46 76V62a4 4 0 0 1 8 0v14M70 76V62a4 4 0 0 1 8 0v14"/></svg></div>
+            <div class="bar"><small>الشهيد</small><h3>إبراهيم الهندي</h3></div>
+            <p>برصاص الاحتلال قرب باب العامود</p>
+            <div class="meta"><a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>باب العامود</a><span>الربع الثالث</span></div>
+          </article>
+          <article class="mart">
+            <div class="frame"><svg viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M50 4v10"/><path d="M26 40a24 24 0 0 1 48 0"/><path d="M28 40h44v10H28z"/><path d="M10 50h80v26H10z"/><path d="M22 76V62a4 4 0 0 1 8 0v14M46 76V62a4 4 0 0 1 8 0v14M70 76V62a4 4 0 0 1 8 0v14"/></svg></div>
+            <div class="bar"><small>الشهيد</small><h3>خليل رشاد الرشق</h3></div>
+            <p>برصاص الاحتلال عند حاجز مخيم شعفاط</p>
+            <div class="meta"><a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>شعفاط</a><span>الربع الثالث</span></div>
+          </article>
+          <article class="mart">
+            <div class="frame"><svg viewBox="0 0 100 80" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M50 4v10"/><path d="M26 40a24 24 0 0 1 48 0"/><path d="M28 40h44v10H28z"/><path d="M10 50h80v26H10z"/><path d="M22 76V62a4 4 0 0 1 8 0v14M46 76V62a4 4 0 0 1 8 0v14M70 76V62a4 4 0 0 1 8 0v14"/></svg></div>
+            <div class="bar"><small>الشهيدان</small><h3>خليل وأحمد الأعور</h3></div>
+            <p>خلال اقتحام قوات الاحتلال بلدة سلوان</p>
+            <div class="meta"><a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>سلوان</a><span>الربع الثالث</span></div>
+          </article>
+        </div>
+        <p class="mfoot"><b>ستة شهداء من محافظة القدس في الربع الثالث</b>، بينهم أيضاً وليد أبو سنينة في مخيم قلنديا ونصر كعابنة قرب الجدار في بيرنبالا. — وفا، 1 تشرين الأول 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 — prisoners: portrait corner + notices -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#f7d417"/></svg>
+        <h2>أسرى القدس</h2>
+        <p>وجه الأسير خلف السياج، واسمه على شريط أصفر، وبطاقة اعتقاله: الحكم، السجن، تاريخ الاعتقال.</p>
+        <span class="n">نموذج — الأسماء والصور من المحرر</span>
+      </div>
+      <div class="bd">
+        <div class="prow">
+          <article class="pris">
+            <div class="frame">
+              <svg class="wire" viewBox="0 0 200 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M0 12C25 4 45 20 70 12S115 4 140 12s45 8 60 0"/><path d="M28 4l8 16M36 4l-8 16M98 4l8 16M106 4l-8 16M166 4l8 16M174 4l-8 16"/></svg>
+              <svg class="who" viewBox="0 0 100 90" fill="currentColor" aria-hidden="true"><circle cx="50" cy="32" r="20"/><path d="M8 90c2-22 20-34 42-34s40 12 42 34z"/></svg>
+            </div>
+            <div class="bar"><small>الأسير</small><h3>[اسم الأسير]</h3></div>
+            <dl>
+              <dt>الحكم</dt><dd class="hl">مؤبد</dd>
+              <dt>السجن</dt><dd>النقب</dd>
+              <dt>الاعتقال</dt><dd>[تاريخ الاعتقال]</dd>
+            </dl>
+            <a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>سلوان</a>
+          </article>
+          <article class="pris">
+            <div class="frame">
+              <svg class="wire" viewBox="0 0 200 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M0 12C25 4 45 20 70 12S115 4 140 12s45 8 60 0"/><path d="M28 4l8 16M36 4l-8 16M98 4l8 16M106 4l-8 16M166 4l8 16M174 4l-8 16"/></svg>
+              <svg class="who" viewBox="0 0 100 90" fill="currentColor" aria-hidden="true"><circle cx="50" cy="32" r="20"/><path d="M8 90c2-22 20-34 42-34s40 12 42 34z"/></svg>
+            </div>
+            <div class="bar"><small>المعتقل الإداري</small><h3>[اسم المعتقل]</h3></div>
+            <dl>
+              <dt>الحكم</dt><dd class="hl">إداري 6 أشهر</dd>
+              <dt>السجن</dt><dd>عوفر</dd>
+              <dt>الاعتقال</dt><dd>[تاريخ الاعتقال]</dd>
+            </dl>
+            <a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>شعفاط</a>
+          </article>
+          <article class="pris">
+            <div class="frame">
+              <svg class="wire" viewBox="0 0 200 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M0 12C25 4 45 20 70 12S115 4 140 12s45 8 60 0"/><path d="M28 4l8 16M36 4l-8 16M98 4l8 16M106 4l-8 16M166 4l8 16M174 4l-8 16"/></svg>
+              <svg class="who" viewBox="0 0 100 90" fill="currentColor" aria-hidden="true"><path d="M50 10c-15 0-25 11-25 26 0 9 3 16 7 20-12 4-22 14-24 34h84c-2-20-12-30-24-34 4-4 7-11 7-20 0-15-10-26-25-26z"/></svg>
+            </div>
+            <div class="bar"><small>الأسيرة</small><h3>[اسم الأسيرة]</h3></div>
+            <dl>
+              <dt>الحكم</dt><dd class="hl">موقوفة بلا محاكمة</dd>
+              <dt>السجن</dt><dd>الدامون</dd>
+              <dt>الاعتقال</dt><dd>[تاريخ الاعتقال]</dd>
+            </dl>
+            <a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>العيسوية</a>
+          </article>
+          <article class="pris">
+            <div class="frame">
+              <svg class="wire" viewBox="0 0 200 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M0 12C25 4 45 20 70 12S115 4 140 12s45 8 60 0"/><path d="M28 4l8 16M36 4l-8 16M98 4l8 16M106 4l-8 16M166 4l8 16M174 4l-8 16"/></svg>
+              <svg class="who" viewBox="0 0 100 90" fill="currentColor" aria-hidden="true"><circle cx="50" cy="38" r="17"/><path d="M14 90c2-18 17-29 36-29s34 11 36 29z"/></svg>
+            </div>
+            <div class="bar"><small>الأسير الطفل</small><h3>[اسم الأسير]</h3></div>
+            <dl>
+              <dt>الحكم</dt><dd class="hl">[مدة الحكم]</dd>
+              <dt>السجن</dt><dd>مجدو</dd>
+              <dt>الاعتقال</dt><dd>[تاريخ الاعتقال]</dd>
+            </dl>
+            <a href="#" class="at"><svg viewBox="0 0 10 13" fill="currentColor" aria-hidden="true"><path d="M0 13V5a5 5 0 0 1 10 0v8z"/></svg>كفر عقب</a>
+          </article>
+        </div>
+
+        <h3 class="sub">إشعارات الأسرى</h3>
+        <div class="nrow">
+          <article class="note">
+            <div class="top"><b>إفراج</b><span>بعد ربع قرن</span></div>
+            <div class="in">
+              <h3>الإفراج عن الأسير أحمد خضر من مخيم قلنديا</h3>
+              <p>أمضى محكوميته كاملة: 25 عاماً منذ اعتقاله عام 2001.</p>
+              <div class="span"><span>2001</span><i></i><span>2026</span></div>
+              <div class="meta"><b>القدس</b><i></i><span>26 تموز 2026</span></div>
+            </div>
+          </article>
+          <article class="note count">
+            <div class="top"><b>حصيلة</b><span>مؤسسة الضمير</span></div>
+            <div class="in">
+              <span class="big">9350</span>
+              <span class="lbl">أسيراً ومعتقلاً في سجون الاحتلال</span>
+              <dl>
+                <dt>3176</dt><dd>معتقلاً إدارياً بلا تهمة</dd>
+                <dt>+350</dt><dd>طفلاً في مجدو وعوفر</dd>
+                <dt>90</dt><dd>أسيرة</dd>
+              </dl>
+              <div class="meta"><b>حتى مطلع أيلول 2026</b></div>
+            </div>
+          </article>
+          <article class="note">
+            <div class="top"><b>بيان</b><span>نادي الأسير</span></div>
+            <div class="in">
+              <h3>ارتفاع عدد الشهداء بين صفوف الأسرى إلى 92 منذ بدء حرب الإبادة</h3>
+              <p>بينهم 53 معتقلاً من قطاع غزة، وفق حصيلة النادي منذ تشرين الأول 2023.</p>
+              <div class="meta"><b>رام الله</b><i></i><span>17 أيلول 2026</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 — deportees: the ban order -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#c4161c"/></svg>
+        <h2>المبعدون</h2>
+        <p>قرار الإبعاد كما يُسلَّم: عن أي مكان، لكم من الوقت، ومن صاحبه. مرابطون وحراس وصحفيون وأسرى محررون.</p>
+        <span class="n">نموذج — الأسماء من المحرر</span>
+      </div>
+      <div class="bd">
+        <div class="stat">
+          <b>762</b><span>قرار إبعاد عن المسجد الأقصى في النصف الأول من 2026، مقابل 365 في عام 2021 كله</span>
+          <b>15</b><span>قراراً في الأيام الأولى من أيلول وحده، قبيل موسم الأعياد العبرية</span>
+          <small>المصدر: محافظة القدس — التقرير النصفي (الجزيرة نت، 2 آب 2026) وبيان 6 أيلول 2026 (قنا)</small>
+        </div>
+        <div class="brow">
+          <article class="ban">
+            <div class="from">
+              <svg viewBox="0 0 30 36" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M2 35V15a13 13 0 0 1 26 0v20z"/><path d="M5 21h20" stroke="#c4161c" stroke-width="5"/></svg>
+              <div><span>إبعاد عن</span><b>الأقصى</b></div>
+            </div>
+            <div class="in">
+              <h3>[اسم المبعَد]</h3>
+              <span class="role">حارس في المسجد الأقصى</span>
+              <div class="len"><b>6</b><span>أشهر · تجديد</span></div>
+              <div class="track" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i></div>
+              <div class="scale"><span>القرار</span><span>6 أشهر</span></div>
+              <p>إبعاد جديد فور انتهاء السابق، بلا تهمة ولا محاكمة.</p>
+              <div class="meta"><span>[تاريخ القرار]</span></div>
+            </div>
+          </article>
+          <article class="ban">
+            <div class="from">
+              <svg viewBox="0 0 30 36" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M2 35V15a13 13 0 0 1 26 0v20z"/><path d="M5 21h20" stroke="#c4161c" stroke-width="5"/></svg>
+              <div><span>إبعاد عن</span><b>الأقصى</b></div>
+            </div>
+            <div class="in">
+              <h3>[اسم المبعَد]</h3>
+              <span class="role">مرابط من البلدة القديمة</span>
+              <div class="len"><b>أسبوع</b><span>أوّلي</span></div>
+              <div class="track" aria-hidden="true"><i class="p"></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="scale"><span>القرار</span><span>6 أشهر</span></div>
+              <p>يُسلَّم في مركز شرطة القشلة، ثم يمدَّد عادة إلى 3 أو 6 أشهر.</p>
+              <div class="meta"><span>[تاريخ القرار]</span></div>
+            </div>
+          </article>
+          <article class="ban">
+            <div class="from">
+              <svg viewBox="0 0 30 36" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M2 35V15a13 13 0 0 1 26 0v20z"/><path d="M5 21h20" stroke="#c4161c" stroke-width="5"/></svg>
+              <div><span>إبعاد عن</span><b>البلدة القديمة</b></div>
+            </div>
+            <div class="in">
+              <h3>[اسم المبعَد]</h3>
+              <span class="role">صحفي</span>
+              <div class="len"><b>3</b><span>أشهر</span></div>
+              <div class="track" aria-hidden="true"><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i><i></i></div>
+              <div class="scale"><span>القرار</span><span>6 أشهر</span></div>
+              <p>منع من دخول أحياء البلدة القديمة وأبوابها طوال المدة.</p>
+              <div class="meta"><span>[تاريخ القرار]</span></div>
+            </div>
+          </article>
+          <article class="ban">
+            <div class="from">
+              <svg viewBox="0 0 30 36" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M2 35V15a13 13 0 0 1 26 0v20z"/><path d="M5 21h20" stroke="#c4161c" stroke-width="5"/></svg>
+              <div><span>إبعاد عن</span><b>القدس</b></div>
+            </div>
+            <div class="in">
+              <h3>[اسم المبعَد]</h3>
+              <span class="role">أسير محرر</span>
+              <div class="len"><b>[مدة]</b></div>
+              <div class="track" aria-hidden="true"><i class="q"></i><i class="q"></i><i class="q"></i><i class="q"></i><i class="q"></i><i class="q"></i></div>
+              <div class="scale"><span>القرار</span><span>6 أشهر</span></div>
+              <p>إبعاد عن المدينة كلها إلى خارج حدود البلدية.</p>
+              <div class="meta"><span>[تاريخ القرار]</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 — quotes -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#f7d417"/></svg>
+        <h2>تصريحات</h2>
+        <p>الجملة كما قيلت، وقائلها، وتاريخها.</p>
+      </div>
+      <div class="bd">
+        <div class="qrow">
+          <article class="quote">
+            <svg viewBox="0 0 34 28" fill="currentColor" aria-hidden="true"><path d="M34 0v12c0 9-5 15-13 16v-6c4-1 6-4 6-8h-6V0zM13 0v12c0 9-5 15-13 16v-6c4-1 6-4 6-8H0V0z"/></svg>
+            <h3>الأعياد اليهودية غطاءٌ لفرض سيادة مزعومة على المسجد الأقصى.</h3>
+            <div class="who"><b>الشيخ عكرمة صبري</b><span>خطيب المسجد الأقصى · 20 أيلول 2026</span></div>
+          </article>
+          <article class="quote">
+            <svg viewBox="0 0 34 28" fill="currentColor" aria-hidden="true"><path d="M34 0v12c0 9-5 15-13 16v-6c4-1 6-4 6-8h-6V0zM13 0v12c0 9-5 15-13 16v-6c4-1 6-4 6-8H0V0z"/></svg>
+            <h3>ما يجري محاولة ممنهجة لفرض واقع جديد وخطير داخل ساحات المسجد.</h3>
+            <div class="who"><b>محمد الخلايلة</b><span>وزير الأوقاف الأردني · تشرين الأول 2026</span></div>
+          </article>
+          <article class="quote">
+            <svg viewBox="0 0 34 28" fill="currentColor" aria-hidden="true"><path d="M34 0v12c0 9-5 15-13 16v-6c4-1 6-4 6-8h-6V0zM13 0v12c0 9-5 15-13 16v-6c4-1 6-4 6-8H0V0z"/></svg>
+            <h3>قوات الاحتلال منعت المسعفين من الوصول إلى المصاب وتقديم العلاج له، ثم احتجزت جثمانه.</h3>
+            <div class="who"><b>جمعية الهلال الأحمر الفلسطيني</b><span>عن الشهيد بهاء النتشة · 2 تشرين الأول 2026</span></div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 — Hebrew press -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#f7d417"/></svg>
+        <h2>عن العبرية</h2>
+        <p>المصدر أولاً، ثم الترجمة العربية.</p>
+      </div>
+      <div class="bd">
+        <div class="hrow">
+          <article class="paper">
+            <div class="src"><b>يديعوت أحرونوت</b><span>تشرين الأول 2026</span></div>
+            <span class="tag">ترجمة القسطل</span>
+            <h3>لندن تلوّح بطرد 27 دبلوماسياً إسرائيلياً إن لم يُتراجع عن إغلاق قنصليتها في القدس</h3>
+            <p>الصحيفة: السفير البريطاني أبلغ مسؤولين إسرائيليين بالقرار.</p>
+          </article>
+          <article class="paper">
+            <div class="src"><b>هآرتس</b><span>15 آب 2026</span></div>
+            <span class="tag">ترجمة القسطل</span>
+            <h3>«حتى هاكابي فهم»: عن عنف المستوطنين و«إرهاب يهودي» في الأراضي المحتلة</h3>
+            <p>افتتاحية بعد إقرار السفير الأميركي بوجود «إرهاب يهودي».</p>
+          </article>
+          <article class="paper">
+            <div class="src"><b>هآرتس</b><span>تشرين الأول 2026</span></div>
+            <span class="tag">ترجمة القسطل</span>
+            <h3>هجمات المستوطنين في الضفة في مرتبة متأخرة من أولويات نتنياهو وكاتس</h3>
+            <p>تقرير: الحكومة منشغلة بتحركات عسكرية جديدة.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 — plus -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#f7d417"/></svg>
+        <h2>القسطل بلس</h2>
+        <p>غلاف واحد يشرح ملفاً كاملاً.</p>
+      </div>
+      <div class="bd">
+        <div class="cvrow">
+          <a href="#" class="cover">
+            <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+            <span class="k">ملف</span>
+            <h3>الإبعاد: كيف يعزل الاحتلال المقدسيين عن الأقصى</h3>
+            <span class="tear">قرارات الإبعاد وأصحابها · 4 تشرين الأول 2026</span>
+          </a>
+          <a href="#" class="cover">
+            <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+            <span class="k">حصاد</span>
+            <h3>الربع الثالث في محافظة القدس: ستة شهداء</h3>
+            <span class="tear">تموز — أيلول 2026 · عن تقرير المحافظة</span>
+          </a>
+          <a href="#" class="cover">
+            <span class="plus"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+            <span class="k">دليل</span>
+            <h3>«عيد العرش» في الأقصى: ما الذي تغيّر هذا العام؟</h3>
+            <span class="tear">26 أيلول — 2 تشرين الأول 2026</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 — photos -->
+  <section class="slot">
+    <div class="wrap">
+      <div class="hd">
+        <svg class="mk" viewBox="0 0 26 26" aria-hidden="true"><path d="M0 0h26A26 26 0 0 1 0 26z" fill="#f7d417"/></svg>
+        <h2>صور</h2>
+        <p>شريط الأسبوع.</p>
+      </div>
+      <div class="bd">
+        <div class="phrow">
+          <figure><div class="ph low"><img src="/_blob/1c09d00c14d4298df596cf2fe34d5272" alt="المصلى القبلي في المسجد الأقصى"></div><figcaption>المصلى القبلي وباحات الأقصى في ساعات الصباح<span>القدس المحتلة</span></figcaption></figure>
+          <figure><div class="ph"><img src="/_blob/03b2123f55b22fd2dbe262692c3b5b6b" alt="نازحون بين الركام في قطاع غزة"></div><figcaption>نازحون بين الركام مع اقتراب المنخفض الجوي<span>قطاع غزة</span></figcaption></figure>
+          <figure><div class="ph"><img src="/_blob/313f761b6b8cb9ddd34df4d0538e4090" alt="قبة الصخرة المشرفة"></div><figcaption>قبة الصخرة المشرّفة<span>القدس المحتلة</span></figcaption></figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <img class="flogo" src="/_blob/5b1076460dc8cc1deee6a980bafd8377" alt="القسطل AL Qastal">
+        <p>موقع لأخبار القدس بالدرجة الأولى، باسم القسطل، القرية الحصن غرب المدينة.</p>
+      </div>
+      <div>
+        <h5>الأقسام</h5>
+        <ul>
+          <li><a href="#">القدس</a></li><li><a href="#">الأقصى</a></li><li><a href="#">الأسرى</a></li>
+          <li><a href="#">المبعدون</a></li><li><a href="#">الضفة</a></li><li><a href="#">غزة</a></li>
+          <li><a href="#">ترجمات عبرية</a></li><li><a href="#">تقارير</a></li><li><a href="#">أبواب القدس</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>تابعونا</h5>
+        <div class="soc">
+          <a href="#" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"/></svg></a>
+          <a href="#" aria-label="إكس"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="تلغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M21 4L3 11l6 2.5L11 20l3.5-4.5L19 19z"/><path d="M9 13.5l12-9.5"/></svg></a>
+          <a href="#" aria-label="إنستغرام"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+        </div>
+        <div class="hdl">@alqastalps</div>
+      </div>
+    </div>
+    <div class="bot"><span>© 2026 القسطل</span><nav aria-label="روابط الموقع"><a href="#">من نحن</a><a href="#">اتصل بنا</a><a href="#">الخصوصية</a></nav></div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5967}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

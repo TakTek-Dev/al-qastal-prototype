@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>القسطل — يوميات القدس</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&amp;family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+
+.bars small{font-size:13px;color:var(--on-navy2)}
+:root{
+  --navy:#1c2b5a; --navy-d:#142047; --navy-l:#2c3d74;
+  --yellow:#f7d417; --red:#c4161c;
+  --paper:#f6f4ee; --stone:#ece8de; --card:#ffffff;
+  --ink:#141a33; --ink2:#3f455c; --ink3:#5a5f76; --rule:#d8d3c5;
+  --on-navy:#dfe3f0; --on-navy2:#b9c1dc;
+  --disp:"Markazi Text", serif; --text:"Noto Kufi Arabic", sans-serif;
+  --tm:96px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-size:16px;line-height:1.8;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.fig{display:block;position:relative;overflow:hidden;background:var(--stone)}
+.fig img{width:100%;height:100%;object-fit:cover}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.wrap{max-width:1296px;margin:0 auto;padding:0 32px}
+.ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.credit{display:block;font-size:13px;line-height:1.5;color:var(--ink3);margin-top:8px}
+h1,h2,h3,h4{font-weight:600}
+
+/* ============ masthead ============ */
+.mast{background:var(--navy);color:#fff}
+.util{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:13px;color:var(--on-navy2);border-bottom:1px solid rgba(255,255,255,.12);min-height:46px}
+.util .soc{display:flex;align-items:center}
+.util .soc a{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;color:#fff}
+.util .soc bdi{margin-inline-end:6px;color:var(--on-navy2)}
+.brandrow{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:32px;padding:20px 0 16px}
+.logo img{height:72px;width:auto}
+.motto{font-family:var(--disp);font-size:26px;line-height:1.4;color:#e8ebf5;border-inline-start:1px solid rgba(255,255,255,.2);padding-inline-start:28px}
+.motto b{color:var(--yellow);font-weight:600}
+.tools{display:flex;gap:12px;align-items:center}
+.search{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid rgba(255,255,255,.28);border-radius:4px;color:#fff}
+.navwrap{position:relative;border-top:1px solid rgba(255,255,255,.12)}
+nav.sec ul{display:flex;list-style:none;overflow-x:auto;scrollbar-width:none}
+nav.sec ul::-webkit-scrollbar{display:none}
+nav.sec a{display:flex;align-items:center;min-height:48px;padding:0 14px;font-size:15px;font-weight:500;color:var(--on-navy);white-space:nowrap}
+nav.sec li.on a{color:#fff;box-shadow:inset 0 -3px 0 var(--yellow)}
+
+/* the city's prayer clock */
+.clock{background:var(--navy-d);color:#fff}
+.clock .wrap{display:grid;grid-template-columns:auto 1fr;gap:40px;align-items:center;padding-top:16px;padding-bottom:16px}
+.clock .ttl{font-family:var(--disp);font-weight:700;font-size:38px;line-height:1.2;white-space:nowrap}
+.clock .ttl span{display:block;font-family:var(--text);font-size:13px;font-weight:500;color:var(--on-navy2);line-height:1.5}
+.parts{display:grid;grid-template-columns:repeat(6,1fr);list-style:none}
+.parts a{position:relative;display:flex;flex-direction:column;justify-content:center;min-height:56px;padding:14px 10px 0;border-inline-start:1px solid rgba(255,255,255,.16);font-size:13px;color:var(--on-navy2);line-height:1.4}
+.parts a b{font-size:15px;color:#fff;font-weight:600}
+.parts a::before{content:"";position:absolute;top:0;inset-inline:0;height:4px;background:rgba(255,255,255,.14)}
+.parts a.done::before{background:var(--yellow)}
+.parts a.cur::before{background:linear-gradient(to left,var(--yellow) 0 30%,rgba(255,255,255,.14) 30%)}
+.parts a.cur b{color:var(--yellow)}
+.parts a.cur::after{content:"الآن";position:absolute;top:-9px;inset-inline-start:30%;transform:translateX(50%);background:var(--yellow);color:var(--navy);font-size:13px;font-weight:700;padding:0 6px;border-radius:2px;line-height:18px}
+.parts a.later b{color:var(--on-navy2)}
+.clock .src{grid-column:2;font-size:13px;color:var(--on-navy2);margin-top:-4px}
+
+/* ============ the day ============ */
+.page{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:56px;padding-top:40px}
+.day{min-width:0}
+.ph,.it,.tick,.later-line{display:grid;grid-template-columns:var(--tm) minmax(0,1fr)}
+.ph > .pt,.it > .tm,.tick > .tm,.later-line > .tm{text-align:left;padding-inline-end:20px;font-weight:700;font-size:15px;color:var(--navy);line-height:1.5}
+.ph > .pc,.it > .body,.tick > .body,.later-line > .body{border-inline-start:2px solid rgba(28,43,90,.22);padding-inline-start:28px;position:relative;min-width:0}
+/* future part: one line */
+.later-line .tm{color:var(--ink3);font-weight:600}
+.later-line .body{border-inline-start-style:dashed;padding-bottom:22px;font-size:15px;color:var(--ink3)}
+.later-line .body b{font-family:var(--disp);font-size:26px;font-weight:600;color:var(--ink3);margin-inline-end:10px;line-height:1.4}
+/* part heading */
+.ph .pt{padding-top:16px}
+.ph .pc{padding-bottom:22px}
+.ph .pc::before{content:"";position:absolute;top:18px;inset-inline-start:-12px;width:22px;height:22px;border-radius:50%;background:var(--yellow);border:5px solid var(--navy);box-sizing:border-box}
+.ph h2{font-family:var(--disp);font-weight:700;font-size:60px;line-height:1.15;color:var(--navy)}
+.ph .rg{font-size:15px;color:var(--ink2);line-height:1.6}
+.nowtag{display:inline-flex;align-items:center;gap:6px;background:var(--yellow);color:var(--navy);font-weight:700;font-size:14px;padding:2px 10px;border-radius:3px;margin-inline-start:10px}
+.part.done .ph h2{font-size:40px;color:var(--navy)}
+.part.done .ph .pc::before{width:16px;height:16px;border-width:4px;top:16px;inset-inline-start:-9px;background:var(--navy)}
+.part.first .ph .pc{border-inline-start-color:transparent}
+/* items */
+.it > .tm{padding-top:4px}
+.it > .tm small{display:block;font-size:13px;font-weight:600;color:var(--ink3)}
+.it > .body{padding-bottom:32px}
+.it > .body::before{content:"";position:absolute;top:12px;inset-inline-start:-6px;width:10px;height:10px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 3px var(--paper)}
+.kick{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--navy);line-height:1.5}
+.kick i{width:7px;height:7px;border-radius:50%;background:var(--yellow);box-shadow:0 0 0 1px var(--navy);font-style:normal}
+.kick.red{color:var(--red)}
+.kick.red i{background:var(--red);box-shadow:none}
+.it h3{font-family:var(--disp);font-size:30px;line-height:1.4;color:var(--ink);margin-top:4px}
+.it .dek{font-size:16px;color:var(--ink2);line-height:1.85;margin-top:6px;max-width:680px}
+.meta{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:8px;font-size:14px;color:var(--ink3);align-items:center;line-height:1.5}
+.place{display:inline-flex;align-items:center;gap:5px;font-weight:600;color:var(--navy)}
+.martyr-line{border-inline-start:4px solid var(--red);padding-inline-start:16px}
+.tick > .body{padding-bottom:28px}
+.tick p{display:inline-flex;align-items:center;gap:10px;font-size:16px;color:var(--ink);line-height:1.6;background:var(--card);border:1px solid var(--rule);border-radius:22px;padding:8px 18px}
+.tick p svg{color:var(--navy)}
+.tick > .body::before{content:"";position:absolute;top:13px;inset-inline-start:-8px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--navy);box-sizing:border-box}
+.pin-ref{display:inline-flex;align-items:center;gap:8px;font-size:15px;font-weight:600;color:var(--navy);border-bottom:2px solid var(--yellow);line-height:1.6}
+
+/* the pinned story of the day */
+.lead{background:var(--navy);color:#fff;border-radius:4px;overflow:hidden}
+.lead .top{display:grid;grid-template-columns:minmax(0,1fr)}
+.lead .tx{padding:26px 30px 24px;display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:30px;align-items:end}
+.lead .tx .kick{grid-column:1/-1}
+.lead .tx .dek{grid-column:2}
+.lead .kick{color:var(--yellow)}
+.lead .kick i{box-shadow:none}
+.lead .num{display:flex;flex-direction:column;align-items:flex-start;gap:8px;margin-top:12px;grid-row:2 / span 2}
+.lead .num b{font-family:var(--disp);font-weight:700;font-size:170px;line-height:.8;color:var(--yellow)}
+.lead .num span{font-size:15px;font-weight:600;color:#fff;background:rgba(255,255,255,.12);padding:4px 10px;border-radius:3px;line-height:1.5}
+.lead h2{font-family:var(--disp);font-weight:700;font-size:40px;line-height:1.4;margin-top:12px}
+.lead h2 em{font-style:normal;color:var(--yellow)}
+.lead .dek{font-size:16px;color:var(--on-navy);line-height:1.85;margin-top:8px}
+.lead .side{display:flex;flex-direction:column}
+.lead .side .fig{aspect-ratio:21/9;background:var(--navy-l)}
+.lead .side .fig img{position:absolute;inset:0}
+.lead .credit{color:var(--on-navy2);margin:0;padding:8px 16px;background:var(--navy-d)}
+.season{border-top:1px solid rgba(255,255,255,.16);padding:20px 28px 22px}
+.season h4{font-size:15px;font-weight:600;color:#fff;line-height:1.5}
+.season h4 span{color:var(--on-navy2);font-weight:500}
+.bars{list-style:none;margin-top:12px}
+.bars li{display:grid;grid-template-columns:200px minmax(0,1fr) 72px;gap:14px;align-items:center;font-size:14px;color:var(--on-navy);line-height:1.5;padding:5px 0}
+.bars .b{height:12px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
+.bars .b i{display:block;height:100%;background:var(--on-navy2)}
+.bars li.today .b i{background:var(--yellow)}
+.bars li.today{color:#fff;font-weight:600}
+.bars strong{font-family:var(--disp);font-size:24px;line-height:1.2;color:#fff;text-align:left;font-weight:600}
+.bars li.today strong{color:var(--yellow)}
+.season .src{font-size:13px;color:var(--on-navy2);margin-top:10px;line-height:1.6}
+
+/* aside */
+.aside{display:flex;flex-direction:column;gap:28px;padding-top:8px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:4px;padding:20px 22px}
+.card h3{font-family:var(--disp);font-size:28px;line-height:1.4;color:var(--navy)}
+.card .sub{font-size:13px;color:var(--ink3);line-height:1.5}
+.ptimes{list-style:none;margin-top:12px}
+.ptimes li{display:flex;justify-content:space-between;align-items:center;min-height:44px;border-top:1px solid var(--rule);font-size:16px;line-height:1.5}
+.ptimes li b{font-family:var(--disp);font-size:24px;font-weight:600;color:var(--ink)}
+.ptimes li.cur{background:var(--yellow);margin:0 -22px;padding:0 22px;border-top-color:transparent;font-weight:600;color:var(--navy)}
+.ptimes li.cur b{color:var(--navy)}
+.ptimes li.past{color:var(--ink3)}
+.ptimes li.past b{color:var(--ink3)}
+.gate .fig{aspect-ratio:1/1;border-radius:3px;margin:-4px 0 0}
+.gate h3{margin-top:12px}
+.gate p{font-size:16px;color:var(--ink2);line-height:1.8;margin-top:4px}
+
+/* ============ yesterday: collapsed spine ============ */
+.yday{margin-top:24px;padding:48px 0 56px;border-top:1px solid var(--rule)}
+.shead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:2px solid var(--navy);padding-bottom:12px;margin-bottom:24px}
+.shead h2{font-family:var(--disp);font-size:44px;font-weight:700;line-height:1.3;color:var(--navy)}
+.shead .sub{font-size:14px;color:var(--ink3);line-height:1.5}
+.shead a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-size:15px;font-weight:600;color:var(--navy);white-space:nowrap}
+.ylist .it h3{font-size:26px}
+.ylist .it > .body{padding-bottom:20px}
+.ylist .it:last-child > .body{padding-bottom:0}
+
+/* ============ reports: dated rows ============ */
+.reports{background:var(--stone);padding:56px 0}
+.rrow{display:grid;grid-template-columns:96px minmax(0,1fr) 220px;gap:28px;align-items:start;padding:22px 0;border-top:1px solid var(--rule)}
+.rrow:first-of-type{border-top:0;padding-top:4px}
+.rdate{text-align:center;border-inline-end:2px solid var(--yellow);padding-inline-end:20px;line-height:1.3}
+.rdate b{display:block;font-family:var(--disp);font-size:52px;line-height:1;color:var(--navy);font-weight:700}
+.rdate span{font-size:14px;color:var(--ink2);font-weight:600}
+.rdate.ev b{font-size:30px;line-height:1.4}
+.rrow h3{font-family:var(--disp);font-size:32px;line-height:1.4;color:var(--ink);margin-top:2px}
+.rrow p{font-size:16px;color:var(--ink2);line-height:1.8;margin-top:4px}
+.rrow .fig{aspect-ratio:3/2;border-radius:3px}
+
+/* ============ video ============ */
+.vids{background:var(--navy-d);color:#fff;padding:56px 0}
+.vids .shead{border-color:var(--yellow)}
+.vids .shead h2{color:#fff}
+.vids .shead .sub{color:var(--on-navy2)}
+.vids .shead a{color:var(--yellow)}
+.vrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.vcard .fig{aspect-ratio:16/10;border-radius:3px;background:var(--navy-l)}
+.vcard .play{position:absolute;bottom:12px;right:12px;display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--yellow);color:var(--navy)}
+.vcard h3{font-family:var(--disp);font-size:26px;line-height:1.4;margin-top:12px}
+.vcard .credit{color:var(--on-navy2)}
+
+/* ============ footer ============ */
+footer{background:var(--navy);color:var(--on-navy);padding:48px 0 24px}
+.fgrid{display:grid;grid-template-columns:4fr 4fr 3fr 3fr;gap:40px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.14)}
+.fgrid img{height:60px;width:auto}
+.fgrid p{font-size:15px;color:var(--on-navy);margin-top:12px;line-height:1.85}
+.fgrid h4{font-size:14px;font-weight:700;color:var(--yellow);margin-bottom:6px;line-height:1.5}
+.fgrid ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:16px}
+.fgrid ul.one{grid-template-columns:1fr}
+.fgrid li a{display:flex;align-items:center;min-height:44px;font-size:15px}
+.fsoc{display:flex;flex-wrap:nowrap;gap:8px}
+.fsoc a{display:inline-flex;width:46px;height:46px;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.28);border-radius:4px;color:#fff}
+.fbot{display:flex;justify-content:space-between;gap:16px;padding-top:18px;font-size:13px;color:var(--on-navy2);flex-wrap:wrap;line-height:1.6}
+
+/* ============ tablet ============ */
+@media (max-width:1120px){
+  .page{grid-template-columns:minmax(0,1fr);gap:0}
+  .aside{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:8px 0 0}
+  .motto{display:none}
+  .lead .num b{font-size:120px}
+  .lead h2{font-size:34px}
+  .rrow{grid-template-columns:84px minmax(0,1fr) 180px}
+}
+
+/* ============ phone ============ */
+@media (max-width:760px){
+  :root{--tm:0px}
+  .wrap{padding:0 16px}
+  .util{font-size:13px}
+  .util .d2{display:none}
+  .util .soc bdi{display:none}
+  .util .soc a{width:40px}
+  .brandrow{grid-template-columns:1fr auto;gap:12px;padding:12px 0}
+  .logo img{height:50px}
+  .navwrap::after{content:"";position:absolute;top:0;bottom:0;left:0;width:48px;background:linear-gradient(to right,var(--navy),rgba(28,43,90,0));pointer-events:none}
+  nav.sec a{padding:0 11px;font-size:14px}
+  .clock .wrap{grid-template-columns:1fr;gap:10px;padding-top:12px;padding-bottom:12px}
+  .clock .ttl{font-size:28px;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 10px;white-space:normal}
+  .clock .ttl span{display:inline}
+  .clock .src{grid-column:1;margin-top:0}
+  .parts a{padding:12px 4px 0;font-size:13px;min-height:52px}
+  .parts a b{font-size:13px}
+  .parts a span{font-size:13px}
+
+  .page{padding-top:20px}
+  /* single rail on the start edge, time inline */
+  .ph,.it,.tick,.later-line{grid-template-columns:minmax(0,1fr)}
+  .ph > .pt,.it > .tm,.tick > .tm,.later-line > .tm{display:none}
+  .ph > .pc,.it > .body,.tick > .body,.later-line > .body{padding-inline-start:16px}
+  .tin{display:inline-flex !important}
+  .ph h2{font-size:46px}
+  .part.done .ph h2{font-size:32px}
+  .ph .pc{padding-bottom:14px}
+  .ph .pc::before{top:12px}
+  .part.done .ph .pc::before{top:12px}
+  .it > .body{padding-bottom:22px}
+  .it h3{font-size:25px}
+  .tick > .body{padding-bottom:18px}
+  .tick p{border-radius:4px;padding:6px 12px;font-size:16px}
+  /* finished parts collapse to their headlines */
+  .part.done .dek,.part.done .meta{display:none}
+  .lead{margin-inline-start:-16px;border-radius:0}
+  .lead .top{grid-template-columns:1fr}
+  .lead .tx{padding:20px 18px 18px}
+  .lead .tx{display:block}
+  .lead .num{flex-direction:row;align-items:flex-end}
+  .lead .num b{font-size:110px}
+  .lead .num span{margin-bottom:8px}
+  .lead h2{font-size:30px}
+  .lead .side .fig{aspect-ratio:16/9}
+  .season{padding:16px 18px 18px}
+  .bars li{grid-template-columns:112px minmax(0,1fr) 52px;gap:10px;font-size:13px}
+  .bars strong{font-size:20px}
+  .aside{display:block;padding:0}
+  .aside .pcard{display:none}
+  .gate{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:start;padding:14px}
+  .gate .fig{margin:0}
+  .gate h3{margin-top:0;font-size:24px}
+  .gate p{font-size:15px}
+  .gate .credit{grid-column:1/-1;margin-top:0}
+
+  .yday{padding:36px 0 40px;margin-top:20px}
+  .shead{flex-wrap:wrap;gap:4px 16px}
+  .shead h2{font-size:34px}
+  .ylist .it h3{font-size:23px}
+  .reports{padding:40px 0}
+  .rrow{grid-template-columns:minmax(0,1fr) 104px;gap:14px;padding:16px 0}
+  .rdate{grid-column:1/-1;display:flex;align-items:baseline;gap:8px;text-align:right;border:0;padding:0;border-bottom:2px solid var(--yellow);justify-self:start}
+  .rdate b,.rdate.ev b{font-size:24px;line-height:1.4}
+  .rrow h3{font-size:23px}
+  .rrow p{display:none}
+  .rrow .fig{aspect-ratio:1/1}
+  .vids{padding:40px 0}
+  .vrow{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;scrollbar-width:none;margin-inline-end:-16px;padding-inline-end:16px}
+  .vrow::-webkit-scrollbar{display:none}
+  .vcard{flex:0 0 76%;scroll-snap-align:start}
+  .vcard h3{font-size:22px}
+  .fgrid{grid-template-columns:1fr 1fr;gap:20px}
+  .fgrid > div:first-child,.fgrid > div:last-child{grid-column:1/-1}
+}
+.tin{display:none;font-weight:700;font-size:14px;color:var(--navy);margin-inline-end:8px}
+
+</style>
+</helmet>
+<div class="dc-root" dir="rtl" lang="ar">
+<header class="mast">
+  <div class="wrap">
+    <div class="util">
+      <span>الاثنين 5 تشرين الأول 2026<span class="d2"> · القدس المحتلة</span></span>
+      <div class="soc">
+        <bdi dir="ltr">@alqastalps</bdi>
+        <a href="#" aria-label="فيسبوك"><svg class="ic" viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+        <a href="#" aria-label="إكس"><svg class="ic" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+        <a href="#" aria-label="تلغرام"><svg class="ic" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l8-6"/></svg></a>
+        <a href="#" aria-label="إنستغرام"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+      </div>
+    </div>
+    <div class="brandrow">
+      <a class="logo" href="#" aria-label="القسطل — الصفحة الرئيسية"><img src="/_blob/b0da4890cae5baa031fc45518f2b45b5" alt="القسطل AL Qastal" width="201" height="72"></a>
+      <p class="motto">أخبار <b>القدس</b> أولاً، على ساعة المدينة</p>
+      <div class="tools">
+        <button class="search" aria-label="بحث"><svg class="ic" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="navwrap">
+    <div class="wrap">
+      <nav class="sec" aria-label="الأقسام">
+        <ul>
+          <li class="on"><a href="#">القدس</a></li>
+          <li><a href="#">الأقصى</a></li>
+          <li><a href="#">الأسرى</a></li>
+          <li><a href="#">الضفة</a></li>
+          <li><a href="#">غزة</a></li>
+          <li><a href="#">ترجمات عبرية</a></li>
+          <li><a href="#">تقارير</a></li>
+          <li><a href="#">فيديو</a></li>
+          <li><a href="#">صور</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="clock">
+    <div class="wrap">
+      <p class="ttl">يوميات القدس<span>اليوم على مواقيت المدينة · رابطة العالم الإسلامي</span></p>
+      <ol class="parts" aria-label="أجزاء اليوم">
+        <li><a href="#fajr" class="done"><b>الفجر</b><span>05:14</span></a></li>
+        <li><a href="#morning" class="done"><b>الصباح</b><span>06:35</span></a></li>
+        <li><a href="#dhuhr" class="done"><b>الظهر</b><span>12:28</span></a></li>
+        <li><a href="#asr" class="done"><b>العصر</b><span>15:49</span></a></li>
+        <li><a href="#maghrib" class="cur"><b>المغرب</b><span>18:20</span></a></li>
+        <li><a href="#night" class="later"><b>الليل</b><span>19:36</span></a></li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap page">
+<section class="day" aria-label="يوميات القدس اليوم، من الآن إلى الفجر">
+
+  <!-- the part still to come: one line -->
+  <div class="later-line" id="night"><span class="tm">19:36</span><p class="body"><b>الليل</b>العشاء 19:36 · لم يحن بعد</p></div>
+
+  <!-- NOW: المغرب, with the day's main story pinned -->
+  <div class="part now" id="maghrib">
+    <div class="ph"><span class="pt">18:20</span><div class="pc"><h2>المغرب</h2><p class="rg">18:20 — 19:36 <span class="nowtag">الآن 18:45</span></p></div></div>
+
+    <article class="it">
+      <span class="tm">17:13<small>مثبّت</small></span>
+      <div class="body">
+        <div class="lead">
+          <div class="top">
+            <div class="tx">
+              <span class="kick"><i></i>الأقصى · خبر اليوم</span>
+              <div class="num"><b>145</b><span>مستوطناً</span></div>
+              <h2><a href="#">اقتحموا المسجد الأقصى اليوم من باب المغاربة، و<em>170</em> آخرون دخلوه بذريعة «السياحة»</a></h2>
+              <p class="dek">في الفترتين الصباحية والمسائية، تحت حماية مشددة من قوات الاحتلال.</p>
+            </div>
+            <div class="side">
+              <span class="fig"><img src="/_blob/0500d74160849ca3cbbb1fc82656f059" alt="جسر باب المغاربة المؤدي إلى المسجد الأقصى" width="1400" height="1050"></span>
+              <span class="credit">جسر باب المغاربة · Leineabstiegsschleuse، ويكيميديا كومنز، CC0</span>
+            </div>
+          </div>
+          <div class="season">
+            <h4>موسم الأعياد في الأقصى <span>· أعداد المقتحمين</span></h4>
+            <ol class="bars">
+              <li><span>13 أيلول</span><span class="b"><i style="width:6.5%"></i></span><strong>593</strong></li>
+              <li><span>20 أيلول</span><span class="b"><i style="width:10.9%"></i></span><strong>992</strong></li>
+              <li><span>21 أيلول</span><span class="b"><i style="width:7.5%"></i></span><strong>686</strong></li>
+              <li><span>27 أيلول – 1 تشرين الأول <small>· 5 أيام</small></span><span class="b"><i style="width:100%"></i></span><strong>9138</strong></li>
+              <li class="today"><span>اليوم، 5 تشرين الأول</span><span class="b"><i style="width:1.6%"></i></span><strong>145</strong></li>
+            </ol>
+            <p class="src">المصادر: محافظة القدس، بيان 2 تشرين الأول — مجموع الموسم 11409 مقتحمين · وكالة وفا، 5 تشرين الأول 2026، الساعة 17:13</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div class="tick"><span class="tm">18:20</span><div class="body"><p><span class="tin">18:20</span>أذان المغرب في المسجد الأقصى</p></div></div>
+  </div>
+
+  <!-- العصر -->
+  <div class="part done" id="asr">
+    <div class="ph"><span class="pt">15:49</span><div class="pc"><h2>العصر</h2><p class="rg">15:49 — 18:20</p></div></div>
+    <article class="it">
+      <span class="tm">17:13</span>
+      <div class="body">
+        <a href="#maghrib" class="pin-ref"><span class="tin">17:13</span>حصيلة اقتحامات الأقصى اليوم: 145 مستوطناً <svg class="ic" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+        <p class="meta">مثبّتة أعلى اليوم</p>
+      </div>
+    </article>
+    <div class="tick"><span class="tm">15:49</span><div class="body"><p><span class="tin">15:49</span>أذان العصر</p></div></div>
+  </div>
+
+  <!-- الظهر -->
+  <div class="part done" id="dhuhr">
+    <div class="ph"><span class="pt">12:28</span><div class="pc"><h2>الظهر</h2><p class="rg">12:28 — 15:49</p></div></div>
+    <article class="it">
+      <span class="tm">اليوم</span>
+      <div class="body martyr-line">
+        <span class="kick red"><i></i>شهداء</span>
+        <h3><a href="#">شهداء وجرحى واعتقالات: الاحتلال ومستوطنوه يصعّدون اعتداءاتهم في الضفة وغزة</a></h3>
+        <p class="meta"><span>عن المركز الفلسطيني للإعلام</span><span>·</span><span>5 تشرين الأول</span></p>
+      </div>
+    </article>
+    <div class="tick"><span class="tm">بعد الظهر</span><div class="body"><p><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h18M13 6l6 6-6 6"/></svg>الفترة المسائية لاقتحامات الأقصى عبر باب المغاربة</p></div></div>
+    <article class="it">
+      <span class="tm">اليوم</span>
+      <div class="body">
+        <span class="kick"><i></i>الضفة</span>
+        <h3><a href="#">مستعمرون يهاجمون قاطفي الزيتون ويسرقون المحصول في قرى رام الله ونابلس</a></h3>
+        <p class="dek">اعتداءات متصاعدة مع بدء موسم قطف الزيتون في عدة قرى وبلدات.</p>
+        <p class="meta"><span>عن وكالة وفا</span><span>·</span><span>5 تشرين الأول</span></p>
+      </div>
+    </article>
+  </div>
+
+  <!-- الصباح -->
+  <div class="part done" id="morning">
+    <div class="ph"><span class="pt">06:35</span><div class="pc"><h2>الصباح</h2><p class="rg">06:35 — 12:28</p></div></div>
+    <article class="it">
+      <span class="tm">اليوم</span>
+      <div class="body">
+        <span class="place"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>الطور · شرق القدس</span>
+        <h3><a href="#">الاحتلال يعتقل الطفلين علي زعمرة ويوسف الصياد (15 عاماً) بعد دهم منزليهما في الطور</a></h3>
+        <p class="meta"><span>عن وكالة وفا</span><span>·</span><span>5 تشرين الأول</span></p>
+      </div>
+    </article>
+    <div class="tick"><span class="tm">صباحاً</span><div class="body"><p><svg class="ic" viewBox="0 0 24 24"><path d="M3 12h18M13 6l6 6-6 6"/></svg>الفترة الصباحية لاقتحامات الأقصى عبر باب المغاربة</p></div></div>
+  </div>
+
+  <!-- الفجر -->
+  <div class="part done first" id="fajr">
+    <div class="ph"><span class="pt">05:14</span><div class="pc"><h2>الفجر</h2><p class="rg">05:14 — 06:35</p></div></div>
+    <div class="tick"><span class="tm">05:14</span><div class="body"><p><span class="tin">05:14</span>أذان الفجر في المسجد الأقصى</p></div></div>
+  </div>
+
+</section>
+
+<aside class="aside" aria-label="ساعة المدينة">
+  <div class="card pcard">
+    <h3>مواقيت القدس اليوم</h3>
+    <p class="sub">الاثنين 5 تشرين الأول · رابطة العالم الإسلامي</p>
+    <ul class="ptimes">
+      <li class="past"><span>الفجر</span><b>05:14</b></li>
+      <li class="past"><span>الشروق</span><b>06:35</b></li>
+      <li class="past"><span>الظهر</span><b>12:28</b></li>
+      <li class="past"><span>العصر</span><b>15:49</b></li>
+      <li class="cur"><span>المغرب · الآن</span><b>18:20</b></li>
+      <li><span>العشاء</span><b>19:36</b></li>
+    </ul>
+  </div>
+  <article class="card gate">
+    <a href="#" class="fig"><img src="/_blob/fba7b12fd4aa7d2db6658e7561493636" alt="باب الأسباط في سور القدس" width="800" height="800"></a>
+    <div>
+      <span class="kick"><i></i>شرح</span>
+      <h3><a href="#">باب الأسباط: الطريق اليومي للمصلّين إلى الأقصى</a></h3>
+      <p>لماذا يتحوّل هذا الباب إلى نقطة تفتيش في أيام الأعياد اليهودية.</p>
+    </div>
+    <span class="credit">باب الأسباط · Godot13، ويكيميديا كومنز، CC BY-SA 4.0</span>
+  </article>
+</aside>
+</div>
+
+<!-- yesterday: the spine, collapsed -->
+<section class="yday" aria-labelledby="yday-h">
+  <div class="wrap">
+    <div class="shead">
+      <div><h2 id="yday-h">أمس في القدس</h2><p class="sub">الأحد 4 تشرين الأول 2026</p></div>
+      <a href="#">يوم الأحد كاملاً <svg class="ic" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></a>
+    </div>
+    <div class="ylist">
+      <article class="it">
+        <span class="tm">الأحد</span>
+        <div class="body martyr-line">
+          <span class="kick red"><i></i>الشهيد بهاء النتشة · 19 عاماً</span>
+          <h3><a href="#">تشييع جثمان الشهيد المقدسي بهاء النتشة بعد احتجاز الاحتلال له</a></h3>
+          <p class="meta"><span>ارتقى مساء الجمعة برصاص مستعمرين في قرية كوبر شمال رام الله</span><span>·</span><span>عن وكالة وفا</span></p>
+        </div>
+      </article>
+      <article class="it">
+        <span class="tm">الأحد</span>
+        <div class="body">
+          <span class="kick"><i></i>الأسرى</span>
+          <h3><a href="#">الاحتلال يصادق على أوامر اعتقال إداري بحق خمسة معتقلين من القدس، لمدد بين 4 و6 أشهر</a></h3>
+          <p class="meta"><span>عن وكالة وفا</span></p>
+        </div>
+      </article>
+      <article class="it">
+        <span class="tm">الأحد</span>
+        <div class="body">
+          <span class="place"><svg class="ic" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>سلوان</span>
+          <h3><a href="#">الاحتلال يجبر عائلة مقدسية على هدم منزلها بيدها في سلوان</a></h3>
+          <p class="meta"><span>عن المركز الفلسطيني للإعلام</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- reports: dated rows -->
+<section class="reports" aria-labelledby="rep-h">
+  <div class="wrap">
+    <div class="shead">
+      <div><h2 id="rep-h">القسطل بلس</h2><p class="sub">تقارير وشروحات، بتاريخ صدورها</p></div>
+      <a href="#">كل التقارير <svg class="ic" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></a>
+    </div>
+    <article class="rrow">
+      <div class="rdate"><b>1</b><span>تشرين الأول</span></div>
+      <div>
+        <span class="kick"><i></i>تقرير ربعي · محافظة القدس</span>
+        <h3><a href="#">القدس في الربع الثالث: 6 شهداء و27830 مستعمراً اقتحموا الأقصى و139 عملية هدم وتجريف</a></h3>
+        <p>و357 حالة اعتقال، و73 قرار إبعاد منها 63 عن المسجد الأقصى.</p>
+        <span class="credit">عن وكالة وفا · الصورة: Gerd Eichmann، ويكيميديا كومنز، CC BY-SA 4.0</span>
+      </div>
+      <a href="#" class="fig"><img src="/_blob/8766326afdc502fa334f7019276e0b56" alt="باحات المسجد الأقصى ومئذنة باب السلسلة" width="900" height="503"></a>
+    </article>
+    <article class="rrow">
+      <div class="rdate"><b>1</b><span>تشرين الأول</span></div>
+      <div>
+        <span class="kick"><i></i>رصد · الأقصى</span>
+        <h3><a href="#">«باسم الرب أدمّرهم»: مستوطنون يحرّضون على هدم الأقصى خلال عيد العُرش</a></h3>
+        <p>ما تنشره منصات جماعات الهيكل خلال الأعياد، مترجماً وموثّقاً.</p>
+        <span class="credit">عن المركز الفلسطيني للإعلام · الصورة: Godot13، ويكيميديا كومنز، CC BY-SA 4.0</span>
+      </div>
+      <a href="#" class="fig"><img src="/_blob/79a5f0796515c31c5fb59f9d4c95ab30" alt="قبة الصخرة المشرفة" width="900" height="651"></a>
+    </article>
+    <article class="rrow">
+      <div class="rdate"><b>27</b><span>أيلول</span></div>
+      <div>
+        <span class="kick"><i></i>الأقصى</span>
+        <h3><a href="#">1143 مستعمراً وحاخامات يقتحمون المسجد الأقصى بحماية شرطة الاحتلال</a></h3>
+        <p>اليوم الأول من عيد العُرش.</p>
+        <span class="credit">عن وكالة وفا · الصورة: القسطل</span>
+      </div>
+      <a href="#" class="fig"><img src="/_blob/9a1b3554353ead7cf83c85704eb72e8f" alt="المسجد القبلي في الأقصى" width="940" height="328"></a>
+    </article>
+    <article class="rrow">
+      <div class="rdate ev"><b>شرح</b><span>دائم</span></div>
+      <div>
+        <span class="kick"><i></i>كيف تعمل الأشياء</span>
+        <h3><a href="#">فترتان كل يوم: كيف تُدار اقتحامات الأقصى من باب المغاربة</a></h3>
+        <p>المسار والمواعيد، ولماذا يُغلق الباب أمام المسلمين وحدهم.</p>
+        <span class="credit">الصورة: Ruby1619، ويكيميديا كومنز، CC BY-SA 3.0</span>
+      </div>
+      <a href="#" class="fig"><img src="/_blob/35b749e3bd728c3c329aa68d1e559945" alt="المسجد القبلي وجبل الزيتون عند الغروب" width="1000" height="667"></a>
+    </article>
+  </div>
+</section>
+
+<!-- video -->
+<section class="vids" aria-labelledby="vid-h">
+  <div class="wrap">
+    <div class="shead">
+      <div><h2 id="vid-h">فيديو</h2><p class="sub">الأقصى بعيون أهله</p></div>
+      <a href="#">كل المقاطع <svg class="ic" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></a>
+    </div>
+    <div class="vrow">
+      <article class="vcard">
+        <a href="#" class="fig"><img src="/_blob/7fed311fec864070875fe79c6279357c" alt="مصلّون في باحات قبة الصخرة" width="1000" height="667"><span class="play"><svg class="ic" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></a>
+        <h3><a href="#">الطريق إلى الصلاة: مصلّون في باحات قبة الصخرة</a></h3>
+        <span class="credit">Moataz1997، ويكيميديا كومنز، CC BY-SA 4.0</span>
+      </article>
+      <article class="vcard">
+        <a href="#" class="fig"><img src="/_blob/1d4f5c8a712193ec5c09ee2c4ae0e040" alt="صلاة الجمعة أمام المسجد القبلي" width="920" height="475"><span class="play"><svg class="ic" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></a>
+        <h3><a href="#">صفوف الجمعة أمام المسجد القبلي</a></h3>
+        <span class="credit">القسطل</span>
+      </article>
+      <article class="vcard">
+        <a href="#" class="fig"><img src="/_blob/09d75614859c10a7d4b7f48b2bb3e50d" alt="واجهة المسجد القبلي في الأقصى" width="1000" height="667"><span class="play"><svg class="ic" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor" stroke="none"/></svg></span></a>
+        <h3><a href="#">أروقة المسجد القبلي: جولة في الواجهة الشمالية</a></h3>
+        <span class="credit">Godot13، ويكيميديا كومنز، CC BY-SA 4.0</span>
+      </article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="/_blob/b0da4890cae5baa031fc45518f2b45b5" alt="القسطل AL Qastal" width="168" height="60">
+        <p>القسطل موقع لأخبار القدس بالدرجة الأولى: الأقصى والأحياء والأسرى، على ساعة المدينة، باسم القرية التي تحرس طريقها من الغرب.</p>
+      </div>
+      <div>
+        <h4>الأقسام</h4>
+        <ul>
+          <li><a href="#">القدس</a></li><li><a href="#">الأقصى</a></li>
+          <li><a href="#">الأسرى</a></li><li><a href="#">الضفة</a></li>
+          <li><a href="#">غزة</a></li><li><a href="#">ترجمات عبرية</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>القسطل</h4>
+        <ul class="one">
+          <li><a href="#">من نحن</a></li>
+          <li><a href="#">أرسل خبراً أو صورة</a></li>
+          <li><a href="#">اتصل بنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تابعنا <bdi dir="ltr">@alqastalps</bdi></h4>
+        <div class="fsoc">
+          <a href="#" aria-label="فيسبوك"><svg class="ic" viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h2z"/></svg></a>
+          <a href="#" aria-label="إكس"><svg class="ic" viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+          <a href="#" aria-label="تلغرام"><svg class="ic" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z"/><path d="M9 13l8-6"/></svg></a>
+          <a href="#" aria-label="إنستغرام"><svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="fbot"><span>© 2026 القسطل · alqastal.ps</span><span>بتوقيت القدس</span></div>
+  </div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5417}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Day.dc.html": {
+      "expand": "fill",
+      "h": 5417,
+      "title": "2 · يوميات القدس",
+      "w": 1440,
+      "x": 1520,
+      "y": 0
+    },
+    "Forms.dc.html": {
+      "expand": "fill",
+      "h": 3873,
+      "title": "3 · القوالب",
+      "w": 1440,
+      "x": 3040,
+      "y": 0
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 5218,
+      "title": "1 · أبواب المدينة",
+      "w": 1440,
+      "x": 0,
+      "y": 0
+    },
+    "Forms2.dc.html": {
+      "expand": "fill",
+      "h": 5967,
+      "title": "3 · القوالب — بعد ملاحظاتكم",
+      "w": 1440,
+      "x": 4560,
+      "y": 0
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-06T10:52:51.772Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "heading": {
+      "kind": "title1",
+      "maxW": 6000,
+      "text": "القسطل — اتجاهات الصفحة الرئيسية",
+      "w": 240,
+      "x": 0,
+      "y": -320
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Day.dc.html",
+    "Forms.dc.html",
+    "Forms2.dc.html"
+  ],
+  "pages": [],
+  "title": "القسطل — ثلاث عينات"
+}
