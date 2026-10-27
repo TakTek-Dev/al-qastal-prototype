@@ -2,10 +2,11 @@
 
 python -I tools/fonts.py   (from the project root; sources in research/font-src, gitignored)
 
-Host Grotesk (Element Type, OFL) is the voice of the masthead: corner names, gate names, headlines,
-labels and every figure. It sits closest to the Latin of the client's lockup (round Q, two-storey a)
-and stays plain enough that a corner name is read, not deciphered. Source Serif 4 (Adobe, OFL)
-carries the reading: standfirsts and story text, at its text optical size.
+Alexandria (Mohamed Gaber, OFL) is the voice: corner names, gate names, headlines, labels, figures.
+Picked side by side against the client's lockup: a geometric Kufi with a flat baseline and long
+horizontal strokes like the logo's القسطل, and plain enough that a corner name is read at a glance
+(the client's note on the earlier samples). Noto Naskh Arabic (Google, OFL) carries the reading:
+standfirsts and story text.
 """
 import io
 import os
@@ -28,10 +29,11 @@ UNICODES = (
      0x2197, 0x2212, 0x00D7, 0x00B0, 0x00B7, 0x00BD]
 )
 
-JOBS = [
-    ('HostGrotesk[wght].ttf', 'host.woff2', {'wght': (400, 800)}),
-    ('SourceSerif4[opsz,wght].ttf', 'serif.woff2', {'opsz': (8, 40), 'wght': (400, 600)}),
-    ('SourceSerif4-Italic[opsz,wght].ttf', 'serif-italic.woff2', {'opsz': (8, 24), 'wght': 400}),
+ARABIC = list(range(0x0600, 0x0700)) + list(range(0xFB50, 0xFE00)) + list(range(0xFE70, 0xFF00)) + [0x200C, 0x200D, 0x200E, 0x200F]
+
+JOBS = [  # file, out, axis limits, extra unicodes
+    ('Alexandria[wght].ttf', 'alexandria.woff2', {'wght': (400, 800)}, ARABIC),
+    ('NotoNaskhArabic[wght].ttf', 'naskh.woff2', {'wght': (400, 600)}, ARABIC),
 ]
 
 
@@ -47,14 +49,14 @@ def options():
     return o
 
 
-for src, out, limits in JOBS:
+for src, out, limits, extra in JOBS:
     font = instancer.instantiateVariableFont(TTFont(os.path.join(SRC, src)), limits)
     buf = io.BytesIO()
     font.save(buf)
     buf.seek(0)
     font = TTFont(buf)
     sub = subset.Subsetter(options())
-    sub.populate(unicodes=UNICODES)
+    sub.populate(unicodes=UNICODES + extra)
     sub.subset(font)
     font.flavor = 'woff2'
     font.save(os.path.join(OUT, out))
