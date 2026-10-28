@@ -74,6 +74,51 @@ def door(key, sizes='(max-width:767px) 72vw, 260px'):
             f'<span class="gname">{esc(g[1])}<small>{second}{esc(g[4])}</small></span>{last}</a>')
 
 
+def hdoor(ph, href=None, small='', title='', sizes='(max-width:900px) 72vw, 360px'):
+    """A page head's arched door: the photo stands in the tower's door, the swing hangs from its sill,
+    and where the door leads is written beside the swing."""
+    tag, hr = ('a', f' href="{href}"') if href else ('div', '')
+    b = f'<b>{esc(title)}</b>' if title else ''
+    cap = f'<span class="hd-c"><small>{esc(small)}</small>{b}</span>' if small else ''
+    return (f'<{tag} class="hdoor"{hr}><span class="arch">{sh.photo(ph, cls="", sizes=sizes, eager=True)}</span>'
+            f'{sh.swing()}{cap}</{tag}>')
+
+
+def fig_parts(f):
+    """'69' + 'مهجرا، بينهم 36 طفلا (أوتشا)' -> the yellow line 'مهجرا', the full label, the source 'أوتشا'."""
+    m = re.match(r'^(.*?)\s*\(([^)]+)\)\s*$', f['label'])
+    label, src = (m.group(1), m.group(2)) if m else (f['label'], f.get('source') or '')
+    return ' '.join(label.split('،')[0].split()[:3]), label, src
+
+
+def social(s):
+    """The story as a post in the client's own templates: a person or a figure gets the red band
+    (the prisoners' template), everything else the torn cover. Made by the newsroom system from the
+    story, checked by an editor before it goes out."""
+    c = CORNER[s['corner']]
+    ph = s.get('photo') or E['gate_photo'].get(s.get('gate') or '')
+    img = sh.photo(ph, cls='', sizes='(max-width:640px) 90vw, 360px') if ph else ''
+    logo = f'<span class="sc-logo">{sh.lockup()}</span>'
+    hand = '<p class="sc-hand"><span class="ltr">alqastalps</span></p>'
+    f, p = s.get('figure'), s.get('person') or {}
+    label = f'بطاقة نشر: {s["headline"]}'
+    if f or p.get('name'):
+        tone = ' p' if s['corner'] == 'prisoners' else ''
+        if f:
+            short, _, src = fig_parts(f)
+            line = f'<p class="sc-fig"><b class="num">{sh.num(f["value"])}</b> {esc(short)}</p>' + (f'<p class="sc-src">{esc(src)}</p>' if src else '')
+        else:
+            line = f'<p class="sc-fig">{esc(p["name"])}</p><p class="sc-src">{esc(p.get("status") or c[1])}</p>'
+        wire = sh.wire('sc-w') if s['corner'] == 'prisoners' else ''
+        return (f'<div class="sc sc-band{tone}" role="img" aria-label="{esc(label)}"><div class="sc-ph">{img}{wire}{logo}</div>'
+                f'<div class="sc-b"><p class="sc-hl">{esc(s["headline"])}</p>{line}{hand}</div></div>')
+    g = sh.GATE.get(sh.gate_of(s) or '')
+    tag = s.get('place') or (g[1] if g else c[1])
+    return (f'<div class="sc sc-cover" role="img" aria-label="{esc(label)}"><div class="sc-ph">{img}</div>{logo}'
+            f'<div class="sc-t"><span class="sc-tag">{esc(tag)}</span><p class="sc-hl">{esc(s["headline"])}</p></div>'
+            f'<div class="sc-foot">{sh.tear()}{hand}</div></div>')
+
+
 def person_rows(p, s):
     rows = []
     if p.get('age'):
@@ -183,29 +228,45 @@ def home():
         g = sh.gate_of(s)
         if g and g not in seen:
             seen.append(g)
-    rail = ''.join(f'<li>{door(k)}</li>' for k in seen)
+    # the slider moves doors in faster than lazy loading notices them: fetch the first eight up front
+    doors = [door(k) for k in seen]
+    doors = [d.replace('loading="lazy"', 'loading="eager"') if n < 8 else d for n, d in enumerate(doors)]
+    rail = ''.join(f'<li class="swiper-slide">{d}</li>' for d in doors)
     gates = f'''<section class="gates on-ink" data-rail><div class="wrap">
 <div class="sec-h"><div><h2>{sh.tower()}أبواب المدينة</h2><p>آخر خبر من كل باب وحي في القدس، الأحدث أولا. افتح الباب لترى كل ما جرى هناك.</p></div><div class="rail-ctl"><button type="button" data-prev aria-label="الأبواب السابقة">{sh.icon("i-back")}</button><button type="button" data-next aria-label="أبواب أخرى">{sh.icon("i-fwd")}</button></div></div>
-<ul class="rail">{rail}</ul>
+<div class="swiper gates-sw" data-gates><ul class="swiper-wrapper rail">{rail}</ul></div>
+<div class="gates-bar"><div class="gates-prog" aria-hidden="true"></div><p class="gates-n num" aria-hidden="true"><bdi dir="ltr"><b data-now>01</b> / {len(seen):02d}</bdi></p></div>
 <p class="gates-foot"><span>في هذا العدد أخبار من {len(seen)} مكانا من أصل {len(GATES)}.</span><a href="gates.html">كل الأبواب والأحياء</a></p>
 </div></section>'''
 
-    def vigil(corner, cls, title, sub, more):
-        people = [s for s in sh.stories(corner) if s.get('person')]
-        figs = FIGS.get(corner, [])
-        head_n = figs[0] if figs else None
-        cnt = (f'<div class="count"><b class="num">{sh.num(head_n["value"])}</b><span>{esc(head_n["label"])}</span></div>' if head_n else '')
-        rest = figs[1:5]
-        facts = f'<div class="facts">{"".join(fact(f) for f in rest)}</div>' if rest else ''
-        news = [s for s in sh.stories(corner) if not s.get('person')][:3]
-        nl = f'<ul class="list" style="margin-top:36px">{"".join(headline_li(s) for s in news)}</ul>' if news else ''
-        return f'''<section class="vigil {cls} on-ink"><div class="wrap">
-{sec_h(title, sub, more)}{cnt}
-<div class="frames">{"".join(frame(s) for s in people[:4])}</div>{facts}{nl}
+    def more(label, href):
+        return f'<a class="more" href="{href}">{esc(label)}{sh.icon("i-fwd")}</a>'
+
+    def count(f):
+        return f'<div class="count"><b class="num">{sh.num(f["value"])}</b><span>{esc(f["label"])}</span></div>' if f else ''
+
+    # the martyrs: a memorial row of frames; the count stands beside the heading, the news and the link share the foot
+    mfigs = FIGS.get('martyrs', [])
+    mpeople = [s for s in sh.stories('martyrs') if s.get('person')]
+    mnews = [s for s in sh.stories('martyrs') if not s.get('person')][:2]
+    martyrs = f'''<section class="vigil m on-ink"><div class="wrap">
+<div class="vhead">{sec_h('شهداء القدس', 'الإطار والاسم كما ينشرهما القسطل: أين ومتى، ومن وثق.')}{count(mfigs[0] if mfigs else None)}</div>
+<div class="frames">{"".join(frame(s) for s in mpeople[:4])}</div>
+{f'<div class="facts">{"".join(fact(f) for f in mfigs[1:5])}</div>' if mfigs[1:] else ''}
+<div class="vfoot"><ul class="list">{"".join(headline_li(s) for s in mnews)}</ul>{more('كل الأسماء', 'martyrs.html')}</div>
 </div></section>'''
 
-    martyrs = vigil('martyrs', 'm', 'شهداء القدس', 'الإطار والاسم كما ينشرهما القسطل: أين ومتى، ومن وثق.', ('كل الأسماء', 'martyrs.html'))
-    prisoners = vigil('prisoners', 'p', 'أسرى القدس', 'الاسم على الشريط الأصفر، وتحته بطاقة الاعتقال: الحكم، والسجن، وتاريخ الاعتقال.', ('زاوية الأسرى', 'prisoners.html'))
+    # the prisoners: a different shape on purpose: the numbers and the news in a side column, the people as
+    # detention cards (name on the yellow band, the record under it), two by two
+    pfigs = FIGS.get('prisoners', [])
+    ppeople = [s for s in sh.stories('prisoners') if s.get('person')]
+    pnews = [s for s in sh.stories('prisoners') if not s.get('person')][:3]
+    prisoners = f'''<section class="vigil p on-ink">{sh.wire("w1")}<div class="wrap"><div class="pgrid">
+<div class="pside">{sec_h('أسرى القدس', 'الاسم على الشريط الأصفر، وتحته بطاقة الاعتقال: الحكم، والسجن، وتاريخ الاعتقال.')}{count(pfigs[0] if pfigs else None)}
+{f'<div class="facts">{"".join(fact(f) for f in pfigs[1:3])}</div>' if pfigs[1:] else ''}</div>
+<div class="frames ids">{"".join(frame(s) for s in ppeople[:4])}</div></div>
+<div class="vfoot"><ul class="list">{"".join(headline_li(s) for s in pnews)}</ul>{more('زاوية الأسرى', 'prisoners.html')}</div>
+</div></section>'''
 
     aq = sh.stories('aqsa')
     aqsa = ''
@@ -224,10 +285,9 @@ def home():
     if ex or sh.stories('exiled'):
         extra = ''.join(row(s) for s in sh.stories('exiled') if s not in ex)
         exiled = f'''<section class="sec"><div class="wrap">
-{sec_h('المبعدون', 'القرار كما يسلم: الإبعاد عن أي مكان، ولكم من الوقت، ومن تسلمه.', ('زاوية المبعدين', 'exiled.html'))}
-{f'<div class="tally" style="margin:0 0 24px">{"".join(fact(f) for f in exf[:2])}</div>' if exf else ''}
+<div class="vhead">{sec_h('المبعدون', 'القرار كما يسلم: الإبعاد عن أي مكان، ولكم من الوقت، ومن تسلمه.')}{count(exf[0] if exf else None)}</div>
 <div class="orders">{"".join(order(s) for s in ex[:4])}</div>
-{f'<ul class="stack" style="margin-top:28px">{extra}</ul>' if extra else ''}
+<div class="vfoot">{f'<ul class="stack cols2">{extra}</ul>' if extra else '<span></span>'}{more('زاوية المبعدين', 'exiled.html')}</div>
 </div></section>'''
 
     st = [x for x in quotes() if x[0]['corner'] == 'statements'] or quotes()
@@ -238,10 +298,12 @@ def home():
 </div></div></section>'''
 
     wb, gz = sh.stories('westbank'), sh.stories('gaza')
-    country = f'''<section class="sec"><div class="wrap">
-{sec_h('خارج المدينة', 'الضفة الغربية وغزة، حين يصل الخبر إلى عتبة القدس أو يعم البلاد.', ('الضفة الغربية', 'westbank.html'))}
-<div class="cards c4">{"".join(card(s, sf=False) for s in (wb[:2] + gz[:2]))}</div>
-<p style="margin-top:20px"><a class="more" href="gaza.html">غزة{sh.icon("i-fwd")}</a></p>
+    with_photo = lambda xs: sorted(xs, key=lambda s: not s.get('photo'))[:2]  # noqa: E731  stable: newest first among those with photos
+    region = lambda name, href, xs: (f'<div class="region"><div class="region-h"><h3>{esc(name)}</h3>{more("كل أخبار " + name, href)}</div>'  # noqa: E731
+                                     f'<div class="cards c2">{"".join(card(s, sf=False) for s in with_photo(xs))}</div></div>')
+    country = f'''<section class="sec country"><div class="wrap">
+{sec_h('خارج المدينة', 'الضفة الغربية وغزة، حين يصل الخبر إلى عتبة القدس أو يعم البلاد.')}
+<div class="regions">{region('الضفة', 'westbank.html', wb)}{region('غزة', 'gaza.html', gz)}</div>
 </div></section>'''
 
     pics = [p for p in E.get('pictures', []) if p in PH][:5]
@@ -253,7 +315,7 @@ def home():
 </div></section>'''
 
     body = first + gates + martyrs + prisoners + aqsa + exiled + voices + country + pictures
-    sh.write('index.html', sh.page(sh.SITE, 'القدس أولا: أخبار المدينة بابا بابا وحيا حيا.', body, current='index'))
+    sh.write('index.html', sh.page(sh.SITE, 'القدس أولا: أخبار المدينة بابا بابا وحيا حيا.', body, current='index', swiper=True))
 
 
 # ---------------------------------------------------------------- corners
@@ -281,17 +343,18 @@ def corner_page(c):
     figs = FIGS.get(key, [])
     meta = (f'<div class="meta"><div><b class="num">{len(items)}</b><span>{"خبرا" if len(items) > 10 else "أخبار"}</span></div>'
             + (f'<div><b class="num">{sh.num(figs[0]["value"])}</b><span>{esc(figs[0]["label"])}</span></div>' if figs else '') + '</div>')
-    bgp = next((s['photo'] for s in items if s.get('photo')), None)
-    bg = f'<div class="bg" aria-hidden="true">{sh.photo(bgp, cls="", sizes="100vw")}</div>' if bgp and not tone else ''
-    head = (f'<section class="chead{tone} on-ink">{bg}<div class="wrap"><div><p class="crumb"><a href="index.html">اليوم</a><span>/</span><span>زاوية</span></p>'
-            f'<h1>{sh.tower()}{esc(title)}</h1><p>{esc(sub)}</p></div>{meta}</div></section>')
+    lead = next((s for s in items if s.get('photo')), None)
+    dr = hdoor(lead['photo'], sh.link(lead['id']), 'آخر خبر', lead['headline']) if lead else ''
+    wires = sh.wire('w1') + sh.wire('w2') if key == 'prisoners' else ''
+    head = (f'<section class="chead{tone}{" has-door" if dr else ""} on-ink grain" data-hero>{wires}<div class="wrap"><div class="ct"><p class="crumb"><a href="index.html">اليوم</a><span>/</span><span>زاوية</span></p>'
+            f'<h1>{sh.tower()}{esc(title)}</h1><p>{esc(sub)}</p>{meta}</div>{dr}</div>{sh.tear()}</section>')
     extra = ''
     if key in PER_PERSON:
         people = [s for s in items if s.get('person')]
         if people:
             cls = 'm' if key == 'martyrs' else 'p'
             facts = ''.join(fact(f) for f in figs[:4])
-            extra = (f'<section class="vigil {cls} on-ink" style="padding-top:48px"><div class="wrap">'
+            extra = (f'<section class="vigil {cls} on-ink" style="padding-top:48px">{sh.wire("w1") if cls == "p" else ""}<div class="wrap">'
                      f'<div class="frames" style="margin-top:0">{"".join(frame(s) for s in people)}</div>'
                      + (f'<div class="facts">{facts}</div>' if facts else '') + '</div></section>')
         items = [s for s in items if not s.get('person')] or items
@@ -316,10 +379,10 @@ def gates_index():
         f'<section class="zone"><h2>{esc(t)} <span style="font-weight:500;color:var(--mute);font-size:16px">· {esc(d)}</span></h2>'
         f'<div class="doors light">{"".join(door(k, sizes="(max-width:640px) 50vw, 25vw") for k, _, _, z, _ in GATES if z == zk)}</div></section>'
         for zk, t, d in ZONES)
-    head = ('<section class="chead on-ink"><div class="wrap"><div><p class="crumb"><a href="index.html">اليوم</a><span>/</span><span>الأماكن</span></p>'
+    head = ('<section class="chead on-ink grain" data-hero><div class="wrap"><div class="ct"><p class="crumb"><a href="index.html">اليوم</a><span>/</span><span>الأماكن</span></p>'
             f'<h1>{sh.tower()}الأبواب والأحياء</h1><p>يحفظ القسطل كل خبر تحت المكان الذي جرى فيه: أبواب البلدة القديمة وأبواب المسجد، '
-            'والأحياء حول السور، والأحياء التي عزلها الجدار.</p></div>'
-            f'<div class="meta"><div><b class="num">{len(GATES)}</b><span>مكانا</span></div><div><b class="num">{len(S)}</b><span>خبرا</span></div></div></div></section>')
+            'والأحياء حول السور، والأحياء التي عزلها الجدار.</p>'
+            f'<div class="meta"><div><b class="num">{len(GATES)}</b><span>مكانا</span></div><div><b class="num">{len(S)}</b><span>خبرا</span></div></div></div></div>{sh.tear()}</section>')
     sh.write('gates.html', sh.page('الأبواب والأحياء', 'كل باب وحي في القدس، وآخر خبر من كل منها.',
                                    head + f'<div class="wrap page-in">{zones}</div>', current='gates'))
 
@@ -329,13 +392,14 @@ def gate_page(g):
     key, name, second, zone, where = g
     items = sh.stories(gate=key)
     ph = E['gate_photo'].get(key)
-    bg = f'<div class="bg" aria-hidden="true">{sh.photo(ph, cls="", sizes="100vw")}</div>' if ph else ''
+    last = items[0] if items else None
+    dr = hdoor(ph, sh.link(last['id']) if last else None, 'آخر خبر من هنا' if last else where, last['headline'] if last else '') if ph else ''
     zt = next(z[1] for z in ZONES if z[0] == zone)
     lead = '' if second == name else f'{esc(second)} · '
-    head = (f'<section class="chead on-ink">{bg}<div class="wrap"><div><p class="crumb"><a href="../gates.html">الأبواب والأحياء</a><span>/</span><span>{esc(zt)}</span></p>'
+    head = (f'<section class="chead{" has-door" if dr else ""} on-ink grain" data-hero><div class="wrap"><div class="ct"><p class="crumb"><a href="../gates.html">الأبواب والأحياء</a><span>/</span><span>{esc(zt)}</span></p>'
             f'<h1>{sh.tower()}{esc(name)}</h1><p>{lead}{esc(where)}.'
-            + (f' {sh.stories_n(len(items))} في هذا العدد.' if items else ' لا أخبار من هنا في هذا العدد بعد.') + '</p></div>'
-            f'<div class="meta"><div><b class="num">{len(items)}</b><span>{"خبرا" if len(items) > 10 else "أخبار"}</span></div></div></div></section>')
+            + (f' {sh.stories_n(len(items))} في هذا العدد.' if items else ' لا أخبار من هنا في هذا العدد بعد.') + '</p>'
+            f'<div class="meta"><div><b class="num">{len(items)}</b><span>{"خبرا" if len(items) > 10 else "أخبار"}</span></div></div></div>{dr}</div>{sh.tear()}</section>')
     same = [x for x in GATES if x[3] == zone and x[0] != key]
     nb = ''.join(f'<li><a href="{x[0]}.html">{esc(x[1])}</a> <span class="num" style="color:var(--mute)">· {gate_count(x[0])}</span></li>' for x in same)
     capt = f'<div class="box"><h2>الصورة</h2><p style="font-size:14px;color:var(--mute)">{sh.caption(ph)}</p></div>' if ph else ''
@@ -352,16 +416,21 @@ def story_page(s, i):
     words = sum(len(p.split()) for p in s.get('body') or [])
     mins = max(1, round(words / 180))
     ph = s.get('photo')
-    lead_ph = ''
+    dr = ''
     if ph:
         note = '' if s.get('photo_own') else 'صورة أرشيفية. '
-        lead_ph = f'<figure class="lead-ph">{sh.photo(ph, sizes="(max-width:1300px) 100vw, 1280px", eager=True, extra=sh.stamp(s))}<figcaption>{note}{sh.caption(ph)}</figcaption></figure>'
+        dr = (f'<figure class="hdoor"><span class="arch">{sh.photo(ph, cls="", sizes="(max-width:900px) 72vw, 420px", eager=True)}{sh.stamp(s)}</span>'
+              f'{sh.swing()}<figcaption class="hd-c">{note}{sh.caption(ph)}</figcaption></figure>')
+    tone = ' red' if s['corner'] == 'martyrs' else ' blue' if s['corner'] == 'prisoners' else ''
     prose = []
     for n, p in enumerate(s.get('body') or []):
         prose.append(f'<p>{esc(p)}</p>')
         if n == 1 and s.get('figure'):
             f = s['figure']
-            prose.append(f'<div class="pull"><b class="fig-n num">{sh.num(f["value"])}</b><p class="fig-l">{esc(f["label"])}</p></div>')
+            _, label, src = fig_parts(f)
+            band = '' if s['corner'] in ('martyrs', 'prisoners') else ' ink'
+            prose.append(f'<div class="pull{band}"><b class="fig-n num">{sh.num(f["value"])}</b><p class="fig-l">{esc(label)}</p>'
+                         + (f'<p class="fig-s">{esc(src)}</p>' if src else '') + '</div>')
         if n == 2 and s.get('quote') and s['quote'].get('text'):
             q = s['quote']
             prose.append(f'<blockquote>«{esc(q["text"])}»<cite>{esc(q.get("who") or "")}{"، " + esc(q["role"]) if q.get("role") else ""}'
@@ -386,13 +455,15 @@ def story_page(s, i):
     pn = ('<nav class="pn" aria-label="الخبر التالي والسابق">'
           + (f'<a href="{prev["id"]}.html"><small>الأحدث</small><b>{esc(prev["headline"])}</b></a>' if prev else '<span></span>')
           + (f'<a href="{nxt["id"]}.html"><small>الأقدم</small><b>{esc(nxt["headline"])}</b></a>' if nxt else '') + '</nav>')
-    body = f'''<article class="story"><div class="wrap">
-<header class="hd">{sh.kick(s)}<h1 class="hl">{esc(s["headline"])}</h1>{f'<p class="sf">{esc(s["standfirst"])}</p>' if s.get("standfirst") else ''}
-<p class="by"><span><b>القسطل</b>، مكتب القدس</span>{sh.tdate(s, long=True)}<span>قراءة في {"دقيقة" if mins == 1 else "دقيقتين" if mins == 2 else f"{mins} دقائق"}</span></p></header>
-{lead_ph}
+    wires = sh.wire('w1') + sh.wire('w2') if s['corner'] == 'prisoners' else ''
+    body = f'''<article class="story"><header class="shead{tone}{" has-door" if dr else ""} on-ink grain" data-hero>{wires}<div class="wrap shead-g">
+<div class="shead-t">{sh.kick(s)}<h1 class="hl">{esc(s["headline"])}</h1>{f'<p class="sf">{esc(s["standfirst"])}</p>' if s.get("standfirst") else ''}
+<p class="by"><span><b>القسطل</b>، مكتب القدس</span>{sh.tdate(s, long=True)}<span>قراءة في {"دقيقة" if mins == 1 else "دقيقتين" if mins == 2 else f"{mins} دقائق"}</span></p></div>
+{dr}</div>{sh.tear()}</header><div class="wrap">
 <div class="body-grid"><div><div class="prose">{"".join(prose)}</div>
 <div class="srcs"><h2 class="lbl">المصادر</h2><ul>{srcs}</ul></div>{pn}</div>
-<aside class="aside-sticky side">{pcard}{gbox}<div class="box"><h2>شارك</h2><div class="share"><button type="button" data-copy>{sh.icon("i-link")}انسخ الرابط</button><a href="https://t.me/alqastalps" rel="noopener" target="_blank">تلغرام</a></div></div></aside></div>
+<aside class="aside-sticky side">{pcard}{gbox}<div class="box"><h2>شارك</h2><div class="share"><button type="button" data-copy>{sh.icon("i-link")}انسخ الرابط</button><a href="https://t.me/alqastalps" rel="noopener" target="_blank">تلغرام</a></div>
+<p class="lbl" style="margin:20px 0 10px">بطاقة الخبر للنشر</p>{social(s)}<p class="sc-note">يصنعها النظام من الخبر على قوالب القسطل، ويراجعها المحرر قبل النشر.</p></div></aside></div>
 {rel}
 </div></article>'''
     sh.write(f'story/{s["id"]}.html', sh.page(s['headline'], s.get('standfirst') or s['headline'], body, current=s['corner'], top=False))
@@ -400,8 +471,8 @@ def story_page(s, i):
 
 # ---------------------------------------------------------------- utility pages
 def simple(rel, title, desc, inner, current=''):
-    head = (f'<section class="chead on-ink"><div class="wrap"><div><p class="crumb"><a href="{C.R}index.html">اليوم</a><span>/</span><span>{esc(title)}</span></p>'
-            f'<h1>{sh.tower()}{esc(title)}</h1><p>{esc(desc)}</p></div></div></section>')
+    head = (f'<section class="chead on-ink grain" data-hero><div class="wrap"><div class="ct"><p class="crumb"><a href="{C.R}index.html">اليوم</a><span>/</span><span>{esc(title)}</span></p>'
+            f'<h1>{sh.tower()}{esc(title)}</h1><p>{esc(desc)}</p></div></div>{sh.tear()}</section>')
     sh.write(rel, sh.page(title, desc, head + f'<div class="wrap page-in">{inner}</div>', current=current))
 
 
@@ -476,6 +547,8 @@ def identity():
     swatches = ''.join(f'<div class="sw"><i style="background:{c}"></i><div><b>{n}</b><span class="num ltr">{c}</span><p style="color:var(--mute);margin-top:4px">{esc(d)}</p></div></div>' for n, c, d in sw)
     demo = next((s for s in S if s.get('person') and s['corner'] == 'prisoners'), None) or next((s for s in S if s.get('person')), None)
     lead = BY[E['lead']]
+    cards = [lead] + [x for x in S if x['id'] in ('deaths-in-custody-92-atrash', 'martyr-bahaa-al-natsheh-kafr-aqab')]
+    cards += [x for x in S if x.get('photo') and not x.get('person') and not x.get('figure') and x['id'] != lead['id']][:1]
     inner = f'''<section class="book">
 <div class="marks"><div style="background:#0E1724;color:#fff">{sh.lockup()}</div><div style="color:#0E1724">{sh.lockup()}</div><div style="background:#FFDD36;color:#0E1724"><span style="font-size:110px;line-height:1">{sh.tower()}</span></div></div>
 <div class="anat" style="margin-top:64px"><div>{big}</div><div><h2 style="font-size:34px">برج بابه مفتوح</h2>
@@ -489,6 +562,17 @@ def identity():
 <div class="split" style="margin-top:24px;align-items:start"><div><p class="lbl" style="margin-bottom:12px">ختم المكان</p><p style="background:var(--ink);padding:24px;border-radius:14px">{sh.stamp(lead)}</p>
 <p class="lbl" style="margin:28px 0 12px">الباب</p><div style="max-width:260px;background:var(--ink);padding:24px 24px 64px;border-radius:14px" class="on-ink">{door(sh.gate_of(lead) or "old-city")}</div></div>
 <div>{f'<p class="lbl" style="margin-bottom:12px">الإطار والشريط</p><div class="vigil p on-ink" style="padding:28px;border-radius:14px"><div style="max-width:300px;position:relative">{frame(demo)}</div></div>' if demo else ''}</div></div>
+<h2 style="font-size:34px;margin-top:72px">من قوالب القسطل</h2>
+<p class="sf" style="margin-top:12px;max-width:66ch">قبل الموقع كانت للقسطل لغة على منشوراتها: ورق ممزق بشق أصفر، وشريط أحمر يحمل الرقم بالأصفر، وسلك شائك على أخبار الأسرى، وبطاقة صفراء للعنوان، وحبيبات على العتمة. أخذنا كل قطعة إلى مكان واحد في الموقع.</p>
+<ul class="kit">
+<li><div class="kit-v tear-v">{sh.tear()}</div><b>الورق الممزق</b><p>نهاية كل ترويسة داكنة: الصفحة البيضاء تنشق عن العتمة، والأصفر في الشق.</p></li>
+<li><div class="kit-v"><div class="pull" style="margin:0;width:100%"><b class="fig-n num">{sh.num("92")}</b><p class="fig-l">شهيدا في سجون الاحتلال منذ تشرين الأول 2023</p><p class="fig-s">الضمير</p></div></div><b>الشريط الأحمر</b><p>رقم الخبر داخل النص: الرقم بالأصفر والمصدر بالأصفر تحته، كما في قالب الأسرى.</p></li>
+<li><div class="kit-v wire-v">{sh.wire()}</div><b>السلك</b><p>يعبر زاوية الترويسة في صفحة الأسرى وأخبارهم فقط، ولا يظهر في غيرها.</p></li>
+<li><div class="kit-v"><span class="sc-tag" style="font-size:28px">باب العامود</span></div><b>البطاقة الصفراء</b><p>اسم المكان على بطاقة النشر، بزاوية واحدة حادة كزاوية البرج.</p></li>
+</ul>
+<h2 style="font-size:34px;margin-top:72px">بطاقات النشر</h2>
+<p class="sf" style="margin-top:12px;max-width:66ch">من كل خبر يصنع النظام بطاقة للنشر على قوالب القسطل نفسها، ويراجعها المحرر قبل أن تخرج: الشريط الأحمر للأشخاص والأرقام، والغلاف الممزق لبقية الأخبار. وفي كل صفحة خبر بطاقتها.</p>
+<div class="scs">{"".join(social(x) for x in cards)}</div>
 <h2 style="font-size:34px;margin-top:72px">الحركة</h2><p class="sf" style="margin-top:12px;max-width:62ch">أول صفحة في الزيارة تفتح من البوابة: يقوم البرج، وينفتح بابه، وترى الصفحة من خلال الباب وهو يكبر حتى يملأ الشاشة. وبين صفحة وأخرى تنفتح الصفحة التالية من العتمة من خلال الباب نفسه. وتتوقف الحركة لكل من يطلب من جهازه حركة أقل.</p>
 <p style="margin-top:20px"><a class="btn y" href="index.html?loader">أعد الافتتاحية</a></p>
 </section>'''

@@ -61,8 +61,25 @@
   }, { rootMargin: '0px 0px -8% 0px' }) : null;
   document.querySelectorAll('.rv,.sec-h').forEach(function (el) { io ? io.observe(el) : el.classList.add('in'); });
 
-  // ---------------------------------------------------------------- the gates rail
+  // ---------------------------------------------------------------- the gates slider (Swiper, right to left)
+  var sw = document.querySelector('[data-gates]');
+  if (sw && window.Swiper) {
+    var box = sw.closest('[data-rail]'), now = box.querySelector('[data-now]');
+    var two = function (n) { return (n < 10 ? '0' : '') + n; };
+    new Swiper(sw, {
+      slidesPerView: 1.3, spaceBetween: 16, speed: still ? 0 : 700, grabCursor: true,
+      watchSlidesProgress: true, keyboard: { enabled: true, onlyInViewport: true },
+      navigation: { prevEl: box.querySelector('[data-prev]'), nextEl: box.querySelector('[data-next]') },
+      pagination: { el: box.querySelector('.gates-prog'), type: 'progressbar' },
+      a11y: { prevSlideMessage: 'الأبواب السابقة', nextSlideMessage: 'أبواب أخرى', slideLabelMessage: 'باب {{index}} من {{slidesLength}}' },
+      breakpoints: { 640: { slidesPerView: 2.3, spaceBetween: 20 }, 900: { slidesPerView: 3.3, spaceBetween: 22 }, 1200: { slidesPerView: 4.3, spaceBetween: 24 } },
+      on: { slideChange: function (s) { if (now) now.textContent = two(s.realIndex + 1); } }
+    });
+  }
+
+  // ---------------------------------------------------------------- the gates rail without Swiper: scroll by two doors
   document.querySelectorAll('[data-rail]').forEach(function (box) {
+    if (box.querySelector('.swiper-initialized')) return;
     var rail = box.querySelector('.rail'), prev = box.querySelector('[data-prev]'), next = box.querySelector('[data-next]');
     if (!rail || !prev) return;
     var step = function () { var li = rail.querySelector('li'); return li ? li.getBoundingClientRect().width + 20 : 300; };
