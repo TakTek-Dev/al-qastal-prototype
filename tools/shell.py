@@ -7,9 +7,10 @@ import datetime as dt
 import html
 import json
 import os
+import random
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V = '7'                                       # bump on any asset change (Chrome caches hard)
+V = '18'                                       # bump on any asset change (Chrome caches hard)
 SITE = 'القسطل'
 BASE_URL = 'https://taktek-dev.github.io/al-qastal-prototype/'
 BASE_PATH = '/al-qastal-prototype/'
@@ -173,6 +174,43 @@ def swing(cls=''):
     return f'<i class="swing{(" " + cls) if cls else ""}" aria-hidden="true"></i>'
 
 
+# ---------------------------------------------------------------- pieces from the client's own post templates
+def _rip(seed, y, amp, w=1440):
+    """A torn edge across the width: points at uneven steps, each a little above or below y."""
+    rnd = random.Random(seed)
+    pts, x = [], 0.0
+    while x < w:
+        pts.append(f'{x:.0f} {y + rnd.uniform(-amp, amp):.1f}')
+        x += rnd.uniform(9, 26)
+    pts.append(f'{w} {y + rnd.uniform(-amp, amp):.1f}')
+    return 'M' + 'L'.join(pts) + 'V48H0Z'
+
+
+TEAR_Y, TEAR_W = _rip(7, 13, 9), _rip(19, 25, 7)
+
+
+def tear():
+    """The paper tears out of the dark, with the yellow rip under its edge (the cover template)."""
+    return (f'<svg class="tear" viewBox="0 0 1440 48" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">'
+            f'<path d="{TEAR_Y}" fill="#FFDD36"/><path d="{TEAR_W}" fill="currentColor"/></svg>')
+
+
+def _strand():
+    twist = ''.join(f'Q{x + 15} {22 if k % 2 == 0 else 38} {x + 30} 30' for k, x in enumerate(range(0, 1200, 30)))
+    twist2 = ''.join(f'Q{x + 15} {38 if k % 2 == 0 else 22} {x + 30} 30' for k, x in enumerate(range(0, 1200, 30)))
+    barbs = ''.join(f'M{x - 11} 15L{x + 11} 45M{x + 11} 15L{x - 11} 45M{x - 5} 25h10v10h-10z' for x in range(75, 1200, 150))
+    return f'M0 30{twist}M0 30{twist2}{barbs}'
+
+
+STRAND = _strand()
+
+
+def wire(cls=''):
+    """A strand of barbed wire, as it crosses the corner of the prisoners' template."""
+    return (f'<svg class="wire{(" " + cls) if cls else ""}" viewBox="0 0 1200 60" aria-hidden="true" focusable="false">'
+            f'<path d="{STRAND}" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+
+
 def stamp(s):
     g = GATE.get(gate_of(s) or '')
     where = s['place'] if s.get('place') else (g[1] if g else '')
@@ -264,7 +302,15 @@ def loader():
             f'<div class="gate-nav" aria-hidden="true">{doorway("gnm")}</div>')
 
 
-def head(title, desc, og=None):
+# Swiper for the gates slider on the home page only (cdnjs, pinned and checked with SRI)
+SWIPER = 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.2.6/'
+SWIPER_CSS = ('<link rel="stylesheet" href="' + SWIPER + 'swiper-bundle.min.css" crossorigin="anonymous" '
+              'integrity="sha384-9kDDKx/5+oRQIb/Ce7grsjaS0AWcNd9aPYY7ubOmUBUO3GovHz5BO0RliSAPq2S/">\n')
+SWIPER_JS = ('<script src="' + SWIPER + 'swiper-bundle.min.js" crossorigin="anonymous" defer '
+             'integrity="sha384-Z8zwe4UlCA9xiPVMGPhmzBsPAEVtt/gabOsU+0A8Lf67I0MjHjP+UzNYng2CtJar"></script>\n')
+
+
+def head(title, desc, og=None, swiper=False):
     t = esc(title if title == SITE else f'{title} · {SITE}')
     return f'''<!doctype html>
 <html lang="ar" dir="rtl">
@@ -276,7 +322,7 @@ def head(title, desc, og=None):
 <meta name="theme-color" content="#0E1724">
 <link rel="icon" href="{C.R}favicon.svg?v={V}" type="image/svg+xml">
 <link rel="preload" href="{C.R}assets/fonts/alexandria.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{C.R}assets/css/aq.css?v={V}">
+{SWIPER_CSS if swiper else ''}<link rel="stylesheet" href="{C.R}assets/css/aq.css?v={V}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="{SITE}">
@@ -335,7 +381,7 @@ def foot():
 <div><h2>الزوايا</h2><ul>{corners}</ul></div>
 <div><h2>{SITE}</h2><ul><li><a href="{C.R}gates.html">كل الأبواب والأحياء</a></li><li><a href="{C.R}about.html">من نحن وكيف نعمل</a></li><li><a href="{C.R}submit.html">أرسل خبرا</a></li><li><a href="{C.R}search.html">بحث</a></li><li><a href="{C.R}credits.html">حقوق الصور</a></li><li><a href="{C.R}identity.html">الهوية</a></li></ul></div>
 <div><h2>نشرة الصباح</h2><p>أخبار القدس في بريدك كل صباح عند السابعة.</p>
-<form class="sub" action="#" method="post" data-proto="اشتركت في النموذج فقط. لم يرسل شيء."><label class="vh" for="em-f">البريد الإلكتروني</label><input id="em-f" name="email" type="email" placeholder="you@example.com" autocomplete="email" dir="ltr" required><button type="submit">اشترك</button></form><p class="msg" role="status"></p></div>
+<form class="sub" action="#" method="post" data-proto="اشتركت في النموذج فقط. لم يرسل شيء."><label class="vh" for="em-f">البريد الإلكتروني</label><input id="em-f" name="email" type="email" placeholder="بريدك الإلكتروني" autocomplete="email" dir="ltr" required><button type="submit">اشترك</button></form><p class="msg" role="status"></p></div>
 </div>
 <nav class="places" aria-label="الأبواب والأحياء"><h2>الأبواب والأحياء</h2><ul>{places}</ul></nav>
 </div>
@@ -343,9 +389,9 @@ def foot():
 </footer>'''
 
 
-def page(title, desc, body, current='', og=None, top=True):
-    return (head(title, desc, og=og) + util() + mast(current) + (urgent() if top else '') +
-            f'<main id="main">{body}</main>' + foot() +
+def page(title, desc, body, current='', og=None, top=True, swiper=False):
+    return (head(title, desc, og=og, swiper=swiper) + util() + mast(current) + (urgent() if top else '') +
+            f'<main id="main">{body}</main>' + foot() + (SWIPER_JS if swiper else '') +
             f'<script src="{C.R}assets/js/aq.js?v={V}" defer></script>\n</body>\n</html>\n')
 
 
