@@ -42,7 +42,10 @@ button{cursor:pointer;background:none;border:0;padding:0}
 .skip:focus{top:12px}
 .ic{width:18px;height:18px;flex:none}
 .num{font-variant-numeric:tabular-nums lining-nums}
-h1,h2,h3{text-wrap:balance;font-weight:700;letter-spacing:normal;line-height:1.4}
+/* headlines fill their measure (pretty only lifts a lone last word); balance stays on the short section titles,
+   where it cannot leave a ragged gap beside a neighbouring card */
+h1,h2,h3{text-wrap:pretty;font-weight:700;letter-spacing:normal;line-height:1.4}
+.sec-h h2,.chead h1{text-wrap:balance}
 .ltr{display:inline-block;direction:ltr;unicode-bidi:isolate}
 p{text-wrap:pretty}
 
